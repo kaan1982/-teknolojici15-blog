@@ -1,12 +1,12 @@
 ---
-title: "İlk Bilgisayar Böceği Gerçek Bir Güveydi (1947)"
+title: "Bilgisayarda Bulunan İlk Gerçek Böcek: 1947'nin Güvesi"
 slug: "ilk-bilgisayar-bocegi-1947"
 date: "2026-10-20"
 year: 1947
 yearLabel: "1947"
 category: "Bilgisayar"
 excerpt: "9 Eylül 1947'de Harvard Mark II'nin rölesinde bir güve bulundu ve deftere yapıştırıldı. Ama \"bug\" kelimesi ondan çok daha eskiydi."
-hook: "İlk bilgisayar böceği gerçek bir güveydi"
+hook: "Bilgisayarda bulunan ilk gerçek böcek"
 fact: "1947"
 factLabel: "Mark II'de güvenin bulunduğu yıl"
 cover: ""

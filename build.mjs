@@ -67,7 +67,7 @@ function sleeve(p, opts = {}) {
   if (p.cover) return `<div class="${cls}"><img src="${esc(p.cover)}" width="720" height="1280" alt="${esc(p.title)}: @teknolojici15 video kapağı" ${opts.eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"><span class="sleeve__spine" aria-hidden="true">${esc(p.yearLabel)}</span></div>`;
   return `<div class="${cls}" data-cat="${esc(p.category)}"><span class="sleeve__in"><span class="sleeve__brand" aria-hidden="true">${mark}<b>TEKNOLOJİCİ15</b></span><span class="sleeve__year" aria-hidden="true">${esc(p.yearLabel)}</span><span class="sleeve__fact">${esc(p.fact || '')}</span><span class="sleeve__hook">${esc(p.hook)}</span></span><span class="sleeve__stripe" aria-hidden="true"></span><span class="sleeve__spine" aria-hidden="true">${esc(p.yearLabel)}</span></div>`;
 }
-const label = (p) => `<p class="label"><span>${esc(p.yearLabel)}</span><span>${esc(p.category)}</span>${p.fact ? `<span>${esc(p.fact)}</span>` : ''}<span>${p.readMin} dk</span></p>`;
+const label = (p) => `<p class="label"><span>${esc(p.yearLabel)}</span><span>${esc(p.category)}</span>${p.fact && !String(p.fact).includes(p.yearLabel) ? `<span>${esc(p.fact)}</span>` : ''}<span>${p.readMin} dk</span></p>`;
 
 function head({ title, desc, url, image, type = 'website', jsonld = [], extra = '' }) {
   const canon = SITE + url;

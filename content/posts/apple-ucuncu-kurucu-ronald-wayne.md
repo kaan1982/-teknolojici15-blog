@@ -52,7 +52,7 @@ Bu gerekçeleri yan yana koyunca karar daha anlaşılır hale geliyor. Bir kez i
 
 ## "Mezarlığın en zengin adamı"
 
-Wayne'in asıl pişmanlığı ilginç bir şekilde hisse değil. Wikipedia'ya göre kendi elindeki imzalı sözleşme kopyasını 500 dolara sattı ve bunu tek pişmanlığı olarak anlattı. Aynı belge daha sonra 2,51 milyon dolara el değiştirdi.
+Wayne'in asıl pişmanlığı ilginç bir şekilde hisse değil. Wikipedia'ya göre kendi elindeki imzalı sözleşme kopyasını 500 dolara sattı ve bunu tek pişmanlığı olarak anlattı.
 
 Hisseyi bırakmasına gelince, pişman olmadığını söylüyor. Kalsaydı muhtemelen "mezarlığın en zengin adamı" olacağını düşünüyor. İngilizce özgün ifadesi şöyle: "probably would have wound up the richest man in the cemetery."
 
