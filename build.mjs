@@ -19,7 +19,7 @@ const noDash = (s) => String(s).replace(/\s?[—–]\s?/g, ', ');
 
 /* ---------- locales ---------- */
 // Active languages (others keep their translations in i18n/ but are not built; old URLs redirect to /en/ in vercel.json)
-const ACTIVE = ['tr', 'en', 'de', 'fr', 'it', 'nl', 'sv', 'uk', 'ar', 'ja'];
+const ACTIVE = ['tr', 'en', 'de', 'fr', 'it', 'nl', 'sv', 'ar', 'ja'];
 const LOCALES = [
   ['tr', 'Türkçe', 'tr-TR'], ['en', 'English', 'en'], ['de', 'Deutsch', 'de-DE'], ['fr', 'Français', 'fr-FR'], ['es', 'Español', 'es-ES'], ['it', 'Italiano', 'it-IT'], ['pt', 'Português', 'pt-BR'], ['nl', 'Nederlands', 'nl-NL'], ['ru', 'Русский', 'ru-RU'], ['uk', 'Українська', 'uk-UA'], ['pl', 'Polski', 'pl-PL'],
   ['cs', 'Čeština', 'cs-CZ'], ['sk', 'Slovenčina', 'sk-SK'], ['ro', 'Română', 'ro-RO'], ['hu', 'Magyar', 'hu-HU'], ['bg', 'Български', 'bg-BG'], ['el', 'Ελληνικά', 'el-GR'], ['sr', 'Српски', 'sr-RS'], ['hr', 'Hrvatski', 'hr-HR'], ['sv', 'Svenska', 'sv-SE'], ['no', 'Norsk', 'nb-NO'],
