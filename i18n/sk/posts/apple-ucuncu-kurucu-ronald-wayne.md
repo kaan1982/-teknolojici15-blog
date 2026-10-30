@@ -22,7 +22,7 @@ Wayneovo pôsobenie v Apple bolo krátke, ale nie prázdne. Podľa Wikipédie pr
 
 Prvá "oficiálna" tvár Applu, teda jeho prvé logo a prvá príručka, vzišla teda veľkou mierou z jeho rúk.
 
-> **Vedeli ste, že?** Dokumenty o Wayneovom odchode a zakladajúca zmluva sa v decembri 2011 predali v New Yorku v aukčnom dome Sotheby's za 1,59 milióna dolárov. Podľa The Register tá cena zodpovedala desaťnásobku odhadu približne 150 000 dolárov. Dokumenty kúpil Eduardo Cisneros, šéf spoločnosti Cisneros Corporation.
+> **Vedeli ste?** Dokumenty o Wayneovom odchode a zakladajúca zmluva sa v decembri 2011 predali v New Yorku v aukčnom dome Sotheby's za 1,59 milióna dolárov. Podľa The Register tá cena zodpovedala desaťnásobku odhadu približne 150 000 dolárov. Dokumenty kúpil Eduardo Cisneros, šéf spoločnosti Cisneros Corporation.
 
 ## Rozhodnutie o 12 dní neskôr
 

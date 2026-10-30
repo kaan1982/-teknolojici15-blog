@@ -26,7 +26,7 @@ Túto prácu robili zamestnanci firmy Raytheon vo Walthame v Massachusetts. Pod�
 
 Vedľajší účinok bol zásadný: softvér sa musel zmraziť mesiace pred letom. Žiadna záplata na poslednú chvíľu neexistovala, pretože oprava chyby znamenala tkať odznova.
 
-> **Vedeli ste, že?** Apollo 11 nemalo jeden AGC, ale dva: jeden vo veliteľskom module a druhý v lunárnom module. Každý vážil približne 32 kg a bežal na kremennom oscilátore s frekvenciou 2,048 MHz.
+> **Vedeli ste?** Apollo 11 nemalo jeden AGC, ale dva: jeden vo veliteľskom module a druhý v lunárnom module. Každý vážil približne 32 kg a bežal na kremennom oscilátore s frekvenciou 2,048 MHz.
 
 ## Alarm, ktorý zazvonil minúty pred pristátím
 

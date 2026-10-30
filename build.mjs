@@ -166,8 +166,8 @@ function chrome(active, url = '/') { // url: base path or content item
 <header class="bar">
   <a class="bar__mark notranslate" translate="no" href="${u('/')}" aria-label="${esc(T.homeAria)}">${mark}<span>TEKNOLOJİCİ<b>15</b></span></a>
   <nav class="bar__nav" aria-label="${esc(T.mainMenu)}">
-    <a href="${u('/#raf')}"${a('raf')}>${esc(T.navShelf)}</a>
-    <a class="bar__news" href="${u('/haber/')}"${a('haber')}>${esc(T.navNews)}</a>
+    <a href="${u('/#haberler')}"${a('raf')}>${esc(T.navNews)}</a>
+    <a class="bar__news" href="${u('/#yol')}">${esc(T.navRoad || UI_TR.navRoad)}</a>
     <a class="bar__ai" href="${u('/yapay-zeka/')}"${a('ai')}>${esc(T.navAI)}</a>
     <a href="${u('/#dizin')}"${a('dizin')}>${esc(T.navAll)}</a>
     <a class="bar__ig" href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -206,7 +206,7 @@ function tv() {
           <p class="tt__top" aria-hidden="true"><span>P100</span><b class="notranslate" translate="no">TEKNO-TEKST</b><span>${dd} ${esc((T.monthsShort || UI_TR.monthsShort)[m - 1])}</span><span class="tt__clock">--:--:--</span></p>
           <h2 id="tv-h" class="tt__h"><span>${esc(T.ttHead)}</span><time datetime="${d}">${fmtDate(d)}</time></h2>
           <ol class="tt__list">${items}</ol>
-          <nav class="tt__bar" aria-label="${esc(T.ttPagesAria)}"><a class="r" href="${u('/#raf')}">${esc(T.ttShelf)}</a><a class="g" href="${u('/yapay-zeka/')}">${esc(T.ttAI)}</a><a class="y" href="${u('/haber/')}">${esc(T.ttNews)}</a><a class="c" href="${u('/#dizin')}">${esc(T.ttAll)}</a></nav>
+          <nav class="tt__bar" aria-label="${esc(T.ttPagesAria)}"><a class="r" href="${u('/#yol')}">${esc(T.ttRoad || UI_TR.ttRoad)}</a><a class="g" href="${u('/yapay-zeka/')}">${esc(T.ttAI)}</a><a class="y" href="${u('/haber/')}">${esc(T.ttNews)}</a><a class="c" href="${u('/#dizin')}">${esc(T.ttAll)}</a></nav>
         </div>
       </div>
       <div class="tv__side" aria-hidden="true"><i class="tv__knob"></i><i class="tv__knob tv__knob--s"></i><span class="tv__grille"></span><b>CH 15</b><span class="tv__led"></span></div>
@@ -218,7 +218,7 @@ function tv() {
 /* ---------- home ---------- */
 function home() {
   const hero = newest[0];
-  const shelf = posts; // oldest → newest
+  const shelf = posts.filter((p) => p.year <= 2026); // oldest → newest, the road ends today
   const cats = [...new Set(all.map((p) => p.category))];
   const desc = T.homeDesc;
   const jsonld = [ORG, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE + u('/'), name: 'Teknolojici15', inLanguage: L.tag, publisher: { '@id': SITE + '/#org' } },
@@ -252,28 +252,24 @@ ${chrome('raf', '/')}
       <div class="vcr" aria-hidden="true">
         <div class="vcr__panel">
           <span class="vcr__rec"><i></i>REC</span>
-          <span class="vcr__sign">${esc(T.vcrSign)}</span>
-          <span class="vcr__count">SP · ${shelf.length} ${esc(T.vcrTapes)}</span>
+          <span class="vcr__sign">${esc(T.vcrSign2 || UI_TR.vcrSign2)}</span>
+          <span class="vcr__count">CH 15 · ${news.length}</span>
         </div>
         <div class="vcr__ticker"><div class="vcr__run">${(() => { const t = [...todayNews.map((n) => `<b>${esc(T.breaking)}</b> ${esc(n.title)}`), ...newest.slice(0, 10).map((p) => `<b>${esc(p.yearLabel)}</b> ${esc(p.title)}`)].map((x) => `<span>${x}</span>`).join(''); return t + t; })()}</div></div>
         <div class="vcr__tracking"></div>
       </div>
   </section>
 
-  <!-- 2 · SHELF: pan, the peak. The deck counter rolls through the years here. -->
-  <section id="raf" class="shelf" data-sc-act="pan" data-sc-span="${Math.max(5, Math.round(shelf.length * 0.36))}" data-sc-drift="#0D0B20">
-    <div data-sc-stage>
-      <div class="rail" data-sc-pan="0.04">
-        <div class="rail__lead">
-          <h2 class="rail__h">${esc(T.shelfH)}</h2>
-          <p>${esc(tpl(T.shelfP, { n: shelf.length }))}</p>
-        </div>
-        ${shelf.map((p) => `<article class="tape" data-year="${esc(p.yearLabel)}" data-title="${esc(p.title)}" data-url="${p.url}">
-          <a href="${p.url}" class="tape__link"><span class="tape__tilt" data-sc-tilt="6">${sleeve(p)}</span>
-          <span class="tape__meta">${label(p)}<span class="tape__t">${esc(p.title)}</span></span></a>
-        </article>`).join('\n')}
-        <div class="rail__end"><p>${esc(T.shelfEnd)}</p><a href="${IG}" target="_blank" rel="noopener noreferrer">${esc(T.follow)}</a></div>
-      </div>
+  <!-- 2 · AI NEWS BAND: replaces the tape shelf. Newest first, a feature + a grid. -->
+  <section id="haberler" class="nb sc-section" data-sc-act="flow">
+    <div class="sc-wrap">
+      <div class="nb__head" data-sc-in><h2 class="nb__h">${esc(T.nbH || UI_TR.nbH)}</h2><p>${esc(T.nbP || UI_TR.nbP)}</p><a class="nb__all" href="${u('/haber/')}">${esc(T.nbAll || UI_TR.nbAll)} ›</a></div>
+      <ol class="nb__grid">
+        ${news.slice(0, 9).map((n, i) => `<li class="nb__item${i === 0 ? ' nb__item--lead' : ''}" data-sc-in><a href="${n.url}" class="nb__card">
+          <span class="nb__img">${n.cover ? `<img src="${esc(n.cover)}" width="720" height="1280" alt="" loading="lazy" decoding="async">` : ''}<span class="nb__ch" aria-hidden="true">CH ${String(i + 1).padStart(2, '0')}</span></span>
+          <span class="nb__body"><span class="nb__meta"><b>${esc(n.category)}</b><time datetime="${n.date}">${fmtDate(n.date)}</time></span><strong>${esc(n.title)}</strong><small>${esc(n.excerpt)}</small></span>
+        </a></li>`).join('\n')}
+      </ol>
     </div>
   </section>
 
@@ -303,6 +299,31 @@ ${chrome('raf', '/')}
       <ul class="dir__list">
         ${[...news, ...posts, ...ai].map((p) => `<li data-cat="${esc(p.category)}"><a href="${p.url}"><span class="dir__y">${esc(p.yearLabel)}</span><span class="dir__t">${esc(p.title)}</span><span class="dir__c">${esc(p.category)}</span><span class="dir__m">${p.readMin} ${esc(T.min.toUpperCase())}</span></a></li>`).join('\n')}
       </ul>
+    </div>
+  </section>
+
+  <!-- 6 · THE ROAD TO 2026: pan. A retro PC walks over the years; every post is a roadside billboard. -->
+  <section id="yol" class="shelf road" data-sc-act="pan" data-sc-span="${Math.max(6, Math.round(shelf.length * 0.42))}" data-sc-drift="#0D0B20">
+    <div data-sc-stage>
+      <div class="road__sky" aria-hidden="true"><span class="road__sun"></span><span class="road__hills"></span></div>
+      <div class="road__ground" aria-hidden="true"><span class="road__lane"></span></div>
+      <div class="pc" aria-hidden="true">
+        <span class="pc__mon"><span class="pc__scr"><b class="pc__year">${esc(shelf[0].yearLabel)}</b><i class="pc__cur"></i></span></span>
+        <span class="pc__case"><i class="pc__slot"></i><i class="pc__led"></i></span>
+        <span class="pc__kb"></span>
+        <span class="pc__legs"><i></i><i></i></span>
+      </div>
+      <div class="rail" data-sc-pan="0.04">
+        <div class="rail__lead">
+          <h2 class="rail__h">${esc(T.roadH || UI_TR.roadH)}</h2>
+          <p>${esc(tpl(T.roadP || UI_TR.roadP, { n: shelf.length }))}</p>
+        </div>
+        ${shelf.map((p) => `<article class="tape stop" data-year="${esc(p.yearLabel)}" data-title="${esc(p.title)}" data-url="${p.url}">
+          <a href="${p.url}" class="tape__link"><span class="stop__post" aria-hidden="true"></span><span class="tape__tilt" data-sc-tilt="5">${sleeve(p)}</span>
+          <span class="tape__meta"><span class="stop__year">${esc(p.yearLabel)}</span><span class="tape__t">${esc(p.title)}</span></span></a>
+        </article>`).join('\n')}
+        <div class="rail__end stop stop--final"><span class="stop__year">2026</span><p>${esc(T.roadEnd || UI_TR.roadEnd)}</p><a href="${u('/haber/')}">${esc(T.nbAll || UI_TR.nbAll)} ›</a></div>
+      </div>
     </div>
   </section>
 

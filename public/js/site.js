@@ -66,8 +66,20 @@
   }
   function inView(el, frac) { if (!el) return false; var r = el.getBoundingClientRect(); var h = window.innerHeight; return r.top < h * (frac || 0.5) && r.bottom > h * (frac || 0.5); }
 
+  var pcYear = document.querySelector('.pc__year'), walkT = null, lastRoadY = window.scrollY;
+  function roadTick() {
+    if (!shelf || !shelf.classList.contains('road')) return;
+    var r = shelf.getBoundingClientRect();
+    var p = Math.min(1, Math.max(0, -r.top / Math.max(1, shelf.offsetHeight - window.innerHeight)));
+    shelf.style.setProperty('--road', String(Math.round(p * 6000)));
+    var y = window.scrollY;
+    if (r.top < 0 && r.bottom > window.innerHeight && Math.abs(y - lastRoadY) > 0) {
+      shelf.classList.add('is-walking'); clearTimeout(walkT); walkT = setTimeout(function () { shelf.classList.remove('is-walking'); }, 160);
+    }
+    lastRoadY = y;
+  }
   function frame() {
-    turnReels();
+    turnReels(); roadTick();
     if (deck && deck.getAttribute('data-mode') === 'home') {
       if (shelf && inView(shelf.querySelector('[data-sc-stage]') ? shelf : shelf, 0.5) && shelf.getBoundingClientRect().top <= window.innerHeight * 0.25) {
         var i = nearestTape();
@@ -75,6 +87,7 @@
           if (current > -1 && tapes[current]) tapes[current].classList.remove('is-now');
           current = i; tapes[i].classList.add('is-now');
           setYear(tapes[i].getAttribute('data-year'), tapes[i].getAttribute('data-title'));
+          if (pcYear) pcYear.textContent = tapes[i].getAttribute('data-year');
         }
       } else {
         if (current > -1 && tapes[current]) { tapes[current].classList.remove('is-now'); current = -1; }

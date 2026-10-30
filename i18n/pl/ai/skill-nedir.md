@@ -1,5 +1,5 @@
 ---
-title: "Czym jest skill? Nowe „foldery umiejętności" agentów AI"
+title: "Czym jest skill? Nowe „foldery umiejętności\" agentów AI"
 excerpt: "Agent Skill to folder z plikiem SKILL.md i opcjonalnymi skryptami. Agent wczytuje go tylko wtedy, gdy jest potrzebny. Czym różni się od promptu, MCP i wtyczki?"
 hook: "Naucz agenta nowej umiejętności za pomocą folderu"
 fact: "3 WARSTWY"

@@ -22,7 +22,7 @@ Sekundu po dosiahnutí najväčšej hodnoty počítadlo pretečie. Predstavte si
 
 Postihnutý systém si toto záporné číslo vyloží ako sekundy odpočítavané od roku 1970 smerom späť. Výsledok: dátum sa zobrazí ako 13. december 1901, 20:45:52 (UTC). Počítač, ktorý sa zrazu vrátil o 136 rokov späť: certifikáty, časovače, záznamy a porovnávanie dátumov môžu začať fungovať nesprávne.
 
-> **Vedeli ste, že?** Tento problém sa v niektorom softvéri objavil dávno pred rokom 2038. Podľa Wikipédie v roku 2006 softvér AOLserver spadol, pretože nastavil hodnotu časového limitu o miliardu sekúnd dopredu a tým prekročil hranicu roku 2038. Každý program, ktorý počíta "budúci dátum", teda môže na túto hranicu narážať už dnes. Podobná 32-bitová hranica spôsobila v roku 2022 problémy aj v Microsoft Exchange: číslo verzie aktualizácie sa prečítalo ako časová pečiatka, prekročilo hranicu a funkcie na kontrolu škodlivého softvéru prestali fungovať.
+> **Vedeli ste?** Tento problém sa v niektorom softvéri objavil dávno pred rokom 2038. Podľa Wikipédie v roku 2006 softvér AOLserver spadol, pretože nastavil hodnotu časového limitu o miliardu sekúnd dopredu a tým prekročil hranicu roku 2038. Každý program, ktorý počíta "budúci dátum", teda môže na túto hranicu narážať už dnes. Podobná 32-bitová hranica spôsobila v roku 2022 problémy aj v Microsoft Exchange: číslo verzie aktualizácie sa prečítalo ako časová pečiatka, prekročilo hranicu a funkcie na kontrolu škodlivého softvéru prestali fungovať.
 
 ## Kto je v ohrození?
 

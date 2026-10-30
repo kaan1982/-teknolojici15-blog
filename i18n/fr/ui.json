@@ -15,7 +15,7 @@
   "deckYear": "ANNÉE",
   "prevTape": "Cassette précédente",
   "nextTape": "Cassette suivante",
-  "footTag": "Les moments « tu ne le savais pas » de l'histoire de la tech. Chaque article avec ses sources.",
+  "footTag": "Les moments « tu ne le savais pas » de l'histoire de la tech. Chaque article avec ses sources.",
   "home": "Accueil",
   "dailyNews": "Les actus du jour",
   "aiGuide": "Guide des Skills IA",
@@ -30,7 +30,7 @@
   "ttAll": "400 Index",
   "monthsShort": ["JANV", "FÉVR", "MARS", "AVR", "MAI", "JUIN", "JUIL", "AOÛT", "SEPT", "OCT", "NOV", "DÉC"],
   "homeTitle": "Teknolojici15 · Rembobinez l'histoire de la tech",
-  "homeDesc": "Teknolojici15 : du premier e-mail à la pizza du Bitcoin, les moments les plus surprenants de l'histoire de la tech, avec leurs sources. Et un guide des skills IA.",
+  "homeDesc": "Teknolojici15 : du premier e-mail à la pizza du Bitcoin, les moments les plus surprenants de l'histoire de la tech, avec leurs sources. Et un guide des skills IA.",
   "heroH1a": "Rembobinez",
   "heroH1b": "l'histoire de la tech.",
   "heroSub": "La version longue et sourcée des histoires des vidéos @teknolojici15. Commencez par la cassette la plus récente.",
@@ -89,5 +89,5 @@
   "nfBack": "Retour à l'étagère de l'accueil",
   "nfOr": "ou",
   "nfAll": "voir tous les articles",
-  "untranslated": "La traduction de cette page n'est pas encore disponible dans cette langue ; l'original turc est affiché."
+  "untranslated": "La traduction de cette page n'est pas encore disponible dans cette langue ; l'original turc est affiché."
 }

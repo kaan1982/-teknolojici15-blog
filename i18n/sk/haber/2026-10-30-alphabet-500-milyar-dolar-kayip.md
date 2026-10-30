@@ -20,4 +20,4 @@ Ide o druhú najväčšiu jednodňovú stratu trhovej hodnoty v americkej histó
 
 ## Súvislosť s históriou
 
-Príbeh Googlu sa začal v roku 1996 na Stanforde, keď dvaja študenti uložili desať 4 GB diskov do skrinky z hračkárskych kociek. Príbeh tejto škatule s celkovou kapacitou 40 GB sme rozpísali v článku [Prvý diskový server Googlu bol z LEGA](/yazi/google-lego-sunucu/). Dnes tá istá spoločnosť za jediný štvrťrok minie na hardvér a dátové centrá viac ako 51 miliárd dolárov.
+Príbeh Googlu sa začal v roku 1996 na Stanforde, keď dvaja študenti uložili desať 4 GB diskov do skrinky z hračkárskych kociek. Príbeh tejto škatule s celkovou kapacitou 40 GB sme rozpísali v článku [Prvá skriňa s diskami Googlu bola z LEGA](/yazi/google-lego-sunucu/). Dnes tá istá spoločnosť za jediný štvrťrok minie na hardvér a dátové centrá viac ako 51 miliárd dolárov.

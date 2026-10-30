@@ -28,7 +28,20 @@
   "ttAI": "200 YZ",
   "ttNews": "300 Haber",
   "ttAll": "400 Dizin",
-  "monthsShort": ["OCA", "ŞUB", "MAR", "NİS", "MAY", "HAZ", "TEM", "AĞU", "EYL", "EKİ", "KAS", "ARA"],
+  "monthsShort": [
+    "OCA",
+    "ŞUB",
+    "MAR",
+    "NİS",
+    "MAY",
+    "HAZ",
+    "TEM",
+    "AĞU",
+    "EYL",
+    "EKİ",
+    "KAS",
+    "ARA"
+  ],
   "homeTitle": "Teknolojici15 · Teknoloji tarihini geri sar",
   "homeDesc": "Teknolojici15: ilk e-postadan Bitcoin pizzasına teknoloji tarihinin şaşırtan anları, kaynaklarıyla. Bir de yapay zekâ skill rehberi.",
   "heroH1a": "Teknoloji tarihini",
@@ -89,5 +102,14 @@
   "nfBack": "Ana sayfadaki rafa dön",
   "nfOr": "ya da",
   "nfAll": "tüm yazılara bak",
-  "untranslated": "Bu sayfanın bu dildeki çevirisi henüz hazır değil; Türkçe aslı gösteriliyor."
+  "untranslated": "Bu sayfanın bu dildeki çevirisi henüz hazır değil; Türkçe aslı gösteriliyor.",
+  "vcrSign2": "YZ HABERLERİ",
+  "nbH": "Yapay zekâ haberleri",
+  "nbP": "Modeller, çipler, kurallar ve araştırmalar: yapay zekâ dünyasında olan biten, kısa ve kaynaklı.",
+  "nbAll": "Tüm haberler",
+  "roadH": "2026'ya giden yol",
+  "roadP": "Kaydır: retro bilgisayarımız yılların üzerinden geçiyor. Her tabela o yılın teknolojisi, toplam {n} durak.",
+  "roadEnd": "Ve bugün: yapay zekâ. Yolun sonu haber masasına çıkıyor.",
+  "navRoad": "2026'ya yol",
+  "ttRoad": "101 Yol"
 }
