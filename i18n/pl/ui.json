@@ -111,5 +111,9 @@
   "roadP": "Przewijaj: nasz retro komputer przejeżdża przez kolejne lata. Każda tablica to technologia danego roku, łącznie {n} przystanków.",
   "roadEnd": "A dziś: sztuczna inteligencja. Droga kończy się w redakcji wiadomości.",
   "navRoad": "Droga do 2026",
-  "ttRoad": "101 Droga"
+  "ttRoad": "101 Droga",
+  "shareH": "Udostępnij",
+  "shareCopy": "Kopiuj link",
+  "shareCopied": "Skopiowano!",
+  "shareMore": "Inne aplikacje"
 }

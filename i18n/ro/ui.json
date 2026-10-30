@@ -111,5 +111,9 @@
   "roadP": "Derulează: computerul nostru retro trece peste ani. Fiecare panou arată tehnologia anului respectiv, în total {n} opriri.",
   "roadEnd": "Și astăzi: inteligența artificială. Drumul se termină la redacția de știri.",
   "navRoad": "Drumul spre 2026",
-  "ttRoad": "101 Drum"
+  "ttRoad": "101 Drum",
+  "shareH": "Distribuie",
+  "shareCopy": "Copiază linkul",
+  "shareCopied": "Copiat!",
+  "shareMore": "Alte aplicații"
 }

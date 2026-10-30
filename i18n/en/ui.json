@@ -28,7 +28,20 @@
   "ttAI": "200 AI",
   "ttNews": "300 News",
   "ttAll": "400 Index",
-  "monthsShort": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+  "monthsShort": [
+    "JAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MAY",
+    "JUN",
+    "JUL",
+    "AUG",
+    "SEP",
+    "OCT",
+    "NOV",
+    "DEC"
+  ],
   "homeTitle": "Teknolojici15 · Rewind tech history",
   "homeDesc": "Teknolojici15: the most surprising moments in tech history, from the first email to the Bitcoin pizza, with sources. Plus an AI skills guide.",
   "heroH1a": "Rewind",
@@ -98,5 +111,9 @@
   "roadP": "Scroll: our retro computer rolls through the years. Each sign is that year's technology, {n} stops in total.",
   "roadEnd": "And today: artificial intelligence. The road ends at the news desk.",
   "navRoad": "Road to 2026",
-  "ttRoad": "101 Road"
+  "ttRoad": "101 Road",
+  "shareH": "Share",
+  "shareCopy": "Copy link",
+  "shareCopied": "Copied!",
+  "shareMore": "More apps"
 }

@@ -111,5 +111,9 @@
   "roadP": "Scroll: den retro datamaskinen vår farer gjennom årene. Hvert skilt er teknologien fra det året, til sammen {n} stopp.",
   "roadEnd": "Og i dag: kunstig intelligens. Enden av veien leder til nyhetsdesken.",
   "navRoad": "Veien til 2026",
-  "ttRoad": "101 Vei"
+  "ttRoad": "101 Vei",
+  "shareH": "Del",
+  "shareCopy": "Kopier lenke",
+  "shareCopied": "Kopiert!",
+  "shareMore": "Flere apper"
 }

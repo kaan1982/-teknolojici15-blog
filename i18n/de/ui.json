@@ -28,7 +28,20 @@
   "ttAI": "200 KI",
   "ttNews": "300 News",
   "ttAll": "400 Index",
-  "monthsShort": ["JAN", "FEB", "MÄR", "APR", "MAI", "JUN", "JUL", "AUG", "SEP", "OKT", "NOV", "DEZ"],
+  "monthsShort": [
+    "JAN",
+    "FEB",
+    "MÄR",
+    "APR",
+    "MAI",
+    "JUN",
+    "JUL",
+    "AUG",
+    "SEP",
+    "OKT",
+    "NOV",
+    "DEZ"
+  ],
   "homeTitle": "Teknolojici15 · Spul die Technikgeschichte zurück",
   "homeDesc": "Teknolojici15: überraschende Momente der Technikgeschichte, von der ersten E-Mail bis zur Bitcoin-Pizza, mit Quellen. Dazu ein KI-Skill-Leitfaden.",
   "heroH1a": "Spul die Technikgeschichte",
@@ -98,5 +111,9 @@
   "roadP": "Scrollen: Unser Retro-Computer rollt durch die Jahre. Jedes Schild zeigt die Technik des jeweiligen Jahres, insgesamt {n} Stationen.",
   "roadEnd": "Und heute: künstliche Intelligenz. Der Weg endet am Nachrichtentisch.",
   "navRoad": "Weg ins Jahr 2026",
-  "ttRoad": "101 Weg"
+  "ttRoad": "101 Weg",
+  "shareH": "Teilen",
+  "shareCopy": "Link kopieren",
+  "shareCopied": "Kopiert!",
+  "shareMore": "Weitere Apps"
 }

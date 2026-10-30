@@ -111,5 +111,9 @@
   "roadP": "Desplázate: nuestro ordenador retro recorre los años. Cada letrero es la tecnología de ese año, {n} paradas en total.",
   "roadEnd": "Y hoy: la inteligencia artificial. El camino termina en la redacción de noticias.",
   "navRoad": "Camino a 2026",
-  "ttRoad": "101 Camino"
+  "ttRoad": "101 Camino",
+  "shareH": "Compartir",
+  "shareCopy": "Copiar enlace",
+  "shareCopied": "¡Copiado!",
+  "shareMore": "Más apps"
 }

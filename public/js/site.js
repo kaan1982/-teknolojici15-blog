@@ -198,3 +198,20 @@
     e.preventDefault(); setTimeout(function () { location.href = a.href; }, 110);
   });
 })();
+
+/* share: copy link + native share sheet (no third-party code) */
+(function () {
+  document.querySelectorAll('.share__copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var label = b.textContent, url = b.getAttribute('data-url');
+      var done = function () { b.textContent = b.getAttribute('data-done'); b.classList.add('is-done'); setTimeout(function () { b.textContent = label; b.classList.remove('is-done'); }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { window.prompt('', url); });
+      else window.prompt('', url);
+    });
+  });
+  if (navigator.share) document.querySelectorAll('.share__nat').forEach(function (li) {
+    li.hidden = false;
+    var b = li.querySelector('button');
+    b.addEventListener('click', function () { navigator.share({ title: b.getAttribute('data-title'), url: b.getAttribute('data-url') }).catch(function () {}); });
+  });
+})();

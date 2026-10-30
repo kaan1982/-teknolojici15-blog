@@ -111,5 +111,9 @@
   "roadP": "Kaydır: retro bilgisayarımız yılların üzerinden geçiyor. Her tabela o yılın teknolojisi, toplam {n} durak.",
   "roadEnd": "Ve bugün: yapay zekâ. Yolun sonu haber masasına çıkıyor.",
   "navRoad": "2026'ya yol",
-  "ttRoad": "101 Yol"
+  "ttRoad": "101 Yol",
+  "shareH": "Paylaş",
+  "shareCopy": "Bağlantıyı kopyala",
+  "shareCopied": "Kopyalandı!",
+  "shareMore": "Diğer uygulamalar"
 }

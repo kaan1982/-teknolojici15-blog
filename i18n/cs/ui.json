@@ -111,5 +111,9 @@
   "roadP": "Posouvej: náš retro počítač projíždí roky. Každá cedule je technologie daného roku, celkem {n} zastávek.",
   "roadEnd": "A dnes: umělá inteligence. Cesta končí v redakci zpráv.",
   "navRoad": "Cesta do 2026",
-  "ttRoad": "101 Cesta"
+  "ttRoad": "101 Cesta",
+  "shareH": "Sdílet",
+  "shareCopy": "Kopírovat odkaz",
+  "shareCopied": "Zkopírováno!",
+  "shareMore": "Další aplikace"
 }

@@ -60,6 +60,35 @@ const AI_ORDER = ['skill-nedir', 'kendi-skillini-yaz', 'belge-skilleri-docx-xlsx
 const aiRank = (p) => { const i = AI_ORDER.indexOf(p.slug); return i < 0 ? 99 : i; };
 const hubFile = path.join(ROOT, 'content', 'ai', '_hub.md');
 const HUB_TR = fs.existsSync(hubFile) ? matter(read(hubFile)) : { data: { title: 'Yapay Zekâ Skill Rehberi', excerpt: '' }, content: '' };
+/* ---------- share links ----------
+   Plain links only: no third-party scripts, widgets, pixels or cookies, so nothing is sent to a network
+   until the reader clicks (no consent banner needed under GDPR/ePrivacy/KVKK). Networks per locale avoid
+   services that are banned or legally restricted there (e.g. Meta in Russia, VK in Ukraine, blocked
+   Western networks in mainland China). */
+const SHARE_NET = {
+  wa: ['WhatsApp', (u, t) => `https://wa.me/?text=${encodeURIComponent(t + ' ' + u)}`],
+  x: ['X', (u, t) => `https://x.com/intent/post?url=${encodeURIComponent(u)}&text=${encodeURIComponent(t)}`],
+  fb: ['Facebook', (u) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(u)}`],
+  li: ['LinkedIn', (u) => `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(u)}`],
+  tg: ['Telegram', (u, t) => `https://t.me/share/url?url=${encodeURIComponent(u)}&text=${encodeURIComponent(t)}`],
+  vk: ['VK', (u, t) => `https://vk.com/share.php?url=${encodeURIComponent(u)}&title=${encodeURIComponent(t)}`],
+  line: ['LINE', (u) => `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(u)}`],
+  weibo: ['微博', (u, t) => `https://service.weibo.com/share/share.php?url=${encodeURIComponent(u)}&title=${encodeURIComponent(t)}`],
+  naver: ['NAVER', (u, t) => `https://share.naver.com/web/shareView?url=${encodeURIComponent(u)}&title=${encodeURIComponent(t)}`],
+  mail: ['E-mail', (u, t) => `mailto:?subject=${encodeURIComponent(t)}&body=${encodeURIComponent(u)}`],
+};
+const SHARE_BY = {
+  default: ['wa', 'x', 'fb', 'li', 'tg', 'mail'],
+  ru: ['tg', 'vk', 'wa', 'mail'], kk: ['wa', 'tg', 'vk', 'fb', 'mail'], uz: ['tg', 'wa', 'fb', 'mail'],
+  uk: ['tg', 'wa', 'fb', 'x', 'li', 'mail'], fa: ['tg', 'wa', 'x', 'mail'],
+  'zh-cn': ['weibo', 'mail'], 'zh-tw': ['line', 'fb', 'x', 'mail'], ja: ['x', 'line', 'fb', 'mail'], th: ['line', 'fb', 'x', 'mail'],
+  ko: ['naver', 'x', 'fb', 'mail'], vi: ['fb', 'x', 'tg', 'mail'],
+};
+function shareBlock(p) {
+  const url = SITE + p.url, t = p.title;
+  const nets = SHARE_BY[L.code] || SHARE_BY.default;
+  return `<section class="share" aria-labelledby="share-h"><h2 id="share-h">${esc(T.shareH)}</h2><ul class="share__list">${nets.map((k) => `<li><a class="share__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0])}</a></li>`).join('')}<li><button type="button" class="share__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></li><li hidden class="share__nat"><button type="button" class="share__a" data-url="${esc(url)}" data-title="${esc(t)}">${esc(T.shareMore)}</button></li></ul></section>`;
+}
 const TFIELDS = ['title', 'excerpt', 'hook', 'fact', 'factLabel', 'category'];
 // A translation lives in i18n/<code>/<posts|ai|haber>/<slug>.md and overrides only text fields + body.
 function tr(p) {
@@ -383,6 +412,7 @@ ${chrome(isAI ? 'ai' : isNews ? 'haber' : 'dizin', p)}
     <article class="prose">
       ${md(p.body)}
       ${p.sources.length ? `<section class="sources" aria-labelledby="kaynak-h"><h2 id="kaynak-h">${esc(T.sources)}</h2><ol>${p.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join('')}</ol></section>` : ''}
+      ${shareBlock(p)}
     </article>
   </div>
   <nav class="pager" aria-label="${esc(isAI ? T.navGuide : isNews ? T.navNewsPager : T.navTimeline)}">

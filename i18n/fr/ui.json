@@ -28,7 +28,20 @@
   "ttAI": "200 IA",
   "ttNews": "300 Actus",
   "ttAll": "400 Index",
-  "monthsShort": ["JANV", "FÉVR", "MARS", "AVR", "MAI", "JUIN", "JUIL", "AOÛT", "SEPT", "OCT", "NOV", "DÉC"],
+  "monthsShort": [
+    "JANV",
+    "FÉVR",
+    "MARS",
+    "AVR",
+    "MAI",
+    "JUIN",
+    "JUIL",
+    "AOÛT",
+    "SEPT",
+    "OCT",
+    "NOV",
+    "DÉC"
+  ],
   "homeTitle": "Teknolojici15 · Rembobinez l'histoire de la tech",
   "homeDesc": "Teknolojici15 : du premier e-mail à la pizza du Bitcoin, les moments les plus surprenants de l'histoire de la tech, avec leurs sources. Et un guide des skills IA.",
   "heroH1a": "Rembobinez",
@@ -98,5 +111,9 @@
   "roadP": "Fais défiler : notre ordinateur rétro traverse les années. Chaque panneau montre la technologie de l'année, {n} étapes au total.",
   "roadEnd": "Et aujourd'hui : l'intelligence artificielle. La route s'arrête à la rédaction.",
   "navRoad": "Route vers 2026",
-  "ttRoad": "101 Route"
+  "ttRoad": "101 Route",
+  "shareH": "Partager",
+  "shareCopy": "Copier le lien",
+  "shareCopied": "Copié !",
+  "shareMore": "Autres applis"
 }

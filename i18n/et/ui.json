@@ -111,5 +111,9 @@
   "roadP": "Keri: meie retroarvuti sõidab läbi aastate. Iga silt on selle aasta tehnoloogia, kokku {n} peatust.",
   "roadEnd": "Ja täna: tehisintellekt. Tee lõpeb uudistelauas.",
   "navRoad": "Tee 2026-sse",
-  "ttRoad": "101 Tee"
+  "ttRoad": "101 Tee",
+  "shareH": "Jaga",
+  "shareCopy": "Kopeeri link",
+  "shareCopied": "Kopeeritud!",
+  "shareMore": "Teised rakendused"
 }

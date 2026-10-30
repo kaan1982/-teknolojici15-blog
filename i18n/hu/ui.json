@@ -111,5 +111,9 @@
   "roadP": "Görgess: retró számítógépünk végigmegy az éveken. Minden tábla az adott év technológiáját mutatja, összesen {n} megálló.",
   "roadEnd": "És ma: a mesterséges intelligencia. Az út a hírszerkesztőségnél ér véget.",
   "navRoad": "Út 2026-ig",
-  "ttRoad": "101 Út"
+  "ttRoad": "101 Út",
+  "shareH": "Megosztás",
+  "shareCopy": "Link másolása",
+  "shareCopied": "Másolva!",
+  "shareMore": "További alkalmazások"
 }

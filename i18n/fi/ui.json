@@ -111,5 +111,9 @@
   "roadP": "Vierritä: retrotietokoneemme kulkee vuosien yli. Jokainen kyltti on kyseisen vuoden teknologiaa, yhteensä {n} pysähdystä.",
   "roadEnd": "Ja tänään: tekoäly. Tie päättyy uutispöydälle.",
   "navRoad": "Tie vuoteen 2026",
-  "ttRoad": "101 Tie"
+  "ttRoad": "101 Tie",
+  "shareH": "Jaa",
+  "shareCopy": "Kopioi linkki",
+  "shareCopied": "Kopioitu!",
+  "shareMore": "Muut sovellukset"
 }

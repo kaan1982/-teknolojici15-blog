@@ -512,3 +512,13 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .deck { transition: opacity .25s var(--sc-ease-out), translate .25s var(--sc-ease-out); }
 .deck.is-off { opacity: 0; translate: 0 24px; pointer-events: none; }
 .deck__year { white-space: nowrap; }
+
+/* share: plain links, no third-party scripts */
+.share { margin-top: 2.25em; padding-top: 1.25rem; border-top: 1px solid var(--sc-hairline-strong); }
+.share h2 { margin: 0 0 .75rem; font-family: var(--sc-font-mono); font-weight: 400; font-size: 24px; letter-spacing: .04em; color: var(--sc-ink-soft); text-transform: uppercase; }
+.share__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.share__list li[hidden] { display: none; }
+.share__a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem; border: 1px solid var(--sc-hairline-strong, rgb(242 238 227 / .22)); border-radius: 999px; background: var(--sc-surface); color: var(--sc-ink); font: 600 15px/1 var(--sc-font-text); text-decoration: none; cursor: pointer; transition: border-color .15s, color .15s; }
+.share__a:hover, .share__a:focus-visible { border-color: var(--sc-accent); color: var(--sc-accent); }
+.share__copy.is-done { border-color: var(--sc-accent); color: var(--sc-accent); }
+.prose .share__a { color: var(--sc-ink); text-decoration: none; } .prose .share__a:hover, .prose .share__a:focus-visible, .prose .share__copy.is-done { color: var(--sc-accent); }

@@ -28,7 +28,20 @@
   "ttAI": "200 UI",
   "ttNews": "300 Vijesti",
   "ttAll": "400 Popis",
-  "monthsShort": ["SIJ", "VEL", "OŽU", "TRA", "SVI", "LIP", "SRP", "KOL", "RUJ", "LIS", "STU", "PRO"],
+  "monthsShort": [
+    "SIJ",
+    "VEL",
+    "OŽU",
+    "TRA",
+    "SVI",
+    "LIP",
+    "SRP",
+    "KOL",
+    "RUJ",
+    "LIS",
+    "STU",
+    "PRO"
+  ],
   "homeTitle": "Teknolojici15 · Premotaj povijest tehnologije",
   "homeDesc": "Teknolojici15: iznenađujući trenuci iz povijesti tehnologije, od prvog e-maila do Bitcoin pizze, s izvorima. Uz to i vodič kroz vještine umjetne inteligencije.",
   "heroH1a": "Premotaj povijest",
@@ -98,5 +111,9 @@
   "roadP": "Skrolaj: naše retro računalo prelazi preko godina. Svaki natpis je tehnologija te godine, ukupno {n} postaja.",
   "roadEnd": "I danas: umjetna inteligencija. Kraj puta vodi do redakcije vijesti.",
   "navRoad": "Put do 2026.",
-  "ttRoad": "101 Put"
+  "ttRoad": "101 Put",
+  "shareH": "Podijeli",
+  "shareCopy": "Kopiraj poveznicu",
+  "shareCopied": "Kopirano!",
+  "shareMore": "Ostale aplikacije"
 }
