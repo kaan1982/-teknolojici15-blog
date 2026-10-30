@@ -50,7 +50,7 @@
   ],
   "redirects": [
     {
-      "source": "/:lang(es|pt|uk|pl|cs|sk|ro|hu|bg|el|sr|hr|no|da|fi|et|lt|az|kk|uz|ka|fa|ur|he|hi|bn|ta|ko|zh-cn|zh-tw|th|vi|id|ms|tl|sw)/:path*",
+      "source": "/:lang(es|pt|ru|pl|cs|sk|ro|hu|bg|el|sr|hr|no|da|fi|et|lt|az|kk|uz|ka|fa|ur|he|hi|bn|ta|ko|zh-cn|zh-tw|th|vi|id|ms|tl|sw)/:path*",
       "destination": "/en/:path*",
       "permanent": true
     }
