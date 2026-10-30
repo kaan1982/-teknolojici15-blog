@@ -150,3 +150,40 @@
   document.addEventListener('click', function (e) { if (lang.open && !lang.contains(e.target)) lang.open = false; });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lang.open) { lang.open = false; lang.querySelector('summary').focus(); } });
 })();
+
+/* Mechanical keyboard "thock" on card / news taps (WebAudio, no files) */
+(function () {
+  'use strict';
+  var SEL = '.tape__link, .hero__tape, .tt__list a, .tt__bar a, .nday__list a, .dir__list a, .more__list a, .toc a, .pager__a';
+  var ctx = null;
+  function thock() {
+    try {
+      ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+      if (ctx.state === 'suspended') ctx.resume();
+      var t = ctx.currentTime, sr = ctx.sampleRate;
+      // click: short filtered noise burst (switch leaf)
+      var n = ctx.createBuffer(1, Math.floor(sr * 0.03), sr), d = n.getChannelData(0);
+      for (var i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / d.length, 3);
+      var src = ctx.createBufferSource(); src.buffer = n;
+      var hp = ctx.createBiquadFilter(); hp.type = 'bandpass'; hp.frequency.value = 3200 + Math.random() * 600; hp.Q.value = 0.9;
+      var g1 = ctx.createGain(); g1.gain.value = 0.55;
+      src.connect(hp); hp.connect(g1); g1.connect(ctx.destination); src.start(t);
+      // thock: keycap bottoming out
+      var o = ctx.createOscillator(); o.type = 'triangle'; o.frequency.setValueAtTime(190 + Math.random() * 30, t + 0.004); o.frequency.exponentialRampToValueAtTime(70, t + 0.06);
+      var g2 = ctx.createGain(); g2.gain.setValueAtTime(0.0001, t); g2.gain.exponentialRampToValueAtTime(0.5, t + 0.006); g2.gain.exponentialRampToValueAtTime(0.0001, t + 0.08);
+      o.connect(g2); g2.connect(ctx.destination); o.start(t); o.stop(t + 0.09);
+      // release click
+      var s2 = ctx.createBufferSource(); s2.buffer = n; var g3 = ctx.createGain(); g3.gain.value = 0.22; var hp2 = ctx.createBiquadFilter(); hp2.type = 'highpass'; hp2.frequency.value = 4500;
+      s2.connect(hp2); hp2.connect(g3); g3.connect(ctx.destination); s2.start(t + 0.075);
+      return true;
+    } catch (e) { return false; }
+  }
+  document.addEventListener('pointerdown', function (e) { if (e.button === 0 && e.target.closest(SEL)) thock(); }, true);
+  document.addEventListener('keydown', function (e) { if ((e.key === 'Enter' || e.key === ' ') && document.activeElement && document.activeElement.matches && document.activeElement.matches(SEL)) thock(); });
+  // give the sound a beat to play before the page changes
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest(SEL); if (!a || !a.href || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+    if (a.hash && a.pathname === location.pathname) return;
+    e.preventDefault(); setTimeout(function () { location.href = a.href; }, 110);
+  });
+})();

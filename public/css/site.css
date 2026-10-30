@@ -395,3 +395,29 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .tt__f { font-family: var(--sc-font-display); font-stretch: 85%; font-size: 14px; text-shadow: none; } .tt__f small { font-size: 1em; }
 .bigfact span { white-space: nowrap; }
 .hero .hero__label .label { font-size: 15px; }
+
+/* ---------- shelf header: a VCR front panel fills the stage's empty upper half ---------- */
+.shelf [data-sc-stage] { position: relative; }
+.vcrband { position: relative; z-index: 2; padding: 0 var(--sc-gutter) clamp(24px, 4vh, 48px); }
+.vcr { display: grid; gap: 14px; pointer-events: none; }
+.vcr__panel { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1.5rem; padding: 18px 26px; border-radius: 14px; background: linear-gradient(#1d1a2c, #121020); box-shadow: inset 0 1px rgb(255 255 255 / .08), inset 0 -2px rgb(0 0 0 / .5), var(--sc-e2); border: 1px solid rgb(255 255 255 / .06); }
+.vcr__rec { font-family: var(--sc-font-mono); font-size: 26px; color: #ff4d3a; display: inline-flex; align-items: center; gap: 10px; letter-spacing: .08em; }
+.vcr__rec i { width: 14px; height: 14px; border-radius: 50%; background: #ff4d3a; box-shadow: 0 0 12px #ff4d3a; animation: rec 1.2s steps(1) infinite; }
+@keyframes rec { 50% { opacity: .15; } }
+.vcr__sign { justify-self: center; font-weight: 900; font-stretch: 125%; font-size: clamp(2.4rem, 1rem + 5vw, 6.4rem); line-height: .9; letter-spacing: .02em; color: transparent; -webkit-text-stroke: 2px var(--sc-accent); text-shadow: 0 0 18px rgb(255 200 69 / .35), 0 0 2px rgb(255 200 69 / .6); }
+.vcr__count { font-family: var(--sc-font-mono); font-size: 24px; color: #4df2ff; letter-spacing: .06em; white-space: nowrap; }
+.vcr__ticker { overflow: hidden; border-block: 1px solid rgb(255 200 69 / .25); background: #08070f; padding: 8px 0; mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.vcr__run { display: flex; width: max-content; gap: 3rem; animation: tick 70s linear infinite; font-family: var(--sc-font-display); font-stretch: 85%; font-size: 17px; color: var(--sc-ink); white-space: nowrap; }
+.vcr__run span { display: inline-flex; gap: .7em; align-items: baseline; }
+.vcr__run b { font-family: var(--sc-font-mono); font-weight: 400; font-size: 19px; color: var(--sc-accent); }
+@keyframes tick { to { transform: translateX(-50%); } }
+.vcr__tracking { height: 10px; background: repeating-linear-gradient(90deg, rgb(255 255 255 / .07) 0 2px, transparent 2px 7px); opacity: .6; animation: track 2.4s steps(6) infinite; }
+@keyframes track { 50% { transform: translateX(14px); opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .vcr__run, .vcr__tracking, .vcr__rec i { animation: none; } }
+@media (max-width: 760px) { .vcr__panel { grid-template-columns: 1fr; justify-items: center; gap: .4rem; padding: 12px; } .vcr__rec, .vcr__count { font-size: 18px; } }
+@media (max-height: 700px) { .vcr__tracking { display: none; } .vcr__sign { font-size: clamp(2rem, 4vw, 3.6rem); } }
+.rail { position: relative; z-index: 2; }
+.hero { min-height: auto; padding-bottom: clamp(40px, 7vh, 80px); }
+@media (min-height: 1000px) { .hero { min-height: 80svh; } }
+.rail { align-items: center; padding-top: 72px; padding-bottom: calc(var(--deck-h) + 12px); }
+.shelf [data-sc-stage] { background: linear-gradient(to bottom, transparent 0 74%, rgb(255 200 69 / .05) 74% 75%, #0a0918 75%); }

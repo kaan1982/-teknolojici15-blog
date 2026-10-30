@@ -203,6 +203,19 @@ ${chrome('raf', '/')}
     </a>
   </section>
 
+  <!-- 1b · VCR front panel + ticker: bridges the hero and the shelf -->
+  <section class="vcrband" aria-hidden="true">
+      <div class="vcr" aria-hidden="true">
+        <div class="vcr__panel">
+          <span class="vcr__rec"><i></i>REC</span>
+          <span class="vcr__sign">BANT RAFI</span>
+          <span class="vcr__count">SP · ${shelf.length} BANT</span>
+        </div>
+        <div class="vcr__ticker"><div class="vcr__run">${(() => { const t = [...todayNews.map((n) => `<b>SON DAKİKA</b> ${esc(n.title)}`), ...newest.slice(0, 10).map((p) => `<b>${esc(p.yearLabel)}</b> ${esc(p.title)}`)].map((x) => `<span>${x}</span>`).join(''); return t + t; })()}</div></div>
+        <div class="vcr__tracking"></div>
+      </div>
+  </section>
+
   <!-- 2 · SHELF: pan, the peak. The deck counter rolls through the years here. -->
   <section id="raf" class="shelf" data-sc-act="pan" data-sc-span="${Math.max(5, Math.round(shelf.length * 0.36))}" data-sc-drift="#0D0B20">
     <div data-sc-stage>
