@@ -28,7 +28,20 @@
   "ttAI": "200 Sİ",
   "ttNews": "300 Xəbər",
   "ttAll": "400 Qaynaq",
-  "monthsShort": ["YAN", "FEV", "MAR", "APR", "MAY", "İYN", "İYL", "AVQ", "SEN", "OKT", "NOY", "DEK"],
+  "monthsShort": [
+    "YAN",
+    "FEV",
+    "MAR",
+    "APR",
+    "MAY",
+    "İYN",
+    "İYL",
+    "AVQ",
+    "SEN",
+    "OKT",
+    "NOY",
+    "DEK"
+  ],
   "homeTitle": "Teknolojici15 · Texnologiya tarixini geri sar",
   "homeDesc": "Teknolojici15: ilk e-poçtdan Bitcoin pizzasına texnologiya tarixinin təəccüblü anları, mənbələri ilə. Bir də süni intellekt skill bələdçisi.",
   "heroH1a": "Texnologiya tarixini",
@@ -89,5 +102,14 @@
   "nfBack": "Ana səhifədəki rəfə qayıt",
   "nfOr": "ya da",
   "nfAll": "bütün yazılara bax",
-  "untranslated": "Bu səhifənin bu dildəki tərcüməsi hələ hazır deyil; türkcə orijinalı göstərilir."
+  "untranslated": "Bu səhifənin bu dildəki tərcüməsi hələ hazır deyil; türkcə orijinalı göstərilir.",
+  "vcrSign2": "Sİ XƏBƏRLƏRİ",
+  "nbH": "Süni intellekt xəbərləri",
+  "nbP": "Modellər, çiplər, qaydalar və tədqiqatlar: süni intellekt dünyasında baş verənlər, qısa və mənbələrlə.",
+  "nbAll": "Bütün xəbərlər",
+  "roadH": "2026-ya gedən yol",
+  "roadP": "Sürüşdür: retro kompüterimiz illərin üstündən keçir. Hər lövhə o ilin texnologiyasıdır, cəmi {n} dayanacaq.",
+  "roadEnd": "Və bu gün: süni intellekt. Yolun sonu xəbər masasına çıxır.",
+  "navRoad": "2026-ya yol",
+  "ttRoad": "101 Yol"
 }
