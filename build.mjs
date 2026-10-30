@@ -89,7 +89,15 @@ function setLocale(loc) {
   if (L.code !== 'tr' && fs.existsSync(hf)) { const h = matter(read(hf)); hub = { data: { ...HUB_TR.data, ...h.data }, content: h.content.trim() ? h.content : HUB_TR.content }; }
 }
 const hasTranslation = (loc, p) => loc.code === 'tr' || fs.existsSync(path.join(ROOT, 'i18n', loc.code, DIRS[p.kind], p.slug + '.md'));
-const hasUI = (loc) => loc.code === 'tr' || fs.existsSync(path.join(ROOT, 'i18n', loc.code, 'ui.json'));
+// a language is published once its UI and every post + AI chapter are translated (news may lag a day)
+const READY = {};
+const hasUI = (loc) => {
+  if (loc.code === 'tr') return true;
+  if (loc.code in READY) return READY[loc.code];
+  const base = path.join(ROOT, 'i18n', loc.code);
+  const n = (d) => fs.existsSync(path.join(base, d)) ? fs.readdirSync(path.join(base, d)).filter((f) => f.endsWith('.md') && !f.startsWith('_')).length : 0;
+  return (READY[loc.code] = fs.existsSync(path.join(base, 'ui.json')) && n('posts') >= SRC.post.length && n('ai') >= SRC.ai.length);
+};
 
 /* ---------- markdown ---------- */
 marked.use({
