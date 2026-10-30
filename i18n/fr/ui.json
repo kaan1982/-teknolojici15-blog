@@ -89,5 +89,14 @@
   "nfBack": "Retour à l'étagère de l'accueil",
   "nfOr": "ou",
   "nfAll": "voir tous les articles",
-  "untranslated": "La traduction de cette page n'est pas encore disponible dans cette langue ; l'original turc est affiché."
+  "untranslated": "La traduction de cette page n'est pas encore disponible dans cette langue ; l'original turc est affiché.",
+  "vcrSign2": "ACTUS IA",
+  "nbH": "Actualités de l'IA",
+  "nbP": "Modèles, puces, règles et recherches : ce qui se passe dans le monde de l'IA, en bref et avec les sources.",
+  "nbAll": "Toutes les actus",
+  "roadH": "La route vers 2026",
+  "roadP": "Fais défiler : notre ordinateur rétro traverse les années. Chaque panneau montre la technologie de l'année, {n} étapes au total.",
+  "roadEnd": "Et aujourd'hui : l'intelligence artificielle. La route s'arrête à la rédaction.",
+  "navRoad": "Route vers 2026",
+  "ttRoad": "101 Route"
 }

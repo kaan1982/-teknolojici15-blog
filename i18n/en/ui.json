@@ -89,5 +89,14 @@
   "nfBack": "Back to the shelf on the home page",
   "nfOr": "or",
   "nfAll": "browse all posts",
-  "untranslated": "The translation of this page into this language isn't ready yet; the Turkish original is shown."
+  "untranslated": "The translation of this page into this language isn't ready yet; the Turkish original is shown.",
+  "vcrSign2": "AI NEWS",
+  "nbH": "AI news",
+  "nbP": "Models, chips, rules and research: what's happening in the world of AI, short and sourced.",
+  "nbAll": "All news",
+  "roadH": "The road to 2026",
+  "roadP": "Scroll: our retro computer rolls through the years. Each sign is that year's technology, {n} stops in total.",
+  "roadEnd": "And today: artificial intelligence. The road ends at the news desk.",
+  "navRoad": "Road to 2026",
+  "ttRoad": "101 Road"
 }
