@@ -71,6 +71,7 @@ function tr(p) {
   for (const k of TFIELDS) if (data[k] != null && String(data[k]).trim()) out[k] = noDash(String(data[k]));
   if (content.trim()) { out.body = content; out.readMin = p.readMin; }
   out.translated = true;
+  if (p.cover) { const lc = p.cover.replace('/img/kapak/', `/img/kapak/${L.code}/`); if (fs.existsSync(path.join(ROOT, 'public', lc))) out.cover = lc; }
   return out;
 }
 let posts, ai, news, todayNews, all, newest, hub;
