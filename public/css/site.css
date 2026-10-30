@@ -498,3 +498,17 @@ a:hover { text-decoration-color: var(--sc-accent); }
 @keyframes step { 0%, 100% { transform: rotate(18deg); } 50% { transform: rotate(-18deg); } }
 @media (prefers-reduced-motion: reduce) { .road.is-walking .pc, .road.is-walking .pc__legs i { animation: none; } }
 @media (max-width: 640px) { .pc { width: 110px; } .road .rail { padding-bottom: calc(var(--deck-h) + 24vh); } .road__sun { width: 30vh; } }
+
+/* director fixes */
+.pc__year { white-space: nowrap; font-size: clamp(20px, 2.1vw, 34px); }
+.pc__year.is-range { font-size: clamp(15px, 1.5vw, 24px); }
+.pc__cur { bottom: 12%; }
+.road .rail::after { content: ""; flex: 0 0 34vw; }
+.stop--final { flex-basis: min(22rem, 68vw); }
+.nb__img img { object-position: 50% 52%; }
+.nb__ch { top: auto; bottom: 10px; background: #000; }
+.nb__item--lead .nb__img { aspect-ratio: 4 / 3; }
+.nb__item--lead { align-self: start; }
+.deck { transition: opacity .25s var(--sc-ease-out), translate .25s var(--sc-ease-out); }
+.deck.is-off { opacity: 0; translate: 0 24px; pointer-events: none; }
+.deck__year { white-space: nowrap; }

@@ -22,7 +22,7 @@ PHP geliştiricileri 21 Ekim'de dilin çekirdek motorundaki iki kritik güvenlik
 
 ## Ne oldu?
 
-Güvenlik şirketi Wiz'in açıklamasına göre açıklar 19 Ağustos'ta keşfedildi ve 24 Ağustos'ta PHP güvenlik ekibine bildirildi. Keşifte Wiz'in kendi aracı Wiz Atlas ile OpenAI'nin GPT-5.6 Sol ve Google'ın Gemini 4 Argon modelleri kullanıldı. Fortune, yapay zekâ güvenlik testi firması Calif ile OpenAI'nin de sürece katkı verdiğini yazdı.
+Fortune'a göre yapay zekâ güvenlik testi firması Calif zincirin ilk parçasını 1 Ağustos'ta GPT-5.6 Sol ile buldu; Wiz ise ilk açığı bağımsız olarak 19 Ağustos'ta tespit etti ve 24 Ağustos'ta PHP güvenlik ekibine bildirdi. Keşifte Wiz'in kendi aracı Wiz Atlas ile OpenAI'nin GPT-5.6 Sol ve Google'ın Gemini 4 Argon modelleri kullanıldı.
 
 Açıklar, saldırganın oturum açmadan sunucuda uzaktan kod çalıştırmasına ve bellekteki verileri sızdırmasına izin veriyor. Wiz'e göre son on yılda çıkan neredeyse her PHP sürümü, 5.4'e kadar geriye, etkileniyor. En yüksek önem puanı CVSS ölçeğinde 9,2. PHP, dünyadaki web sitelerinin yaklaşık yüzde 70'inin arkasında çalışıyor; tek başına WordPress bile sitelerin kabaca yüzde 40'ını yönetiyor. Fortune'un güncellenen haberine göre açıklar, yamanın ardından geniş çapta istismar edilmeye başlandı.
 

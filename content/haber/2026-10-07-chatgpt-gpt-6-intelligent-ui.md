@@ -24,7 +24,7 @@ OpenAI, 7 Ekim Çarşamba günü GPT-6'yı ChatGPT'de geniş kitleye açmaya ba�
 
 ## Ne oldu?
 
-Intelligent UI, ChatGPT'nin yanıtı yalnızca metinle değil, etkileşimli parçalarla kurmasını sağlıyor. OpenAI'nin açıklamasına göre model grafik, dokunulabilir buton, form, tablo ve küçük araçlar üretebiliyor. TechCrunch ve The Verge'ün aktardığı örnekler arasında uçak kanadının nasıl çalıştığını gösteren bir diyagram, yedi vitesli bir bisikletin parçalarını tek tek vurgulayan bir çizim, çok günlük bir yürüyüş rotası için harita, birikim hesaplayıcı ve hesap bölüştürme aracı var.
+Intelligent UI, ChatGPT'nin yanıtı yalnızca metinle değil, etkileşimli parçalarla kurmasını sağlıyor. OpenAI'nin açıklamasına göre model grafik, dokunulabilir buton, form, çizelge ve küçük etkileşimli araçlar üretebiliyor. TechCrunch ve The Verge'ün aktardığı örnekler arasında uçak kanadının nasıl çalıştığını gösteren bir diyagram, yedi vitesli bir bisikletin parçalarını tek tek vurgulayan bir çizim, çok günlük bir yürüyüş rotası için harita, birikim hesaplayıcı ve hesap bölüştürme aracı var.
 
 Biçimi model kendisi seçiyor. Karşılaştırmada yan yana kartlar, bir açıklamada etkileşimli şema gösterebiliyor; basit bir metin yeterliyse düz yazıyla yanıt veriyor. OpenAI, bu GPT-6 sürümünü her hafta 1,2 milyardan fazla kişinin kullandığı ChatGPT için hazırladığını söylüyor. Ekrandaki bir şeye tıklayarak bilgisayarla konuşma fikrinin 1964'te tahtadan bir fareyle başladığını [ilk bilgisayar faresi](/yazi/ilk-bilgisayar-faresi-tahta-1964/) yazımızda anlatmıştık.
 

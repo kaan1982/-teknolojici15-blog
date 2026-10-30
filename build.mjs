@@ -330,7 +330,7 @@ ${chrome('raf', '/')}
           <a href="${p.url}" class="tape__link"><span class="stop__post" aria-hidden="true"></span><span class="tape__tilt" data-sc-tilt="5">${sleeve(p)}</span>
           <span class="tape__meta"><span class="stop__year">${esc(p.yearLabel)}</span><span class="tape__t">${esc(p.title)}</span></span></a>
         </article>`).join('\n')}
-        <div class="rail__end stop stop--final"><span class="stop__year">2026</span><p>${esc(T.roadEnd || UI_TR.roadEnd)}</p><a href="${u('/haber/')}">${esc(T.nbAll || UI_TR.nbAll)} ›</a></div>
+        <div class="rail__end stop stop--final tape" data-year="2026" data-title="${esc(T.roadEnd || UI_TR.roadEnd)}"><span class="stop__year">2026</span><p>${esc(T.roadEnd || UI_TR.roadEnd)}</p><a href="${u('/haber/')}">${esc(T.nbAll || UI_TR.nbAll)} ›</a></div>
       </div>
     </div>
   </section>

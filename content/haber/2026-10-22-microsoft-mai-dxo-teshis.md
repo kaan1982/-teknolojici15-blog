@@ -22,7 +22,7 @@ Microsoft AI, 22 Ekim'de hakemli bilim dergisi Science'ta yayımlanan bir çalı
 
 ## Ne oldu?
 
-Sistem, New England Journal of Medicine'de yayımlanmış karmaşık vaka raporları üzerinde, simülasyon ortamında test edildi. TechCrunch ve The Verge'e göre MAI-DxO bu vakaların yaklaşık yüzde 83'ünde doğru teşhise ulaştı. Kaynaklara bakabilen pratisyen ve dahiliye hekimlerinin oranı yüzde 36, hiçbir kaynak kullanmayanlarınki yüzde 22 oldu. The Verge'ün aktardığına göre acil servis vakalarında sonuç yüzde 80'e karşı ortalama yüzde 47.
+Sistem, New England Journal of Medicine'de yayımlanmış karmaşık vaka raporları üzerinde, simülasyon ortamında test edildi. TechCrunch ve The Verge'e göre MAI-DxO bu vakaların yaklaşık yüzde 83'ünde doğru teşhise ulaştı. Kaynaklara bakabilen pratisyen ve dahiliye hekimlerinin oranı yüzde 36, hiçbir kaynak kullanmayanlarınki yüzde 22 oldu. Beth Israel'in hasta kabul veritabanından alınan acil servis vakalarında ise sonuç yüzde 80'e karşı ortalama yüzde 47 oldu.
 
 MAI-DxO tek bir model değil; farklı yapay zekâ modellerini bir hekim ekibi gibi birlikte çalıştıran bir düzenleyici. Microsoft, bu yapının tek başına çalışan bir modele göre maliyeti de düşürdüğünü söylüyor.
 
@@ -30,4 +30,4 @@ TechCrunch önemli bir çekinceye dikkat çekiyor: çalışmanın kendi verileri
 
 ## Neden önemli?
 
-Hakemli bir dergide yayımlanması, sonuçları şirket duyurularından daha sağlam bir zemine taşıyor. Yine de bu bir simülasyon, gerçek hastalarla yapılmış bir deney değil. Microsoft, Mayo Clinic ile sağlık için bir temel model eğitiyor ve Boston'daki Beth Israel Deaconess Tıp Merkezi ile sistemin klinik muhakemesini değerlendiriyor. Asıl soru, bu rakamların muayene odasında da tutup tutmayacağı.
+Hakemli bir dergide yayımlanması, sonuçları şirket duyurularından daha sağlam bir zemine taşıyor. Yine de bu bir simülasyon, gerçek hastalarla yapılmış bir deney değil. Microsoft, Mayo Clinic ile sağlık için bir temel model eğitiyor ve Boston'daki Beth Israel Deaconess Tıp Merkezi'nde gerçek dünya denemesi yürütüyor: onay veren hastaların bakımına MAI-DxO'nun önerileri de ekleniyor. Asıl soru, bu rakamların muayene odasında da tutup tutmayacağı.

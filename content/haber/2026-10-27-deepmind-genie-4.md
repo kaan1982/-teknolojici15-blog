@@ -26,7 +26,7 @@ DeepMind'a göre Genie 4, şirketin sesi doğrudan üreten ilk gerçek zamanlı 
 
 Kullanıcı, çalışan bir dünyayı düz yazıyla yönlendirebiliyor. Havayı değiştirmek, kamerayı oynatmak ya da sahneye yeni kişi ve nesneler eklemek mümkün; komutları Gemini modelleri yorumluyor. DeepMind modeli robotlar ve yapay zekâ ajanları için eğitim ortamı, oyun tasarımında prototip ve filmlerde ön görselleştirme aracı olarak konumluyor. Tek bir arşiv fotoğrafını gezilebilir bir sahneye dönüştüren örnekler de paylaşıldı.
 
-Şimdilik model yalnızca seçilmiş test kullanıcılarına açık. Erişim yakında Project Genie üzerinden Google AI Ultra abonelerine, ardından Gemini API ve AI Studio'nun erken erişim ortaklarına aşamalı olarak genişleyecek.
+Şimdilik model yalnızca seçilmiş test kullanıcılarına açık. Erişim yakında Project Genie üzerinden Google AI Ultra abonelerine ve Gemini API ve AI Studio'nun erken erişim ortaklarına aşamalı olarak genişleyecek.
 
 ## Neden önemli?
 

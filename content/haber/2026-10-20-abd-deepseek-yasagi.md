@@ -24,7 +24,7 @@ ABD İç Güvenlik Bakanlığı (DHS), 20 Ekim'de Federal Register'da yayımlana
 
 Emir iki şey yapıyor. İlki, Hangzhou merkezli DeepSeek ile bağlı şirketlerinin geliştirdiği bilgi teknolojisi ürün ve hizmetlerini federal sivil kurumların alımlarından dışlıyor. İkincisi, DeepSeek ürünlerini ve DeepSeek teknolojisiyle geliştirilmiş üçüncü taraf ürün ve hizmetleri kurumların sistemlerinden kaldırmayı zorunlu kılıyor. TechCrunch'a göre kurumlar istisna talep edebiliyor. Dayanak, 2018 tarihli Federal Tedarik Zinciri Güvenliği Yasası.
 
-DHS gerekçe olarak verinin işlenme biçimini gösteriyor: ABD'li kamu kullanıcılarına ait hassas bilgilerin Çin yasaları gereği Çinli yetkililerin erişimine açılabileceği uyarısında bulunuyor. Çin Dışişleri Bakanlığı Sözcüsü Mao Ning ise ulusal güvenlik kavramının aşırı genişletilmesine ve teknoloji konularının siyasallaştırılmasına karşı olduklarını, Çinli şirketlerin haklarını savunacaklarını söyledi.
+DHS gerekçe olarak verinin işlenme biçimini gösteriyor: ABD'li kamu kullanıcılarına ait hassas bilgilerin Çin yasaları gereği Çinli yetkililerin erişimine açılabileceği uyarısında bulunuyor. Çin Dışişleri Bakanlığı Sözcüsü Mao Ning ise ulusal güvenlik kavramının aşırı genişletilmesine ve teknoloji ve ticaret konularının siyasallaştırılmasına karşı olduklarını, Çinli şirketlerin haklarını savunacaklarını söyledi.
 
 ABD, Aralık 2025'te çıkan bir yasayla DeepSeek'in istihbarat ve ulusal güvenlik sistemlerinde kullanımını zaten kısıtlamıştı. Yeni emir bunu sivil kurumlara, hem yeni alımlara hem de çalışan sistemlere genişletiyor.
 
