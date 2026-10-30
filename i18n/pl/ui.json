@@ -28,7 +28,20 @@
   "ttAI": "200 AI",
   "ttNews": "300 Newsy",
   "ttAll": "400 Spis",
-  "monthsShort": ["STY", "LUT", "MAR", "KWI", "MAJ", "CZE", "LIP", "SIE", "WRZ", "PAŹ", "LIS", "GRU"],
+  "monthsShort": [
+    "STY",
+    "LUT",
+    "MAR",
+    "KWI",
+    "MAJ",
+    "CZE",
+    "LIP",
+    "SIE",
+    "WRZ",
+    "PAŹ",
+    "LIS",
+    "GRU"
+  ],
   "homeTitle": "Teknolojici15 · Przewiń historię technologii",
   "homeDesc": "Teknolojici15: zaskakujące momenty z historii technologii, od pierwszego e-maila po bitcoinową pizzę, ze źródłami. Do tego przewodnik po skillach AI.",
   "heroH1a": "Przewiń historię",
@@ -89,5 +102,14 @@
   "nfBack": "Wróć na półkę na stronie głównej",
   "nfOr": "albo",
   "nfAll": "zobacz wszystkie wpisy",
-  "untranslated": "Tłumaczenie tej strony na ten język nie jest jeszcze gotowe; wyświetlamy turecki oryginał."
+  "untranslated": "Tłumaczenie tej strony na ten język nie jest jeszcze gotowe; wyświetlamy turecki oryginał.",
+  "vcrSign2": "NEWSY O AI",
+  "nbH": "Wiadomości o sztucznej inteligencji",
+  "nbP": "Modele, układy, przepisy i badania: co dzieje się w świecie AI, krótko i ze źródłami.",
+  "nbAll": "Wszystkie wiadomości",
+  "roadH": "Droga do 2026",
+  "roadP": "Przewijaj: nasz retro komputer przejeżdża przez kolejne lata. Każda tablica to technologia danego roku, łącznie {n} przystanków.",
+  "roadEnd": "A dziś: sztuczna inteligencja. Droga kończy się w redakcji wiadomości.",
+  "navRoad": "Droga do 2026",
+  "ttRoad": "101 Droga"
 }

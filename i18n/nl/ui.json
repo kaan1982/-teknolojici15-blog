@@ -28,7 +28,20 @@
   "ttAI": "200 AI",
   "ttNews": "300 Nieuws",
   "ttAll": "400 Index",
-  "monthsShort": ["JAN", "FEB", "MRT", "APR", "MEI", "JUN", "JUL", "AUG", "SEP", "OKT", "NOV", "DEC"],
+  "monthsShort": [
+    "JAN",
+    "FEB",
+    "MRT",
+    "APR",
+    "MEI",
+    "JUN",
+    "JUL",
+    "AUG",
+    "SEP",
+    "OKT",
+    "NOV",
+    "DEC"
+  ],
   "homeTitle": "Teknolojici15 · Spoel de techgeschiedenis terug",
   "homeDesc": "Teknolojici15: de verrassendste momenten uit de techgeschiedenis, van de eerste e-mail tot de bitcoinpizza, met bronnen. Plus een gids voor AI-skills.",
   "heroH1a": "Spoel de techgeschiedenis",
@@ -89,5 +102,14 @@
   "nfBack": "Terug naar de kast op de startpagina",
   "nfOr": "of",
   "nfAll": "bekijk alle artikelen",
-  "untranslated": "De vertaling van deze pagina in deze taal is nog niet klaar; de Turkse tekst wordt getoond."
+  "untranslated": "De vertaling van deze pagina in deze taal is nog niet klaar; de Turkse tekst wordt getoond.",
+  "vcrSign2": "AI-NIEUWS",
+  "nbH": "AI-nieuws",
+  "nbP": "Modellen, chips, regels en onderzoek: wat er gebeurt in de wereld van kunstmatige intelligentie, kort en met bronnen.",
+  "nbAll": "Al het nieuws",
+  "roadH": "De weg naar 2026",
+  "roadP": "Scroll: onze retrocomputer rijdt door de jaren heen. Elk bord is de technologie van dat jaar, in totaal {n} haltes.",
+  "roadEnd": "En vandaag: kunstmatige intelligentie. Het eind van de weg komt uit bij de nieuwsredactie.",
+  "navRoad": "Weg naar 2026",
+  "ttRoad": "101 Weg"
 }

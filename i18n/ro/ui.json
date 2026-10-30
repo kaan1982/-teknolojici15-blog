@@ -28,7 +28,20 @@
   "ttAI": "200 IA",
   "ttNews": "300 Știri",
   "ttAll": "400 Index",
-  "monthsShort": ["IAN", "FEB", "MAR", "APR", "MAI", "IUN", "IUL", "AUG", "SEP", "OCT", "NOI", "DEC"],
+  "monthsShort": [
+    "IAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MAI",
+    "IUN",
+    "IUL",
+    "AUG",
+    "SEP",
+    "OCT",
+    "NOI",
+    "DEC"
+  ],
   "homeTitle": "Teknolojici15 · Derulează înapoi istoria tehnologiei",
   "homeDesc": "Teknolojici15: de la primul e-mail până la pizza Bitcoin, momentele surprinzătoare din istoria tehnologiei, cu surse. Plus un ghid de skill-uri pentru inteligența artificială.",
   "heroH1a": "Derulează înapoi",
@@ -89,5 +102,14 @@
   "nfBack": "Înapoi la raftul de pe pagina principală",
   "nfOr": "sau",
   "nfAll": "vezi toate articolele",
-  "untranslated": "Traducerea acestei pagini în această limbă nu este încă gata; se afișează originalul în turcă."
+  "untranslated": "Traducerea acestei pagini în această limbă nu este încă gata; se afișează originalul în turcă.",
+  "vcrSign2": "ȘTIRI IA",
+  "nbH": "Știri despre inteligența artificială",
+  "nbP": "Modele, cipuri, reguli și cercetări: ce se întâmplă în lumea inteligenței artificiale, pe scurt și cu surse.",
+  "nbAll": "Toate știrile",
+  "roadH": "Drumul spre 2026",
+  "roadP": "Derulează: computerul nostru retro trece peste ani. Fiecare panou arată tehnologia anului respectiv, în total {n} opriri.",
+  "roadEnd": "Și astăzi: inteligența artificială. Drumul se termină la redacția de știri.",
+  "navRoad": "Drumul spre 2026",
+  "ttRoad": "101 Drum"
 }

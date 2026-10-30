@@ -28,7 +28,20 @@
   "ttAI": "200 IA",
   "ttNews": "300 Notícias",
   "ttAll": "400 Índice",
-  "monthsShort": ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN", "JUL", "AGO", "SET", "OUT", "NOV", "DEZ"],
+  "monthsShort": [
+    "JAN",
+    "FEV",
+    "MAR",
+    "ABR",
+    "MAI",
+    "JUN",
+    "JUL",
+    "AGO",
+    "SET",
+    "OUT",
+    "NOV",
+    "DEZ"
+  ],
   "homeTitle": "Teknolojici15 · Volte no tempo da tecnologia",
   "homeDesc": "Teknolojici15: dos primeiros e-mails à pizza do Bitcoin, os momentos mais surpreendentes da história da tecnologia, com fontes. E um guia de skills de IA.",
   "heroH1a": "Volte no tempo",
@@ -89,5 +102,14 @@
   "nfBack": "Voltar à prateleira da página inicial",
   "nfOr": "ou",
   "nfAll": "veja todos os posts",
-  "untranslated": "A tradução desta página para este idioma ainda não está pronta; o original em turco está sendo exibido."
+  "untranslated": "A tradução desta página para este idioma ainda não está pronta; o original em turco está sendo exibido.",
+  "vcrSign2": "NOTÍCIAS DE IA",
+  "nbH": "Notícias de inteligência artificial",
+  "nbP": "Modelos, chips, regras e pesquisas: o que acontece no mundo da IA, de forma curta e com fontes.",
+  "nbAll": "Todas as notícias",
+  "roadH": "O caminho até 2026",
+  "roadP": "Role a página: nosso computador retrô atravessa os anos. Cada placa é a tecnologia daquele ano, {n} paradas no total.",
+  "roadEnd": "E hoje: a inteligência artificial. O caminho termina na redação de notícias.",
+  "navRoad": "Caminho até 2026",
+  "ttRoad": "101 Caminho"
 }

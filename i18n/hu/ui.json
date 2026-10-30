@@ -28,7 +28,20 @@
   "ttAI": "200 MI",
   "ttNews": "300 Hírek",
   "ttAll": "400 Index",
-  "monthsShort": ["JAN", "FEB", "MÁR", "ÁPR", "MÁJ", "JÚN", "JÚL", "AUG", "SZE", "OKT", "NOV", "DEC"],
+  "monthsShort": [
+    "JAN",
+    "FEB",
+    "MÁR",
+    "ÁPR",
+    "MÁJ",
+    "JÚN",
+    "JÚL",
+    "AUG",
+    "SZE",
+    "OKT",
+    "NOV",
+    "DEC"
+  ],
   "homeTitle": "Teknolojici15 · Tekerd vissza a technikatörténetet",
   "homeDesc": "Teknolojici15: a technikatörténet megdöbbentő pillanatai az első e-mailtől a Bitcoin-pizzáig, forrásokkal. Meg egy MI skill-útmutató.",
   "heroH1a": "Tekerd vissza",
@@ -89,5 +102,14 @@
   "nfBack": "Vissza a főoldali polchoz",
   "nfOr": "vagy",
   "nfAll": "nézd meg az összes cikket",
-  "untranslated": "Ennek az oldalnak a fordítása ezen a nyelven még nem készült el; a török eredetit mutatjuk."
+  "untranslated": "Ennek az oldalnak a fordítása ezen a nyelven még nem készült el; a török eredetit mutatjuk.",
+  "vcrSign2": "MI HÍREK",
+  "nbH": "Mesterséges intelligencia hírek",
+  "nbP": "Modellek, chipek, szabályok és kutatások: mi történik az MI világában, röviden és forrásokkal.",
+  "nbAll": "Minden hír",
+  "roadH": "Az út 2026-ig",
+  "roadP": "Görgess: retró számítógépünk végigmegy az éveken. Minden tábla az adott év technológiáját mutatja, összesen {n} megálló.",
+  "roadEnd": "És ma: a mesterséges intelligencia. Az út a hírszerkesztőségnél ér véget.",
+  "navRoad": "Út 2026-ig",
+  "ttRoad": "101 Út"
 }

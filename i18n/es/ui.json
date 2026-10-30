@@ -28,7 +28,20 @@
   "ttAI": "200 IA",
   "ttNews": "300 Noticias",
   "ttAll": "400 Índice",
-  "monthsShort": ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"],
+  "monthsShort": [
+    "ENE",
+    "FEB",
+    "MAR",
+    "ABR",
+    "MAY",
+    "JUN",
+    "JUL",
+    "AGO",
+    "SEP",
+    "OCT",
+    "NOV",
+    "DIC"
+  ],
   "homeTitle": "Teknolojici15 · Rebobina la historia de la tecnología",
   "homeDesc": "Teknolojici15: desde el primer correo electrónico hasta la pizza de Bitcoin, los momentos más sorprendentes de la historia de la tecnología, con sus fuentes. Y también una guía de skills de inteligencia artificial.",
   "heroH1a": "Rebobina la historia",
@@ -89,5 +102,14 @@
   "nfBack": "Volver al estante de la página de inicio",
   "nfOr": "o",
   "nfAll": "mira todos los artículos",
-  "untranslated": "La traducción de esta página a este idioma aún no está lista; se muestra el original en turco."
+  "untranslated": "La traducción de esta página a este idioma aún no está lista; se muestra el original en turco.",
+  "vcrSign2": "NOTICIAS DE IA",
+  "nbH": "Noticias de inteligencia artificial",
+  "nbP": "Modelos, chips, normas e investigaciones: lo que pasa en el mundo de la IA, breve y con fuentes.",
+  "nbAll": "Todas las noticias",
+  "roadH": "El camino hacia 2026",
+  "roadP": "Desplázate: nuestro ordenador retro recorre los años. Cada letrero es la tecnología de ese año, {n} paradas en total.",
+  "roadEnd": "Y hoy: la inteligencia artificial. El camino termina en la redacción de noticias.",
+  "navRoad": "Camino a 2026",
+  "ttRoad": "101 Camino"
 }

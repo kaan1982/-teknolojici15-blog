@@ -28,7 +28,20 @@
   "ttAI": "200 IA",
   "ttNews": "300 Notizie",
   "ttAll": "400 Indice",
-  "monthsShort": ["GEN", "FEB", "MAR", "APR", "MAG", "GIU", "LUG", "AGO", "SET", "OTT", "NOV", "DIC"],
+  "monthsShort": [
+    "GEN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MAG",
+    "GIU",
+    "LUG",
+    "AGO",
+    "SET",
+    "OTT",
+    "NOV",
+    "DIC"
+  ],
   "homeTitle": "Teknolojici15 · Riavvolgi la storia della tecnologia",
   "homeDesc": "Teknolojici15: dalla prima e-mail alla pizza del Bitcoin, i momenti più sorprendenti della storia della tecnologia, con le fonti. E una guida alle skill per l'intelligenza artificiale.",
   "heroH1a": "Riavvolgi la storia",
@@ -89,5 +102,14 @@
   "nfBack": "Torna allo scaffale della pagina iniziale",
   "nfOr": "oppure",
   "nfAll": "guarda tutti gli articoli",
-  "untranslated": "La traduzione di questa pagina in questa lingua non è ancora pronta; viene mostrato l'originale turco."
+  "untranslated": "La traduzione di questa pagina in questa lingua non è ancora pronta; viene mostrato l'originale turco.",
+  "vcrSign2": "NOTIZIE IA",
+  "nbH": "Notizie sull'intelligenza artificiale",
+  "nbP": "Modelli, chip, regole e ricerche: cosa succede nel mondo dell'IA, in breve e con le fonti.",
+  "nbAll": "Tutte le notizie",
+  "roadH": "La strada verso il 2026",
+  "roadP": "Scorri: il nostro computer retrò attraversa gli anni. Ogni insegna è la tecnologia di quell'anno, {n} tappe in tutto.",
+  "roadEnd": "Ed ecco oggi: l'intelligenza artificiale. La strada finisce in redazione.",
+  "navRoad": "Strada verso il 2026",
+  "ttRoad": "101 Strada"
 }
