@@ -181,6 +181,167 @@
   "<i class=\"done\"></i><i class=\"done\"></i><i class=\"done\"></i><i class=\"done\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><span>&nbsp;BÖLÜM 5/7</span>",
   "Üstelik MCP sunucusu kuranı da var 🛠️"
  ],
+ "hook11-ilkeposta": [
+  "TEKNOLOJİ TARİHİ",
+  "DÜNYANIN İLK",
+  "E-POSTASI",
+  "NE YAZIYORDU?",
+  "GÖNDEREN BİLE HATIRLAMIYOR 🤯"
+ ],
+ "hook12-ilkbarkod": [
+  "TEKNOLOJİ TARİHİ",
+  "26 HAZİRAN 1974",
+  "NEYDİ?",
+  "BARKODLA SATILAN",
+  "İLK ÜRÜN",
+  "TAHMİN ET · CEVAP ŞAŞIRTACAK"
+ ],
+ "hook13-eniac30ton": [
+  "TEKNOLOJİ TARİHİ",
+  "1946 · ENIAC",
+  "BU BİLGİSAYAR",
+  "30 TON",
+  "≈ 30.000 KG",
+  "ŞAKA DEĞİL!",
+  "BİR ODAYI DOLDURUYORDU"
+ ],
+ "hook14-nintendooyunkarti": [
+  "OYUN TARİHİ",
+  "1889 · KYOTO · JAPONYA",
+  "YANLIŞ!",
+  "NINTENDO",
+  "OYUN ŞİRKETİ Mİ?",
+  "İLK ÜRÜNÜ BİR KONSOL DEĞİLDİ"
+ ],
+ "hook15-intel4004": [
+  "O ZAMAN vs ŞİMDİ",
+  "vs",
+  "(function(){var g=document.getElementById('dots'),s=7;function r(){s=(s*9301+49297)%233280;return s/233280}\nfor(var i=0;i<160;i++){var c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',740+r()*180);c.setAttribute('cy',1030+r()*110*(0.6+r()));c.setAttribute('r',1.6+r()*1.4);g.appendChild(c)}})();",
+  "TRANSİSTÖR",
+  "BUGÜN",
+  "MİLYAR",
+  "KAÇ KAT?",
+  "CEVABI CEBİNDE TAŞIYORSUN"
+ ],
+ "hook16-2038problemi": [
+  "BİLGİSAYAR",
+  "⚠ UNIX ZAMAN BOMBASI",
+  "$ date -u",
+  "19.01.2038  UTC",
+  "TERMINAL-32",
+  "ZAMAN DOLUYOR!",
+  "32-BIT SAAT TAŞIYOR",
+  "BİLGİSAYARLAR",
+  "1901'E DÖNECEK!",
+  "&gt; 2038'DE NE OLACAK?_",
+  "SANİYE KALDI"
+ ],
+ "hook17-googlelegosunucu": [
+  "İLGİNÇ BİLGİ",
+  "1996 · STANFORD",
+  "GOOGLE'IN<br>İLK SUNUCUSU<br><em>NEYDEN?</em>",
+  "4 GB",
+  "TAHMİN ET!",
+  "İPUCU: ÇOCUKKEN OYNADIN!"
+ ],
+ "hook18-fakstelefondanonce": [
+  "TEKNOLOJİ TARİHİ",
+  "TEKNO GAZETE",
+  "27 MAYIS 1843 · İSKOÇYA · 1 PENİ",
+  "TX ▶▶",
+  "FAKS, TELEFONDAN<br><em>33 YIL YAŞLI!</em>",
+  "<small>BUNU</small>BİLMİYORDUN!<span>★★★</span>",
+  "Telefon daha icat edilmemişti 😳"
+ ],
+ "hook19-bluetoothvikingkrali": [
+  "İSİM HİKÂYESİ",
+  "BİR İSMİN HİKÂYESİ",
+  "BLUETOOTH<br><em>1000 YAŞINDA!</em>",
+  "NASIL YANİ?",
+  "Adını bir Viking kralından aldı 👑"
+ ],
+ "hook20-creeperilkvirus": [
+  "SİBER TARİH",
+  "1971 · ARPANET · İLK VİRÜS",
+  "> CATCH ME_",
+  "İLK VİRÜS<br><em>HİÇBİR ŞEYİ<br>SİLMEDİ!</em>",
+  "YANLIŞ BİLİYORSUN",
+  "Peki o zaman ne yaptı? 👀"
+ ],
+ "hook21-mikrodalgacikolata": [
+  "KAZARA İCAT",
+  "ŞEKİL 01 · 1945",
+  "MİKRODALGAYI<br><em>NE İCAT ETTİ?</em>",
+  "ÇİKOLATA",
+  "DETAY A: ?",
+  "TAHMİN ET!",
+  "Cevap birinin cebinden çıktı 🍫"
+ ],
+ "hook22-ctrlaltdel": [
+  "KLAVYE SIRRI",
+  "1981 · IBM PC · GİZLİ KOMBİNASYON",
+  "CTRL",
+  "ALT",
+  "DEL",
+  "BUNU<br>BİLMİYORDUN!",
+  "CTRL+ALT+DEL<br><em>GİZLİ BİR SIRRI VAR!</em>",
+  "Bill Gates bile itiraf etti 🤫"
+ ],
+ "hook23-ilkwebsitesi": [
+  "İNTERNET TARİHİ",
+  "6 AĞUSTOS 1991 · CERN",
+  "info.cern.ch",
+  "World Wide Web",
+  "1 SİTE",
+  "VS",
+  "BUGÜN",
+  "1 MİLYAR+",
+  "1 SİTEDEN<br><em>1 MİLYARA!</em>",
+  "o zaman vs şimdi",
+  "<small>İLK WEB SİTESİ</small>HÂLÂ AÇIK!<i>• • •</i>",
+  "İlk site 35 yıldır kapanmadı 👀"
+ ],
+ "hook24-ilkiphonekopyalayapistir": [
+  "TEKNOLOJİ TARİHİ",
+  "2007 · İLK iPHONE",
+  "KOPYALA-YAPIŞTIR<br><em>YOKTU!</em>",
+  "EDGE",
+  "Notlar",
+  "Toplantı 15:00",
+  "Wi-Fi şifresi:",
+  "X7k-29Pq-44",
+  "Kopyala",
+  "YIL",
+  "<span class=\"ic\">⏳</span>2 YIL BEKLE!",
+  "Bir yazıyı kopyalamak için 😳"
+ ],
+ "hook25-hedylamarrwifi": [
+  "İCAT HİKÂYESİ",
+  "WI-FI'IN ATASI",
+  "PATENT · 1942",
+  "KİM?",
+  "BİR FİLM<br><em>YILDIZI MI?!</em>",
+  "Cevap: torpidolardan bugünkü kablosuza 📡"
+ ],
+ "hook26-emojiappledegil": [
+  "TEKNOLOJİ TARİHİ",
+  "1999 · JAPONYA · 12×12 PİKSEL",
+  "YANLIŞ<br>BİLİYORSUN!",
+  "EMOJİYİ APPLE<br><em>İCAT ETMEDİ!</em>",
+  "Gerçek mucidi bugün müzede 🖼️"
+ ],
+ "hook27-bitcoinpizza": [
+  "KRİPTO TARİHİ",
+  "22 MAYIS 2010 · FLORIDA",
+  "2 PİZZAYA<br><em>800 MİLYON $!</em>",
+  "FİŞ #2010",
+  "2x PİZZA",
+  "ÖDENEN:",
+  "10.000 BTC",
+  "YER MİYDİN?",
+  "<span class=\"a\">O GÜN 41 $</span><i>→</i><span class=\"b\">BUGÜN 800 M $</span>",
+  "Tarihin en pahalı yemeği 🍕"
+ ],
  "ilk-bilgisayar-bocegi-1947": [
   "TEKNOLOJİ TARİHİ",
   "9 EYLÜL 1947 · HARVARD MARK II",
