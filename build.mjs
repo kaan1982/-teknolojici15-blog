@@ -6,7 +6,7 @@ import { marked } from 'marked';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, 'dist');
-const SITE = 'https://teknolojici15.com'; // canonical origin; change here when the domain is final
+const SITE = process.env.SITE_URL || 'https://teknolojici15-blog.vercel.app'; // canonical origin; set SITE_URL when a custom domain is added
 const IG = 'https://www.instagram.com/teknolojici15/';
 const ENGINE = path.join(ROOT, 'engine');
 
@@ -135,7 +135,7 @@ function home() {
   const jsonld = [ORG, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE + '/', name: 'Teknolojici15', inLanguage: 'tr-TR', publisher: { '@id': SITE + '/#org' } },
     { '@type': 'Blog', '@id': SITE + '/#blog', url: SITE + '/', name: 'Teknolojici15', inLanguage: 'tr-TR', publisher: { '@id': SITE + '/#org' }, blogPost: all.slice(0, 40).map((p) => ({ '@type': 'BlogPosting', headline: p.title, url: SITE + p.url, datePublished: p.date })) }]
     .map((j) => ({ '@context': 'https://schema.org', ...j }));
-  return `${head({ title: 'Teknolojici15 · Teknoloji tarihini geri sar', desc, url: '/', image: hero?.cover || null, jsonld })}
+  return `${head({ title: 'Teknolojici15 · Teknoloji tarihini geri sar', desc, url: '/', image: null, jsonld })}
 <body class="home">
 ${chrome('raf')}
 <main id="icerik">
