@@ -28,7 +28,20 @@
   "ttAI": "200 AI",
   "ttNews": "300 Berita",
   "ttAll": "400 Indeks",
-  "monthsShort": ["JAN", "FEB", "MAR", "APR", "MEI", "JUN", "JUL", "AGU", "SEP", "OKT", "NOV", "DES"],
+  "monthsShort": [
+    "JAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MEI",
+    "JUN",
+    "JUL",
+    "AGU",
+    "SEP",
+    "OKT",
+    "NOV",
+    "DES"
+  ],
   "homeTitle": "Teknolojici15 · Putar ulang sejarah teknologi",
   "homeDesc": "Teknolojici15: momen-momen mengejutkan sejarah teknologi, dari email pertama hingga pizza Bitcoin, lengkap dengan sumbernya. Plus panduan skill kecerdasan buatan.",
   "heroH1a": "Putar ulang",
@@ -89,5 +102,14 @@
   "nfBack": "Kembali ke rak di beranda",
   "nfOr": "atau",
   "nfAll": "lihat semua artikel",
-  "untranslated": "Terjemahan halaman ini dalam bahasa ini belum siap; ditampilkan teks asli berbahasa Turki."
+  "untranslated": "Terjemahan halaman ini dalam bahasa ini belum siap; ditampilkan teks asli berbahasa Turki.",
+  "vcrSign2": "BERITA AI",
+  "nbH": "Berita kecerdasan buatan",
+  "nbP": "Model, chip, regulasi, dan riset: kabar terbaru dunia AI, singkat dan bersumber.",
+  "nbAll": "Semua berita",
+  "roadH": "Jalan menuju 2026",
+  "roadP": "Gulir: komputer retro kita melintasi tahun demi tahun. Setiap papan adalah teknologi tahun itu, total {n} perhentian.",
+  "roadEnd": "Dan hari ini: kecerdasan buatan. Ujung jalan mengarah ke meja berita.",
+  "navRoad": "Jalan ke 2026",
+  "ttRoad": "101 Jalan"
 }
