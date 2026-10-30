@@ -31,6 +31,7 @@ function load(dir, kind) {
       year: Number(data.year) || 2026, yearLabel: String(data.yearLabel || data.year || ''),
       date: String(data.date || '2026-10-30'), readMin: Number(data.readMin) || Math.max(2, Math.round(content.split(/\s+/).length / 200)),
       sources: Array.isArray(data.sources) ? data.sources : [],
+      cover: data.cover ? String(data.cover).replace(/\.jpg$/, '.webp') : '',
       body: content,
       url: kind === 'ai' ? `/yapay-zeka/${slug}/` : `/yazi/${slug}/`,
     };
@@ -63,7 +64,7 @@ const md = (s) => marked.parse(noDash(s));
 const mark = `<img src="/img/brand/mark.png" width="36" height="40" alt="">`;
 function sleeve(p, opts = {}) {
   const cls = `sleeve${p.cover ? ' sleeve--img' : ' sleeve--gen'}${opts.big ? ' sleeve--big' : ''}`;
-  if (p.cover) return `<div class="${cls}"><img src="${esc(p.cover)}" width="1080" height="1920" alt="${esc(p.title)}: @teknolojici15 video kapağı" ${opts.eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"><span class="sleeve__spine" aria-hidden="true">${esc(p.yearLabel)}</span></div>`;
+  if (p.cover) return `<div class="${cls}"><img src="${esc(p.cover)}" width="720" height="1280" alt="${esc(p.title)}: @teknolojici15 video kapağı" ${opts.eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"><span class="sleeve__spine" aria-hidden="true">${esc(p.yearLabel)}</span></div>`;
   return `<div class="${cls}" data-cat="${esc(p.category)}"><span class="sleeve__in"><span class="sleeve__brand" aria-hidden="true">${mark}<b>TEKNOLOJİCİ15</b></span><span class="sleeve__year" aria-hidden="true">${esc(p.yearLabel)}</span><span class="sleeve__fact">${esc(p.fact || '')}</span><span class="sleeve__hook">${esc(p.hook)}</span></span><span class="sleeve__stripe" aria-hidden="true"></span><span class="sleeve__spine" aria-hidden="true">${esc(p.yearLabel)}</span></div>`;
 }
 const label = (p) => `<p class="label"><span>${esc(p.yearLabel)}</span><span>${esc(p.category)}</span>${p.fact ? `<span>${esc(p.fact)}</span>` : ''}<span>${p.readMin} dk</span></p>`;
