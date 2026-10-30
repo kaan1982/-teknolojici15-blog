@@ -63,6 +63,6 @@ Yani doğru cümle şu olabilir: Lamarr, bugün Bluetooth'ta ve ilk Wi-Fi sürü
 | Patent hemen kullanıldı | Donanma kullanmadı, patent 1959'da sona erdi |
 | Hiç tanınmadı | 1997 EFF Pioneer Ödülü, 2014 Ulusal Mucitler Onur Listesi |
 
-Lamarr'ın değeri efsaneye ihtiyaç duymuyor. Wikipedia'ya göre 1997'de Invention Convention'ın BULBIE Gnass Spirit of Achievement ödülünü alan ilk kadın oldu, 1998'de Avusturya Patent Sahipleri ve Mucitler Derneği'nin Viktor Kaplan Madalyası'nı aldı. 1997'de Antheil ile birlikte Electronic Frontier Foundation'ın Pioneer Ödülü'nü aldı, 2014'te ölümünden sonra ABD Ulusal Mucitler Onur Listesi'ne (National Inventors Hall of Fame) girdi. Bir film yıldızının savaş yıllarında oturup patent yazması zaten başlı başına olağanüstü.
+Lamarr'ın değeri efsaneye ihtiyaç duymuyor. Wikipedia'ya göre 1997'de Invention Convention'ın BULBIE Gnass Spirit of Achievement ödülünü alan ilk kadın oldu, 1998'de Avusturya Patent Sahipleri ve Mucitler Derneği'nin Viktor Kaplan Madalyası'nı aldı. Aynı 1997'de Antheil ile birlikte Electronic Frontier Foundation'ın Pioneer Ödülü'ne layık görüldü, 2014'te de ölümünden sonra ABD Ulusal Mucitler Onur Listesi'ne (National Inventors Hall of Fame) girdi. Bir film yıldızının savaş yıllarında oturup patent yazması zaten başlı başına olağanüstü.
 
 Sence bir icadı "abartarak" anlatmak, onu yapan kişiye hizmet mi ediyor, yoksa gerçek katkısını gölgede mi bırakıyor?

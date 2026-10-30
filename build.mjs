@@ -37,7 +37,9 @@ function load(dir, kind) {
   });
 }
 const posts = load('posts', 'post').sort((a, b) => a.year - b.year || a.title.localeCompare(b.title, 'tr'));
-const ai = load('ai', 'ai').sort((a, b) => (a.order ?? 99) - (b.order ?? 99) || a.date.localeCompare(b.date) || a.title.localeCompare(b.title, 'tr'));
+const AI_ORDER = ['skill-nedir', 'kendi-skillini-yaz', 'belge-skilleri-docx-xlsx-pptx-pdf', 'tasarim-ve-web-skilleri', 'gelistirici-skilleri-skill-creator-mcp-builder', 'pazarlama-video-icerik-skilleri', 'skill-guvenligi'];
+const aiRank = (p) => { const i = AI_ORDER.indexOf(p.slug); return i < 0 ? 99 : i; };
+const ai = load('ai', 'ai').sort((a, b) => aiRank(a) - aiRank(b) || a.title.localeCompare(b.title, 'tr'));
 const hubFile = path.join(ROOT, 'content', 'ai', '_hub.md');
 const hub = fs.existsSync(hubFile) ? matter(read(hubFile)) : { data: { title: 'Yapay Zekâ Skill Rehberi', excerpt: '' }, content: '' };
 const all = [...posts, ...ai];
