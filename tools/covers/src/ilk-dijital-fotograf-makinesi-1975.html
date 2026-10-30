@@ -1,0 +1,54 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+.cv{--bg:#F3EFE6;--ink:#151515;--acc:#E8333C}
+.dots{position:absolute;inset:0;background:radial-gradient(rgb(0 0 0/.07) 2px,transparent 2.5px) 0 0/28px 28px}
+.cv__brand{background:#151515;color:#fff;padding:10px 24px 10px 12px;border-radius:44px}
+.k{position:absolute;left:0;right:0;top:186px;text-align:center}
+.k span{background:#151515;color:#FFC845;padding:6px 26px;border-radius:6px}
+.art{position:absolute;left:40px;top:250px;width:1000px;height:760px}
+.t{position:absolute;left:40px;right:40px;top:1200px;font-size:132px;text-align:center}
+.t em{font-style:normal;color:var(--acc);display:block;font-size:210px;margin-top:14px}
+.st{color:var(--acc);background:#F3EFE6;left:540px;top:930px;font-size:62px;white-space:nowrap;transform:rotate(-6deg)}
+.cv__foot{text-align:center}
+.cv__foot span{background:#151515;color:#fff;padding:16px 36px;border-radius:50px;font-size:38px}
+</style></head><body><div class="cv">
+<div class="dots"></div>
+<div class="cv__top"><div class="cv__brand"><img src="../../../public/img/brand/mark.png">TEKNOLOJİCİ<b>15</b></div><div class="cv__tag">Teknoloji tarihi</div></div>
+<div class="cv__kicker k"><span>ARALIK 1975 · 3,6 KG · SİYAH-BEYAZ</span></div>
+<svg class="art" viewBox="0 0 1000 760">
+  <!-- photo print with pixel mosaic -->
+  <g transform="translate(0 -20) rotate(6 760 330)">
+    <rect x="590" y="110" width="360" height="420" rx="10" fill="#fff" stroke="#151515" stroke-width="8"/>
+    <g id="mos" transform="translate(620 140)"></g>
+    <text x="800" y="505" text-anchor="middle" font-family="V" font-size="40" fill="#151515">100 × 100 PİKSEL</text>
+  </g>
+  <!-- camera body -->
+  <rect x="60" y="220" width="560" height="380" rx="22" fill="#D9D4C7" stroke="#151515" stroke-width="10"/>
+  <rect x="60" y="220" width="560" height="70" rx="22" fill="#B9B3A4" stroke="#151515" stroke-width="10"/>
+  <rect x="100" y="150" width="150" height="74" rx="10" fill="#151515"/>
+  <rect x="470" y="182" width="90" height="40" rx="8" fill="#E8333C" stroke="#151515" stroke-width="8"/>
+  <!-- cassette window -->
+  <rect x="330" y="340" width="250" height="150" rx="12" fill="#151515"/>
+  <rect x="350" y="360" width="210" height="110" rx="8" fill="#3A3A3A"/>
+  <circle cx="410" cy="415" r="30" fill="#D9D4C7" stroke="#151515" stroke-width="6"/>
+  <circle cx="500" cy="415" r="30" fill="#D9D4C7" stroke="#151515" stroke-width="6"/>
+  <circle cx="410" cy="415" r="10" fill="#151515"/><circle cx="500" cy="415" r="10" fill="#151515"/>
+  <text x="455" y="535" text-anchor="middle" font-family="V" font-size="36" fill="#151515">KASET · 23 SN/KARE</text>
+  <!-- lens -->
+  <circle cx="200" cy="430" r="125" fill="#151515"/>
+  <circle cx="200" cy="430" r="95" fill="#2D2D2D" stroke="#777" stroke-width="6"/>
+  <circle cx="200" cy="430" r="58" fill="#0E0E0E"/>
+  <circle cx="178" cy="405" r="18" fill="#fff" opacity=".55"/>
+  <!-- vents -->
+  <g stroke="#151515" stroke-width="7" stroke-linecap="round"><line x1="330" y1="250" x2="420" y2="250"/><line x1="440" y1="250" x2="560" y2="250"/></g>
+</svg>
+<div class="cv__stamp st">ŞAKA DEĞİL!</div>
+<div class="cv__title t">İLK DİJİTAL<br>KAMERA <em>0,01 MP</em></div>
+<div class="cv__foot"><span>Yapan şirket onu rafa kaldırdı 📷</span></div>
+</div>
+<script>
+const g=document.getElementById('mos');let s='';const n=10,c=30;
+for(let y=0;y<n;y++)for(let x=0;x<n;x++){const dx=x-4.5,dy=y-3.6;const face=dx*dx/14+dy*dy/22<1;const hair=y<3&&Math.abs(dx)<4;let v=face?200-((x*37+y*11)%40):hair?50:120+((x*13+y*29)%60);if(face&&y==3&&(x==3||x==6))v=40;if(face&&y==6&&x>3&&x<7)v=70;s+=`<rect x="${x*c}" y="${y*c}" width="${c}" height="${c}" fill="rgb(${v},${v},${v})"/>`}
+g.innerHTML=s;
+</script>
+</body></html>

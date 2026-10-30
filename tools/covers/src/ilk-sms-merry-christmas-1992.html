@@ -1,0 +1,50 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+.cv{--bg:#07140B;--ink:#E9FFE6;--acc:#7CFF6B}
+.glow{position:absolute;left:-200px;right:-200px;top:300px;height:1000px;background:radial-gradient(closest-side,rgb(124 255 107/.20),transparent)}
+.code{position:absolute;inset:0;font-family:V,monospace;font-size:30px;line-height:36px;color:rgb(124 255 107/.10);word-break:break-all;padding:0 10px}
+.k{position:absolute;left:0;right:0;top:196px;text-align:center;color:var(--acc);text-shadow:0 0 18px rgb(124 255 107/.6)}
+.art{position:absolute;left:250px;top:270px;width:580px;height:1040px}
+.t{position:absolute;left:40px;right:40px;top:1330px;font-size:132px;text-align:center}
+.t em{font-style:normal;color:var(--acc);display:block;text-shadow:0 0 30px rgb(124 255 107/.55)}
+.st{color:#FF4D5A;background:#07140B;left:600px;top:1060px;font-size:64px;white-space:nowrap;transform:rotate(-9deg);box-shadow:0 0 30px rgb(255 77 90/.45)}
+.cv__foot{text-align:center}
+</style></head><body><div class="cv scan">
+<div class="code" id="code"></div>
+<div class="glow"></div>
+<div class="cv__top"><div class="cv__brand"><img src="../../../public/img/brand/mark.png">TEKNOLOJİCİ<b>15</b></div><div class="cv__tag">Teknoloji tarihi</div></div>
+<div class="cv__kicker k">3 ARALIK 1992 · PC → TELEFON</div>
+<svg class="art" viewBox="0 0 580 1040">
+  <!-- antenna -->
+  <rect x="410" y="10" width="34" height="150" rx="14" fill="#1E2A22" stroke="#7CFF6B" stroke-width="5"/>
+  <!-- body -->
+  <rect x="60" y="120" width="460" height="900" rx="60" fill="#1A221D" stroke="#7CFF6B" stroke-width="7"/>
+  <rect x="200" y="160" width="180" height="16" rx="8" fill="#0C120E"/>
+  <!-- LCD -->
+  <rect x="100" y="210" width="380" height="330" rx="18" fill="#0C120E"/>
+  <rect x="122" y="232" width="336" height="286" rx="8" fill="#A9D46A"/>
+  <g font-family="V" fill="#1F3A12">
+    <text x="140" y="276" font-size="34">MESAJ 1/1</text>
+    <rect x="140" y="290" width="300" height="4"/>
+    <text x="140" y="360" font-size="62">MERRY</text>
+    <text x="140" y="420" font-size="62">CHRISTMAS</text>
+    <text x="140" y="496" font-size="34">CEVAP: YOK_</text>
+  </g>
+  <!-- keypad -->
+  <g fill="#0C120E" stroke="#7CFF6B" stroke-width="3">
+    <rect x="110" y="580" width="160" height="60" rx="26"/><rect x="310" y="580" width="160" height="60" rx="26"/>
+  </g>
+  <g id="keys" fill="#26342B" stroke="#7CFF6B" stroke-opacity=".6" stroke-width="3"></g>
+  <g fill="#7CFF6B" font-family="V" font-size="40" text-anchor="middle" id="kl"></g>
+</svg>
+<div class="cv__stamp st">CEVAPSIZ!</div>
+<div class="cv__title t">İLK SMS'E <em>CEVAP GELMEDİ</em></div>
+<div class="cv__foot">29 yıl sonra 107.000 euroya satıldı 💶</div>
+</div>
+<script>
+let k='',l='';const labels='123456789*0#';
+for(let r=0;r<4;r++)for(let c=0;c<3;c++){const x=110+c*125,y=670+r*80;k+=`<rect x="${x}" y="${y}" width="110" height="62" rx="22"/>`;l+=`<text x="${x+55}" y="${y+44}">${labels[r*3+c]}</text>`}
+document.getElementById('keys').innerHTML=k;document.getElementById('kl').innerHTML=l;
+let t='';for(let i=0;i<3000;i++)t+='01'[(i*7+i%13)%2];document.getElementById('code').textContent=t;
+</script>
+</body></html>

@@ -1,0 +1,45 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+.cv{--bg:#EADFC6;--ink:#2A1C10;--acc:#B3261E}
+.ht{position:absolute;inset:0;background:radial-gradient(rgb(42 28 16/.16) 2.4px,transparent 3px) 0 0/16px 16px;-webkit-mask:linear-gradient(160deg,#000,transparent 55%,#000)}
+.paper{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,transparent 50%,rgb(90 60 20/.25))}
+.cv__brand{background:#2A1C10;color:#fff;padding:10px 24px 10px 12px;border-radius:44px}
+.mast{position:absolute;left:56px;right:56px;top:170px;border-top:6px solid #2A1C10;border-bottom:2px solid #2A1C10;padding:10px 0;display:flex;justify-content:space-between;font-family:V;font-size:40px;letter-spacing:.06em}
+.art{position:absolute;left:60px;top:270px;width:960px;height:820px}
+.t{position:absolute;left:40px;right:40px;top:1160px;font-size:150px;text-align:center}
+.t em{font-style:normal;color:var(--acc);display:block}
+.st{color:var(--acc);background:#EADFC6;left:90px;top:990px;font-size:56px;white-space:nowrap;transform:rotate(-7deg)}
+.cv__foot{text-align:center;font-size:38px}
+.cv__foot span{border-top:3px solid #2A1C10;border-bottom:3px solid #2A1C10;padding:14px 10px}
+</style></head><body><div class="cv">
+<div class="ht"></div><div class="paper"></div>
+<div class="cv__top"><div class="cv__brand"><img src="../../../public/img/brand/mark.png">TEKNOLOJİCİ<b>15</b></div><div class="cv__tag">Teknoloji tarihi</div></div>
+<div class="mast"><span>1873 · DAKTİLO MİRASI</span><span>FİYATI: 125 $</span></div>
+<svg class="art" viewBox="0 0 960 820">
+  <!-- paper sheet -->
+  <rect x="300" y="40" width="360" height="300" fill="#FBF6EA" stroke="#2A1C10" stroke-width="6"/>
+  <text x="480" y="150" text-anchor="middle" font-family="V" font-size="84" fill="#2A1C10">QWERTY</text>
+  <g stroke="#2A1C10" stroke-opacity=".35" stroke-width="5"><line x1="340" y1="200" x2="620" y2="200"/><line x1="340" y1="240" x2="580" y2="240"/><line x1="340" y1="280" x2="600" y2="280"/></g>
+  <!-- platen -->
+  <rect x="160" y="300" width="640" height="70" rx="35" fill="#2A1C10"/>
+  <circle cx="140" cy="335" r="40" fill="#2A1C10"/><circle cx="820" cy="335" r="40" fill="#2A1C10"/>
+  <!-- body -->
+  <path d="M120 380 L840 380 L920 640 L40 640 Z" fill="#3B2A1A" stroke="#2A1C10" stroke-width="6"/>
+  <path d="M260 380 Q480 470 700 380" fill="#2A1C10"/>
+  <!-- type bars fan -->
+  <g stroke="#C9B48C" stroke-width="4" opacity=".8">
+    <line x1="480" y1="430" x2="380" y2="388"/><line x1="480" y1="430" x2="420" y2="386"/><line x1="480" y1="430" x2="460" y2="384"/><line x1="480" y1="430" x2="500" y2="384"/><line x1="480" y1="430" x2="540" y2="386"/><line x1="480" y1="430" x2="580" y2="388"/>
+  </g>
+  <g id="keys"></g>
+  <rect x="40" y="640" width="880" height="40" fill="#2A1C10"/>
+</svg>
+<div class="cv__stamp st">YANLIŞ BİLİYORSUN!</div>
+<div class="cv__title t">KLAVYEN <em>150 YILLIK</em> BİR DAKTİLO</div>
+<div class="cv__foot"><span>“Sıkışmasın diye” hikâyesi efsane olabilir ⌨️</span></div>
+</div>
+<script>
+const rows=['QWERTYUIOP','ASDFGHJKL','ZXCVBNM'];let s='';
+rows.forEach((r,ri)=>{const y=480+ri*56,w=64,n=r.length,x0=480-(n*w)/2+w/2;[...r].forEach((ch,i)=>{const x=x0+i*w;const hot=ri==0&&i<6;s+=`<circle cx="${x}" cy="${y}" r="27" fill="${hot?'#B3261E':'#F4ECD8'}" stroke="#C9B48C" stroke-width="4"/><text x="${x}" y="${y+12}" text-anchor="middle" font-family="A" font-weight="800" font-size="32" fill="${hot?'#fff':'#2A1C10'}">${ch}</text>`})});
+document.getElementById('keys').innerHTML=s;
+</script>
+</body></html>

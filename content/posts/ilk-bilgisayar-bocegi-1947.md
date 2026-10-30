@@ -9,7 +9,7 @@ excerpt: "9 Eylül 1947'de Harvard Mark II'nin rölesinde bir güve bulundu ve d
 hook: "Bilgisayarda bulunan ilk gerçek böcek"
 fact: "1947"
 factLabel: "Mark II'de güvenin bulunduğu yıl"
-cover: ""
+cover: "/img/kapak/gen-ilk-bilgisayar-bocegi-1947.webp"
 video: true
 readMin: 4
 sources:

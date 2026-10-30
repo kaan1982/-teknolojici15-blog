@@ -9,7 +9,7 @@ excerpt: "15 Mart 1985'te tescil edilen symbolics.com dünyanın ilk .com alan a
 hook: "İlk .com bir Lisp şirketinindi"
 fact: "15 MART 1985"
 factLabel: "İlk .com alan adının tescil günü"
-cover: ""
+cover: "/img/kapak/gen-ilk-com-alan-adi-symbolics-1985.webp"
 video: false
 readMin: 4
 sources:

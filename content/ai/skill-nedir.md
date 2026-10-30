@@ -9,7 +9,7 @@ excerpt: "Agent Skill, SKILL.md dosyası ve isteğe bağlı betiklerden oluşan 
 hook: "Ajana bir klasörle yeni beceri öğret"
 fact: "3 KATMAN"
 factLabel: "Skill içeriğinin aşamalı yüklenmesi"
-cover: ""
+cover: "/img/kapak/gen-skill-nedir.webp"
 video: false
 readMin: 5
 sources:

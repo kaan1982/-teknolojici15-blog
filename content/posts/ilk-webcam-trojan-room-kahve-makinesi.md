@@ -9,7 +9,7 @@ excerpt: "Cambridge'de 1991'de bir kahve makinesine kamera çevrildi, 1993'te g�
 hook: "İlk webcam kahveyi kontrol ediyordu"
 fact: "128x128"
 factLabel: "Gri tonlu görüntü çözünürlüğü (piksel)"
-cover: ""
+cover: "/img/kapak/gen-ilk-webcam-trojan-room-kahve-makinesi.webp"
 video: true
 readMin: 4
 sources:

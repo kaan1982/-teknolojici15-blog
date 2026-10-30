@@ -9,7 +9,7 @@ excerpt: "3 Nisan 1973'te Manhattan'da bir kaldırımda yapılan ilk el tipi cep
 hook: "İlk cep aramasını rakibine yaptı"
 fact: "1,1 KG"
 factLabel: "1973 prototip telefonunun ağırlığı"
-cover: ""
+cover: "/img/kapak/gen-ilk-cep-telefonu-gorusmesi-1973.webp"
 video: true
 readMin: 4
 sources:

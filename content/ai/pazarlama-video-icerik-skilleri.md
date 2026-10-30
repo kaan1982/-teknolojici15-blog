@@ -9,7 +9,7 @@ excerpt: "Corey Haines'in marketingskills deposu, Anthropic'in marketing eklenti
 hook: "Videoyu kodla, metni skill'le yaz"
 fact: "52 SKILL"
 factLabel: "marketingskills deposundaki skill sayısı"
-cover: ""
+cover: "/img/kapak/gen-pazarlama-video-icerik-skilleri.webp"
 video: false
 readMin: 5
 sources:

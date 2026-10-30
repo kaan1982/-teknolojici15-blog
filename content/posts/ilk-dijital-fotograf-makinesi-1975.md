@@ -9,7 +9,7 @@ excerpt: "1975'te Kodak mühendisi Steven Sasson 3,6 kiloluk, 0,01 megapiksellik
 hook: "İlk dijital kamera 0,01 megapikseldi!"
 fact: "0,01 MP"
 factLabel: "100 x 100 piksel, siyah-beyaz"
-cover: ""
+cover: "/img/kapak/gen-ilk-dijital-fotograf-makinesi-1975.webp"
 video: false
 readMin: 4
 sources:

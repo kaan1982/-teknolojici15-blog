@@ -9,7 +9,7 @@ excerpt: "IBM'in 1971'deki ilk disketi 8 inçti, salt okunurdu ve 80 KB tutuyord
 hook: "Kaydet simgesinin gerçek hikâyesi"
 fact: "80 KB"
 factLabel: "İlk disketin kapasitesi (salt okunur)"
-cover: ""
+cover: "/img/kapak/gen-ilk-disket-ibm-1971-80-kb.webp"
 video: false
 readMin: 4
 sources:

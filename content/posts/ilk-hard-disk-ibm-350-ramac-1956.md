@@ -9,7 +9,7 @@ excerpt: "1956'da tanıtılan IBM 350, 24 inçlik 50 diskle yaklaşık 3,75 MB v
 hook: "3,75 MB için bir ton ağırlık"
 fact: "3,75 MB"
 factLabel: "IBM 350'nin kullanılabilir kapasitesi"
-cover: ""
+cover: "/img/kapak/gen-ilk-hard-disk-ibm-350-ramac-1956.webp"
 video: true
 readMin: 4
 sources:

@@ -124,3 +124,29 @@
     });
   });
 })();
+
+/* TEKNO-TEKST clock (Istanbul time) + language picker niceties */
+(function () {
+  'use strict';
+  var clock = document.querySelector('.tt__clock');
+  if (clock) {
+    var fmt;
+    try { fmt = new Intl.DateTimeFormat('tr-TR', { timeZone: 'Europe/Istanbul', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }); } catch (e) { fmt = null; }
+    var tick = function () { var d = new Date(); clock.textContent = fmt ? fmt.format(d) : d.toTimeString().slice(0, 8); };
+    tick(); setInterval(tick, 1000);
+  }
+  var lang = document.querySelector('.lang');
+  if (!lang) return;
+  // suggest the visitor's own language first
+  var pref = (navigator.language || '').toLowerCase();
+  var code = pref.indexOf('zh') === 0 ? (/tw|hk|hant/.test(pref) ? 'zh-TW' : 'zh-CN') : pref.split('-')[0] === 'he' ? 'iw' : pref.split('-')[0];
+  if (code && code !== 'tr') {
+    var hit = lang.querySelector('.lang__list a[data-l="' + code + '"]');
+    if (hit) { hit.classList.add('is-suggested'); var li = hit.parentNode; li.parentNode.insertBefore(li, li.parentNode.firstChild); }
+  }
+  // on the translated mirror, show the active language on the button
+  var m = /[?&]_x_tr_tl=([^&]+)/.exec(location.search);
+  if (m && /translate\.goog$/.test(location.hostname)) { var s = lang.querySelector('summary span'); if (s) s.textContent = decodeURIComponent(m[1]).toUpperCase().slice(0, 5); }
+  document.addEventListener('click', function (e) { if (lang.open && !lang.contains(e.target)) lang.open = false; });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lang.open) { lang.open = false; lang.querySelector('summary').focus(); } });
+})();

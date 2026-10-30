@@ -9,7 +9,7 @@ excerpt: "3 Aralık 1992'de bir bilgisayardan bir telefona \"Merry Christmas\" y
 hook: "İlk SMS'e cevap yazmak imkânsızdı"
 fact: "1992"
 factLabel: "İlk SMS'in gönderildiği yıl"
-cover: ""
+cover: "/img/kapak/gen-ilk-sms-merry-christmas-1992.webp"
 video: true
 readMin: 4
 sources:

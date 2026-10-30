@@ -9,7 +9,7 @@ excerpt: "Bir klasör, bir SKILL.md ve iyi yazılmış bir açıklama. Kendi Age
 hook: "Skill'i açıklaması tetikler"
 fact: "1.024"
 factLabel: "description alanı için azami karakter"
-cover: ""
+cover: "/img/kapak/gen-kendi-skillini-yaz.webp"
 video: false
 readMin: 5
 sources:

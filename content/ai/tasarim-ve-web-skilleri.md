@@ -9,7 +9,7 @@ excerpt: "frontend-design, web-artifacts-builder, canvas-design ve Vercel'in web
 hook: "Yapay zekâ tasarımı neden hep aynı?"
 fact: "10 TEMA"
 factLabel: "theme-factory'deki hazır tema sayısı"
-cover: ""
+cover: "/img/kapak/gen-tasarim-ve-web-skilleri.webp"
 video: false
 readMin: 5
 sources:

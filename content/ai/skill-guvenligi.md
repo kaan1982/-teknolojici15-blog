@@ -9,7 +9,7 @@ excerpt: "Skill'ler kod çalıştırabilir, dış kaynaklardan talimat çekebili
 hook: "Skill kurmak, yazılım kurmaktır"
 fact: "%13,4"
 factLabel: "Kritik açıklı skill oranı (Snyk, 2026)"
-cover: ""
+cover: "/img/kapak/gen-skill-guvenligi.webp"
 video: false
 readMin: 5
 sources:

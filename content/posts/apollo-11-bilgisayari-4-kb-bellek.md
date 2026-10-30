@@ -9,7 +9,7 @@ excerpt: "Apollo 11'i Ay'a indiren bilgisayarın yaklaşık 4 KB RAM'i vardı. P
 hook: "Ay'a 4 KB RAM ile indiler"
 fact: "4 KB"
 factLabel: "AGC'nin silinebilir belleği (RAM)"
-cover: ""
+cover: "/img/kapak/gen-apollo-11-bilgisayari-4-kb-bellek.webp"
 video: true
 readMin: 4
 sources:

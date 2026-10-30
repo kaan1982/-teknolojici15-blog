@@ -9,7 +9,7 @@ excerpt: "Brian Acton 2009'da önce Twitter'dan, sonra Facebook'tan ret yedi. 20
 hook: "Facebook onu işe almadı, sonra satın aldı"
 fact: "19 MİLYAR $"
 factLabel: "Facebook'un 2014'te açıkladığı fiyat"
-cover: ""
+cover: "/img/kapak/gen-whatsapp-brian-acton-facebook-reddi.webp"
 video: true
 readMin: 4
 sources:

@@ -9,7 +9,7 @@ excerpt: "Telefonundaki klavye bile 1870'lerin bir daktilosundan kalma. QWERTY d
 hook: "Klavyen 150 yıllık bir daktilo"
 fact: "125 $"
 factLabel: "1874'te ilk QWERTY daktilonun fiyatı"
-cover: ""
+cover: "/img/kapak/gen-qwerty-klavye-nereden-geldi.webp"
 video: false
 readMin: 4
 sources:

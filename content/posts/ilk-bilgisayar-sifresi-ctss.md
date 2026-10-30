@@ -9,7 +9,7 @@ excerpt: "MIT'nin CTSS sistemi parolayı bilgisayara getirdi. Kısa süre sonra 
 hook: "İlk şifre, ilk hacklenen oldu"
 fact: "1962"
 factLabel: "İlk bilinen şifre hırsızlığı"
-cover: ""
+cover: "/img/kapak/gen-ilk-bilgisayar-sifresi-ctss.webp"
 video: false
 readMin: 4
 sources:

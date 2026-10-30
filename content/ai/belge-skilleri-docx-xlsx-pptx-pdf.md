@@ -9,7 +9,7 @@ excerpt: "Anthropic'in docx, xlsx, pptx ve pdf skill'leri ne yapıyor, nerede ç
 hook: "Rapor, tablo, sunum: hepsi bir skill"
 fact: "4 BELGE"
 factLabel: "Hazır gelen belge skill'i sayısı"
-cover: ""
+cover: "/img/kapak/gen-belge-skilleri-docx-xlsx-pptx-pdf.webp"
 video: false
 readMin: 5
 sources:

@@ -9,7 +9,7 @@ excerpt: "23 Nisan 2005'te yüklenen 19 saniyelik \"Me at the zoo\", YouTube'un 
 hook: "YouTube'un ilk videosu sadece 19 saniye!"
 fact: "19 SN"
 factLabel: "YouTube'a yüklenen ilk videonun süresi"
-cover: ""
+cover: "/img/kapak/gen-ilk-youtube-videosu-me-at-the-zoo.webp"
 video: true
 readMin: 4
 sources:

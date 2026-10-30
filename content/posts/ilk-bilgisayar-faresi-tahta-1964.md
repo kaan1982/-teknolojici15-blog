@@ -9,7 +9,7 @@ excerpt: "İlk fare ahşap bir kutu ve iki metal tekerlekti. Engelbart fikrini 1
 hook: "İlk fare tahtadan bir kutuydu"
 fact: "1964"
 factLabel: "İlk ahşap fare prototipinin yılı"
-cover: ""
+cover: "/img/kapak/gen-ilk-bilgisayar-faresi-tahta-1964.webp"
 video: true
 readMin: 4
 sources:

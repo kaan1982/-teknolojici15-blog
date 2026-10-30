@@ -9,7 +9,7 @@ excerpt: "Skill yazan skill, MCP sunucusu kuran skill, test ve hata ayıklama di
 hook: "Skill yazan bir skill var"
 fact: "20 SORGU"
 factLabel: "Tetiklenme testi için önerilen örnek"
-cover: ""
+cover: "/img/kapak/gen-gelistirici-skilleri-skill-creator-mcp-builder.webp"
 video: false
 readMin: 5
 sources:

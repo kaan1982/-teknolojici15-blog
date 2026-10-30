@@ -9,7 +9,7 @@ excerpt: "1976'da Apple'ın yüzde 10'u Ronald Wayne'indi. 12 gün sonra hissesi
 hook: "Apple'ın %10'unu 800 dolara bıraktı"
 fact: "800 $"
 factLabel: "Wayne'in %10 hissesi için aldığı para"
-cover: ""
+cover: "/img/kapak/gen-apple-ucuncu-kurucu-ronald-wayne.webp"
 video: true
 readMin: 4
 sources:
