@@ -28,7 +28,20 @@
   "ttAI": "200 UI",
   "ttNews": "300 Správy",
   "ttAll": "400 Register",
-  "monthsShort": ["JAN", "FEB", "MAR", "APR", "MÁJ", "JÚN", "JÚL", "AUG", "SEP", "OKT", "NOV", "DEC"],
+  "monthsShort": [
+    "JAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MÁJ",
+    "JÚN",
+    "JÚL",
+    "AUG",
+    "SEP",
+    "OKT",
+    "NOV",
+    "DEC"
+  ],
   "homeTitle": "Teknolojici15 · Pretočte dejiny techniky",
   "homeDesc": "Teknolojici15: prekvapivé momenty z dejín techniky, od prvého e-mailu po bitcoinovú pizzu, so zdrojmi. A k tomu príručka skillov pre umelú inteligenciu.",
   "heroH1a": "Pretočte dejiny",
@@ -89,5 +102,14 @@
   "nfBack": "Späť na policu na domovskej stránke",
   "nfOr": "alebo",
   "nfAll": "pozrite si všetky články",
-  "untranslated": "Preklad tejto stránky do tohto jazyka ešte nie je hotový; zobrazuje sa turecký originál."
+  "untranslated": "Preklad tejto stránky do tohto jazyka ešte nie je hotový; zobrazuje sa turecký originál.",
+  "vcrSign2": "SPRÁVY O AI",
+  "nbH": "Správy o umelej inteligencii",
+  "nbP": "Modely, čipy, pravidlá a výskum: čo sa deje vo svete AI, stručne a so zdrojmi.",
+  "nbAll": "Všetky správy",
+  "roadH": "Cesta do roku 2026",
+  "roadP": "Posúvaj: náš retro počítač prechádza rokmi. Každá tabuľa je technológia daného roka, spolu {n} zastávok.",
+  "roadEnd": "A dnes: umelá inteligencia. Cesta končí v redakcii správ.",
+  "navRoad": "Cesta do 2026",
+  "ttRoad": "101 Cesta"
 }
