@@ -78,8 +78,8 @@
         }
       } else {
         if (current > -1 && tapes[current]) { tapes[current].classList.remove('is-now'); current = -1; }
-        if (inView(manual, 0.5)) setYear('2026', 'Yapay Zekâ Skill Rehberi');
-        else if (inView(dir, 0.5)) setYear('2026', 'Tüm yazılar');
+        if (inView(manual, 0.5)) setYear('2026', (manual.querySelector('.manual__h') || {}).textContent);
+        else if (inView(dir, 0.5)) setYear('2026', (dir.querySelector('.dir__h') || {}).textContent);
         else if (shelf && shelf.getBoundingClientRect().top > window.innerHeight * 0.25) setYear(heroYear, heroTitle);
       }
     }
@@ -139,14 +139,11 @@
   if (!lang) return;
   // suggest the visitor's own language first
   var pref = (navigator.language || '').toLowerCase();
-  var code = pref.indexOf('zh') === 0 ? (/tw|hk|hant/.test(pref) ? 'zh-TW' : 'zh-CN') : pref.split('-')[0] === 'he' ? 'iw' : pref.split('-')[0];
-  if (code && code !== 'tr') {
+  var code = pref.indexOf('zh') === 0 ? (/tw|hk|hant/.test(pref) ? 'zh-tw' : 'zh-cn') : (pref.split('-')[0] === 'nb' || pref.split('-')[0] === 'nn') ? 'no' : pref.split('-')[0];
+  if (code && code !== document.documentElement.lang.toLowerCase().split('-')[0]) {
     var hit = lang.querySelector('.lang__list a[data-l="' + code + '"]');
     if (hit) { hit.classList.add('is-suggested'); var li = hit.parentNode; li.parentNode.insertBefore(li, li.parentNode.firstChild); }
   }
-  // on the translated mirror, show the active language on the button
-  var m = /[?&]_x_tr_tl=([^&]+)/.exec(location.search);
-  if (m && /translate\.goog$/.test(location.hostname)) { var s = lang.querySelector('summary span'); if (s) s.textContent = decodeURIComponent(m[1]).toUpperCase().slice(0, 5); }
   document.addEventListener('click', function (e) { if (lang.open && !lang.contains(e.target)) lang.open = false; });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lang.open) { lang.open = false; lang.querySelector('summary').focus(); } });
 })();

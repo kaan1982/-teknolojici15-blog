@@ -421,3 +421,14 @@ a:hover { text-decoration-color: var(--sc-accent); }
 @media (min-height: 1000px) { .hero { min-height: 80svh; } }
 .rail { align-items: center; padding-top: 72px; padding-bottom: calc(var(--deck-h) + 12px); }
 .shelf [data-sc-stage] { background: linear-gradient(to bottom, transparent 0 74%, rgb(255 200 69 / .05) 74% 75%, #0a0918 75%); }
+
+/* ---------- i18n ---------- */
+.lang__list a[aria-current] { background: rgb(255 200 69 / .14); color: var(--sc-accent) !important; }
+.lang__list a.is-pending { opacity: .55; }
+.lang__list small { color: var(--sc-ink-soft); font-weight: 400; }
+.untr { margin: 0 0 1rem; padding: 10px 14px; border-radius: 8px; background: rgb(77 242 255 / .08); border: 1px solid rgb(77 242 255 / .25); font-size: 14px; color: var(--sc-ink-soft); }
+:lang(ja) .hero__h, :lang(zh) .hero__h, :lang(ko) .hero__h, :lang(th) .hero__h, :lang(hi) .hero__h, :lang(bn) .hero__h, :lang(ta) .hero__h, :lang(ka) .hero__h, :lang(ar) .hero__h, :lang(fa) .hero__h, :lang(ur) .hero__h, :lang(he) .hero__h { letter-spacing: 0; line-height: 1.1; }
+:lang(ja) .post__h, :lang(zh) .post__h, :lang(ko) .post__h, :lang(th) .post__h, :lang(hi) .post__h, :lang(bn) .post__h, :lang(ta) .post__h, :lang(ar) .post__h, :lang(fa) .post__h, :lang(ur) .post__h, :lang(he) .post__h, :lang(ka) .post__h { letter-spacing: 0; line-height: 1.2; }
+[dir="rtl"] .prose, [dir="rtl"] .post__head, [dir="rtl"] .crumbs, [dir="rtl"] .hero__copy, [dir="rtl"] .rail__lead, [dir="rtl"] .manual__head, [dir="rtl"] .toc, [dir="rtl"] .dir__list, [dir="rtl"] .tt { text-align: right; }
+[dir="rtl"] .rail, [dir="rtl"] .vcr__run, [dir="rtl"] .deck { direction: ltr; }
+[dir="rtl"] .tape__meta, [dir="rtl"] .vcr__run span { direction: rtl; }
