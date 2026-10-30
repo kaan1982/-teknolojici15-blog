@@ -18,13 +18,15 @@ const trMonths = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmu
 const noDash = (s) => String(s).replace(/\s?[—–]\s?/g, ', ');
 
 /* ---------- locales ---------- */
+// Active languages (others keep their translations in i18n/ but are not built; old URLs redirect to /en/ in vercel.json)
+const ACTIVE = ['tr', 'en', 'de', 'fr', 'it', 'nl', 'sv', 'ru', 'ar', 'ja'];
 const LOCALES = [
   ['tr', 'Türkçe', 'tr-TR'], ['en', 'English', 'en'], ['de', 'Deutsch', 'de-DE'], ['fr', 'Français', 'fr-FR'], ['es', 'Español', 'es-ES'], ['it', 'Italiano', 'it-IT'], ['pt', 'Português', 'pt-BR'], ['nl', 'Nederlands', 'nl-NL'], ['ru', 'Русский', 'ru-RU'], ['uk', 'Українська', 'uk-UA'], ['pl', 'Polski', 'pl-PL'],
   ['cs', 'Čeština', 'cs-CZ'], ['sk', 'Slovenčina', 'sk-SK'], ['ro', 'Română', 'ro-RO'], ['hu', 'Magyar', 'hu-HU'], ['bg', 'Български', 'bg-BG'], ['el', 'Ελληνικά', 'el-GR'], ['sr', 'Српски', 'sr-RS'], ['hr', 'Hrvatski', 'hr-HR'], ['sv', 'Svenska', 'sv-SE'], ['no', 'Norsk', 'nb-NO'],
   ['da', 'Dansk', 'da-DK'], ['fi', 'Suomi', 'fi-FI'], ['et', 'Eesti', 'et-EE'], ['lt', 'Lietuvių', 'lt-LT'], ['az', 'Azərbaycanca', 'az-AZ'], ['kk', 'Қазақша', 'kk-KZ'], ['uz', "O'zbekcha", 'uz-UZ'], ['ka', 'ქართული', 'ka-GE'], ['ar', 'العربية', 'ar'], ['fa', 'فارسی', 'fa-IR'],
   ['ur', 'اردو', 'ur-PK'], ['he', 'עברית', 'he-IL'], ['hi', 'हिन्दी', 'hi-IN'], ['bn', 'বাংলা', 'bn-BD'], ['ta', 'தமிழ்', 'ta-IN'], ['ja', '日本語', 'ja-JP'], ['ko', '한국어', 'ko-KR'], ['zh-cn', '简体中文', 'zh-CN'], ['zh-tw', '繁體中文', 'zh-TW'], ['th', 'ไทย', 'th-TH'],
   ['vi', 'Tiếng Việt', 'vi-VN'], ['id', 'Bahasa Indonesia', 'id-ID'], ['ms', 'Bahasa Melayu', 'ms-MY'], ['tl', 'Filipino', 'fil-PH'], ['sw', 'Kiswahili', 'sw-KE'],
-].map(([code, name, tag]) => ({ code, name, tag, prefix: code === 'tr' ? '' : '/' + code, rtl: ['ar', 'fa', 'ur', 'he'].includes(code) }));
+].filter(([code]) => ACTIVE.includes(code)).map(([code, name, tag]) => ({ code, name, tag, prefix: code === 'tr' ? '' : '/' + code, rtl: ['ar', 'fa', 'ur', 'he'].includes(code) }));
 const ONLY = process.env.LOCALES ? process.env.LOCALES.split(',') : null; // e.g. LOCALES=tr,en for a quick build
 const UI_TR = JSON.parse(read(path.join(ROOT, 'i18n', 'ui.tr.json')));
 let L = LOCALES[0], T = UI_TR;
