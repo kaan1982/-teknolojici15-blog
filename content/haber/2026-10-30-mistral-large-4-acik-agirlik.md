@@ -4,7 +4,7 @@ slug: "2026-10-30-mistral-large-4-acik-agirlik"
 date: "2026-10-30"
 rank: 2
 category: "Haber"
-excerpt: "Fransız Mistral, 1,05 trilyon parametreli Large 4 modelini indirilebilir açık ağırlıkla yayımladı. Hedef: siber güvenlik ve kodlama ajanları."
+excerpt: "Fransız Mistral, 1,05 trilyon parametreli Large 4 modelini indirilebilir açık ağırlıkla yayımladı. Hedef: siber güvenlik; kodlamada da iddialı."
 hook: "Avrupa'dan 1 trilyonluk açık model"
 fact: "1,05 trilyon"
 factLabel: "Mistral Large 4'ün toplam parametresi"
@@ -24,7 +24,7 @@ Fransız yapay zekâ şirketi Mistral, 29 Ekim Perşembe günü en büyük model
 
 ## Ne oldu?
 
-VentureBeat'in aktardığı verilere göre model toplam 1,05 trilyon parametreye sahip, ama her kelime parçası için bunun yalnızca 52 milyarını çalıştırıyor. Bağlam penceresi 1 milyon token. Metin ve görsel okuyabiliyor, metin üretiyor. Eğitiminde yaklaşık 3.800 Nvidia Grace Blackwell GPU kullanıldı.
+VentureBeat'in aktardığı verilere göre model toplam 1,05 trilyon parametreye sahip, ama etkin parametre sayısı 52 milyar: model her adımda toplamın yalnızca küçük bir kısmını çalıştırıyor. Bağlam penceresi 1 milyon token. Metin ve görsel okuyabiliyor, metin üretiyor. Eğitiminde yaklaşık 3.800 Nvidia Grace Blackwell GPU kullanıldı.
 
 Mistral modeli özellikle siber güvenlik ve kodlama ajanları için konumluyor: kod ve BT altyapısındaki tehditleri bulmak, analiz etmek ve yanıtlamak. Bağımsız değerlendirme kuruluşu Artificial Analysis'in endeksinde model, Çin dışında geliştirilen açık ağırlıklı modeller arasında en yüksek puanı aldı. Yine de DeepSeek ve GLM gibi Çinli açık modellerin gerisinde kalıyor. Lisans tamamen serbest değil: değiştirilmiş bir MIT lisansı, modeli hizmet olarak satan şirketlerden ayrı ticari lisans istiyor.
 

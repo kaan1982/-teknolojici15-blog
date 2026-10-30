@@ -63,7 +63,7 @@ marked.use({
 });
 const md = (s) => marked.parse(noDash(s));
 
-/* ---------- languages: Google Translate proxy (45+ dil) ---------- */
+/* ---------- languages: Google Translate proxy (Türkçe + 65 dil) ---------- */
 const LANGS = [['en','English'],['de','Deutsch'],['fr','Français'],['es','Español'],['it','Italiano'],['pt','Português'],['nl','Nederlands'],['ru','Русский'],['uk','Українська'],['pl','Polski'],['cs','Čeština'],['sk','Slovenčina'],['ro','Română'],['hu','Magyar'],['bg','Български'],['el','Ελληνικά'],['sr','Српски'],['hr','Hrvatski'],['sl','Slovenščina'],['bs','Bosanski'],['sq','Shqip'],['mk','Македонски'],['sv','Svenska'],['no','Norsk'],['da','Dansk'],['fi','Suomi'],['et','Eesti'],['lv','Latviešu'],['lt','Lietuvių'],['is','Íslenska'],['ga','Gaeilge'],['az','Azərbaycanca'],['kk','Қазақша'],['uz',"O'zbekcha"],['ky','Кыргызча'],['tk','Türkmençe'],['ka','ქართული'],['hy','Հայերեն'],['ku','Kurdî'],['ar','العربية'],['fa','فارسی'],['ur','اردو'],['iw','עברית'],['hi','हिन्दी'],['bn','বাংলা'],['pa','ਪੰਜਾਬੀ'],['ta','தமிழ்'],['te','తెలుగు'],['mr','मराठी'],['gu','ગુજરાતી'],['ja','日本語'],['ko','한국어'],['zh-CN','简体中文'],['zh-TW','繁體中文'],['th','ไทย'],['vi','Tiếng Việt'],['id','Bahasa Indonesia'],['ms','Bahasa Melayu'],['tl','Filipino'],['sw','Kiswahili'],['af','Afrikaans'],['am','አማርኛ'],['ha','Hausa'],['yo','Yorùbá'],['zu','isiZulu']];
 const TR_HOST = new URL(SITE).hostname.replace(/-/g, '--').replace(/\./g, '-') + '.translate.goog';
 const trUrl = (url, l) => `https://${TR_HOST}${url}?_x_tr_sl=tr&_x_tr_tl=${l}&_x_tr_hl=${l}&_x_tr_pto=wapp`;
@@ -143,7 +143,7 @@ function deck({ year = '2026', title = 'Teknolojici15', prev = null, next = null
 const foot = `<footer class="foot">
   <p class="foot__mark notranslate" translate="no">${mark}<span>TEKNOLOJİCİ<b>15</b></span></p>
   <p>Teknoloji tarihinin "bunu bilmiyordun" anları. Her yazı kaynaklarıyla.</p>
-  <p class="foot__links"><a href="/">Ana sayfa</a><a href="/yapay-zeka/">Yapay Zekâ Skill Rehberi</a><a href="/#dizin">Tüm yazılar</a><a href="/feed.xml">RSS</a><a href="${IG}" target="_blank" rel="noopener noreferrer">@teknolojici15</a></p>
+  <p class="foot__links"><a href="/">Ana sayfa</a><a href="/haber/">Günün haberleri</a><a href="/yapay-zeka/">Yapay Zekâ Skill Rehberi</a><a href="/#dizin">Tüm yazılar</a><a href="/feed.xml">RSS</a><a href="${IG}" target="_blank" rel="noopener noreferrer">@teknolojici15</a></p>
 </footer>`;
 const scripts = (home) => `<script src="/sc/scrollcraft.js" defer></script><script src="/js/site.js" defer></script>${home ? '' : ''}`;
 
@@ -274,7 +274,7 @@ function article(p, list) {
   const isAI = p.kind === 'ai', isNews = p.kind === 'news';
   const crumbs = isNews ? [['Ana sayfa', '/'], ['Haberler', '/haber/'], [p.title, p.url]] : isAI ? [['Ana sayfa', '/'], ['Yapay Zekâ', '/yapay-zeka/'], [p.title, p.url]] : [['Ana sayfa', '/'], ['Yazılar', '/#dizin'], [p.title, p.url]];
   const jsonld = [
-    { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.title, description: p.excerpt, datePublished: p.date, dateModified: p.date, inLanguage: 'tr-TR', mainEntityOfPage: SITE + p.url, image: p.cover ? SITE + p.cover : SITE + '/img/og.jpg', author: { '@id': SITE + '/#org' }, publisher: ORG, articleSection: p.category, citation: p.sources.map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url })), ...(p.year < 2026 ? { about: { '@type': 'Thing', name: p.title, temporalCoverage: p.yearLabel } } : {}) },
+    { '@context': 'https://schema.org', '@type': isNews ? 'NewsArticle' : 'BlogPosting', headline: p.title, description: p.excerpt, datePublished: p.date, dateModified: p.date, inLanguage: 'tr-TR', mainEntityOfPage: SITE + p.url, image: p.cover ? SITE + p.cover : SITE + '/img/og.jpg', author: { '@id': SITE + '/#org' }, publisher: ORG, articleSection: p.category, citation: p.sources.map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url })), ...(p.year < 2026 ? { about: { '@type': 'Thing', name: p.title, temporalCoverage: p.yearLabel } } : {}) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([n, u], k) => ({ '@type': 'ListItem', position: k + 1, name: n, item: SITE + u })) },
   ];
   return `${head({ title: `${p.title} · Teknolojici15`, desc: p.excerpt, url: p.url, image: p.cover || null, type: 'article', jsonld, extra: `<meta property="article:published_time" content="${p.date}"><meta property="article:section" content="${esc(p.category)}">` })}

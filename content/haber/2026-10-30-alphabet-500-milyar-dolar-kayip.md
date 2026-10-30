@@ -5,7 +5,7 @@ date: "2026-10-30"
 rank: 1
 category: "Haber"
 excerpt: "Google'ın ana şirketi Alphabet, rekor yapay zekâ harcaması ve yavaşlayan arama gelirinin ardından 2004'ten bu yana en sert düşüşünü yaşadı."
-hook: "Google bir günde 500 milyar $ kaybetti"
+hook: "Alphabet bir günde ~500 milyar $ kaybetti"
 fact: "500 milyar $"
 factLabel: "29 Ekim'de silinen yaklaşık değer"
 year: 2026
@@ -28,7 +28,7 @@ Yatırımcıları korkutan ise iki şey oldu. İlki harcama: şirket tek çeyrek
 
 ## Neden önemli?
 
-Bu düşüş, ABD tarihindeki en büyük ikinci tek günlük piyasa değeri kaybı. Rekor hâlâ Nvidia'nın Ocak 2025'teki yaklaşık 593 milyar dolarlık kaybında. Asıl mesaj şu: piyasa artık yapay zekâya yapılan dev yatırımların ne zaman geri döneceğini sorguluyor. Bir analist, Yahoo Finance'in aktardığına göre bunun yapay zekânın arama işine ciddi zarar vermeye başladığı ilk çeyrek olarak yorumlanabileceğini söyledi. Google'ın yıllardır para makinesi olan arama reklamlarının yerini sohbet botlarının alıp almayacağı, bundan sonraki çeyreklerin ana sorusu olacak.
+Bu düşüş, ABD tarihindeki en büyük ikinci tek günlük piyasa değeri kaybı. Rekor hâlâ Nvidia'nın Ocak 2025'teki yaklaşık 593 milyar dolarlık kaybında. Asıl mesaj şu: piyasa artık yapay zekâya yapılan dev yatırımların ne zaman geri döneceğini sorguluyor. Pivotal Research'ten bir analist, Yahoo Finance'e göre, düşüş bekleyen yatırımcıların bunu yapay zekânın arama işine ciddi zarar vermeye başladığı ilk çeyrek olarak yorumlayacağını söyledi. Google'ın yıllardır para makinesi olan arama reklamlarının yerini sohbet botlarının alıp almayacağı, bundan sonraki çeyreklerin ana sorusu olacak.
 
 ## Tarihten bir bağ
 

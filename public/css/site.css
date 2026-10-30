@@ -47,7 +47,7 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .bar__nav a:hover, .bar__nav a[aria-current] { color: var(--sc-ink); }
 .bar__nav a[aria-current] { box-shadow: inset 0 -2px var(--sc-accent); }
 .bar__ig { border: 1px solid var(--sc-hairline-strong); border-radius: var(--r); padding: 6px 12px !important; color: var(--sc-ink) !important; }
-@media (max-width: 760px) { .bar__nav a:not(.bar__ig):not([href="/yapay-zeka/"]) { display: none; } .bar__mark span { font-size: 13px; } .bar__nav a { white-space: nowrap; } }
+@media (max-width: 760px) { .bar__nav > a:not(.bar__ig):not([href="/yapay-zeka/"]) { display: none; } .bar__mark span { font-size: 13px; } .bar__nav a { white-space: nowrap; } }
 @media (max-width: 420px) { .bar__mark span { display: none; } .bar__nav { gap: .6rem; } }
 
 /* ---------- museum label (one schema everywhere) ---------- */
@@ -393,3 +393,5 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .tt__list strong { font-family: var(--sc-font-display); font-stretch: 82%; font-weight: 700; font-size: clamp(18px, 1.45vw, 22px); line-height: 1.15; text-shadow: none; letter-spacing: -.005em; }
 .tt__f { font-size: 18px; }
 .tt__f { font-family: var(--sc-font-display); font-stretch: 85%; font-size: 14px; text-shadow: none; } .tt__f small { font-size: 1em; }
+.bigfact span { white-space: nowrap; }
+.hero .hero__label .label { font-size: 15px; }
