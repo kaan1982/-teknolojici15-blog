@@ -43,7 +43,7 @@ Yani tarih biraz katmanlı: site 1990 sonunda CERN içinde çalışıyordu, 1991
 
 ## Peki "hâlâ yayında" ne demek?
 
-İşte o dipnot. İlk sitenin 1991'deki dosyaları olduğu gibi korunmadı. CERN, webin kamuya açılmasının 20. yıl dönümünde, 30 Nisan 2013'te ilk siteyi orijinal adresinde geri getirmek için bir proje başlattı. CBC News'e göre geri yüklenen sürüm, CERN arşivlerinde bulunan 1992 tarihli bir kopya. CERN'in web yöneticisi Dan Noyes bunun "bulabildikleri en eski kopya olabileceğini" ve daha eskilerini aramaya devam edeceklerini söylemişti.
+İşte o dipnot. İlk sitenin 1991'deki dosyaları olduğu gibi korunmadı. CERN, webin kamuya açılmasının 20. yıl dönümünde, 30 Nisan 2013'te ilk siteyi orijinal adresinde geri getirmek için bir proje başlattı. CBC News'e göre geri yüklenen sürüm, CERN arşivlerinde bulunan 1992 tarihli bir kopya. CBC'ye göre proje sadece sayfayı geri getirmekle kalmayıp orijinal makine adlarını ve IP adreslerini geri yüklemeyi, ilk metin tabanlı tarayıcı deneyimini yeniden yaratmayı ve özgün donanımı belgelemeyi de hedefliyordu. CERN'in web yöneticisi Dan Noyes bunun "bulabildikleri en eski kopya olabileceğini" ve daha eskilerini aramaya devam edeceklerini söylemişti.
 
 Yani info.cern.ch'de bugün gördüğün şey, ilk web sitesinin elimizdeki en eski hâli. Adres aynı, içerik ise 1992'den kalma bir anlık görüntü. "Hâlâ yayında" demek doğru, ama "35 yıldır hiç kapanmadan aynı sayfa yayında" demek tam doğru değil.
 
@@ -59,6 +59,8 @@ Netcraft'ın Temmuz 2026 web sunucusu anketi 1.494.915.628 siteden yanıt aldı�
 | Siyah yazı, mavi bağlantı | Video, uygulama, yapay zekâ |
 | Sunucuya "SAKIN KAPATMAYIN" etiketi | Dünyaya yayılmış veri merkezleri |
 | 1993: yazılım kamu malı oldu | Web hâlâ açık standartlarla işliyor |
+
+Bu tabloyu düşününce ilk sitenin değeri daha iyi anlaşılıyor. İçinde reklam, çerez uyarısı, video ya da abonelik penceresi yok; sadece metin ve bağlantılar var. Ama bağlantıya tıklayıp başka bir belgeye geçme fikri, bugün açtığın her sayfanın temelinde hâlâ duruyor.
 
 Tek bir bilgisayarda başlayan bir proje, CERN'in yazılımı herkese açma kararıyla bugünkü dev ağa dönüştü.
 

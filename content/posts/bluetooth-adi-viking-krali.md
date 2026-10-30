@@ -33,6 +33,8 @@ Harald'ın en somut izi, 965 civarında anne babası Gorm ve Thyra adına diktir
 
 ## Bir toplantı, bir kitap, bir geçici kod adı
 
+Teknolojinin kendisi İsveç'te doğdu. Wikipedia'ya göre Ericsson Mobile'ın Lund'daki ekibi, teknoloji direktörü Nils Rydbeck'in yönlendirmesiyle 1989'da kısa mesafe radyo bağlantısı üzerinde çalışmaya başladı; asıl tasarım 1994'te Jaap Haartsen ve Sven Mattisson ile hız kazandı ve 1997'de çalışan bir çözüm vardı.
+
 1990'ların ortasında Ericsson, Intel ve Nokia, telefonlar ile bilgisayarları kısa mesafede telsiz olarak bağlayacak bir standart üzerinde anlaşmaya çalışıyordu. Bluetooth SIG, bu planlama toplantısını 1996 olarak veriyor.
 
 Adı öneren, Intel'den Jim Kardach oldu. Wikipedia'ya göre Kardach adı 1997'de, Ericsson mühendisi Sven Mattisson ile yaptığı bir sohbetin ardından önerdi. Mattisson ona İskandinav tarihini Frans G. Bengtsson'un Viking romanı "The Long Ships" (Uzun Gemiler) üzerinden anlatmıştı; romanda Harald Bluetooth da geçiyor. Kardach'ın gerekçesi Bluetooth SIG sitesinde şöyle aktarılıyor: Harald, İskandinavya'yı birleştirmesiyle ünlüydü, "tıpkı bizim PC ve hücresel endüstrilerini birleştirmeyi amaçladığımız gibi."
@@ -50,6 +52,8 @@ Kısacası cebindeki telefonun ayarlar menüsünde, yaklaşık bin yıl öncesin
 ## Geçici ad nasıl kalıcı oldu?
 
 Ad hızla sektöre yayıldı ve değiştirilmeye fırsat kalmadı. Bluetooth SIG 20 Mayıs 1998'de Ericsson, IBM, Intel, Nokia ve Toshiba'nın kurucu üyeliğiyle resmen duyuruldu. Bluetooth 1.0 spesifikasyonu 1999'da kabul edildi ve ilk Bluetooth cihazı (eller serbest bir kulaklık) aynı yıl tanıtıldı.
+
+Telefonlara gelmesi biraz daha sürdü: Wikipedia'ya göre piyasada satılan ilk Bluetooth'lu telefon, 2001'in ilk çeyreğinde çıkan Ericsson R520m oldu. Yani Viking kralının adı, kod adı olarak önerildikten yaklaşık dört yıl sonra ceplere girdi.
 
 Teknik tarafta da "birleştirme" fikri ismine yakışır şekilde sürüyor. Klasik Bluetooth, 2,402 ile 2,480 GHz arasındaki bandı 79 kanala bölüyor ve uyarlamalı frekans atlamayla genellikle saniyede 1.600 kez kanal değiştiriyor. Bu sayede aynı odadaki onlarca cihaz birbirine fazla karışmadan konuşabiliyor.
 

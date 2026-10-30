@@ -29,7 +29,7 @@ Hikâyenin kahramanı bir mühendis değil, bir saatçi.
 
 Alexander Bain 1810'da İskoçya'nın Caithness bölgesinde doğdu ve saat yapımcısı olarak yetişti. 27 Mayıs 1843'te 9745 numaralı İngiliz patentini aldı. Patentin adı bugün kulağa garip geliyor: "Electric Printing Telegraph", yani elektrikli baskı telgrafı.
 
-Bain'in iddiası cesurdu. İletken ve yalıtkan malzemelerden oluşan herhangi bir yüzeyin kopyasının bu yöntemle uzağa aktarılabileceğini yazdı. Yani bir görüntüyü kablo üzerinden göndermekten söz ediyordu. Wikipedia'ya göre 1846'da laboratuvar deneylerinde grafik işaretleri yeniden üretmeyi başardı.
+Bain'in iddiası cesurdu. İletken ve yalıtkan malzemelerden oluşan herhangi bir yüzeyin kopyasının bu yöntemle uzağa aktarılabileceğini yazdı. Yani bir görüntüyü kablo üzerinden göndermekten söz ediyordu. Wikipedia'ya göre 1846'da laboratuvar deneylerinde grafik işaretleri yeniden üretmeyi başardı. Fikrini Atlantik'in öbür yakasında da korumaya aldı: 5 Aralık 1848'de "yüzeylerin elektrikle kopyalanmasında iyileştirme" başlıklı 5.957 numaralı ABD patentini aldı.
 
 ## Sarkaçlar, metal iğneler ve kimyasal kâğıt
 
@@ -61,7 +61,7 @@ Faksın telefona "bağlanması" çok daha sonra oldu. Western Union 1948'de masa
 
 ## Faksın uzun ömrü
 
-Faksın asıl patlaması 1980'lerde geldi. ITU (o zamanki adıyla CCITT) 1980'de dijital faksın önünü açan T.4 önerisini yayımladı ve sayfa başına süre yaklaşık 40 saniyeye indi. Ofislerin vazgeçilmezi olan o bej kutular, aslında 19. yüzyılın ortasında bir saatçinin masasında başlayan bir fikrin torunlarıydı.
+Faksın asıl patlaması 1980'lerde geldi. ITU (o zamanki adıyla CCITT) 1980'de dijital faksın önünü açan T.4 önerisini yayımladı ve sayfa başına süre yaklaşık 40 saniyeye indi. Arada başka kilometre taşları da vardı: Shelford Bidwell 1880'de herhangi iki boyutlu bir belgeyi tarayabilen "taramalı fototelgrafı" yaptı, Elisha Gray'in 1888 tarihli telautografı ise imzaların uzağa gönderilmesini sağladı. Ofislerin vazgeçilmezi olan o bej kutular, aslında 19. yüzyılın ortasında bir saatçinin masasında başlayan bir fikrin torunlarıydı.
 
 Bu hikâye bize teknolojinin hep düz bir çizgide ilerlemediğini hatırlatıyor: bazen "eski" sandığımız bir buluş, "temel" sandığımız bir başkasından çok daha yaşlı çıkıyor.
 

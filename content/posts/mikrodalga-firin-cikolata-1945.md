@@ -8,7 +8,7 @@ category: "İcatlar"
 excerpt: "1945'te bir radar mühendisinin cebindeki şekerleme eridi; birkaç yıl sonra 340 kiloluk ilk mikrodalga fırın satıştaydı. Percy Spencer'ın hikâyesi."
 hook: "Mikrodalgayı bir çikolata mı icat etti?"
 fact: "340 KG"
-factLabel: "İlk ticari mikrodalga Radarange'ın ağırlığı"
+factLabel: "İlk ticari mikrodalganın ağırlığı"
 cover: "/img/kapak/hook21-mikrodalgacikolata.jpg"
 video: true
 readMin: 4
@@ -27,7 +27,7 @@ Mutfaktaki o sıradan kutu, aslında İkinci Dünya Savaşı'nın radar laboratu
 
 Percy Spencer 1894'te Maine'de doğdu. Wikipedia'ya göre ilkokulu bile bitirmedi, elektrik mühendisliği eğitimi almadı; matematiği, fiziği ve kimyayı büyük ölçüde kendi kendine öğrendi. 18 yaşında ABD Donanması'na katıldı.
 
-1939'da Raytheon şirketinin güç tüpleri bölümünün başına geçti. Radarların kalbi olan magnetron tüplerini üretmenin daha verimli bir yolunu buldu ve üretimi günde 100'den 2.600'e çıkardı. Savaş yıllarında Raytheon'un radar ekipmanı işlerinde merkezi bir isimdi.
+1939'da Raytheon şirketinin güç tüpleri bölümünün başına geçti. Radarların kalbi olan magnetron tüplerini üretmenin daha verimli bir yolunu buldu ve üretimi günde 100'den 2.600'e çıkardı. Wikipedia'ya göre Raytheon'un MIT Radyasyon Laboratuvarı için savaş radarı ekipmanı üretme sözleşmesini almasında da payı vardı. Yani cebindeki bar eridiğinde, dünyada magnetronu ondan daha iyi tanıyan çok az insan vardı.
 
 ## 1945: cepte eriyen bar
 
@@ -48,7 +48,7 @@ Raytheon, mikrodalgayla pişirme yöntemi için ABD patent başvurusunu 8 Ekim 1
 - 3 kilovat güç tüketimi (Wikipedia'ya göre bugünkü fırınların yaklaşık üç katı),
 - Su soğutmalı bir yapı.
 
-Bu fırınlar evler için değil, oteller, restoranlar ve gemiler içindi. Wikipedia'ya göre erken modeller günlüğü 5 dolara (aylık 150 dolar) kiralanıyordu. APS ise fiyatı o dönem için 5.000 dolar olarak veriyor.
+Bu fırınlar evler için değil, oteller, restoranlar ve gemiler içindi. Wikipedia'ya göre erken modeller günlüğü 5 dolara (aylık 150 dolar) kiralanıyordu. APS ise fiyatı o dönem için 5.000 dolar olarak veriyor ve bunun bugünün parasıyla 50.000 doları aştığını hesaplıyor. APS'ye göre ilk Radarange'lardan biri, 300 kilonun üzerindeki ağırlığıyla Savannah adlı bir gemiye kuruldu. Yani ilk mikrodalga yemekleri bir mutfakta değil, denizin ortasında ısıtılıyordu.
 
 | O zaman | Şimdi |
 |---|---|
@@ -61,6 +61,14 @@ Bu fırınlar evler için değil, oteller, restoranlar ve gemiler içindi. Wikip
 
 Mikrodalganın evlere girmesi yirmi yılı aştı. Raytheon 1965'te Amana şirketini satın aldı ve 1967'de ilk tezgâh üstü Radarange'ı 495 dolara satışa çıkardı. Wikipedia bu fiyatın 2025 dolarıyla yaklaşık 5.000 dolara denk geldiğini hesaplıyor. Yani hâlâ lüks bir alet, ama artık bir mutfağa sığıyordu.
 
+Bu arada küçük bir not: hikâyede hep "mikrodalga" diyoruz ama Raytheon'un ilk ticari ürününün adı da bu işin radar kökenini açıkça gösteriyor. "Radarange", radar ile ocak (range) kelimelerinin birleşimi gibi okunuyor.
+
 Spencer'ın hikâyesinin asıl dersi belki de şu: aynı radar setinin yanında başka mühendisler de durmuştu. Fark, cebindeki erimiş barı bir "sorun" olarak değil, bir "soru" olarak görmesiydi.
+
+## Okulu bitirmeyen mucidin mirası
+
+Spencer 8 Eylül 1970'te Massachusetts'in Newton kentinde, 76 yaşında öldü. Hayatı boyunca resmi bir mühendislik diploması olmadı ama Wikipedia'ya göre ABD Donanması'nın Seçkin Kamu Hizmeti Ödülü'nü aldı, Amerikan Sanat ve Bilim Akademisi'ne üye seçildi, Massachusetts Üniversitesi'nden fahri doktora aldı ve Mucitler Onur Listesi'ne girdi.
+
+Bugün mutfakta bir şeyi otuz saniyede ısıtırken kullandığımız teknoloji, aslında savaş radarları için geliştirilmiş bir tüpün yan ürünü. Bunu fark eden kişi de kendi kendini yetiştirmiş bir ustaydı.
 
 Sence bugün, farkında olmadan yanından geçtiğimiz hangi küçük tesadüf geleceğin sıradan bir ev aletine dönüşebilir?

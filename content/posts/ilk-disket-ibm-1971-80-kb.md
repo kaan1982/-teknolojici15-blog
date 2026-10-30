@@ -54,7 +54,7 @@ Hepimizin hatırladığı "1,44 MB" yüksek yoğunluklu disket ise 1980'lerin or
 
 ## Disketin uzun vedası
 
-Disket sahneden yavaş çekildi. Wikipedia'ya göre Sony yeni disket üretimini 2011'de bitirdi. Ama bazı yerlerde disket çok daha uzun süre resmî işlerin parçası olarak kaldı.
+Disket sahneden yavaş çekildi. Wikipedia'ya göre Sony yeni disket üretimini 2011'de bitirdi. Ama bazı yerlerde disket çok daha uzun süre resmî işlerin parçası olarak kaldı. Bunun sebebi çoğu zaman teknoloji değil, yıllar önce yazılmış ve kimsenin güncellemediği kurallardı.
 
 En çarpıcı örnek Japonya. Ülkenin Dijital Ajansı, devlet işlemlerinde disket kullanımını şart koşan 1.034 düzenlemeyi kaldırdı. Dijital İşler Bakanı Taro Kono, 28 Haziran 2024'te kampanyanın tamamlandığını "Disketlere karşı savaşı kazandık" sözleriyle duyurdu. Yani ilk disketin üzerinden 53 yıl geçmişti.
 

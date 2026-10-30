@@ -35,13 +35,15 @@ Ama bugünden bakınca eksik listesi şaşırtıcı:
 - MMS (resimli mesaj) yoktu.
 - Gerçek bir GPS desteği yoktu.
 
-Buna rağmen Wikipedia'ya göre satışa çıktıktan 74 gün sonra bir milyonuncu iPhone satılmıştı. İnsanlar eksikleri biliyor, yine de alıyordu.
+Buna rağmen Wikipedia'ya göre satışa çıktıktan 74 gün sonra bir milyonuncu iPhone satılmıştı. İnsanlar eksikleri biliyor, yine de alıyordu. Apple da modeli kısa sürede güncelledi: 8 GB modelin fiyatı 399 dolara indi, Şubat 2008'de ise 499 dolarlık 16 GB model geldi. Ama bütün bu değişiklikler donanım ve fiyatla ilgiliydi; yazılımdaki eksikler yerinde duruyordu.
 
 ## Önce mağaza geldi, sonra kopyala-yapıştır
 
 İlk büyük sıçrama 11 Temmuz 2008'de iPhone OS 2.0 ile geldi: uygulama mağazası açıldı ve aynı gün iPhone 3G satışa çıktı. Artık telefona başka geliştiricilerin yazdığı uygulamaları yüklemek mümkündü. Ama metin seçip kopyalamak hâlâ mümkün değildi.
 
-Kopyala-yapıştır, 17 Mart 2009'da duyurulan iPhone OS 3.0 ile geldi. Güncelleme 17 Haziran 2009'da yayımlandı. Wikipedia'ya göre metni basılı tutunca açılan bir baloncuk menüde "Kes, Kopyala, Yapıştır" seçenekleri belirdi. Aynı güncelleme sistem genelinde arama yapan Spotlight'ı da getirdi.
+Kopyala-yapıştır, 17 Mart 2009'da duyurulan iPhone OS 3.0 ile geldi. Güncelleme 17 Haziran 2009'da yayımlandı. Wikipedia'ya göre metni basılı tutunca açılan bir baloncuk menüde "Kes, Kopyala, Yapıştır" seçenekleri belirdi. Aynı güncelleme sistem genelinde arama yapan Spotlight'ı da getirdi; ana ekranda sağa kaydırınca açılan bu arama, kişileri, e-postaları, takvim kayıtlarını, müzikleri ve uygulamaları tek yerden bulmayı sağlıyordu. iPhone OS 3.0, aynı ay satışa çıkan iPhone 3GS ile birlikte gelen yazılımdı ama eski modellere de güncelleme olarak sunuldu.
+
+Güncelleme ilk iPhone'a da geldi. Yani 2007'de telefon alanlar kopyala-yapıştıra sonunda kavuştu, ama aşağıda göreceğin gibi aynı güncellemenin getirdiği her şeye değil.
 
 İlk iPhone'un ABD'de satışa çıktığı 29 Haziran 2007'den 17 Haziran 2009'a tam 719 gün var. Tanıtımdan (9 Ocak 2007) sayarsan bu süre 890 güne çıkıyor.
 
@@ -50,6 +52,8 @@ Kopyala-yapıştır, 17 Mart 2009'da duyurulan iPhone OS 3.0 ile geldi. Güncell
 ## Neden bu kadar beklendi?
 
 Apple, kopyala-yapıştırın neden ilk sürümde olmadığını kaynaklarımızda açıklamış değil, bu yüzden kesin bir neden söylemek doğru olmaz. Bilinen şu: o dönemin telefonlarında metin seçimi genellikle tuşlarla ya da kalemle yapılıyordu ve tamamen parmakla çalışan bir ekranda bunun nasıl olacağı yeni bir tasarım problemiydi. 3.0'daki çözüm, metni basılı tutup seçim tutamaklarını sürüklemek oldu; bu yaklaşım bugün hâlâ kullanılıyor.
+
+Bu yazıda bilinçli olarak "neden" sorusuna kesin bir cevap vermiyoruz; Apple'ın o döneme ait resmi bir açıklamasını doğrulayabileceğimiz bir kaynakta bulamadık.
 
 Bu hikâyenin ilginç tarafı, eksiklerin ürünün başarısını engellememesi. İlk iPhone kusursuz değildi ama yön belirledi; eksik parçalar sonraki güncellemelerle tamamlandı.
 

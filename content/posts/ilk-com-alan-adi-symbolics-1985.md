@@ -35,7 +35,7 @@ Wikipedia'ya göre .com uzantısı 1 Ocak 1985'te devreye alındı. Adı "commer
 
 Symbolics, Massachusetts'in Cambridge şehrinde kurulmuş, MIT'nin yapay zekâ laboratuvarından doğan bir şirketti. Lisp adlı programlama dili için özel olarak tasarlanmış "Lisp makineleri" üretiyordu. Yani 1980'lerin yapay zekâ araştırmacılarının gözde iş istasyonlarını yapan bir firma.
 
-Böyle bir şirketin ilk .com'u alması aslında şaşırtıcı değil. O yıllarda internet büyük ölçüde üniversiteler, araştırma laboratuvarları ve onlarla çalışan teknoloji şirketlerinden oluşan küçük bir dünyaydı. Symbolics de tam bu dünyanın içindeydi.
+Böyle bir şirketin ilk .com'u alması aslında şaşırtıcı değil. O yıllarda internet büyük ölçüde üniversiteler, araştırma laboratuvarları ve onlarla çalışan teknoloji şirketlerinden oluşan küçük bir dünyaydı. Symbolics de tam bu dünyanın içindeydi. Bir alan adı almak, o dönem için bir pazarlama hamlesi değil, ağda düzgün adreslenebilmek için atılan teknik bir adımdı.
 
 ## 1985'in tüm .com listesi
 

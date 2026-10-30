@@ -25,6 +25,8 @@ Bilgisayar donduğunda parmakların neredeyse refleksle aynı üç tuşa gider: 
 
 Ctrl+Alt+Del'i 1981'de, IBM PC projesinin Florida, Boca Raton'daki ekibinde çalışan David Bradley yazdı. Bradley projenin baş mühendislerinden biri ve bilgisayarın ROM-BIOS'unu geliştiren isimdi.
 
+Tarihi biraz temkinli okumak gerekiyor: Wikipedia, 1981 yılını bir iş arkadaşının Mart 2018 tarihli e-postasına dayandırıyor; kombinasyonun yazıldığı kesin gün bilinmiyor.
+
 Amaç çok pratikti. Geliştiriciler ve teknik yazarlar, bir program kilitlendiğinde makineyi her seferinde kapatıp açmak zorunda kalıyordu. Bradley'nin kombinasyonu bilgisayarı güç kesmeden, yazılımla yeniden başlatıyordu (buna "soft reboot" deniyor). Wikipedia'ya göre bu, uyarı ya da onay istemeden doğrudan yeniden başlatan bir iç geliştirme özelliğiydi.
 
 ## Önce Ctrl+Alt+Esc vardı
@@ -37,7 +39,7 @@ Wikipedia'ya göre projenin baş programcısı Mel Hallerman, güvenlik önlemi 
 
 ## "Ben icat ettim, Bill ünlü yaptı"
 
-Ctrl+Alt+Del'i milyonlarca kişinin hayatına sokan şey ise Windows oldu. Özellikle Windows NT'de bu kombinasyon, oturum açma ekranından önce basılan bir "güvenli dikkat dizisi" (secure attention sequence) olarak kullanıldı. Wikipedia'ya göre amaç, kötü amaçlı bir yazılımın sahte bir giriş ekranı göstermesini engellemekti, çünkü bu tuş dizisi programlar tarafından yakalanamıyordu.
+Ctrl+Alt+Del'i milyonlarca kişinin hayatına sokan şey ise Windows oldu. Özellikle Windows NT'de bu kombinasyon, oturum açma ekranından önce basılan bir "güvenli dikkat dizisi" (secure attention sequence) olarak kullanıldı. Wikipedia'ya göre amaç, kötü amaçlı bir yazılımın sahte bir giriş ekranı göstermesini engellemekti, çünkü bu tuş dizisi programlar tarafından yakalanamıyordu. Yani ekranda Ctrl+Alt+Del'e bastıktan sonra gelen giriş penceresinin gerçekten işletim sistemine ait olduğundan emin olabiliyordun. Wikipedia'ya göre bu zorunluluk günümüz Windows sürümlerinde varsayılan olarak kapalı; bilgisayar bir şirket ağına (Windows etki alanına) bağlıysa açılıyor.
 
 Bradley, IBM PC'nin 20. yıl dönümü için 8 Ağustos 2001'de The Tech Museum'da düzenlenen etkinlikte bu durumu esprili bir cümleyle özetledi: "I may have invented it, but I think Bill made it famous." Yani: "Onu ben icat etmiş olabilirim ama sanırım Bill ünlü yaptı." Wikipedia, Bradley'nin hemen ardından bu sözün Windows NT'nin oturum açma ekranına atıf olduğunu eklediğini aktarıyor.
 
@@ -56,6 +58,8 @@ Yani Gates'e göre ideal çözüm, oturum açmak için ayrılmış tek bir düğ
 | Tek elle basılamasın diye seçildi | Windows'ta oturum açma ve görev menüsü |
 
 ## Bir iç araç nasıl kültüre dönüştü?
+
+Bir de ironik bir taraf var: kazayla basılmasın diye özellikle zorlaştırılmış bir kombinasyon, sonunda milyonlarca kişinin her gün bilerek bastığı bir tuş dizisine dönüştü. Tasarımcıların "kimse buna yanlışlıkla basmasın" kaygısı, Windows döneminde "herkes buna her sabah bassın" alışkanlığına evrildi.
 
 Ctrl+Alt+Del'in hikâyesi, küçük bir mühendislik kararının nasıl kalıcı bir alışkanlığa dönüşebileceğini gösteriyor. Bir ekibin kendi işini kolaylaştırmak için yazdığı birkaç satır kod, kırk yılı aşkın süredir dünyanın dört bir yanındaki klavyelerde yaşıyor.
 

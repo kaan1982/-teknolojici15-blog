@@ -43,9 +43,9 @@ Türkçesiyle: "Ben Sürüngen'im: Yakalayabilirsen yakala." Hepsi bu. Hiçbir d
 
 ## Virüs mü, solucan mı?
 
-Burada küçük ama önemli bir düzeltme gerekiyor. Teknik olarak Creeper bir virüs değil, bir solucandı. Virüs başka bir programa ya da dosyaya yapışarak yayılır; solucan ise ağ üzerinden kendi başına hareket eder. Creeper ikinci gruba giriyor. Yine de pek çok yayın onu "dünyanın ilk bilgisayar virüsü" olarak anıyor, çünkü kavramın popüler hâli bu.
+Burada küçük ama önemli bir düzeltme gerekiyor. Teknik olarak Creeper bir virüs değil, bir solucandı. Virüs başka bir programa ya da dosyaya yapışarak yayılır; solucan ise ağ üzerinden kendi başına hareket eder. Creeper ikinci gruba giriyor. Yine de pek çok yayın onu "dünyanın ilk bilgisayar virüsü" olarak anıyor; Wikipedia'nın aktardığı bir Guardian alıntısı da tam olarak bu ifadeyi kullanıyor. Kavramın popüler hâli bu, ama teknik olarak doğru etiket "ilk solucan".
 
-"Bilgisayar virüsü" teriminin kendisi ise Creeper'dan 12 yıl sonra doğdu. ESET'in WeLiveSecurity yazısına göre Güney Kaliforniya Üniversitesi'nde öğrenci olan Fred Cohen 3 Kasım 1983'te kendini yayan bir program yazdı; hocası Len Adleman da bu "enfeksiyon" benzeri yayılmayı biyolojideki virüslere benzeterek terimi önerdi.
+"Bilgisayar virüsü" teriminin kendisi ise Creeper'dan 12 yıl sonra doğdu. ESET'in WeLiveSecurity yazısına göre Güney Kaliforniya Üniversitesi'nde öğrenci olan Fred Cohen 3 Kasım 1983'te kendini yayan bir program yazdı; hocası Len Adleman da bu "enfeksiyon" benzeri yayılmayı biyolojideki virüslere benzeterek terimi önerdi. Cohen programı Unix çalıştıran bir VAX 11/750 üzerinde, yaklaşık sekiz saatlik bir çalışmayla hazırlamıştı.
 
 > **Biliyor muydun?** E-postayı icat eden ve @ işaretini adreslere taşıyan Ray Tomlinson, aynı zamanda ilk antivirüs sayılan programın da yaratıcısı. Yani internetin en sevilen aracını da, ilk "temizlikçisini" de aynı kişi yazdı.
 
@@ -64,6 +64,8 @@ Bu hikâyede güzel bir ironi var: dünyanın ilk antivirüsü de aslında kendi
 ## Masum bir deneyin uzun gölgesi
 
 Creeper zararsızdı ama bir kapıyı araladı: bir program ağ üzerinde kendi başına yayılabiliyorsa, birileri bu gücü kötü amaçla da kullanabilirdi. Sonraki on yıllarda tam olarak bu oldu ve "virüs", "solucan", "antivirüs" kelimeleri gündelik dilimize girdi.
+
+Bugün bir güvenlik araştırmacısı benzer bir deneyi izin almadan internete salsa, büyük ihtimalle başı ciddi biçimde derde girerdi. 1971'in ARPANET'i ise birbirini tanıyan araştırmacılardan oluşan küçük bir topluluktu ve deney, Wikipedia'nın aktardığı gibi operatörlerin iş birliğiyle yürütüldü.
 
 Yine de başlangıç noktası bir saldırı değil, bir meraktı. Bir mühendis "acaba yapılabilir mi?" diye sordu ve cevabı ekranda tek bir cümleyle verdi.
 

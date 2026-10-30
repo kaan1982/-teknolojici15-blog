@@ -29,19 +29,21 @@ Günde kaç kez emoji gönderiyorsun? Gülen yüz, kalp, ateş, el sallayan el..
 
 1999'da Japon mobil operatörü NTT Docomo, telefonlardan internete bağlanmayı sağlayan i-mode hizmetini hazırlıyordu. Şirkette çalışan genç tasarımcı Shigetaka Kurita (1972 doğumlu) bu hizmet için 176 piktogramdan oluşan bir set tasarladı. Her biri sadece 12×12 piksellik bir ızgaraya çizilmişti.
 
-Bu kadar küçük bir alana bir duygu ya da nesne sığdırmak ciddi bir tasarım problemiydi. MoMA'nın açıklamasına göre Kurita mangadan, Zapf Dingbats yazı karakterinden ve ifade simgelerinden (emoticon) ilham aldı. Wikipedia ayrıca hava durumu sembollerini, Çince karakterleri ve trafik işaretlerini de ilham kaynakları arasında sayıyor. Setin içinde hava durumu sembolleri, kalp gibi piktogramlar ve yüz ifadeleri vardı.
+Bu kadar küçük bir alana bir duygu ya da nesne sığdırmak ciddi bir tasarım problemiydi: her simge için toplam 144 piksel. MoMA'nın açıklamasına göre Kurita mangadan, Zapf Dingbats yazı karakterinden ve ifade simgelerinden (emoticon) ilham aldı. Wikipedia ayrıca hava durumu sembollerini, Çince karakterleri ve trafik işaretlerini de ilham kaynakları arasında sayıyor. Setin içinde hava durumu sembolleri, kalp gibi piktogramlar ve yüz ifadeleri vardı.
+
+Bugünkü emojilerle yan yana koyunca Kurita'nın çizimleri neredeyse soyut görünüyor. Ama bir kalbi, bir güneşi ya da gülen bir yüzü birkaç düzine pikselle tanınır kılmak, o dönemin ekran sınırları düşünüldüğünde ciddi bir ustalık işiydi.
 
 Amaç, kısa mesajlara ve mobil e-postalara ton ve duygu katmaktı. Düz yazıyla "tamam" demek ile yanına bir gülen yüz koymak arasındaki farkı düşün.
 
 ## Müzeye giren pikseller
 
-Kurita'nın seti 2016'da New York'taki Modern Sanat Müzesi'nin (MoMA) koleksiyonuna girdi. MoMA kayıtlarında eser "Emoji, 1998-1999" olarak, NTT Docomo'nun bağışı şeklinde yer alıyor. Müze, bugünkü emojilerin bu orijinal setin torunları olduğunu not ediyor.
+Kurita'nın seti 2016'da New York'taki Modern Sanat Müzesi'nin (MoMA) koleksiyonuna girdi. MoMA kayıtlarında eser "Emoji, 1998-1999" olarak, NTT Docomo'nun bağışı şeklinde yer alıyor. Müze, bugünkü emojilerin bu orijinal setin torunları olduğunu not ediyor ve seti "Inbox: The Original Emoji, by Shigetaka Kurita" adlı bir sergiyle de ziyaretçilere sundu. Birkaç piksellik telefon simgelerinin dünyanın en tanınmış modern sanat müzelerinden birine girmesi, tasarımın sadece büyük tuvallerde değil, en küçük ekranlarda da yaşadığını hatırlatıyor.
 
 > **Biliyor muydun?** Emoji kelimesi İngilizcedeki "emotion" (duygu) kelimesinden gelmiyor. Japonca "e" (resim) ve "moji" (karakter) kelimelerinin birleşimi. Wikipedia'nın deyişiyle benzerlik "tamamen tesadüf".
 
 ## Peki "ilk" emoji gerçekten Kurita'nınki mi?
 
-Uzun yıllar boyunca öyle anlatıldı. Ancak emoji arşivi Emojipedia, "Correcting the Record" başlıklı bir düzeltmeyle bu kaydı değiştirdi. Emojipedia'ya göre o zamanki adıyla J-Phone olan SoftBank, 1 Kasım 1997'de çıkan SkyWalker DP-211SW telefonunda 90 emojilik bir set sunmuştu. Tasarımcıları bilinmiyor. Telefon iyi satmadığı ve set başka cihazlarda desteklenmediği için bu emojiler geniş kitlelere ulaşmadı.
+Uzun yıllar boyunca öyle anlatıldı. Ancak emoji arşivi Emojipedia, "Correcting the Record" başlıklı bir düzeltmeyle bu kaydı değiştirdi. Emojipedia'ya göre o zamanki adıyla J-Phone olan SoftBank, 1 Kasım 1997'de çıkan SkyWalker DP-211SW telefonunda 90 emojilik bir set sunmuştu. Wikipedia'ya göre bu tek renkli, 12×12 piksellik set sayıları, sporları, saati, ay evrelerini ve hava durumunu kapsıyordu. Tasarımcıları bilinmiyor. Telefon iyi satmadığı ve set başka cihazlarda desteklenmediği için bu emojiler geniş kitlelere ulaşmadı.
 
 Bu yüzden videoda "Kurita emojinin mucididir" demek yerine dikkatli davrandık: Kurita'nın seti ilk değil ama emojiyi yaygınlaştıran ve bugünkü emojilerin atası sayılan set. Emojipedia ayrıca Docomo'nun 1995'te çağrı cihazlarına bir kalp simgesi eklediğini, bunun da erken bir emoji sayılabileceğini hatırlatıyor.
 
@@ -54,6 +56,8 @@ Bu yüzden videoda "Kurita emojinin mucididir" demek yerine dikkatli davrandık:
 ## Apple ne zaman devreye girdi?
 
 Apple'ın emoji hikâyesindeki rolü, emojiyi icat etmek değil, dünyaya taşımak oldu. Wikipedia'ya göre iPhone'da emoji klavyesi ilk kez 2008'de iPhone OS 2.2 ile sadece Japonya'da sunuldu. Ekim 2010'da Unicode 6.0, 722 emojiyi standart hâle getirdi; böylece farklı cihazlar aynı emojiyi aynı şekilde tanıyabildi. Apple da 2011'de iOS 5 ile emoji klavyesini Japonya dışındaki kullanıcılara açtı.
+
+Bugün emoji listesi Kurita'nın 176 karesinden çok uzakta. Wikipedia'ya göre Unicode 17.0 toplam 3.953 emojiyi 1.438 karakter kullanarak tanımlıyor. Aradaki fark, birçok emojinin tek bir karakter değil, birkaç karakterin birleşimi olmasından kaynaklanıyor; ten rengi seçenekleri ya da aile emojileri bu şekilde oluşturuluyor.
 
 Yani zincir şöyle: Japon operatörler emojiyi icat etti, Unicode onu evrensel bir dile çevirdi, akıllı telefonlar da herkesin cebine taşıdı.
 

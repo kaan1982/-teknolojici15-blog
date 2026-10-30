@@ -31,6 +31,8 @@ O dönemde Bitcoin henüz bir yatırım aracı değil, meraklıların deneme tah
 
 ## 22 Mayıs 2010: pizzalar kapıda
 
+Guinness'in anlatımıyla teklif, kendisi için iki büyük pizza sipariş edecek herkese açıktı; pizzanın nereden geldiği önemli değildi.
+
 Birkaç gün sonra teklifi forumda "jercos" kullanıcı adıyla tanınan Jeremy Sturdivant kabul etti. CoinDesk'e göre Sturdivant o sırada 19 yaşındaydı. Papa John's'tan iki büyük pizza sipariş edip Hanyecz'in adresine gönderdi ve karşılığında 10.000 bitcoini aldı. Guinness Dünya Rekorları'na göre Sturdivant pizzalar için yaklaşık 25 dolar ödedi.
 
 Hanyecz 22 Mayıs'ta foruma şu notu düştü: "I just want to report that I successfully traded 10,000 bitcoins for pizza." Yani: "10.000 bitcoini başarıyla pizzayla takas ettiğimi bildirmek istiyorum."
@@ -43,7 +45,9 @@ Guinness, bu alışverişi "ilk ticari Bitcoin işlemi" olarak kayda geçirdi ve
 
 Fiyatlar her gün değiştiği için burada tarihli bir kaynakla konuşmak gerekiyor. Fortune'a göre 21 Ekim 2026 sabahı (ABD Doğu saatiyle 08.00) 1 BTC 83.404,81 dolardı. Bu fiyatla 10.000 BTC yaklaşık 834 milyon dolar ediyor. Videodaki "800 milyon dolar" ifadesi de bu büyüklüğün yuvarlanmış hâli. Yani o gün 41 dolar eden tutar, Ekim 2026 fiyatlarıyla yaklaşık 20 milyon kat değerlenmiş durumda.
 
-Kıyas için: Guinness, aynı 10.000 BTC'nin 24 Şubat 2022'de 350.160.000 dolar ettiğini kaydetmiş. Rakam fiyatlarla birlikte inip çıkıyor, ama her durumda iki pizza için akıl almaz bir tutar.
+Kıyas için: Guinness, aynı 10.000 BTC'nin 24 Şubat 2022'de 350.160.000 dolar ettiğini kaydetmiş. Rakam fiyatlarla birlikte inip çıkıyor, ama her durumda iki pizza için akıl almaz bir tutar. 21 Ekim 2026 fiyatıyla hesaplarsak pizzaların her biri, yani 5.000 BTC, tek başına yaklaşık 417 milyon dolara denk geliyor.
+
+Burada bir uyarı da gerekli: bu tür "bugün olsa ne ederdi?" hesapları geriye dönük bir oyun. 2010'da kimse Bitcoin'in bu seviyelere çıkacağını bilmiyordu ve o gün 10.000 BTC gerçekten de yaklaşık 41 dolarlık bir şeydi.
 
 | O zaman (22 Mayıs 2010) | Şimdi (21 Ekim 2026 fiyatıyla) |
 |---|---|
@@ -53,7 +57,7 @@ Kıyas için: Guinness, aynı 10.000 BTC'nin 24 Şubat 2022'de 350.160.000 dolar
 
 ## Pişmanlık mı, tarih mi?
 
-Bu hikâye genellikle "dünyanın en pahalı pizzası" esprisiyle anlatılıyor. Ama işlemin asıl değeri parasal değil. Hanyecz ve Sturdivant, Bitcoin'in gerçek bir ürünle değiş tokuş edilebileceğini ilk kez kanıtladılar. Bir paranın para olması için birilerinin onu kabul etmesi gerekiyordu; o gün bunu bir pizza yaptı.
+Bu hikâye genellikle "dünyanın en pahalı pizzası" esprisiyle anlatılıyor. Ama işlemin asıl değeri parasal değil. Hanyecz ve Sturdivant, Bitcoin'in gerçek bir ürünle değiş tokuş edilebileceğini ilk kez kanıtladılar. Fiyat grafiğine bakıp "keşke harcamasaydı" demek kolay. Ama o gün kimse bitcoin harcamasaydı, Bitcoin'in bir ödeme aracı olarak işe yarayıp yaramadığını da kimse bilemezdi. Bir paranın para olması için birilerinin onu kabul etmesi gerekiyordu; o gün bunu bir pizza yaptı.
 
 Bugün 22 Mayıs, kripto topluluğunda her yıl Bitcoin Pizza Günü olarak anılıyor. Belki de en güzel tarafı şu: hikâyenin iki tarafı da o gün sadece bir deney yaptığını düşünüyordu.
 
