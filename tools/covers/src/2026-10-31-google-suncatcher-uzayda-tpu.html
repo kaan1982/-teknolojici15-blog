@@ -1,0 +1,60 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+.cv{--bg:#14052B;--acc:#FF3EA5}
+.sky{position:absolute;inset:0;background:linear-gradient(#0B0220 0%,#2A0845 45%,#6A0F5E 70%,#14052B 100%)}
+.k{position:absolute;left:56px;top:200px;color:#3EF0FF}
+.t{position:absolute;left:56px;right:40px;top:268px;font-size:112px;white-space:nowrap;text-shadow:0 0 24px rgb(255 62 165/.5)}
+.t em{font-style:normal;color:#FF3EA5;display:block}
+.art{position:absolute;left:0;top:620px;width:1080px;height:900px}
+.st{color:#FFE14D;left:560px;top:1630px;font-size:56px;white-space:nowrap;background:#14052B}
+.lab{position:absolute;left:56px;top:1530px;font-family:V,monospace;font-size:44px;color:#3EF0FF;border:3px solid #3EF0FF;padding:6px 16px;background:rgb(20 5 43/.7)}
+.cv__foot{bottom:60px}
+</style></head><body><div class="cv">
+<div class="sky"></div>
+<div class="cv__top"><div class="cv__brand"><img src="../../../public/img/brand/mark.png">TEKNOLOJİCİ<b>15</b></div><div class="cv__tag">GÜNÜN HABERİ</div></div>
+<div class="cv__kicker k">30 EKİM 2026 · UZAY · YAPAY ZEKÂ</div>
+<div class="cv__title t">UZAYDAKİ ÇİP<br>İLK ŞİİRİNİ<em>YAZDI</em></div>
+<svg class="art" viewBox="0 0 1080 900" font-family="V">
+  <!-- stars -->
+  <g fill="#fff"><circle cx="90" cy="60" r="3"/><circle cx="980" cy="90" r="4"/><circle cx="860" cy="30" r="2"/><circle cx="200" cy="210" r="2"/><circle cx="1010" cy="300" r="3"/><circle cx="60" cy="380" r="3"/><circle cx="520" cy="20" r="2"/></g>
+  <!-- synthwave sun (earth glow) -->
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE14D"/><stop offset="1" stop-color="#FF3EA5"/></linearGradient>
+    <clipPath id="half"><rect x="0" y="0" width="1080" height="760"/></clipPath>
+  </defs>
+  <g clip-path="url(#half)">
+    <circle cx="540" cy="760" r="300" fill="url(#sun)"/>
+    <g fill="#2A0845"><rect x="200" y="560" width="680" height="10"/><rect x="200" y="610" width="680" height="16"/><rect x="200" y="660" width="680" height="22"/><rect x="200" y="712" width="680" height="30"/></g>
+  </g>
+  <!-- grid floor -->
+  <rect x="0" y="760" width="1080" height="140" fill="#14052B"/>
+  <g stroke="#FF3EA5" stroke-width="3" opacity=".8">
+    <line x1="0" y1="760" x2="1080" y2="760"/><line x1="0" y1="790" x2="1080" y2="790"/><line x1="0" y1="830" x2="1080" y2="830"/><line x1="0" y1="885" x2="1080" y2="885"/>
+    <line x1="540" y1="760" x2="540" y2="900"/><line x1="440" y1="760" x2="300" y2="900"/><line x1="640" y1="760" x2="780" y2="900"/><line x1="340" y1="760" x2="60" y2="900"/><line x1="740" y1="760" x2="1020" y2="900"/>
+  </g>
+  <!-- satellite -->
+  <g transform="translate(540 250) rotate(-12)">
+    <line x1="-330" y1="0" x2="330" y2="0" stroke="#C9D6FF" stroke-width="8"/>
+    <g fill="#1B2D7A" stroke="#3EF0FF" stroke-width="4">
+      <rect x="-360" y="-70" width="220" height="140"/><rect x="140" y="-70" width="220" height="140"/>
+    </g>
+    <g stroke="#3EF0FF" stroke-width="2" opacity=".7">
+      <line x1="-305" y1="-70" x2="-305" y2="70"/><line x1="-250" y1="-70" x2="-250" y2="70"/><line x1="-195" y1="-70" x2="-195" y2="70"/><line x1="-360" y1="0" x2="-140" y2="0"/>
+      <line x1="195" y1="-70" x2="195" y2="70"/><line x1="250" y1="-70" x2="250" y2="70"/><line x1="305" y1="-70" x2="305" y2="70"/><line x1="140" y1="0" x2="360" y2="0"/>
+    </g>
+    <rect x="-95" y="-95" width="190" height="190" rx="12" fill="#E8E2F5" stroke="#FFE14D" stroke-width="6"/>
+    <!-- chip on body -->
+    <rect x="-55" y="-55" width="110" height="110" fill="#14052B" stroke="#FF3EA5" stroke-width="5"/>
+    <g stroke="#FF3EA5" stroke-width="5"><line x1="-35" y1="-55" x2="-35" y2="-75"/><line x1="0" y1="-55" x2="0" y2="-75"/><line x1="35" y1="-55" x2="35" y2="-75"/><line x1="-35" y1="55" x2="-35" y2="75"/><line x1="0" y1="55" x2="0" y2="75"/><line x1="35" y1="55" x2="35" y2="75"/></g>
+    <text x="0" y="14" fill="#3EF0FF" font-size="44" text-anchor="middle">TPU</text>
+    <line x1="0" y1="95" x2="0" y2="140" stroke="#C9D6FF" stroke-width="6"/><path d="M-40 160 Q0 120 40 160" fill="none" stroke="#C9D6FF" stroke-width="6"/>
+  </g>
+  <!-- transmission -->
+  <g stroke="#FFE14D" stroke-width="4" fill="none" stroke-dasharray="12 10"><path d="M560 420 Q 600 470 560 520"/></g>
+  <rect x="190" y="440" width="700" height="72" fill="#14052B" stroke="#FFE14D" stroke-width="4"/>
+  <text x="540" y="490" fill="#FFE14D" font-size="46" text-anchor="middle">&gt; "BLUE MARBLE BELOW..."</text>
+</svg>
+<div class="cv__stamp st">ŞAKA DEĞİL!</div>
+<div class="lab">4 TPU · EN FAZLA 1 kW · GEMMA 4</div>
+<div class="cv__foot">Veri merkezleri uzaya mı taşınıyor? 🛰️</div>
+</div></body></html>

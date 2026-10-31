@@ -588,5 +588,30 @@
   "NASIL YANİ?": "どういうこと?",
   "FACEBOOK ONU <em>İŞE ALMADI</em>": "Facebookは彼を<em>採用しなかった</em>",
   "5 yıl sonra ortağı olduğu şirketi aldı 💸": "5年後、彼が共同創業した会社を買収 💸"
+ },
+ "2026-10-31-google-suncatcher-uzayda-tpu": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "30 EKİM 2026 · UZAY · YAPAY ZEKÂ": "2026年10月30日 · 宇宙 · AI",
+  "UZAYDAKİ ÇİP<br>İLK ŞİİRİNİ<em>YAZDI</em>": "宇宙のチップが<br>初めての<em>詩を書いた</em>",
+  "TPU": "TPU",
+  "> \"BLUE MARBLE BELOW...\"": "> \"BLUE MARBLE BELOW...\"",
+  "ŞAKA DEĞİL!": "冗談じゃない!",
+  "4 TPU · EN FAZLA 1 kW · GEMMA 4": "TPU 4基 · 最大1 kW · GEMMA 4",
+  "Veri merkezleri uzaya mı taşınıyor? 🛰️": "データセンターは宇宙へ? 🛰️"
+ },
+ "2026-10-31-yapay-zeka-egitim-robots-txt": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "<span>30 EKİM 2026</span><span>WEB · YAPAY ZEKÂ</span>": "<span>2026年10月30日</span><span>ウェブ · AI</span>",
+  "TEK SATIRLA<br><em>YAPAY ZEKÂYA</em><br>\"HAYIR\"": "たった1行で<br><em>AIに</em><br>「ノー」",
+  "robots.txt": "robots.txt",
+  "# 1994'ten beri": "# 1994年から",
+  "User-Agent: *": "User-Agent: *",
+  "Allow: /": "Allow: /",
+  "User-Agent:": "User-Agent:",
+  "__usage_ai-training": "__usage_ai-training",
+  "Disallow: /": "Disallow: /",
+  "YENİ KURAL!": "新ルール!",
+  "OpenAI, Google, Microsoft ve Anthropic aynı işarete uyacak": "OpenAI、Google、Microsoft、Anthropicが同じ合図に従う",
+  "Ama uymak gönüllü. İşe yarar mı? 🤖": "でも任意。効果はある? 🤖"
  }
 }
