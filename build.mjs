@@ -6,7 +6,7 @@ import { marked } from 'marked';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, 'dist');
-const SITE = process.env.SITE_URL || 'https://teknolojici15-blog.vercel.app'; // canonical origin; set SITE_URL when a custom domain is added
+const SITE = process.env.SITE_URL || 'https://teknolojici15.com'; // canonical origin (custom domain; vercel.app and www redirect here)
 const IG = 'https://www.instagram.com/teknolojici15/';
 const ENGINE = path.join(ROOT, 'engine');
 /* ---------- Google Analytics 4 + AdSense (site.config.json; empty = feature off, nothing is loaded) ---------- */
