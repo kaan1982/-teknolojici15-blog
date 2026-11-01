@@ -50,6 +50,28 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "teknolojici15-blog.vercel.app"
+        }
+      ],
+      "destination": "https://teknolojici15.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.teknolojici15.com"
+        }
+      ],
+      "destination": "https://teknolojici15.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/:lang(es|pt|ru|uk|pl|cs|sk|ro|hu|bg|el|sr|hr|no|da|fi|et|lt|az|kk|uz|ka|fa|ur|he|hi|bn|ta|ko|zh-cn|zh-tw|th|vi|id|ms|tl|sw)/:path*",
       "destination": "/en/:path*",
       "permanent": true
