@@ -25,6 +25,14 @@ const write = (p, s) => { fs.mkdirSync(path.dirname(p), { recursive: true }); fs
 const copyDir = (a, b) => { if (!fs.existsSync(a)) return; fs.mkdirSync(b, { recursive: true }); for (const f of fs.readdirSync(a)) { const s = path.join(a, f), d = path.join(b, f); fs.statSync(s).isDirectory() ? copyDir(s, d) : fs.copyFileSync(s, d); } };
 const trMonths = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
 const noDash = (s) => String(s).replace(/\s?[—–]\s?/g, ', ');
+// Only http(s), mailto, site-relative and fragment links are emitted; anything else (javascript:, data:, vbscript:)
+// becomes "#". Content comes partly from the daily news pipeline, so links are treated as untrusted.
+const safeHref = (h) => { const v = String(h ?? '').trim(), t = v.replace(/[\u0000-\u0020\u007f]/g, ''); if (/^(https?:|mailto:)/i.test(t)) return v; return /^[a-z][a-z0-9+.-]*:/i.test(t) || /^[\/\\]{2}/.test(t) ? '#' : v; };
+const isWebUrl = (h) => /^https?:\/\/[^\s"'<>]+$/i.test(String(h ?? '').trim());
+// <title> keeps the brand suffix only while the whole title stays short enough for search results
+const ttl = (t) => (String(t).length + 16 <= 65 ? `${t} · Teknolojici15` : String(t));
+// meta description: cut at a word boundary (search engines show ~155-160 characters)
+const clip = (s, n = 160) => { s = String(s ?? '').replace(/\s+/g, ' ').trim(); if (s.length <= n) return s; let c = s.slice(0, n - 1); const sp = c.lastIndexOf(' '); if (sp > n * 0.6) c = c.slice(0, sp); return c.replace(/[\s,.;:،、。]+$/u, '') + '…'; };
 
 /* ---------- locales ---------- */
 // Active languages (others keep their translations in i18n/ but are not built; old URLs redirect to /en/ in vercel.json)
@@ -149,7 +157,9 @@ marked.use({
       return m ? `<aside class="note-box" role="note"><span class="note-box__tag" aria-hidden="true">${esc(T.note)}</span>${inner.replace(m[0], `<p><strong class="note-box__h">${m[1]}</strong> `)}</aside>` : `<blockquote>${inner}</blockquote>`;
     },
     table(t) { return `<div class="tbl-wrap">${marked.Renderer.prototype.table.call(this, t)}</div>`; },
-    link({ href, title, tokens }) { const text = this.parser.parseInline(tokens); const ext = /^https?:/.test(href); if (!ext && href.startsWith('/') && !href.startsWith('//')) href = u(href); return `<a href="${esc(href)}"${title ? ` title="${esc(title)}"` : ''}${ext ? ' target="_blank" rel="noopener noreferrer"' : ''}>${text}</a>`; },
+    // raw HTML in Markdown is printed as text, never injected (news bodies are written from untrusted web sources)
+    html({ text }) { return esc(text); },
+    link({ href, title, tokens }) { const text = this.parser.parseInline(tokens); href = safeHref(href); const ext = /^https?:/.test(href); if (!ext && href.startsWith('/') && !href.startsWith('//')) href = u(href); return `<a href="${esc(href)}"${title ? ` title="${esc(title)}"` : ''}${ext ? ' target="_blank" rel="noopener noreferrer"' : ''}>${text}</a>`; },
   },
 });
 const md = (s) => marked.parse(noDash(s));
@@ -179,11 +189,15 @@ function sleeve(p, opts = {}) {
 }
 const label = (p) => `<p class="label"><span>${esc(p.yearLabel)}</span><span>${esc(p.category)}</span>${p.fact && !String(p.fact).includes(p.yearLabel) ? `<span>${esc(p.fact)}</span>` : ''}<span>${p.readMin} ${esc(T.min)}</span></p>`;
 
+const ogLocale = (loc) => ({ en: 'en_US', ar: 'ar_AR' }[loc.tag] || loc.tag.replace('-', '_')); // Open Graph wants language_TERRITORY
 function head({ title, desc, url, image, type = 'website', jsonld = [], extra = '', alt = null, noindex = false, kind = 'page', slug = '', ads = true }) {
   // url is the base (Turkish) path; alt = list of locales that have this page
   const canon = SITE + L.prefix + url;
-  const alts = (alt || LOCALES.filter(hasUI)).filter((loc) => !ONLY || ONLY.includes(loc.code));
+  const is404 = kind === '404'; // error pages: noindex, no canonical/hreflang pointing at a URL that does not exist
+  if (is404) noindex = true;
+  const alts = is404 ? [] : (alt || LOCALES.filter(hasUI)).filter((loc) => !ONLY || ONLY.includes(loc.code));
   const img = image ? SITE + image : SITE + '/img/og.jpg';
+  desc = clip(desc);
   return `<!doctype html>
 <html lang="${L.tag}"${L.rtl ? ' dir="rtl"' : ''}>
 <head>
@@ -191,12 +205,12 @@ function head({ title, desc, url, image, type = 'website', jsonld = [], extra = 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
-<link rel="canonical" href="${canon}">
+${is404 ? '' : `<link rel="canonical" href="${canon}">`}
 <meta name="theme-color" content="#0D0B20">
 <meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}">
-${alts.map((loc) => `<link rel="alternate" hreflang="${loc.tag}" href="${SITE}${loc.prefix}${url}">`).join('')}<link rel="alternate" hreflang="x-default" href="${SITE}${url}">
-<meta property="og:type" content="${type}"><meta property="og:site_name" content="Teknolojici15"><meta property="og:locale" content="${L.tag.replace('-', '_')}">
-<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${canon}"><meta property="og:image" content="${img}">
+${alts.map((loc) => `<link rel="alternate" hreflang="${loc.tag}" href="${SITE}${loc.prefix}${url}">`).join('')}${is404 ? '' : `<link rel="alternate" hreflang="x-default" href="${SITE}${url}">`}
+<meta property="og:type" content="${type}"><meta property="og:site_name" content="Teknolojici15"><meta property="og:locale" content="${ogLocale(L)}">${alts.filter((loc) => loc !== L).map((loc) => `<meta property="og:locale:alternate" content="${ogLocale(loc)}">`).join('')}
+<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">${is404 ? '' : `<meta property="og:url" content="${canon}">`}<meta property="og:image" content="${img}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${img}">
 <link rel="icon" type="image/png" href="/img/brand/icon-192.png"><link rel="apple-touch-icon" href="/img/brand/icon-192.png">
 <link rel="alternate" type="application/rss+xml" title="Teknolojici15" href="/feed.xml">
@@ -280,8 +294,8 @@ function home() {
   const shelf = posts.filter((p) => p.year <= 2026); // oldest → newest, the road ends today
   const cats = [...new Set(all.map((p) => p.category))];
   const desc = T.homeDesc;
-  const jsonld = [ORG, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE + u('/'), name: 'Teknolojici15', inLanguage: L.tag, publisher: { '@id': SITE + '/#org' } },
-    { '@type': 'Blog', '@id': SITE + '/#blog', url: SITE + u('/'), name: 'Teknolojici15', inLanguage: L.tag, publisher: { '@id': SITE + '/#org' }, blogPost: all.slice(0, 40).map((p) => ({ '@type': 'BlogPosting', headline: p.title, url: SITE + p.url, datePublished: p.date })) }]
+  const jsonld = [ORG, { '@type': 'WebSite', '@id': SITE + u('/') + '#site', url: SITE + u('/'), name: 'Teknolojici15', inLanguage: L.tag, publisher: { '@id': SITE + '/#org' } },
+    { '@type': 'Blog', '@id': SITE + u('/') + '#blog', url: SITE + u('/'), name: 'Teknolojici15', description: T.homeDesc, inLanguage: L.tag, isPartOf: { '@id': SITE + u('/') + '#site' }, publisher: { '@id': SITE + '/#org' }, blogPost: all.slice(0, 40).map((p) => ({ '@type': 'BlogPosting', headline: p.title, url: SITE + p.url, datePublished: p.date })) }]
     .map((j) => ({ '@context': 'https://schema.org', ...j }));
   return `${head({ title: T.homeTitle, desc, url: '/', image: null, jsonld, kind: 'home' })}
 <body class="home">
@@ -411,10 +425,10 @@ function article(p, list) {
   const isAI = p.kind === 'ai', isNews = p.kind === 'news';
   const crumbs = isNews ? [[T.home, u('/')], [T.navNews, u('/haber/')], [p.title, p.url]] : isAI ? [[T.home, u('/')], [T.navAI, u('/yapay-zeka/')], [p.title, p.url]] : [[T.home, u('/')], [T.posts, u('/#dizin')], [p.title, p.url]];
   const jsonld = [
-    { '@context': 'https://schema.org', '@type': isNews ? 'NewsArticle' : 'BlogPosting', headline: p.title, description: p.excerpt, datePublished: p.date, dateModified: p.date, inLanguage: p.translated ? L.tag : 'tr-TR', mainEntityOfPage: SITE + p.url, image: p.cover ? SITE + p.cover : SITE + '/img/og.jpg', author: { '@id': SITE + '/#org' }, publisher: ORG, articleSection: p.category, citation: p.sources.map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url })), ...(p.year < 2026 ? { about: { '@type': 'Thing', name: p.title, temporalCoverage: p.yearLabel } } : {}) },
+    { '@context': 'https://schema.org', '@type': isNews ? 'NewsArticle' : 'BlogPosting', headline: p.title, description: p.excerpt, datePublished: p.date, dateModified: p.date, inLanguage: p.translated ? L.tag : 'tr-TR', mainEntityOfPage: { '@type': 'WebPage', '@id': SITE + p.url }, isPartOf: { '@id': SITE + u('/') + '#site' }, url: SITE + p.url, image: p.cover ? SITE + p.cover : SITE + '/img/og.jpg', author: { '@type': 'Organization', '@id': SITE + '/#org', name: 'Teknolojici15', url: SITE + '/' }, publisher: ORG, articleSection: p.category, citation: p.sources.filter((s) => isWebUrl(s.url)).map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url })), ...(p.year < 2026 ? { about: { '@type': 'Thing', name: p.title, temporalCoverage: p.yearLabel } } : {}) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([n, u], k) => ({ '@type': 'ListItem', position: k + 1, name: n, item: SITE + u })) },
   ];
-  return `${head({ title: `${p.title} · Teknolojici15`, desc: p.excerpt, url: p.path, image: p.cover || null, type: 'article', jsonld, alt: LOCALES.filter((loc) => hasUI(loc) && hasTranslation(loc, p)), noindex: !p.translated, kind: p.kind, slug: p.slug, ads: p.translated, extra: `<meta property="article:published_time" content="${p.date}"><meta property="article:section" content="${esc(p.category)}">` })}
+  return `${head({ title: ttl(p.title), desc: p.excerpt, url: p.path, image: p.cover || null, type: 'article', jsonld, alt: LOCALES.filter((loc) => hasUI(loc) && hasTranslation(loc, p)), noindex: !p.translated, kind: p.kind, slug: p.slug, ads: p.translated, extra: `<meta property="article:published_time" content="${p.date}"><meta property="article:section" content="${esc(p.category)}">` })}
 <body class="post${isAI ? ' post--manual' : ''}${isNews ? ' post--news' : ''}">
 ${chrome(isAI ? 'ai' : isNews ? 'haber' : 'dizin', p)}
 <main id="icerik" class="post__wrap">
@@ -432,7 +446,7 @@ ${chrome(isAI ? 'ai' : isNews ? 'haber' : 'dizin', p)}
     </aside>
     <article class="prose">
       ${p.translated ? withInArticle(md(p.body)) : md(p.body)}
-      ${p.sources.length ? `<section class="sources" aria-labelledby="kaynak-h"><h2 id="kaynak-h">${esc(T.sources)}</h2><ol>${p.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join('')}</ol></section>` : ''}
+      ${p.sources.length ? `<section class="sources" aria-labelledby="kaynak-h"><h2 id="kaynak-h">${esc(T.sources)}</h2><ol>${p.sources.filter((s) => isWebUrl(s.url)).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join('')}</ol></section>` : ''}
       ${shareBlock(p)}
     </article>
   </div>
@@ -454,8 +468,9 @@ ${scripts(false)}
 
 /* ---------- AI hub ---------- */
 function aiHub() {
-  const jsonld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: hub.data.title, url: SITE + u('/yapay-zeka/'), inLanguage: L.tag, hasPart: ai.map((p) => ({ '@type': 'BlogPosting', headline: p.title, url: SITE + p.url })) }];
-  return `${head({ title: `${hub.data.title || T.aiGuide} · Teknolojici15`, desc: hub.data.excerpt || T.aiGuide, url: '/yapay-zeka/', jsonld, kind: 'ai_hub' })}
+  const jsonld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: hub.data.title, url: SITE + u('/yapay-zeka/'), inLanguage: L.tag, hasPart: ai.map((p) => ({ '@type': 'BlogPosting', headline: p.title, url: SITE + p.url })) },
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [[T.home, u('/')], [T.navAI, u('/yapay-zeka/')]].map(([n, x], k) => ({ '@type': 'ListItem', position: k + 1, name: n, item: SITE + x })) }];
+  return `${head({ title: ttl(hub.data.title || T.aiGuide), desc: hub.data.excerpt || T.aiGuide, url: '/yapay-zeka/', jsonld, kind: 'ai_hub' })}
 <body class="post post--manual hubpage">
 ${chrome('ai', '/yapay-zeka/')}
 <main id="icerik" class="post__wrap">
@@ -478,8 +493,9 @@ ${scripts(false)}
 function newsIndex() {
   const byDay = {};
   for (const n of news) (byDay[n.date] ||= []).push(n);
-  const jsonld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${T.navNews} · Teknolojici15`, url: SITE + u('/haber/'), inLanguage: L.tag, hasPart: news.slice(0, 30).map((p) => ({ '@type': 'NewsArticle', headline: p.title, url: SITE + p.url, datePublished: p.date })) }];
-  return `${head({ title: `${T.newsTitle} · Teknolojici15`, desc: T.newsDesc, url: '/haber/', jsonld, kind: 'news_index' })}
+  const jsonld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${T.navNews} · Teknolojici15`, url: SITE + u('/haber/'), inLanguage: L.tag, hasPart: news.slice(0, 30).map((p) => ({ '@type': 'NewsArticle', headline: p.title, url: SITE + p.url, datePublished: p.date })) },
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [[T.home, u('/')], [T.navNews, u('/haber/')]].map(([n, x], k) => ({ '@type': 'ListItem', position: k + 1, name: n, item: SITE + x })) }];
+  return `${head({ title: ttl(T.newsTitle), desc: T.newsDesc, url: '/haber/', jsonld, kind: 'news_index' })}
 <body class="post newspage">
 ${chrome('haber', '/haber/')}
 <main id="icerik" class="post__wrap">
@@ -500,7 +516,8 @@ ${scripts(false)}
 function privacy() {
   const f = path.join(ROOT, 'content', 'gizlilik', L.code + '.md');
   const body = read(fs.existsSync(f) ? f : path.join(ROOT, 'content', 'gizlilik', 'en.md'));
-  return `${head({ title: `${T.privacyH} · Teknolojici15`, desc: T.privacyH, url: '/gizlilik/', kind: 'privacy', ads: false })}
+  const lead = (body.split(/\n\s*\n/).map((x) => x.trim()).find((x) => x && !x.startsWith('#')) || '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_`>]/g, '').trim();
+  return `${head({ title: ttl(T.privacyH), desc: lead || T.privacyH, url: '/gizlilik/', kind: 'privacy', ads: false })}
 <body class="post">
 ${chrome('', '/gizlilik/')}
 <main id="icerik" class="post__wrap">
@@ -514,7 +531,7 @@ ${scripts(false)}
 }
 
 function notFound() {
-  return `${head({ title: `${T.nfTitle} · Teknolojici15`, desc: T.nfDesc, url: '/404', kind: '404', ads: false })}
+  return `${head({ title: ttl(T.nfTitle), desc: T.nfDesc, url: '/404', kind: '404', ads: false })}
 <body class="post">${chrome('', '/')}<main id="icerik" class="post__wrap nf"><p class="label"><span>${esc(T.nfErr)}</span><span>${esc(T.nfNoTape)}</span></p><h1 class="post__h">${esc(T.nfH1)}</h1><p class="post__lede">${esc(T.nfP1)} <a href="${u('/')}">${esc(T.nfBack)}</a> ${esc(T.nfOr)} <a href="${u('/#dizin')}">${esc(T.nfAll)}</a>.</p></main>${footer()}${deck({ year: '404', title: T.nfTitle })}${scripts(false)}</body></html>`;
 }
 
@@ -547,11 +564,40 @@ setLocale(LOCALES[0]);
 
 if (GOOGLE) write(path.join(OUT, 'js', 'g.js'), read(path.join(ROOT, 'tools', 'google', 'g.tpl.js')).replace('__GA4__', GA4).replace('__ADS__', ADS));
 if (ADS) write(path.join(OUT, 'ads.txt'), `google.com, ${ADS.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n`);
-const today = new Date().toISOString().slice(0, 10);
-write(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[['/', today, '1.0'], ['/haber/', today, '0.9'], ['/yapay-zeka/', today, '0.9'], ...all.map((p) => [p.url, p.date, '0.8']), ...LOCALES.filter((loc) => loc.code !== 'tr' && hasUI(loc) && (!ONLY || ONLY.includes(loc.code))).flatMap((loc) => [[loc.prefix + '/', today, '0.7'], ...all.filter((p) => hasTranslation(loc, p)).map((p) => [loc.prefix + p.path, p.date, '0.6'])])].map(([u, d, pr]) => `  <url><loc>${SITE}${u}</loc><lastmod>${d}</lastmod><priority>${pr}</priority></url>`).join('\n')}\n</urlset>\n`);
-write(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\n# Yapay zekâ tarayıcılarına açık\nUser-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
-write(path.join(OUT, 'llms.txt'), `# Teknolojici15\n\n> Türkçe teknoloji tarihi blogu. Instagram'daki @teknolojici15 videolarının kaynaklı, uzun yazıları ve bir yapay zekâ skill rehberi.\n\n- Instagram: ${IG}\n- Her yazının sonunda kaynak listesi vardır; rakamlar ve tarihler kaynaklarla doğrulanır.\n\n## Teknoloji tarihi yazıları\n${posts.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.yearLabel}): ${p.excerpt}`).join('\n')}\n\n## Günün haberleri\n${news.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.date}): ${p.excerpt}`).join('\n')}\n\n## Yapay Zekâ Skill Rehberi\n${ai.map((p) => `- [${p.title}](${SITE}${p.url}): ${p.excerpt}`).join('\n')}\n`);
+// lastmod = the newest content date a page shows (not the build day), so crawlers only re-fetch on real changes
+const maxDate = (list) => list.reduce((m, p) => (p.date > m ? p.date : m), '');
+const sitemapLocs = LOCALES.filter((loc) => hasUI(loc) && (!ONLY || ONLY.includes(loc.code)));
+const smUrls = sitemapLocs.flatMap((loc) => {
+  const k = loc.code === 'tr' ? 0 : 1; // Turkish originals first, slightly higher priority
+  return [
+    [loc.prefix + '/', maxDate(all), k ? '0.7' : '1.0'],
+    [loc.prefix + '/haber/', maxDate(news), k ? '0.6' : '0.9'],
+    [loc.prefix + '/yapay-zeka/', maxDate(ai), k ? '0.6' : '0.9'],
+    ...all.filter((p) => hasTranslation(loc, p)).map((p) => [loc.prefix + p.path, p.date, k ? '0.6' : '0.8']),
+    ...(GOOGLE ? [[loc.prefix + '/gizlilik/', '', '0.2']] : []),
+  ];
+});
+write(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${smUrls.map(([x, d, pr]) => `  <url><loc>${SITE}${x}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}<priority>${pr}</priority></url>`).join('\n')}\n</urlset>\n`);
+const AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended'];
+write(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\n# Yapay zekâ tarayıcılarına açık\n${AI_BOTS.map((b) => `User-agent: ${b}\nAllow: /\n`).join('')}\nSitemap: ${SITE}/sitemap.xml\n`);
+const langList = sitemapLocs.map((loc) => `- ${loc.name} (${loc.tag}): ${SITE}${loc.prefix}/`).join('\n');
+write(path.join(OUT, 'llms.txt'), `# Teknolojici15\n\n> Türkçe teknoloji tarihi blogu. Instagram'daki @teknolojici15 videolarının kaynaklı, uzun yazıları, günlük teknoloji/yapay zekâ haberleri ve bir yapay zekâ skill rehberi. Özgün dil Türkçe; tüm yazılar ${sitemapLocs.length} dile çevrilir.\n\n- Instagram: ${IG}\n- Her yazının sonunda kaynak listesi vardır; rakamlar ve tarihler kaynaklarla doğrulanır.\n- Yazar ve yayıncı: Teknolojici15\n\n## Ana sayfalar\n- [Ana sayfa](${SITE}/): son haberler, yapay zekâ rehberi ve tüm yazıların dizini\n- [Günün haberleri](${SITE}/haber/): her gün seçilen 2 teknoloji/yapay zekâ haberi, gün gün arşiv\n- [Yapay Zekâ Skill Rehberi](${SITE}/yapay-zeka/): ${ai.length} bölümlük rehber\n- [RSS](${SITE}/feed.xml) · [Site haritası](${SITE}/sitemap.xml)\n\n## Diller\n${langList}\n\n## Teknoloji tarihi yazıları\n${posts.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.yearLabel}): ${p.excerpt}`).join('\n')}\n\n## Günün haberleri\n${news.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.date}): ${p.excerpt}`).join('\n')}\n\n## Yapay Zekâ Skill Rehberi\n${ai.map((p) => `- [${p.title}](${SITE}${p.url}): ${p.excerpt}`).join('\n')}\n`);
 const rssDate = (d) => new Date(d + 'T09:00:00+03:00').toUTCString();
-write(path.join(OUT, 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Teknolojici15</title><link>${SITE}/</link><description>Teknoloji tarihinin şaşırtan anları, kaynaklarıyla.</description><language>tr</language>\n${[...all].sort((a, b) => b.date.localeCompare(a.date)).map((p) => `<item><title>${esc(p.title)}</title><link>${SITE}${p.url}</link><guid>${SITE}${p.url}</guid><pubDate>${rssDate(p.date)}</pubDate><description>${esc(p.excerpt)}</description></item>`).join('\n')}\n</channel></rss>\n`);
+const feedItems = [...all].sort((a, b) => b.date.localeCompare(a.date));
+write(path.join(OUT, 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Teknolojici15</title><link>${SITE}/</link><atom:link href="${SITE}/feed.xml" rel="self" type="application/rss+xml"/><description>Teknoloji tarihinin şaşırtan anları, kaynaklarıyla.</description><language>tr</language>${feedItems.length ? `<lastBuildDate>${rssDate(feedItems[0].date)}</lastBuildDate>` : ''}\n${feedItems.map((p) => `<item><title>${esc(p.title)}</title><link>${SITE}${p.url}</link><guid isPermaLink="true">${SITE}${p.url}</guid><pubDate>${rssDate(p.date)}</pubDate><category>${esc(p.category)}</category><description>${esc(p.excerpt)}</description></item>`).join('\n')}\n</channel></rss>\n`);
+
+/* ---------- CSP guard: every external script the pages load must be allowed by vercel.json script-src ---------- */
+{
+  const vj = JSON.parse(read(path.join(ROOT, 'vercel.json')));
+  const csp = (vj.headers || []).flatMap((h) => h.headers).find((h) => h.key === 'Content-Security-Policy')?.value || '';
+  const dir = (n) => ((csp.split(';').map((x) => x.trim().split(/\s+/)).find((x) => x[0] === n) || []).slice(1));
+  const allowed = (host, list) => list.some((src) => src === 'https:' || src === `https://${host}` || (src.startsWith('https://*.') && host.endsWith(src.slice(9))));
+  const hosts = new Set(), inline = [];
+  const scan = (d) => { for (const f of fs.readdirSync(d)) { const q = path.join(d, f); if (fs.statSync(q).isDirectory()) scan(q); else if (f.endsWith('.html')) { const h = read(q); for (const m of h.matchAll(/<script[^>]+src="https:\/\/([^/"]+)/g)) hosts.add(m[1]); if (/<script(?![^>]*\b(?:src=|type="application\/ld\+json"))[^>]*>/.test(h)) inline.push(path.relative(OUT, q)); } } };
+  scan(OUT);
+  const bad = [...hosts].filter((h) => !allowed(h, dir('script-src')));
+  if (csp && bad.length) throw new Error(`vercel.json CSP script-src does not allow: ${bad.join(', ')}`);
+  if (inline.length) throw new Error(`inline <script> in ${inline.slice(0, 3).join(', ')}: CSP has no 'unsafe-inline' for scripts, move it to a file`);
+}
 console.log(`google: ga4=${GA4 || 'off'} adsense=${ADS || 'off'} slots=${Object.entries(SLOTS).filter(([, v]) => v).map(([k]) => k).join(',') || 'none'}`);
 console.log(`built: ${posts.length} posts, ${ai.length} ai, ${news.length} news · locales ${built.join(' ')} → ${OUT}`);
