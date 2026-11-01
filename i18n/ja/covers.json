@@ -613,5 +613,32 @@
   "YENİ KURAL!": "新ルール!",
   "OpenAI, Google, Microsoft ve Anthropic aynı işarete uyacak": "OpenAI、Google、Microsoft、Anthropicが同じ合図に従う",
   "Ama uymak gönüllü. İşe yarar mı? 🤖": "でも任意。効果はある? 🤖"
+ },
+ "2026-11-01-binance-rekor-kripto-soygunu": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "29 EKİM 2026 · KRİPTO · GÜVENLİK": "2026年10月29日 · 暗号資産 · セキュリティ",
+  "BİRKAÇ SAATTE<br>6 MİLYAR DOLAR<em>SOYULDU</em>": "数時間で<br>60億ドル超が<em>盗まれた</em>",
+  "SICAK CÜZDAN": "ホットウォレット",
+  "> BAKİYE KONTROL...": "> 残高チェック...",
+  "> ETH  ████████  -": "> ETH  ████████  -",
+  "> BTC  ██████    -": "> BTC  ██████    -",
+  "> SOL  ███       -": "> SOL  ███       -",
+  "> BAKİYE: 0,00 _": "> 残高: 0.00 _",
+  "Ξ": "Ξ",
+  "FBI: ARKASINDA KUZEY KORE": "FBI: 背後に北朝鮮",
+  "REKOR SOYGUN!": "過去最大!",
+  "Kullanıcıların parası ne olacak? 🔐": "利用者のお金はどうなる? 🔐"
+ },
+ "2026-11-01-apple-intelligence-cin-qwen": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "31 EKİM 2026 · YAPAY ZEKÂ · ÇİN": "2026年10月31日 · AI · 中国",
+  "ÇİN'DEKİ<br>TELEFONA<em>YERLİ BEYİN</em>": "中国の<br>スマホに<em>地元のAI</em>",
+  "BU NE? 📷": "これ何? 📷",
+  "QWEN": "QWEN",
+  "ARALIK": "12月",
+  "iOS": "iOS",
+  "SIRI + QWEN · iOS 27.3": "SIRI + QWEN · iOS 27.3",
+  "NASIL YANİ?": "どういうこと?",
+  "Aynı telefon, ülkeye göre farklı yapay zekâ 🤖": "同じスマホでも国ごとに違うAI 🤖"
  }
 }
