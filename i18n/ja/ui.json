@@ -115,5 +115,9 @@
   "shareH": "シェア",
   "shareCopy": "リンクをコピー",
   "shareCopied": "コピーしました！",
-  "shareMore": "その他のアプリ"
+  "shareMore": "その他のアプリ",
+  "privacyH": "プライバシーとCookie",
+  "adLabel": "広告",
+  "privacy": "プライバシー",
+  "cookieSettings": "Cookie設定"
 }

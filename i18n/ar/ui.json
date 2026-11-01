@@ -115,5 +115,9 @@
   "shareH": "مشاركة",
   "shareCopy": "نسخ الرابط",
   "shareCopied": "تم النسخ!",
-  "shareMore": "تطبيقات أخرى"
+  "shareMore": "تطبيقات أخرى",
+  "privacyH": "الخصوصية وملفات تعريف الارتباط",
+  "adLabel": "إعلان",
+  "privacy": "الخصوصية",
+  "cookieSettings": "إعدادات ملفات تعريف الارتباط"
 }

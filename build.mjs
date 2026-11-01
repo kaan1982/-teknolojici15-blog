@@ -9,6 +9,15 @@ const OUT = path.join(ROOT, 'dist');
 const SITE = process.env.SITE_URL || 'https://teknolojici15-blog.vercel.app'; // canonical origin; set SITE_URL when a custom domain is added
 const IG = 'https://www.instagram.com/teknolojici15/';
 const ENGINE = path.join(ROOT, 'engine');
+/* ---------- Google Analytics 4 + AdSense (site.config.json; empty = feature off, nothing is loaded) ---------- */
+const CFG = fs.existsSync(path.join(ROOT, 'site.config.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'site.config.json'), 'utf8')) : {};
+const GA4 = String(process.env.GA4_ID ?? CFG.ga4 ?? '').trim();
+const ADS = String(process.env.ADSENSE_CLIENT ?? CFG.adsenseClient ?? '').trim();
+const SLOTS = CFG.adSlots || {};
+if (GA4 && !/^G-[A-Z0-9]{4,}$/.test(GA4)) throw new Error('site.config.json ga4 must look like G-XXXXXXXXXX');
+if (ADS && !/^ca-pub-\d{10,20}$/.test(ADS)) throw new Error('site.config.json adsenseClient must look like ca-pub-1234567890123456');
+for (const [k, v] of Object.entries(SLOTS)) if (v && !/^\d{6,12}$/.test(String(v))) throw new Error(`adSlots.${k} must be the numeric data-ad-slot`);
+const GOOGLE = !!(GA4 || ADS);
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const read = (p) => fs.readFileSync(p, 'utf8');
@@ -170,7 +179,7 @@ function sleeve(p, opts = {}) {
 }
 const label = (p) => `<p class="label"><span>${esc(p.yearLabel)}</span><span>${esc(p.category)}</span>${p.fact && !String(p.fact).includes(p.yearLabel) ? `<span>${esc(p.fact)}</span>` : ''}<span>${p.readMin} ${esc(T.min)}</span></p>`;
 
-function head({ title, desc, url, image, type = 'website', jsonld = [], extra = '', alt = null, noindex = false }) {
+function head({ title, desc, url, image, type = 'website', jsonld = [], extra = '', alt = null, noindex = false, kind = 'page', slug = '', ads = true }) {
   // url is the base (Turkish) path; alt = list of locales that have this page
   const canon = SITE + L.prefix + url;
   const alts = (alt || LOCALES.filter(hasUI)).filter((loc) => !ONLY || ONLY.includes(loc.code));
@@ -195,8 +204,18 @@ ${alts.map((loc) => `<link rel="alternate" hreflang="${loc.tag}" href="${SITE}${
 <link rel="stylesheet" href="/sc/scrollcraft.css"><link rel="stylesheet" href="/css/site.css">
 ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n')}
 ${extra}
+${googleTags(kind, slug, ads)}
 </head>`;
 }
+function googleTags(kind, slug, ads) {
+  if (!GOOGLE) return '';
+  return `<meta name="t15:kind" content="${esc(kind)}">${slug ? `<meta name="t15:slug" content="${esc(slug)}">` : ''}${ADS ? `<meta name="google-adsense-account" content="${ADS}">` : ''}
+<script src="/js/g.js"></script>${GA4 ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4}"></script>` : ''}${ADS && ads ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS}" crossorigin="anonymous"></script>` : ''}`;
+}
+// One responsive AdSense unit, clearly labelled, kept away from navigation (Google: no accidental-click placement)
+const adUnit = (name) => ADS && SLOTS[name] ? `<aside class="ad ad--${name}" data-slot-name="${name}" aria-label="${esc(T.adLabel)}"><p class="ad__label">${esc(T.adLabel)}</p><ins class="adsbygoogle" data-ad-client="${ADS}" data-ad-slot="${esc(SLOTS[name])}" data-ad-format="auto" data-full-width-responsive="true"></ins></aside>` : '';
+// put the in-article unit after the 2nd paragraph, only when the text is long enough to carry it
+const withInArticle = (html) => { if (!(ADS && SLOTS.inArticle)) return html; const parts = html.split('</p>'); if (parts.length < 6) return html; return parts.slice(0, 2).join('</p>') + '</p>' + adUnit('inArticle') + parts.slice(2).join('</p>'); };
 const ORG = { '@type': 'Organization', '@id': SITE + '/#org', name: 'Teknolojici15', url: SITE + '/', logo: SITE + '/img/brand/icon-512.png', sameAs: [IG] };
 
 function chrome(active, url = '/') { // url: base path or content item
@@ -228,7 +247,7 @@ function deck({ year = '2026', title = 'Teknolojici15', prev = null, next = null
 const footer = () => `<footer class="foot">
   <p class="foot__mark notranslate" translate="no">${mark}<span>TEKNOLOJİCİ<b>15</b></span></p>
   <p>${esc(T.footTag)}</p>
-  <p class="foot__links"><a href="${u('/')}">${esc(T.home)}</a><a href="${u('/haber/')}">${esc(T.dailyNews)}</a><a href="${u('/yapay-zeka/')}">${esc(T.aiGuide)}</a><a href="${u('/#dizin')}">${esc(T.navAll)}</a><a href="/feed.xml">RSS</a><a href="${IG}" target="_blank" rel="noopener noreferrer">@teknolojici15</a></p>
+  <p class="foot__links"><a href="${u('/')}">${esc(T.home)}</a><a href="${u('/haber/')}">${esc(T.dailyNews)}</a><a href="${u('/yapay-zeka/')}">${esc(T.aiGuide)}</a><a href="${u('/#dizin')}">${esc(T.navAll)}</a><a href="/feed.xml">RSS</a><a href="${IG}" target="_blank" rel="noopener noreferrer">@teknolojici15</a>${GOOGLE ? `<a href="${u('/gizlilik/')}">${esc(T.privacy)}</a>` : ''}${ADS ? `<a href="#" data-cookie-settings hidden>${esc(T.cookieSettings)}</a>` : ''}</p>
 </footer>`;
 const scripts = (home) => `<script src="/sc/scrollcraft.js" defer></script><script src="/js/site.js" defer></script>${home ? '' : ''}`;
 
@@ -264,7 +283,7 @@ function home() {
   const jsonld = [ORG, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE + u('/'), name: 'Teknolojici15', inLanguage: L.tag, publisher: { '@id': SITE + '/#org' } },
     { '@type': 'Blog', '@id': SITE + '/#blog', url: SITE + u('/'), name: 'Teknolojici15', inLanguage: L.tag, publisher: { '@id': SITE + '/#org' }, blogPost: all.slice(0, 40).map((p) => ({ '@type': 'BlogPosting', headline: p.title, url: SITE + p.url, datePublished: p.date })) }]
     .map((j) => ({ '@context': 'https://schema.org', ...j }));
-  return `${head({ title: T.homeTitle, desc, url: '/', image: null, jsonld })}
+  return `${head({ title: T.homeTitle, desc, url: '/', image: null, jsonld, kind: 'home' })}
 <body class="home">
 ${chrome('raf', '/')}
 <main id="icerik">
@@ -395,7 +414,7 @@ function article(p, list) {
     { '@context': 'https://schema.org', '@type': isNews ? 'NewsArticle' : 'BlogPosting', headline: p.title, description: p.excerpt, datePublished: p.date, dateModified: p.date, inLanguage: p.translated ? L.tag : 'tr-TR', mainEntityOfPage: SITE + p.url, image: p.cover ? SITE + p.cover : SITE + '/img/og.jpg', author: { '@id': SITE + '/#org' }, publisher: ORG, articleSection: p.category, citation: p.sources.map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url })), ...(p.year < 2026 ? { about: { '@type': 'Thing', name: p.title, temporalCoverage: p.yearLabel } } : {}) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map(([n, u], k) => ({ '@type': 'ListItem', position: k + 1, name: n, item: SITE + u })) },
   ];
-  return `${head({ title: `${p.title} · Teknolojici15`, desc: p.excerpt, url: p.path, image: p.cover || null, type: 'article', jsonld, alt: LOCALES.filter((loc) => hasUI(loc) && hasTranslation(loc, p)), noindex: !p.translated, extra: `<meta property="article:published_time" content="${p.date}"><meta property="article:section" content="${esc(p.category)}">` })}
+  return `${head({ title: `${p.title} · Teknolojici15`, desc: p.excerpt, url: p.path, image: p.cover || null, type: 'article', jsonld, alt: LOCALES.filter((loc) => hasUI(loc) && hasTranslation(loc, p)), noindex: !p.translated, kind: p.kind, slug: p.slug, ads: p.translated, extra: `<meta property="article:published_time" content="${p.date}"><meta property="article:section" content="${esc(p.category)}">` })}
 <body class="post${isAI ? ' post--manual' : ''}${isNews ? ' post--news' : ''}">
 ${chrome(isAI ? 'ai' : isNews ? 'haber' : 'dizin', p)}
 <main id="icerik" class="post__wrap">
@@ -412,11 +431,12 @@ ${chrome(isAI ? 'ai' : isNews ? 'haber' : 'dizin', p)}
       ${isAI ? `${p.cover ? sleeve(p, { eager: true }) : ''}<div class="spec"><span class="spec__k">${esc(T.chapter)}</span><span class="spec__v">${String(list.indexOf(p) + 1).padStart(2, '0')}</span>${p.fact ? `<span class="spec__k">${esc(T.key)}</span><span class="spec__v spec__v--sm">${esc(p.fact)}</span>` : ''}</div>` : `${sleeve(p, { eager: true })}${p.fact ? `<p class="bigfact"><span>${esc(p.fact)}</span><small>${esc(p.factLabel || '')}</small></p>` : ''}`}
     </aside>
     <article class="prose">
-      ${md(p.body)}
+      ${p.translated ? withInArticle(md(p.body)) : md(p.body)}
       ${p.sources.length ? `<section class="sources" aria-labelledby="kaynak-h"><h2 id="kaynak-h">${esc(T.sources)}</h2><ol>${p.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join('')}</ol></section>` : ''}
       ${shareBlock(p)}
     </article>
   </div>
+  ${p.translated ? adUnit('afterArticle') : ''}
   <nav class="pager" aria-label="${esc(isAI ? T.navGuide : isNews ? T.navNewsPager : T.navTimeline)}">
     ${prev ? `<a class="pager__a" href="${prev.url}" rel="prev"><small>${isAI ? esc(T.prevChapter) : isNews ? esc(T.newerNews) : `⏪ ${esc(prev.yearLabel)}`}</small><span>${esc(prev.title)}</span></a>` : '<span></span>'}
     ${next ? `<a class="pager__a pager__a--next" href="${next.url}" rel="next"><small>${isAI ? esc(T.nextChapter) : isNews ? esc(T.olderNews) : `${esc(next.yearLabel)} ⏩`}</small><span>${esc(next.title)}</span></a>` : '<span></span>'}
@@ -435,7 +455,7 @@ ${scripts(false)}
 /* ---------- AI hub ---------- */
 function aiHub() {
   const jsonld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: hub.data.title, url: SITE + u('/yapay-zeka/'), inLanguage: L.tag, hasPart: ai.map((p) => ({ '@type': 'BlogPosting', headline: p.title, url: SITE + p.url })) }];
-  return `${head({ title: `${hub.data.title || T.aiGuide} · Teknolojici15`, desc: hub.data.excerpt || T.aiGuide, url: '/yapay-zeka/', jsonld })}
+  return `${head({ title: `${hub.data.title || T.aiGuide} · Teknolojici15`, desc: hub.data.excerpt || T.aiGuide, url: '/yapay-zeka/', jsonld, kind: 'ai_hub' })}
 <body class="post post--manual hubpage">
 ${chrome('ai', '/yapay-zeka/')}
 <main id="icerik" class="post__wrap">
@@ -459,7 +479,7 @@ function newsIndex() {
   const byDay = {};
   for (const n of news) (byDay[n.date] ||= []).push(n);
   const jsonld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${T.navNews} · Teknolojici15`, url: SITE + u('/haber/'), inLanguage: L.tag, hasPart: news.slice(0, 30).map((p) => ({ '@type': 'NewsArticle', headline: p.title, url: SITE + p.url, datePublished: p.date })) }];
-  return `${head({ title: `${T.newsTitle} · Teknolojici15`, desc: T.newsDesc, url: '/haber/', jsonld })}
+  return `${head({ title: `${T.newsTitle} · Teknolojici15`, desc: T.newsDesc, url: '/haber/', jsonld, kind: 'news_index' })}
 <body class="post newspage">
 ${chrome('haber', '/haber/')}
 <main id="icerik" class="post__wrap">
@@ -469,7 +489,7 @@ ${chrome('haber', '/haber/')}
     <h1 class="post__h">${esc(T.newsH1)}</h1>
     <p class="post__lede">${esc(T.newsLede)}</p>
   </header>
-  ${Object.keys(byDay).length ? Object.entries(byDay).map(([d, list]) => `<section class="nday" aria-label="${fmtDate(d)}"><h2 class="nday__h"><time datetime="${d}">${fmtDate(d)}</time></h2><ol class="nday__list">${list.map((n, i) => `<li><a href="${n.url}">${n.cover ? `<img src="${esc(n.cover)}" width="720" height="1280" alt="" loading="lazy" decoding="async">` : ''}<span class="nday__n">${i + 1}</span><span class="nday__t"><strong>${esc(n.title)}</strong><small>${esc(n.excerpt)}</small></span></a></li>`).join('')}</ol></section>`).join('') : `<p class="post__lede">${esc(T.newsSoon)}</p>`}
+  ${Object.keys(byDay).length ? Object.entries(byDay).map(([d, list]) => `<section class="nday" aria-label="${fmtDate(d)}"><h2 class="nday__h"><time datetime="${d}">${fmtDate(d)}</time></h2><ol class="nday__list">${list.map((n, i) => `<li><a href="${n.url}">${n.cover ? `<img src="${esc(n.cover)}" width="720" height="1280" alt="" loading="lazy" decoding="async">` : ''}<span class="nday__n">${i + 1}</span><span class="nday__t"><strong>${esc(n.title)}</strong><small>${esc(n.excerpt)}</small></span></a></li>`).join('')}</ol></section>`).map((h, i) => i === 0 ? h + adUnit('newsList') : h).join('') : `<p class="post__lede">${esc(T.newsSoon)}</p>`}
 </main>
 ${footer()}
 ${deck({ year: '2026', title: T.dailyNews, mode: 'page' })}
@@ -477,8 +497,24 @@ ${scripts(false)}
 </body></html>`;
 }
 
+function privacy() {
+  const f = path.join(ROOT, 'content', 'gizlilik', L.code + '.md');
+  const body = read(fs.existsSync(f) ? f : path.join(ROOT, 'content', 'gizlilik', 'en.md'));
+  return `${head({ title: `${T.privacyH} · Teknolojici15`, desc: T.privacyH, url: '/gizlilik/', kind: 'privacy', ads: false })}
+<body class="post">
+${chrome('', '/gizlilik/')}
+<main id="icerik" class="post__wrap">
+  <header class="post__head"><h1 class="post__h">${esc(T.privacyH)}</h1></header>
+  <article class="prose">${md(body)}</article>
+</main>
+${footer()}
+${deck({ year: '2026', title: T.privacyH, mode: 'page' })}
+${scripts(false)}
+</body></html>`;
+}
+
 function notFound() {
-  return `${head({ title: `${T.nfTitle} · Teknolojici15`, desc: T.nfDesc, url: '/404' })}
+  return `${head({ title: `${T.nfTitle} · Teknolojici15`, desc: T.nfDesc, url: '/404', kind: '404', ads: false })}
 <body class="post">${chrome('', '/')}<main id="icerik" class="post__wrap nf"><p class="label"><span>${esc(T.nfErr)}</span><span>${esc(T.nfNoTape)}</span></p><h1 class="post__h">${esc(T.nfH1)}</h1><p class="post__lede">${esc(T.nfP1)} <a href="${u('/')}">${esc(T.nfBack)}</a> ${esc(T.nfOr)} <a href="${u('/#dizin')}">${esc(T.nfAll)}</a>.</p></main>${footer()}${deck({ year: '404', title: T.nfTitle })}${scripts(false)}</body></html>`;
 }
 
@@ -503,15 +539,19 @@ for (const loc of LOCALES) {
   for (const p of news) write(path.join(D, 'haber', p.slug, 'index.html'), article(p, news));
   write(path.join(D, 'haber', 'index.html'), newsIndex());
   write(path.join(D, 'yapay-zeka', 'index.html'), aiHub());
+  if (GOOGLE) write(path.join(D, 'gizlilik', 'index.html'), privacy());
   if (loc.code === 'tr') write(path.join(OUT, '404.html'), notFound()); else write(path.join(D, '404.html'), notFound());
   built.push(`${loc.code}:${all.filter((p) => p.translated).length}/${all.length}`);
 }
 setLocale(LOCALES[0]);
 
+if (GOOGLE) write(path.join(OUT, 'js', 'g.js'), read(path.join(ROOT, 'tools', 'google', 'g.tpl.js')).replace('__GA4__', GA4).replace('__ADS__', ADS));
+if (ADS) write(path.join(OUT, 'ads.txt'), `google.com, ${ADS.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n`);
 const today = new Date().toISOString().slice(0, 10);
 write(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[['/', today, '1.0'], ['/haber/', today, '0.9'], ['/yapay-zeka/', today, '0.9'], ...all.map((p) => [p.url, p.date, '0.8']), ...LOCALES.filter((loc) => loc.code !== 'tr' && hasUI(loc) && (!ONLY || ONLY.includes(loc.code))).flatMap((loc) => [[loc.prefix + '/', today, '0.7'], ...all.filter((p) => hasTranslation(loc, p)).map((p) => [loc.prefix + p.path, p.date, '0.6'])])].map(([u, d, pr]) => `  <url><loc>${SITE}${u}</loc><lastmod>${d}</lastmod><priority>${pr}</priority></url>`).join('\n')}\n</urlset>\n`);
 write(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\n# Yapay zekâ tarayıcılarına açık\nUser-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 write(path.join(OUT, 'llms.txt'), `# Teknolojici15\n\n> Türkçe teknoloji tarihi blogu. Instagram'daki @teknolojici15 videolarının kaynaklı, uzun yazıları ve bir yapay zekâ skill rehberi.\n\n- Instagram: ${IG}\n- Her yazının sonunda kaynak listesi vardır; rakamlar ve tarihler kaynaklarla doğrulanır.\n\n## Teknoloji tarihi yazıları\n${posts.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.yearLabel}): ${p.excerpt}`).join('\n')}\n\n## Günün haberleri\n${news.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.date}): ${p.excerpt}`).join('\n')}\n\n## Yapay Zekâ Skill Rehberi\n${ai.map((p) => `- [${p.title}](${SITE}${p.url}): ${p.excerpt}`).join('\n')}\n`);
 const rssDate = (d) => new Date(d + 'T09:00:00+03:00').toUTCString();
 write(path.join(OUT, 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Teknolojici15</title><link>${SITE}/</link><description>Teknoloji tarihinin şaşırtan anları, kaynaklarıyla.</description><language>tr</language>\n${[...all].sort((a, b) => b.date.localeCompare(a.date)).map((p) => `<item><title>${esc(p.title)}</title><link>${SITE}${p.url}</link><guid>${SITE}${p.url}</guid><pubDate>${rssDate(p.date)}</pubDate><description>${esc(p.excerpt)}</description></item>`).join('\n')}\n</channel></rss>\n`);
+console.log(`google: ga4=${GA4 || 'off'} adsense=${ADS || 'off'} slots=${Object.entries(SLOTS).filter(([, v]) => v).map(([k]) => k).join(',') || 'none'}`);
 console.log(`built: ${posts.length} posts, ${ai.length} ai, ${news.length} news · locales ${built.join(' ')} → ${OUT}`);

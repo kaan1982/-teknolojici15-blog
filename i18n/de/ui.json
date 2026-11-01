@@ -115,5 +115,9 @@
   "shareH": "Teilen",
   "shareCopy": "Link kopieren",
   "shareCopied": "Kopiert!",
-  "shareMore": "Weitere Apps"
+  "shareMore": "Weitere Apps",
+  "privacyH": "Datenschutz und Cookies",
+  "adLabel": "ANZEIGE",
+  "privacy": "Datenschutz",
+  "cookieSettings": "Cookie-Einstellungen"
 }

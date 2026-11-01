@@ -115,5 +115,9 @@
   "shareH": "Share",
   "shareCopy": "Copy link",
   "shareCopied": "Copied!",
-  "shareMore": "More apps"
+  "shareMore": "More apps",
+  "privacyH": "Privacy and cookies",
+  "adLabel": "ADVERTISEMENT",
+  "privacy": "Privacy",
+  "cookieSettings": "Cookie settings"
 }
