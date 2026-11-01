@@ -1,6 +1,6 @@
 {
   "_note": "Google kimlikleri. Boş bırakılan özellik siteye hiç eklenmez. ga4: G-XXXXXXXXXX (Analytics > Yönetici > Veri akışları). adsenseClient: ca-pub-XXXXXXXXXXXXXXXX (AdSense > Hesap > Hesap bilgileri). adSlots: AdSense > Reklamlar > Reklam birimine göre ile oluşturulan birimlerin data-ad-slot numaraları; boşsa o alan basılmaz (Otomatik reklamlar yine çalışabilir).",
-  "ga4": "",
+  "ga4": "G-7WHMGGYWMQ",
   "adsenseClient": "",
   "adSlots": {
     "inArticle": "",
