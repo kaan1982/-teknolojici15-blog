@@ -261,8 +261,9 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .nf { min-height: 70vh; }
 .nf .post__lede a { color: var(--sc-accent); }
 @media (max-width: 860px) {
-  .post__grid { grid-template-columns: 1fr; }
-  .post__side { position: static; grid-template-columns: 9rem 1fr; align-items: end; }
+  .post__grid { grid-template-columns: minmax(0, 1fr); }
+  .post__side { position: static; grid-template-columns: 9rem minmax(0, 1fr); align-items: end; }
+  .bigfact span { font-size: clamp(30px, 8.5vw, 54px); overflow-wrap: anywhere; }
   .post--manual .post__side { grid-template-columns: 1fr; }
 }
 
