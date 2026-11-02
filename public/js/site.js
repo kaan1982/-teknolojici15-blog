@@ -217,17 +217,64 @@
       if (w) { try { w.opener = null; } catch (err) {} } else location.href = a.href;
     });
   });
-  // Instagram has no web share link: phones get the system share sheet (Instagram is in it),
-  // desktops get the link copied and Instagram opened in a new tab to paste it (story/DM)
+  // Instagram has no web share link. Phones: the share sheet gets the 9:16 cover as an image file
+  // (pick Instagram > Story/Post) and the caption is copied to paste. Elsewhere: a post-ready kit
+  // (preview, caption, download) in a dialog.
   document.querySelectorAll('.share__ig').forEach(function (b) {
+    var sec = b.closest('.share'), dlg = sec && sec.querySelector('.igkit');
+    var cap = b.getAttribute('data-caption'), name = (b.getAttribute('data-file') || 'teknolojici15') + '.jpg';
+    var file = null, busy = null;
+    var mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.platform));
+    // build a 1080x1920 JPEG once (Instagram does not take WebP); done ahead of the tap so the share
+    // call stays inside the user gesture (Safari requires that)
+    function prep() {
+      if (busy) return busy;
+      busy = new Promise(function (res) {
+        var img = new Image(); img.decoding = 'async';
+        img.onload = function () {
+          try {
+            var c = document.createElement('canvas'); c.width = 1080; c.height = 1920;
+            var x = c.getContext('2d'); x.fillStyle = '#000'; x.fillRect(0, 0, 1080, 1920); x.drawImage(img, 0, 0, 1080, 1920);
+            c.toBlob(function (bl) { if (bl) file = new File([bl], name, { type: 'image/jpeg' }); res(file); }, 'image/jpeg', 0.92);
+          } catch (e) { res(null); }
+        };
+        img.onerror = function () { res(null); };
+        img.src = b.getAttribute('data-img');
+      });
+      return busy;
+    }
+    if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { io.disconnect(); prep(); } }, { rootMargin: '400px' }); io.observe(b); } else prep();
+    b.addEventListener('pointerdown', prep);
+    function copy(t) { try { if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(t); } catch (e) {} return Promise.reject(); }
+    function openKit() {
+      if (!dlg) return;
+      if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+    }
     b.addEventListener('click', function () {
-      var url = b.getAttribute('data-url'), label = b.textContent;
-      var mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.platform));
-      if (mobile && navigator.share) { navigator.share({ title: b.getAttribute('data-title'), url: url }).catch(function () {}); return; }
-      var open = function () { var w = window.open('https://www.instagram.com/', '_blank'); if (w) { try { w.opener = null; } catch (err) {} } };
-      var done = function () { b.textContent = b.getAttribute('data-done'); b.classList.add('is-done'); setTimeout(function () { b.textContent = label; b.classList.remove('is-done'); }, 2600); open(); };
-      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { window.prompt('', url); open(); });
-      else { window.prompt('', url); open(); }
+      if (mobile && file && navigator.canShare && navigator.canShare({ files: [file] })) {
+        copy(cap).catch(function () {});
+        navigator.share({ files: [file], text: cap }).catch(function (e) { if (e && e.name !== 'AbortError') openKit(); });
+        return;
+      }
+      openKit();
+    });
+    if (!dlg) return;
+    var close = function () { if (dlg.close) dlg.close(); else dlg.removeAttribute('open'); };
+    dlg.querySelector('.igkit__x').addEventListener('click', close);
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
+    dlg.querySelector('.igkit__dl').addEventListener('click', function () {
+      prep().then(function (f) {
+        var a = document.createElement('a');
+        a.href = f ? URL.createObjectURL(f) : b.getAttribute('data-img'); a.download = f ? name : '';
+        document.body.appendChild(a); a.click(); a.remove();
+        if (f) setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+      });
+    });
+    var cb = dlg.querySelector('.igkit__copy'), ta = dlg.querySelector('.igkit__cap');
+    cb.addEventListener('click', function () {
+      var label = cb.textContent;
+      var ok = function () { cb.textContent = cb.getAttribute('data-done'); cb.classList.add('is-done'); setTimeout(function () { cb.textContent = label; cb.classList.remove('is-done'); }, 1800); };
+      copy(cap).then(ok, function () { ta.focus(); ta.select(); try { document.execCommand('copy'); ok(); } catch (e) {} });
     });
   });
   if (navigator.share) document.querySelectorAll('.share__nat').forEach(function (li) {

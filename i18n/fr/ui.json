@@ -123,5 +123,16 @@
   "aiBadge": "IA",
   "aiSpotH": "L'IA à la une",
   "aiSpotP": "Modèles, agents, puces et règles : les dernières actualités de l'IA, avec leurs couvertures.",
-  "shareIgDone": "Lien copié, collez-le dans Instagram"
+  "shareTags": "#teknolojici15 #tech #actutech",
+  "shareTagsAI": "#teknolojici15 #IA #tech #actutech",
+  "shareRead": "L'article complet",
+  "igH": "Partager sur Instagram",
+  "igStep1": "Téléchargez l'image de couverture (9:16, idéale pour les Stories et Reels).",
+  "igStep2": "Copiez la légende.",
+  "igStep3": "Créez une Story ou une publication sur Instagram, choisissez l'image et collez la légende.",
+  "igCaption": "Légende",
+  "igDownload": "Télécharger l'image",
+  "igCopy": "Copier la légende",
+  "igOpen": "Ouvrir Instagram",
+  "igClose": "Fermer"
 }

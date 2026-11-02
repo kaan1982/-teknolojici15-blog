@@ -123,5 +123,16 @@
   "aiBadge": "YAPAY ZEKÂ",
   "aiSpotH": "Yapay zekâ vitrini",
   "aiSpotP": "Modeller, ajanlar, çipler ve kurallar: yapay zekâ dünyasının en son haberleri, kapaklarıyla.",
-  "shareIgDone": "Bağlantı kopyalandı, Instagram'da yapıştır"
+  "shareTags": "#teknolojici15 #teknoloji #teknolojihaberleri",
+  "shareTagsAI": "#teknolojici15 #yapayzeka #teknoloji #teknolojihaberleri",
+  "shareRead": "Haberin tamamı",
+  "igH": "Instagram'da paylaş",
+  "igStep1": "Kapak görselini indir (9:16, Hikâye ve Reels kapağına uygun).",
+  "igStep2": "Açıklamayı kopyala.",
+  "igStep3": "Instagram'da yeni Hikâye ya da Gönderi oluştur, görseli seç ve açıklamayı yapıştır.",
+  "igCaption": "Açıklama",
+  "igDownload": "Görseli indir",
+  "igCopy": "Açıklamayı kopyala",
+  "igOpen": "Instagram'ı aç",
+  "igClose": "Kapat"
 }

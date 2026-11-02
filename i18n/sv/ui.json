@@ -123,5 +123,16 @@
   "aiBadge": "AI",
   "aiSpotH": "AI i fokus",
   "aiSpotP": "Modeller, agenter, chip och regler: de senaste AI-nyheterna, med sina omslag.",
-  "shareIgDone": "Länken kopierad, klistra in i Instagram"
+  "shareTags": "#teknolojici15 #teknik #tekniknyheter",
+  "shareTagsAI": "#teknolojici15 #AI #teknik #tekniknyheter",
+  "shareRead": "Hela nyheten",
+  "igH": "Dela på Instagram",
+  "igStep1": "Ladda ner omslagsbilden (9:16, passar för Stories och Reels).",
+  "igStep2": "Kopiera bildtexten.",
+  "igStep3": "Skapa en ny Story eller ett inlägg i Instagram, välj bilden och klistra in texten.",
+  "igCaption": "Bildtext",
+  "igDownload": "Ladda ner bild",
+  "igCopy": "Kopiera bildtext",
+  "igOpen": "Öppna Instagram",
+  "igClose": "Stäng"
 }

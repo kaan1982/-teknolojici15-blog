@@ -123,5 +123,16 @@
   "aiBadge": "AI",
   "aiSpotH": "AI spotlight",
   "aiSpotP": "Models, agents, chips and rules: the latest AI news, with their covers.",
-  "shareIgDone": "Link copied, paste it in Instagram"
+  "shareTags": "#teknolojici15 #tech #technews",
+  "shareTagsAI": "#teknolojici15 #AI #tech #technews",
+  "shareRead": "Full story",
+  "igH": "Share on Instagram",
+  "igStep1": "Download the cover image (9:16, fits Stories and Reels covers).",
+  "igStep2": "Copy the caption.",
+  "igStep3": "Create a new Story or Post in Instagram, pick the image and paste the caption.",
+  "igCaption": "Caption",
+  "igDownload": "Download image",
+  "igCopy": "Copy caption",
+  "igOpen": "Open Instagram",
+  "igClose": "Close"
 }

@@ -87,16 +87,18 @@ const HUB_TR = fs.existsSync(hubFile) ? matter(read(hubFile)) : { data: { title:
    services that are banned or legally restricted there (e.g. Meta in Russia, VK in Ukraine, blocked
    Western networks in mainland China). */
 const SHARE_NET = {
-  wa: ['WhatsApp', (u, t) => `https://wa.me/?text=${encodeURIComponent(t + ' ' + u)}`],
-  x: ['X', (u, t) => `https://x.com/intent/post?url=${encodeURIComponent(u)}&text=${encodeURIComponent(t)}`],
+  // each network gets the story the way people post there: WhatsApp/Telegram a bold headline + summary,
+  // X a short headline + hashtags, e-mail a subject + summary; Facebook/LinkedIn read the page's OG card
+  wa: ['WhatsApp', (u, t, ex) => `https://wa.me/?text=${encodeURIComponent(`*${t}*\n\n${ex ? ex + '\n\n' : ''}${u}`)}`],
+  x: ['X', (u, t, ex, tags) => `https://x.com/intent/post?url=${encodeURIComponent(u)}&text=${encodeURIComponent(t + (tags.length ? '\n\n' + tags.slice(0, 2).join(' ') : ''))}`],
   fb: ['Facebook', (u) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(u)}`],
   li: ['LinkedIn', (u) => `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(u)}`],
-  tg: ['Telegram', (u, t) => `https://t.me/share/url?url=${encodeURIComponent(u)}&text=${encodeURIComponent(t)}`],
+  tg: ['Telegram', (u, t, ex) => `https://t.me/share/url?url=${encodeURIComponent(u)}&text=${encodeURIComponent(`**${t}**${ex ? '\n\n' + ex : ''}`)}`],
   vk: ['VK', (u, t) => `https://vk.com/share.php?url=${encodeURIComponent(u)}&title=${encodeURIComponent(t)}`],
   line: ['LINE', (u) => `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(u)}`],
   weibo: ['微博', (u, t) => `https://service.weibo.com/share/share.php?url=${encodeURIComponent(u)}&title=${encodeURIComponent(t)}`],
   naver: ['NAVER', (u, t) => `https://share.naver.com/web/shareView?url=${encodeURIComponent(u)}&title=${encodeURIComponent(t)}`],
-  mail: ['E-mail', (u, t) => `mailto:?subject=${encodeURIComponent(t)}&body=${encodeURIComponent(u)}`],
+  mail: ['E-mail', (u, t, ex) => `mailto:?subject=${encodeURIComponent(t)}&body=${encodeURIComponent(`${ex ? ex + '\n\n' : ''}${u}`)}`],
 };
 const SHARE_BY = {
   default: ['wa', 'ig', 'x', 'fb', 'li', 'tg', 'mail'],
@@ -105,10 +107,21 @@ const SHARE_BY = {
   'zh-cn': ['weibo', 'mail'], 'zh-tw': ['line', 'fb', 'x', 'mail'], ja: ['x', 'line', 'ig', 'fb', 'mail'], th: ['line', 'fb', 'x', 'mail'],
   ko: ['naver', 'x', 'fb', 'mail'], vi: ['fb', 'x', 'tg', 'mail'],
 };
+const tx = (k) => T[k] || UI_TR[k] || '';
 function shareBlock(p) {
-  const url = SITE + p.url, t = p.title;
+  const url = SITE + p.url, t = p.title, ex = p.excerpt || '';
+  const tags = tx(p.isAI || p.kind === 'ai' ? 'shareTagsAI' : 'shareTags').split(/\s+/).filter(Boolean);
   const nets = SHARE_BY[L.code] || SHARE_BY.default;
-  return `<section class="share" aria-labelledby="share-h"><h2 id="share-h">${esc(T.shareH)}</h2><ul class="share__list">${nets.map((k) => k === 'ig' ? `<li><button type="button" class="share__a share__a--ig share__ig" data-url="${esc(url)}" data-title="${esc(t)}" data-done="${esc(T.shareIgDone || UI_TR.shareIgDone)}">Instagram</button></li>` : `<li><a class="share__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0])}</a></li>`).join('')}<li><button type="button" class="share__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></li><li hidden class="share__nat"><button type="button" class="share__a" data-url="${esc(url)}" data-title="${esc(t)}">${esc(T.shareMore)}</button></li></ul></section>`;
+  // Instagram has no share URL: the button opens a post-ready kit (9:16 cover + caption), or the phone's share sheet with the image
+  const caption = `${t}\n\n${ex}${ex ? '\n\n' : ''}${tx('shareRead')}: ${url}\n\n${tags.join(' ')}`;
+  const ig = p.cover ? `<li><button type="button" class="share__a share__a--ig share__ig" data-img="${esc(p.cover)}" data-file="${esc(p.slug)}" data-caption="${esc(caption)}" aria-haspopup="dialog">Instagram</button></li>` : '';
+  const kit = p.cover ? `<dialog class="igkit" aria-labelledby="igkit-h"><div class="igkit__in">
+    <figure class="igkit__post"><figcaption class="igkit__user"><img src="/img/brand/icon-192.png" width="32" height="32" alt=""><b>teknolojici15</b></figcaption><img class="igkit__img" src="${esc(p.cover)}" width="720" height="1280" alt="${esc(t)}" loading="lazy"></figure>
+    <div class="igkit__side"><h2 id="igkit-h">${esc(tx('igH'))}</h2><ol class="igkit__steps"><li>${esc(tx('igStep1'))}</li><li>${esc(tx('igStep2'))}</li><li>${esc(tx('igStep3'))}</li></ol>
+      <label class="igkit__lab" for="igkit-cap">${esc(tx('igCaption'))}</label><textarea id="igkit-cap" class="igkit__cap" rows="11" readonly>${esc(caption)}</textarea>
+      <div class="igkit__btns"><button type="button" class="share__a igkit__dl">${esc(tx('igDownload'))}</button><button type="button" class="share__a igkit__copy" data-done="${esc(T.shareCopied)}">${esc(tx('igCopy'))}</button><a class="share__a igkit__open" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow">${esc(tx('igOpen'))}</a></div>
+      <button type="button" class="igkit__x" aria-label="${esc(tx('igClose'))}">×</button></div></div></dialog>` : '';
+  return `<section class="share" aria-labelledby="share-h"><h2 id="share-h">${esc(T.shareH)}</h2><ul class="share__list">${nets.map((k) => k === 'ig' ? ig : `<li><a class="share__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t, ex, tags))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0])}</a></li>`).join('')}<li><button type="button" class="share__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></li><li hidden class="share__nat"><button type="button" class="share__a" data-url="${esc(url)}" data-title="${esc(t)}">${esc(T.shareMore)}</button></li></ul>${kit}</section>`;
 }
 const TFIELDS = ['title', 'excerpt', 'hook', 'fact', 'factLabel', 'category'];
 // A translation lives in i18n/<code>/<posts|ai|haber>/<slug>.md and overrides only text fields + body.

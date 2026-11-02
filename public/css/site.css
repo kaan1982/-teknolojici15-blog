@@ -562,3 +562,23 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .nday__ai { justify-self: start; display: inline-block; margin-bottom: 4px; font-family: var(--sc-font-mono); font-weight: 400; font-size: 14px; letter-spacing: .06em; color: #0b0a14; background: #4dff7a; padding: 1px 8px; border-radius: 3px; text-transform: uppercase; }
 
 .share__a--ig:hover, .share__a--ig:focus-visible, .share__ig.is-done { border-color: #e1306c; color: #ff5c93; }
+
+/* Instagram post kit */
+.igkit { width: min(860px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 0; border: 1px solid rgb(255 255 255 / .12); border-radius: 18px; background: #12101f; color: var(--sc-ink); box-shadow: 0 30px 80px rgb(0 0 0 / .6); overflow: auto; }
+.igkit::backdrop { background: rgb(5 4 12 / .78); backdrop-filter: blur(4px); }
+.igkit__in { display: grid; grid-template-columns: minmax(0, 300px) 1fr; gap: 24px; padding: 22px; position: relative; }
+.igkit__post { margin: 0; border-radius: 12px; overflow: hidden; background: #000; border: 1px solid rgb(255 255 255 / .1); align-self: start; }
+.igkit__user { display: flex; align-items: center; gap: 8px; padding: 8px 10px; font: 600 14px/1 var(--sc-font-text); }
+.igkit__user img { width: 28px; height: 28px; border-radius: 50%; box-shadow: 0 0 0 2px #12101f, 0 0 0 4px #e1306c; }
+.igkit__img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: cover; }
+.igkit__side { display: grid; align-content: start; gap: 12px; min-width: 0; }
+.igkit__side h2 { margin: 0 40px 0 0; font-weight: 900; font-stretch: 115%; font-size: 1.6rem; line-height: 1.05; }
+.igkit__steps { margin: 0; padding-left: 1.2em; color: var(--sc-ink-soft); font-size: 15px; line-height: 1.5; }
+.igkit__lab { font-family: var(--sc-font-mono); font-size: 16px; color: var(--sc-ink-soft); text-transform: uppercase; }
+.igkit__cap { width: 100%; resize: vertical; padding: 12px; border-radius: 10px; border: 1px solid rgb(255 255 255 / .14); background: #0b0a14; color: var(--sc-ink); font: 14px/1.5 var(--sc-font-text); white-space: pre-wrap; }
+.igkit__btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.igkit__dl { background: linear-gradient(45deg, #f58529, #dd2a7b 50%, #8134af); border-color: transparent; color: #fff; }
+.igkit__dl:hover, .igkit__dl:focus-visible { color: #fff; filter: brightness(1.1); }
+.igkit__copy.is-done { border-color: var(--sc-accent); color: var(--sc-accent); }
+.igkit__x { position: absolute; top: 14px; right: 14px; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgb(255 255 255 / .16); background: transparent; color: var(--sc-ink); font-size: 26px; line-height: 1; cursor: pointer; }
+@media (max-width: 640px) { .igkit__in { grid-template-columns: 1fr; padding: 16px; } .igkit__post { max-width: 220px; justify-self: center; } }

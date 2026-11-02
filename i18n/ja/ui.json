@@ -123,5 +123,16 @@
   "aiBadge": "AI",
   "aiSpotH": "AIピックアップ",
   "aiSpotP": "モデル、エージェント、チップ、ルール。最新のAIニュースをカバー画像とともに。",
-  "shareIgDone": "リンクをコピーしました。Instagramに貼り付けてください"
+  "shareTags": "#teknolojici15 #テクノロジー #テックニュース",
+  "shareTagsAI": "#teknolojici15 #AI #テクノロジー #テックニュース",
+  "shareRead": "記事全文",
+  "igH": "Instagramでシェア",
+  "igStep1": "カバー画像をダウンロード（9:16、ストーリーズやリールのカバーに最適）。",
+  "igStep2": "キャプションをコピー。",
+  "igStep3": "Instagramで新しいストーリーズか投稿を作成し、画像を選んでキャプションを貼り付け。",
+  "igCaption": "キャプション",
+  "igDownload": "画像をダウンロード",
+  "igCopy": "キャプションをコピー",
+  "igOpen": "Instagramを開く",
+  "igClose": "閉じる"
 }
