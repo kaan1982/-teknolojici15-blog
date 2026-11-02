@@ -4,6 +4,7 @@ slug: "2026-10-20-abd-deepseek-yasagi"
 date: "2026-10-20"
 rank: 1
 category: "Yapay Zekâ"
+topic: "yapay-zeka"
 excerpt: "ABD İç Güvenlik Bakanlığı, sivil federal kurumların DeepSeek ürünlerini almasını yasakladı; bu modelle yapılmış üçüncü taraf ürünler de kapsamda."
 hook: "DeepSeek devlet sistemlerinden çıkıyor"
 fact: "20 Ekim"

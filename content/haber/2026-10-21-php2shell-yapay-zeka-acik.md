@@ -4,6 +4,7 @@ slug: "2026-10-21-php2shell-yapay-zeka-acik"
 date: "2026-10-21"
 rank: 1
 category: "Yapay Zekâ"
+topic: "yapay-zeka"
 excerpt: "PHP2Shell adlı iki açık, oturum açmadan sunucuda kod çalıştırmaya izin veriyor. Keşifte GPT-5.6 Sol ve Gemini 4 Argon gibi modeller kullanıldı."
 hook: "PHP'deki dev açığı YZ buldu"
 fact: "CVSS 9,2"

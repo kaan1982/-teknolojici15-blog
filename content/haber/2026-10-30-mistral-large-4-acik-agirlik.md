@@ -4,6 +4,7 @@ slug: "2026-10-30-mistral-large-4-acik-agirlik"
 date: "2026-10-30"
 rank: 2
 category: "Haber"
+topic: "yapay-zeka"
 excerpt: "Fransız Mistral, 1,05 trilyon parametreli Large 4 modelini indirilebilir açık ağırlıkla yayımladı. Hedef: siber güvenlik; kodlamada da iddialı."
 hook: "Avrupa'dan 1 trilyonluk açık model"
 fact: "1,05 trilyon"

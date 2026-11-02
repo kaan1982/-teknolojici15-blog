@@ -4,6 +4,7 @@ slug: "2026-10-31-yapay-zeka-egitim-robots-txt"
 date: "2026-10-31"
 rank: 2
 category: "Haber"
+topic: "yapay-zeka"
 excerpt: "OpenAI, Google, Microsoft ve Anthropic, sitelerin tek satırla yapay zekâ eğitiminden çıkmasını sağlayan ortak bir robots.txt işaretine destek verecek."
 hook: "Tek satırla yapay zekâya hayır"
 fact: "4 şirket"

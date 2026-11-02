@@ -4,6 +4,7 @@ slug: "2026-10-07-chatgpt-gpt-6-intelligent-ui"
 date: "2026-10-07"
 rank: 1
 category: "Yapay Zekâ"
+topic: "yapay-zeka"
 excerpt: "OpenAI, GPT-6'yı ve etkileşimli yanıtlar üreten Intelligent UI özelliğini ChatGPT'de ücretli kullanıcılardan başlayarak herkese açtı."
 hook: "Cevap yerine mini uygulama"
 fact: "1,2 milyar"

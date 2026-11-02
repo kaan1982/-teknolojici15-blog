@@ -70,6 +70,7 @@ function load(dir, kind) {
       body: content,
       path: BASE[kind] + slug + '/',
       rank: Number(data.rank) || 9,
+      isAI: String(data.topic || '').trim() === 'yapay-zeka',
       translated: true,
     };
   });
@@ -130,7 +131,7 @@ function setLocale(loc) {
   posts = SRC.post.map(tr).sort((a, b) => a.year - b.year || a.slug.localeCompare(b.slug));
   ai = SRC.ai.map(tr).sort((a, b) => aiRank(a) - aiRank(b) || a.slug.localeCompare(b.slug));
   news = SRC.news.map(tr).sort((a, b) => b.date.localeCompare(a.date) || a.rank - b.rank);
-  todayNews = news.filter((n) => n.date === (news[0] && news[0].date)).slice(0, 2);
+  todayNews = news.filter((n) => n.date === (news[0] && news[0].date)).slice(0, 3);
   all = [...posts, ...ai, ...news];
   newest = [...posts].sort((a, b) => b.date.localeCompare(a.date) || b.year - a.year);
   hub = HUB_TR;
@@ -265,11 +266,11 @@ const footer = () => `<footer class="foot">
 </footer>`;
 const scripts = (home) => `<script src="/sc/scrollcraft.js" defer></script><script src="/js/site.js" defer></script>${home ? '' : ''}`;
 
-/* ---------- the CRT: TEKNO-TEKST teletext, today's top 2 ---------- */
+/* ---------- the CRT: TEKNO-TEKST teletext, today's top 3 ---------- */
 function tv() {
   const d = todayNews[0] ? todayNews[0].date : new Date().toISOString().slice(0, 10);
   const [, m, dd] = d.split('-').map(Number);
-  const items = todayNews.length ? todayNews.map((n, i) => `<li><a href="${n.url}"><span class="tt__n" aria-hidden="true">${i + 1}</span><span class="tt__c">${esc(n.category === 'Haber' && n.tag ? n.tag : n.category)}</span><strong>${esc(n.title)}</strong>${n.fact ? `<span class="tt__f">${esc(n.fact)}${n.factLabel ? ` <small>${esc(n.factLabel)}</small>` : ''}</span>` : ''}</a></li>`).join('')
+  const items = todayNews.length ? todayNews.map((n, i) => `<li><a href="${n.url}"><span class="tt__n" aria-hidden="true">${i + 1}</span><span class="tt__c${n.isAI ? ' tt__c--ai' : ''}">${esc(n.isAI ? (T.aiBadge || UI_TR.aiBadge) : n.category === 'Haber' && n.tag ? n.tag : n.category)}</span><strong>${esc(n.title)}</strong>${n.fact ? `<span class="tt__f">${esc(n.fact)}${n.factLabel ? ` <small>${esc(n.factLabel)}</small>` : ''}</span>` : ''}</a></li>`).join('')
     : `<li class="tt__empty">${esc(T.ttEmpty)}</li>`;
   return `<section class="tv" aria-labelledby="tv-h" data-sc-in>
     <span class="tv__ears" aria-hidden="true"><i></i><i></i></span>
@@ -285,6 +286,23 @@ function tv() {
       <div class="tv__side" aria-hidden="true"><i class="tv__knob"></i><i class="tv__knob tv__knob--s"></i><span class="tv__grille"></span><b>CH 15</b><span class="tv__led"></span></div>
     </div>
     <span class="tv__feet" aria-hidden="true"><i></i><i></i></span>
+  </section>`;
+}
+
+/* ---------- AI spotlight: the newest AI stories as full 9:16 cover cards (reels shelf) ---------- */
+function aiSpot() {
+  const list = news.filter((n) => n.isAI && n.cover).slice(0, 8);
+  if (!list.length) return '';
+  return `<section id="yz-vitrin" class="aispot sc-section" aria-labelledby="aispot-h">
+    <div class="sc-wrap">
+      <div class="aispot__head" data-sc-in><p class="aispot__kicker"><i aria-hidden="true"></i>${esc(T.aiBadge || UI_TR.aiBadge)}</p><h2 id="aispot-h" class="aispot__h">${esc(T.aiSpotH || UI_TR.aiSpotH)}</h2><p class="aispot__p">${esc(T.aiSpotP || UI_TR.aiSpotP)}</p></div>
+      <ol class="aispot__row">
+        ${list.map((n, i) => `<li class="aispot__item${i === 0 ? ' aispot__item--lead' : ''}"><a class="aispot__card" href="${n.url}">
+          <span class="aispot__img"><img src="${esc(n.cover)}" width="720" height="1280" alt="${esc(n.title)}" loading="${i < 3 ? 'eager' : 'lazy'}" decoding="async"></span>
+          <span class="aispot__body"><time datetime="${n.date}">${fmtDate(n.date)}</time><strong>${esc(n.title)}</strong>${i === 0 ? `<small>${esc(n.excerpt)}</small>` : ''}</span>
+        </a></li>`).join('\n')}
+      </ol>
+    </div>
   </section>`;
 }
 
@@ -333,6 +351,8 @@ ${chrome('raf', '/')}
       </div>
   </section>
 
+${aiSpot()}
+
   <!-- 2 · AI NEWS BAND: replaces the tape shelf. Newest first, a feature + a grid. -->
   <section id="haberler" class="nb sc-section" data-sc-act="flow">
     <div class="sc-wrap">
@@ -340,7 +360,7 @@ ${chrome('raf', '/')}
       <ol class="nb__grid">
         ${news.slice(0, 9).map((n, i) => `<li class="nb__item${i === 0 ? ' nb__item--lead' : ''}" data-sc-in><a href="${n.url}" class="nb__card">
           <span class="nb__img">${n.cover ? `<img src="${esc(n.cover)}" width="720" height="1280" alt="" loading="lazy" decoding="async">` : ''}<span class="nb__ch" aria-hidden="true">CH ${String(i + 1).padStart(2, '0')}</span></span>
-          <span class="nb__body"><span class="nb__meta"><b>${esc(n.category)}</b><time datetime="${n.date}">${fmtDate(n.date)}</time></span><strong>${esc(n.title)}</strong><small>${esc(n.excerpt)}</small></span>
+          <span class="nb__body"><span class="nb__meta"><b${n.isAI ? ' class="is-ai"' : ''}>${esc(n.isAI ? (T.aiBadge || UI_TR.aiBadge) : n.category)}</b><time datetime="${n.date}">${fmtDate(n.date)}</time></span><strong>${esc(n.title)}</strong><small>${esc(n.excerpt)}</small></span>
         </a></li>`).join('\n')}
       </ol>
     </div>
@@ -505,7 +525,7 @@ ${chrome('haber', '/haber/')}
     <h1 class="post__h">${esc(T.newsH1)}</h1>
     <p class="post__lede">${esc(T.newsLede)}</p>
   </header>
-  ${Object.keys(byDay).length ? Object.entries(byDay).map(([d, list]) => `<section class="nday" aria-label="${fmtDate(d)}"><h2 class="nday__h"><time datetime="${d}">${fmtDate(d)}</time></h2><ol class="nday__list">${list.map((n, i) => `<li><a href="${n.url}">${n.cover ? `<img src="${esc(n.cover)}" width="720" height="1280" alt="" loading="lazy" decoding="async">` : ''}<span class="nday__n">${i + 1}</span><span class="nday__t"><strong>${esc(n.title)}</strong><small>${esc(n.excerpt)}</small></span></a></li>`).join('')}</ol></section>`).map((h, i) => i === 0 ? h + adUnit('newsList') : h).join('') : `<p class="post__lede">${esc(T.newsSoon)}</p>`}
+  ${Object.keys(byDay).length ? Object.entries(byDay).map(([d, list]) => `<section class="nday" aria-label="${fmtDate(d)}"><h2 class="nday__h"><time datetime="${d}">${fmtDate(d)}</time></h2><ol class="nday__list">${list.map((n, i) => `<li><a href="${n.url}">${n.cover ? `<img src="${esc(n.cover)}" width="720" height="1280" alt="" loading="lazy" decoding="async">` : ''}<span class="nday__n">${i + 1}</span><span class="nday__t">${n.isAI ? `<b class="nday__ai">${esc(T.aiBadge || UI_TR.aiBadge)}</b>` : ''}<strong>${esc(n.title)}</strong><small>${esc(n.excerpt)}</small></span></a></li>`).join('')}</ol></section>`).map((h, i) => i === 0 ? h + adUnit('newsList') : h).join('') : `<p class="post__lede">${esc(T.newsSoon)}</p>`}
 </main>
 ${footer()}
 ${deck({ year: '2026', title: T.dailyNews, mode: 'page' })}
@@ -581,7 +601,7 @@ write(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<u
 const AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended'];
 write(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\n# Yapay zekâ tarayıcılarına açık\n${AI_BOTS.map((b) => `User-agent: ${b}\nAllow: /\n`).join('')}\nSitemap: ${SITE}/sitemap.xml\n`);
 const langList = sitemapLocs.map((loc) => `- ${loc.name} (${loc.tag}): ${SITE}${loc.prefix}/`).join('\n');
-write(path.join(OUT, 'llms.txt'), `# Teknolojici15\n\n> Türkçe teknoloji tarihi blogu. Instagram'daki @teknolojici15 videolarının kaynaklı, uzun yazıları, günlük teknoloji/yapay zekâ haberleri ve bir yapay zekâ skill rehberi. Özgün dil Türkçe; tüm yazılar ${sitemapLocs.length} dile çevrilir.\n\n- Instagram: ${IG}\n- Her yazının sonunda kaynak listesi vardır; rakamlar ve tarihler kaynaklarla doğrulanır.\n- Yazar ve yayıncı: Teknolojici15\n\n## Ana sayfalar\n- [Ana sayfa](${SITE}/): son haberler, yapay zekâ rehberi ve tüm yazıların dizini\n- [Günün haberleri](${SITE}/haber/): her gün seçilen 2 teknoloji/yapay zekâ haberi, gün gün arşiv\n- [Yapay Zekâ Skill Rehberi](${SITE}/yapay-zeka/): ${ai.length} bölümlük rehber\n- [RSS](${SITE}/feed.xml) · [Site haritası](${SITE}/sitemap.xml)\n\n## Diller\n${langList}\n\n## Teknoloji tarihi yazıları\n${posts.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.yearLabel}): ${p.excerpt}`).join('\n')}\n\n## Günün haberleri\n${news.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.date}): ${p.excerpt}`).join('\n')}\n\n## Yapay Zekâ Skill Rehberi\n${ai.map((p) => `- [${p.title}](${SITE}${p.url}): ${p.excerpt}`).join('\n')}\n`);
+write(path.join(OUT, 'llms.txt'), `# Teknolojici15\n\n> Türkçe teknoloji tarihi blogu. Instagram'daki @teknolojici15 videolarının kaynaklı, uzun yazıları, günlük teknoloji/yapay zekâ haberleri ve bir yapay zekâ skill rehberi. Özgün dil Türkçe; tüm yazılar ${sitemapLocs.length} dile çevrilir.\n\n- Instagram: ${IG}\n- Her yazının sonunda kaynak listesi vardır; rakamlar ve tarihler kaynaklarla doğrulanır.\n- Yazar ve yayıncı: Teknolojici15\n\n## Ana sayfalar\n- [Ana sayfa](${SITE}/): son haberler, yapay zekâ rehberi ve tüm yazıların dizini\n- [Günün haberleri](${SITE}/haber/): her gün seçilen 3 teknoloji/yapay zekâ haberi, gün gün arşiv\n- [Yapay Zekâ Skill Rehberi](${SITE}/yapay-zeka/): ${ai.length} bölümlük rehber\n- [RSS](${SITE}/feed.xml) · [Site haritası](${SITE}/sitemap.xml)\n\n## Diller\n${langList}\n\n## Teknoloji tarihi yazıları\n${posts.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.yearLabel}): ${p.excerpt}`).join('\n')}\n\n## Günün haberleri\n${news.map((p) => `- [${p.title}](${SITE}${p.url}) (${p.date}): ${p.excerpt}`).join('\n')}\n\n## Yapay Zekâ Skill Rehberi\n${ai.map((p) => `- [${p.title}](${SITE}${p.url}): ${p.excerpt}`).join('\n')}\n`);
 const rssDate = (d) => new Date(d + 'T09:00:00+03:00').toUTCString();
 const feedItems = [...all].sort((a, b) => b.date.localeCompare(a.date));
 write(path.join(OUT, 'feed.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Teknolojici15</title><link>${SITE}/</link><atom:link href="${SITE}/feed.xml" rel="self" type="application/rss+xml"/><description>Teknoloji tarihinin şaşırtan anları, kaynaklarıyla.</description><language>tr</language>${feedItems.length ? `<lastBuildDate>${rssDate(feedItems[0].date)}</lastBuildDate>` : ''}\n${feedItems.map((p) => `<item><title>${esc(p.title)}</title><link>${SITE}${p.url}</link><guid isPermaLink="true">${SITE}${p.url}</guid><pubDate>${rssDate(p.date)}</pubDate><category>${esc(p.category)}</category><description>${esc(p.excerpt)}</description></item>`).join('\n')}\n</channel></rss>\n`);

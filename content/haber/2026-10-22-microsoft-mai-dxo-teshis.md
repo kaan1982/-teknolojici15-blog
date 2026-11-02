@@ -4,6 +4,7 @@ slug: "2026-10-22-microsoft-mai-dxo-teshis"
 date: "2026-10-22"
 rank: 1
 category: "Yapay Zekâ"
+topic: "yapay-zeka"
 excerpt: "Science'ta yayımlanan çalışmaya göre MAI-DxO, zor vakaların yaklaşık yüzde 83'ünü doğru teşhis etti. Ama kazancın çoğu alttaki modellerden geliyor."
 hook: "Zor vakada YZ %83, hekim %36"
 fact: "%83"

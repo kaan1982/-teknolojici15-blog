@@ -4,6 +4,7 @@ slug: "2026-11-02-deepseek-super-agent"
 date: "2026-11-02"
 rank: 1
 category: "Haber"
+topic: "yapay-zeka"
 excerpt: "DeepSeek, GitHub ve Feishu'daki istekleri takip edip pull request açan deneysel kodlama ajanı Super-Agent'ın kodunu MIT lisansıyla yayımladı."
 hook: "Çağırmadan işe koşan kod ajanı"
 fact: "MIT"

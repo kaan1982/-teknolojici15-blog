@@ -4,6 +4,7 @@ slug: "2026-11-01-apple-intelligence-cin-qwen"
 date: "2026-11-01"
 rank: 2
 category: "Haber"
+topic: "yapay-zeka"
 excerpt: "Apple, yapay zekâ özelliklerinin Aralık'ta iOS 27.3 ile Çin'e geleceğini duyurdu. Siri ve yazma araçları bazı istekleri Alibaba'nın Qwen modeline aktaracak."
 hook: "Çin'deki iPhone'a Qwen geliyor"
 fact: "iOS 27.3"

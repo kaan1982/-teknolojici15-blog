@@ -4,6 +4,7 @@ slug: "2026-10-27-deepmind-genie-4"
 date: "2026-10-27"
 rank: 1
 category: "Yapay Zekâ"
+topic: "yapay-zeka"
 excerpt: "Google DeepMind'ın yeni dünya modeli Genie 4, gezilebilir ortamları gerçek zamanlı ve ilk kez ses, ortam gürültüsü ve konuşmayla birlikte üretiyor."
 hook: "Yazarak dünya kur, içinde gez"
 fact: "Birkaç dakika"

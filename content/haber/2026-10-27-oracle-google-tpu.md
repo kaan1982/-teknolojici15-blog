@@ -4,6 +4,7 @@ slug: "2026-10-27-oracle-google-tpu"
 date: "2026-10-27"
 rank: 2
 category: "Yapay Zekâ"
+topic: "yapay-zeka"
 excerpt: "Oracle, Google'ın sekizinci nesil TPU çiplerini 2027'den itibaren kendi bulutunda sunacak. TPU'lar ilk kez başka bir büyük bulut sağlayıcısında."
 hook: "Google'ın çipi rakip bulutta"
 fact: "2,7 kata kadar"

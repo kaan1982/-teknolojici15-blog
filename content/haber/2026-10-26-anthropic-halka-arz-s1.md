@@ -4,6 +4,7 @@ slug: "2026-10-26-anthropic-halka-arz-s1"
 date: "2026-10-26"
 rank: 1
 category: "Yapay Zekâ"
+topic: "yapay-zeka"
 excerpt: "Claude'un geliştiricisi Anthropic, SEC'e S-1 sundu. Gelir hızla büyüyor; 80,7 milyar dolarlık net zararın çoğu ise bir muhasebe kaleminden geliyor."
 hook: "Claude'un yapımcısı borsaya hazırlanıyor"
 fact: "16,29 milyar $"

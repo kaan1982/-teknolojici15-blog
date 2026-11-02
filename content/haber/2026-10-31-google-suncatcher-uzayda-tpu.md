@@ -4,6 +4,7 @@ slug: "2026-10-31-google-suncatcher-uzayda-tpu"
 date: "2026-10-31"
 rank: 1
 category: "Haber"
+topic: "yapay-zeka"
 excerpt: "Google'ın Project Suncatcher uydusu yörüngede kendi yapay zekâ çiplerini çalıştırdı. Gemma 4 modeli uzaydan ilk yanıtını kısa bir şiirle verdi."
 hook: "Yörüngedeki çip ilk şiirini yazdı"
 fact: "1 kW"

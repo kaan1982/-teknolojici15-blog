@@ -4,6 +4,7 @@ slug: "2026-10-26-openai-eth-matematik-sonuclari"
 date: "2026-10-26"
 rank: 2
 category: "Yapay Zekâ"
+topic: "yapay-zeka"
 excerpt: "Matematik, bilgisayar bilimi ve fizikte üç sonuç paylaşıldı. En çok tartışılanı, 1999'dan beri kabul gören Üstel Zaman Hipotezi'nin çürütülmesi."
 hook: "1999'dan beri süren varsayım çöktü mü?"
 fact: "3 problem"
