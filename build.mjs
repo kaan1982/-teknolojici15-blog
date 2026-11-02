@@ -1,6 +1,7 @@
 // Teknolojici15 blog: static site generator. `node build.mjs` → dist/
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
@@ -98,16 +99,16 @@ const SHARE_NET = {
   mail: ['E-mail', (u, t) => `mailto:?subject=${encodeURIComponent(t)}&body=${encodeURIComponent(u)}`],
 };
 const SHARE_BY = {
-  default: ['wa', 'x', 'fb', 'li', 'tg', 'mail'],
+  default: ['wa', 'ig', 'x', 'fb', 'li', 'tg', 'mail'],
   ru: ['tg', 'vk', 'wa', 'mail'], kk: ['wa', 'tg', 'vk', 'fb', 'mail'], uz: ['tg', 'wa', 'fb', 'mail'],
   uk: ['tg', 'wa', 'fb', 'x', 'li', 'mail'], fa: ['tg', 'wa', 'x', 'mail'],
-  'zh-cn': ['weibo', 'mail'], 'zh-tw': ['line', 'fb', 'x', 'mail'], ja: ['x', 'line', 'fb', 'mail'], th: ['line', 'fb', 'x', 'mail'],
+  'zh-cn': ['weibo', 'mail'], 'zh-tw': ['line', 'fb', 'x', 'mail'], ja: ['x', 'line', 'ig', 'fb', 'mail'], th: ['line', 'fb', 'x', 'mail'],
   ko: ['naver', 'x', 'fb', 'mail'], vi: ['fb', 'x', 'tg', 'mail'],
 };
 function shareBlock(p) {
   const url = SITE + p.url, t = p.title;
   const nets = SHARE_BY[L.code] || SHARE_BY.default;
-  return `<section class="share" aria-labelledby="share-h"><h2 id="share-h">${esc(T.shareH)}</h2><ul class="share__list">${nets.map((k) => `<li><a class="share__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0])}</a></li>`).join('')}<li><button type="button" class="share__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></li><li hidden class="share__nat"><button type="button" class="share__a" data-url="${esc(url)}" data-title="${esc(t)}">${esc(T.shareMore)}</button></li></ul></section>`;
+  return `<section class="share" aria-labelledby="share-h"><h2 id="share-h">${esc(T.shareH)}</h2><ul class="share__list">${nets.map((k) => k === 'ig' ? `<li><button type="button" class="share__a share__a--ig share__ig" data-url="${esc(url)}" data-title="${esc(t)}" data-done="${esc(T.shareIgDone || UI_TR.shareIgDone)}">Instagram</button></li>` : `<li><a class="share__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0])}</a></li>`).join('')}<li><button type="button" class="share__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></li><li hidden class="share__nat"><button type="button" class="share__a" data-url="${esc(url)}" data-title="${esc(t)}">${esc(T.shareMore)}</button></li></ul></section>`;
 }
 const TFIELDS = ['title', 'excerpt', 'hook', 'fact', 'factLabel', 'category'];
 // A translation lives in i18n/<code>/<posts|ai|haber>/<slug>.md and overrides only text fields + body.
@@ -216,7 +217,7 @@ ${alts.map((loc) => `<link rel="alternate" hreflang="${loc.tag}" href="${SITE}${
 <link rel="icon" type="image/png" href="/img/brand/icon-192.png"><link rel="apple-touch-icon" href="/img/brand/icon-192.png">
 <link rel="alternate" type="application/rss+xml" title="Teknolojici15" href="/feed.xml">
 <link rel="preload" href="/fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/sc/scrollcraft.css"><link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/sc/scrollcraft.css?v=${ASSET_V('engine/scrollcraft.css')}"><link rel="stylesheet" href="/css/site.css?v=${ASSET_V('public/css/site.css')}">
 ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n')}
 ${extra}
 ${googleTags(kind, slug, ads)}
@@ -264,7 +265,9 @@ const footer = () => `<footer class="foot">
   <p>${esc(T.footTag)}</p>
   <p class="foot__links"><a href="${u('/')}">${esc(T.home)}</a><a href="${u('/haber/')}">${esc(T.dailyNews)}</a><a href="${u('/yapay-zeka/')}">${esc(T.aiGuide)}</a><a href="${u('/#dizin')}">${esc(T.navAll)}</a><a href="/feed.xml">RSS</a><a href="${IG}" target="_blank" rel="noopener noreferrer">@teknolojici15</a>${GOOGLE ? `<a href="${u('/gizlilik/')}">${esc(T.privacy)}</a>` : ''}${ADS ? `<a href="#" data-cookie-settings hidden>${esc(T.cookieSettings)}</a>` : ''}</p>
 </footer>`;
-const scripts = (home) => `<script src="/sc/scrollcraft.js" defer></script><script src="/js/site.js" defer></script>${home ? '' : ''}`;
+// cache-busting: browsers fetch the new CSS/JS as soon as a deploy changes them
+function ASSET_V(f) { try { return crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, f))).digest('hex').slice(0, 8); } catch (e) { return '1'; } }
+const scripts = (home) => `<script src="/sc/scrollcraft.js?v=${ASSET_V('engine/scrollcraft.js')}" defer></script><script src="/js/site.js?v=${ASSET_V('public/js/site.js')}" defer></script>${home ? '' : ''}`;
 
 /* ---------- the CRT: TEKNO-TEKST teletext, today's top 3 ---------- */
 function tv() {

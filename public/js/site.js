@@ -209,6 +209,27 @@
       else window.prompt('', url);
     });
   });
+  // network links: open a new tab; if the browser/in-app viewer blocks pop-ups, go there in this tab instead
+  document.querySelectorAll('a.share__a[target="_blank"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var w = null; try { w = window.open(a.href, '_blank'); } catch (err) {}
+      if (w) { try { w.opener = null; } catch (err) {} } else location.href = a.href;
+    });
+  });
+  // Instagram has no web share link: phones get the system share sheet (Instagram is in it),
+  // desktops get the link copied and Instagram opened in a new tab to paste it (story/DM)
+  document.querySelectorAll('.share__ig').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var url = b.getAttribute('data-url'), label = b.textContent;
+      var mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.platform));
+      if (mobile && navigator.share) { navigator.share({ title: b.getAttribute('data-title'), url: url }).catch(function () {}); return; }
+      var open = function () { var w = window.open('https://www.instagram.com/', '_blank'); if (w) { try { w.opener = null; } catch (err) {} } };
+      var done = function () { b.textContent = b.getAttribute('data-done'); b.classList.add('is-done'); setTimeout(function () { b.textContent = label; b.classList.remove('is-done'); }, 2600); open(); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { window.prompt('', url); open(); });
+      else { window.prompt('', url); open(); }
+    });
+  });
   if (navigator.share) document.querySelectorAll('.share__nat').forEach(function (li) {
     li.hidden = false;
     var b = li.querySelector('button');

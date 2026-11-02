@@ -560,3 +560,5 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .tt__c--ai { justify-self: start; background: #4dff7a; color: #000; padding: 0 6px; text-shadow: none; }
 .nb__meta b.is-ai::before { content: "● "; }
 .nday__ai { justify-self: start; display: inline-block; margin-bottom: 4px; font-family: var(--sc-font-mono); font-weight: 400; font-size: 14px; letter-spacing: .06em; color: #0b0a14; background: #4dff7a; padding: 1px 8px; border-radius: 3px; text-transform: uppercase; }
+
+.share__a--ig:hover, .share__a--ig:focus-visible, .share__ig.is-done { border-color: #e1306c; color: #ff5c93; }
