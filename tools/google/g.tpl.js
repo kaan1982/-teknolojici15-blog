@@ -25,6 +25,32 @@
     /* ad units: fill each <ins class="adsbygoogle"> once */
     if (AD) document.querySelectorAll('ins.adsbygoogle').forEach(function () { try { (w.adsbygoogle = w.adsbygoogle || []).push({}); } catch (e) {} });
 
+    /* Auto ads: keep the fixed header bar and the bottom year deck clear of Google's anchor (sticky) ads,
+       and measure auto-placed in-page ads like our own slots */
+    if (AD && 'MutationObserver' in w) {
+      var root = document.documentElement, lastT = -1, lastB = -1;
+      var fit = function () {
+        var t = 0, b = 0;
+        document.querySelectorAll('ins.adsbygoogle[data-anchor-status], ins.adsbygoogle[data-anchor-shown]').forEach(function (el) {
+          var st = el.getAttribute('data-anchor-status');
+          if (st && st !== 'displayed') return;
+          var r = el.getBoundingClientRect(); if (!r.height || getComputedStyle(el).display === 'none') return;
+          if (r.top < w.innerHeight / 2) t = Math.max(t, Math.round(r.bottom)); else b = Math.max(b, Math.round(w.innerHeight - r.top));
+        });
+        if (t !== lastT) { lastT = t; root.style.setProperty('--ad-anchor-t', t + 'px'); }
+        if (b !== lastB) { lastB = b; root.style.setProperty('--ad-anchor-b', b + 'px'); }
+      };
+      var seenAuto = 'IntersectionObserver' in w && GA ? new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { ev('ad_slot_view', { slot_name: 'auto' }); seenAuto.unobserve(x.target); } }); }, { threshold: 0.5 }) : null;
+      var tick = null;
+      new MutationObserver(function () {
+        if (tick) return; tick = setTimeout(function () {
+          tick = null; fit();
+          if (seenAuto) document.querySelectorAll('.google-auto-placed:not([data-t15])').forEach(function (el) { el.setAttribute('data-t15', '1'); seenAuto.observe(el); });
+        }, 250);
+      }).observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['data-anchor-status', 'style'] });
+      w.addEventListener('resize', fit, { passive: true });
+    }
+
     /* cookie settings link (Google CMP revocation message) */
     document.querySelectorAll('[data-cookie-settings]').forEach(function (b) {
       b.hidden = false;

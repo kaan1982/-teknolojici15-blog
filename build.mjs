@@ -238,7 +238,7 @@ ${googleTags(kind, slug, ads)}
 }
 function googleTags(kind, slug, ads) {
   if (!GOOGLE) return '';
-  return `<meta name="t15:kind" content="${esc(kind)}">${slug ? `<meta name="t15:slug" content="${esc(slug)}">` : ''}${ADS ? `<meta name="google-adsense-account" content="${ADS}">` : ''}
+  return `<meta name="t15:kind" content="${esc(kind)}">${slug ? `<meta name="t15:slug" content="${esc(slug)}">` : ''}${ADS ? `<meta name="google-adsense-account" content="${ADS}">${ads ? '<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin><link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin><link rel="preconnect" href="https://tpc.googlesyndication.com" crossorigin><link rel="dns-prefetch" href="https://ep1.adtrafficquality.google">' : ''}` : ''}
 <script src="/js/g.js"></script>${GA4 ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4}"></script>` : ''}${ADS && ads ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS}" crossorigin="anonymous"></script>` : ''}`;
 }
 // One responsive AdSense unit, clearly labelled, kept away from navigation (Google: no accidental-click placement)

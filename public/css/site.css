@@ -582,3 +582,10 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .igkit__copy.is-done { border-color: var(--sc-accent); color: var(--sc-accent); }
 .igkit__x { position: absolute; top: 14px; right: 14px; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgb(255 255 255 / .16); background: transparent; color: var(--sc-ink); font-size: 26px; line-height: 1; cursor: pointer; }
 @media (max-width: 640px) { .igkit__in { grid-template-columns: 1fr; padding: 16px; } .igkit__post { max-width: 220px; justify-self: center; } }
+
+/* AdSense Auto ads: room for in-page units, header/deck clear of anchor ads */
+.google-auto-placed { clear: both; max-width: 100%; margin: 2.25rem auto !important; overflow: hidden; }
+.prose .google-auto-placed { margin: 2rem 0 !important; }
+.google-auto-placed ins.adsbygoogle { margin-inline: auto; }
+.bar { top: var(--ad-anchor-t, 0px); transition: top .2s; }
+.deck { bottom: calc(max(12px, env(safe-area-inset-bottom)) + var(--ad-anchor-b, 0px)); transition: bottom .2s; }
