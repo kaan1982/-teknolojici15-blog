@@ -640,5 +640,37 @@
   "SIRI + QWEN · iOS 27.3": "SIRI + QWEN · iOS 27.3",
   "NASIL YANİ?": "HOE BEDOEL JE?",
   "Aynı telefon, ülkeye göre farklı yapay zekâ 🤖": "Zelfde telefoon, andere AI per land 🤖"
+ },
+ "2026-11-02-deepseek-super-agent": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "31 EKİM 2026 · YAPAY ZEKÂ · AÇIK KAYNAK": "31 OKTOBER 2026 · AI · OPEN SOURCE",
+  "SOHBETİ DİNLER,<br>KODU KENDİ<em>YAZAR</em>": "LUISTERT MEE,<br>SCHRIJFT ZELF<em>CODE</em>",
+  "#EKİP-SOHBETİ": "#TEAM-CHAT",
+  "TEST KIRILDI 😩": "TEST KAPOT 😩",
+  "KİM BAKACAK?": "WIE KIJKT ERNAAR?",
+  "AJAN: DÜZELTTİM,": "AGENT: OPGELOST,",
+  "PR #42 HAZIR ✓": "PR #42 KLAAR ✓",
+  "SÜPER AJAN": "SUPER AGENT",
+  "PULL REQUEST": "PULL REQUEST",
+  "- if (x = null)": "- if (x = null)",
+  "+ if (x === null)": "+ if (x === null)",
+  "MERGE?": "MERGE?",
+  "İNSAN ONAYI": "MENSELIJK OK",
+  "LİSANS: MIT": "LICENTIE: MIT",
+  "ARAŞTIRMA PROTOTİPİ": "ONDERZOEKSPROTOTYPE",
+  "ŞAKA DEĞİL!": "ECHT WAAR!",
+  "Takıma yeni bir \"arkadaş\" mı geliyor? 🤖": "Een nieuwe \"collega\" in het team? 🤖"
+ },
+ "2026-11-02-kioxia-hisse-dususu": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2 KASIM 2026 · ÇİP · BORSA": "2 NOVEMBER 2026 · CHIP · BEURS",
+  "BELLEK DEVİ<br>BİR GÜNDE<br>%17'YE KADAR<em>DÜŞTÜ</em>": "GEHEUGENREUS<br>OP ÉÉN DAG<br>TOT 17%<em>OMLAAG</em>",
+  "2026 İLK YARI": "2026 1E HELFT",
+  "NAND": "NAND",
+  "BEKLENTİ 2,35 TR ¥": "VERWACHT 2.350 MLD ¥",
+  "TAHMİN 2 TR ¥": "PROGNOSE 2.000 MLD ¥",
+  "KIOXIA · TOKYO": "KIOXIA · TOKYO",
+  "NASIL YANİ?": "HOE DAN?",
+  "Talep güçlü ama yatırımcı kaçtı 📉": "Vraag sterk, toch vluchten beleggers 📉"
  }
 }

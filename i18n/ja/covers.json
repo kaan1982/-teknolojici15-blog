@@ -640,5 +640,37 @@
   "SIRI + QWEN · iOS 27.3": "SIRI + QWEN · iOS 27.3",
   "NASIL YANİ?": "どういうこと?",
   "Aynı telefon, ülkeye göre farklı yapay zekâ 🤖": "同じスマホでも国ごとに違うAI 🤖"
+ },
+ "2026-11-02-deepseek-super-agent": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "31 EKİM 2026 · YAPAY ZEKÂ · AÇIK KAYNAK": "2026年10月31日 · AI · オープンソース",
+  "SOHBETİ DİNLER,<br>KODU KENDİ<em>YAZAR</em>": "会話を聞いて<br>コードを自分で<em>書く</em>",
+  "#EKİP-SOHBETİ": "#チーム-チャット",
+  "TEST KIRILDI 😩": "テストが落ちた 😩",
+  "KİM BAKACAK?": "誰が見る?",
+  "AJAN: DÜZELTTİM,": "エージェント: 直した、",
+  "PR #42 HAZIR ✓": "PR #42 準備OK ✓",
+  "SÜPER AJAN": "スーパーエージェント",
+  "PULL REQUEST": "PULL REQUEST",
+  "- if (x = null)": "- if (x = null)",
+  "+ if (x === null)": "+ if (x === null)",
+  "MERGE?": "MERGE?",
+  "İNSAN ONAYI": "人間の承認",
+  "LİSANS: MIT": "ライセンス: MIT",
+  "ARAŞTIRMA PROTOTİPİ": "研究用プロトタイプ",
+  "ŞAKA DEĞİL!": "冗談じゃない!",
+  "Takıma yeni bir \"arkadaş\" mı geliyor? 🤖": "チームに新しい「仲間」? 🤖"
+ },
+ "2026-11-02-kioxia-hisse-dususu": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2 KASIM 2026 · ÇİP · BORSA": "2026年11月2日 · 半導体 · 株式市場",
+  "BELLEK DEVİ<br>BİR GÜNDE<br>%17'YE KADAR<em>DÜŞTÜ</em>": "メモリ大手<br>1日で<br>最大17%<em>下落</em>",
+  "2026 İLK YARI": "2026年上半期",
+  "NAND": "NAND",
+  "BEKLENTİ 2,35 TR ¥": "予想 2.35兆円",
+  "TAHMİN 2 TR ¥": "見通し 2兆円",
+  "KIOXIA · TOKYO": "KIOXIA · 東京",
+  "NASIL YANİ?": "どういうこと?",
+  "Talep güçlü ama yatırımcı kaçtı 📉": "需要は強いのに投資家は逃げた 📉"
  }
 }
