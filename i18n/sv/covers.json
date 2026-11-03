@@ -672,5 +672,41 @@
   "KIOXIA · TOKYO": "KIOXIA · TOKYO",
   "NASIL YANİ?": "HUR DÅ?",
   "Talep güçlü ama yatırımcı kaçtı 📉": "Stark efterfrågan, men investerarna flydde 📉"
+ },
+ "2026-11-03-anthropic-ucuncu-ceyrek-17-milyar": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2 KASIM 2026 · YAPAY ZEKÂ · HALKA ARZ": "2 NOVEMBER 2026 · AI · BÖRSNOTERING",
+  "ÇEYREK GELİR<br>17 MİLYAR $,<br>TAAHHÜT<em>895 MİLYAR $</em>": "KVARTALSINTÄKT<br>17 MDR $,<br>ÅTAGANDEN<em>895 MDR $</em>",
+  "17 B$": "17 B$",
+  "895 B$": "895 B$",
+  "Q2 2026: +974 M$": "Q2 2026: +974 M$",
+  "Q3 2026: -567 M$": "Q3 2026: -567 M$",
+  "S-1 · Q3 2026": "S-1 · Q3 2026",
+  "NASIL YANİ?": "VA SA DU?",
+  "Claude'un yapımcısının defteri açıldı 📒": "Claudes skapare öppnar böckerna 📒"
+ },
+ "2026-11-03-marvell-lumentum-115-milyar": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2 KASIM 2026 · ÇİP · SATIN ALMA": "2 NOVEMBER 2026 · CHIP · UPPKÖP",
+  "ÇİP DEVİ<br>IŞIK ŞİRKETİNİ<br>ALIYOR:<em>115 MİLYAR $</em>": "CHIPJÄTTE<br>KÖPER LJUS-<br>FÖRETAG:<em>115 MDR $</em>",
+  "ÇİP": "CHIP",
+  "LAZER": "LASER",
+  "IŞIK": "LJUS",
+  "BAKIR": "KOPPAR",
+  "4.5 MRVL = 1 LITE": "4.5 MRVL = 1 LITE",
+  "DEV ANLAŞMA!": "MEGAAFFÄR!",
+  "Veri merkezinde kablolar ışığa dönüyor 💡": "I datacenter blir kablarna ljus 💡"
+ },
+ "2026-11-03-grok-bot-limit-kisitlamasi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "1 KASIM 2026 · YAPAY ZEKÂ · AJAN": "1 NOVEMBER 2026 · AI · AGENT",
+  "SEN UYURKEN<br>HAFTALIK LİMİT<em>DOLDU</em>": "MEDAN DU SOV<br>TOG VECKOGRÄNSEN<em>SLUT</em>",
+  "> GROK BOT": "> GROK BOT",
+  "LIMIT 100%": "LIMIT 100%",
+  "z": "z",
+  "MALİYET > GELİR ?": "KOSTNAD > INTÄKT ?",
+  "HAFTALIK KOTA": "VECKOKVOT",
+  "HATA DEĞİL!": "INGET FEL!",
+  "Yapay zekâ ajanının faturası kabardı 💸": "AI-agentens nota blev för hög 💸"
  }
 }

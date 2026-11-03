@@ -672,5 +672,41 @@
   "KIOXIA · TOKYO": "KIOXIA · 東京",
   "NASIL YANİ?": "どういうこと?",
   "Talep güçlü ama yatırımcı kaçtı 📉": "需要は強いのに投資家は逃げた 📉"
+ },
+ "2026-11-03-anthropic-ucuncu-ceyrek-17-milyar": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2 KASIM 2026 · YAPAY ZEKÂ · HALKA ARZ": "2026年11月2日 · AI · 上場",
+  "ÇEYREK GELİR<br>17 MİLYAR $,<br>TAAHHÜT<em>895 MİLYAR $</em>": "四半期売上<br>170億ドル、<br>契約額<em>8950億ドル</em>",
+  "17 B$": "17 B$",
+  "895 B$": "895 B$",
+  "Q2 2026: +974 M$": "Q2 2026: +974 M$",
+  "Q3 2026: -567 M$": "Q3 2026: -567 M$",
+  "S-1 · Q3 2026": "S-1 · Q3 2026",
+  "NASIL YANİ?": "どういうこと?",
+  "Claude'un yapımcısının defteri açıldı 📒": "Claudeの開発元が帳簿を公開 📒"
+ },
+ "2026-11-03-marvell-lumentum-115-milyar": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2 KASIM 2026 · ÇİP · SATIN ALMA": "2026年11月2日 · 半導体 · 買収",
+  "ÇİP DEVİ<br>IŞIK ŞİRKETİNİ<br>ALIYOR:<em>115 MİLYAR $</em>": "半導体大手が<br>光の会社を<br>買収:<em>1150億ドル</em>",
+  "ÇİP": "チップ",
+  "LAZER": "レーザー",
+  "IŞIK": "光",
+  "BAKIR": "銅",
+  "4.5 MRVL = 1 LITE": "4.5 MRVL = 1 LITE",
+  "DEV ANLAŞMA!": "巨額ディール!",
+  "Veri merkezinde kablolar ışığa dönüyor 💡": "データセンターの配線が光に 💡"
+ },
+ "2026-11-03-grok-bot-limit-kisitlamasi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "1 KASIM 2026 · YAPAY ZEKÂ · AJAN": "2026年11月1日 · AI · エージェント",
+  "SEN UYURKEN<br>HAFTALIK LİMİT<em>DOLDU</em>": "寝ている間に<br>週の上限に<em>到達</em>",
+  "> GROK BOT": "> GROK BOT",
+  "LIMIT 100%": "LIMIT 100%",
+  "z": "z",
+  "MALİYET > GELİR ?": "コスト > 収入 ?",
+  "HAFTALIK KOTA": "週間クォータ",
+  "HATA DEĞİL!": "バグじゃない!",
+  "Yapay zekâ ajanının faturası kabardı 💸": "AIエージェントの請求額が膨らんだ 💸"
  }
 }
