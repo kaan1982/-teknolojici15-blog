@@ -135,6 +135,7 @@
       var f = c.getAttribute('data-filter');
       Array.prototype.forEach.call(chips, function (x) { x.setAttribute('aria-pressed', x === c ? 'true' : 'false'); });
       Array.prototype.forEach.call(rows, function (r) { r.hidden = !(f === '*' || r.getAttribute('data-cat') === f); });
+      var dl = document.querySelector('.dir__list'); if (dl) dl.scrollTop = 0;
     });
   });
 })();

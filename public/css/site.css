@@ -152,7 +152,7 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .chip:hover { color: var(--sc-ink); border-color: var(--sc-ink-soft); }
 .chip[aria-pressed="true"] { background: var(--sc-accent); color: var(--sc-accent-ink); border-color: var(--sc-accent); }
 .chip:active { transform: translateY(1px); }
-.dir__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--sc-hairline-strong); }
+.dir__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--sc-hairline-strong); border-bottom: 1px solid var(--sc-hairline-strong); max-height: min(26rem, 52vh); overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: rgb(255 200 69 / .5) transparent; -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 2.5rem), transparent); mask-image: linear-gradient(to bottom, #000 calc(100% - 2.5rem), transparent); }
 .dir__list li { border-bottom: 1px solid var(--sc-hairline); }
 .dir__list li[hidden] { display: none; }
 .dir__list a { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr) 9rem 4rem; gap: 1rem; align-items: baseline; padding: .9rem .25rem; text-decoration: none; transition: background-color .15s; }
@@ -161,7 +161,7 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .dir__m { color: var(--sc-ink-soft); text-align: right; }
 .dir__t { font-weight: 650; font-size: var(--sc-t-base); line-height: 1.35; }
 .dir__c { color: var(--sc-ink-soft); font-size: var(--sc-t-sm); }
-@media (max-width: 680px) { .dir__list a { grid-template-columns: 4rem minmax(0, 1fr); } .dir__c, .dir__m { display: none; } }
+@media (max-width: 680px) { .dir__list { max-height: min(20rem, 45vh); } .dir__list a { grid-template-columns: 3.2rem minmax(0, 1fr); gap: .6rem; padding: .55rem .25rem; } .dir__list .dir__t { font-size: .95rem; line-height: 1.3; } .dir__c, .dir__m { display: none; } }
 
 /* ---------- 5 · close: rental card ---------- */
 .close { padding: var(--sc-section) var(--sc-gutter) calc(var(--deck-h) + 2rem); }
