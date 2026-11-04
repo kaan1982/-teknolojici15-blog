@@ -708,5 +708,36 @@
   "HAFTALIK KOTA": "VECKOKVOT",
   "HATA DEĞİL!": "INGET FEL!",
   "Yapay zekâ ajanının faturası kabardı 💸": "AI-agentens nota blev för hög 💸"
+ },
+ "2026-11-04-google-okul-yapay-zeka-arama": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "3 KASIM 2026 · YAPAY ZEKÂ · OKUL": "3 NOVEMBER 2026 · AI · SKOLA",
+  "YAPAY ZEKÂYI<br>KAPATANA<em>ARAMA YOK</em>": "STÄNG AV AI<br>OCH DU MISTER<em>SÖKNINGEN</em>",
+  "ÖDEV: FOTOSENTEZ": "LÄXA: FOTOSYNTES",
+  "AI": "AI",
+  "ARAMA": "SÖK",
+  "AI KAPANIRSA": "OM AI STÄNGS AV",
+  "ARAMA DA GİDER": "FÖRSVINNER SÖK",
+  "NASIL YANİ?": "VA SA DU?",
+  "Google okullara zor bir seçim bıraktı 🏫": "Google ställer skolor inför ett svårt val 🏫"
+ },
+ "2026-11-04-avrupa-market-dondurucu-saldirisi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2 KASIM 2026 · SİBER GÜVENLİK · 7 ÜLKE": "2 NOVEMBER 2026 · CYBERSÄKERHET · 7 LÄNDER",
+  "MARKET<br>DONDURUCULARI<em>HACKLENDİ</em>": "BUTIKERNAS<br>FRYSAR<em>HACKADE</em>",
+  "DONDURUCU · A-A": "FRYS · A-A",
+  "+50°C": "+50°C",
+  "-27°C": "-27°C",
+  "MOD: BUZ ÇÖZME (!)": "LÄGE: AVFROSTNING (!)",
+  "ŞAKA DEĞİL!": "INGET SKÄMT!",
+  "Bir gecede raflar boşaldı 🧊": "Tomma hyllor på en natt 🧊"
+ },
+ "2026-11-04-siri-ai-uygulama-becerileri": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "3 KASIM 2026 · YAPAY ZEKÂ · ASİSTAN": "3 NOVEMBER 2026 · AI · ASSISTENT",
+  "SİRİ ARTIK<br>HER UYGULAMAYA<em>AÇILDI</em>": "SIRI ÖPPNAS<br>NU FÖR<em>ALLA APPAR</em>",
+  "“AYAKKABILARI PARTNERİME GÖNDER”": "“SKICKA SKORNA TILL MIN PARTNER”",
+  "SONUNDA!": "ÄNTLIGEN!",
+  "Tek komut, birden çok uygulama 📱": "Ett kommando, flera appar 📱"
  }
 }

@@ -708,5 +708,36 @@
   "HAFTALIK KOTA": "QUOTA HEBDO",
   "HATA DEĞİL!": "PAS UN BUG !",
   "Yapay zekâ ajanının faturası kabardı 💸": "La facture de l'agent IA a explosé 💸"
+ },
+ "2026-11-04-google-okul-yapay-zeka-arama": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "3 KASIM 2026 · YAPAY ZEKÂ · OKUL": "3 NOVEMBRE 2026 · IA · ÉCOLE",
+  "YAPAY ZEKÂYI<br>KAPATANA<em>ARAMA YOK</em>": "PAS D'IA ?<br>ALORS PAS DE<em>RECHERCHE</em>",
+  "ÖDEV: FOTOSENTEZ": "DEVOIR : PHOTOSYNTHÈSE",
+  "AI": "IA",
+  "ARAMA": "RECHERCHE",
+  "AI KAPANIRSA": "SANS IA,",
+  "ARAMA DA GİDER": "SANS RECHERCHE",
+  "NASIL YANİ?": "PARDON ?",
+  "Google okullara zor bir seçim bıraktı 🏫": "Google impose un choix difficile aux écoles 🏫"
+ },
+ "2026-11-04-avrupa-market-dondurucu-saldirisi": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "2 KASIM 2026 · SİBER GÜVENLİK · 7 ÜLKE": "2 NOVEMBRE 2026 · CYBERSÉCURITÉ · 7 PAYS",
+  "MARKET<br>DONDURUCULARI<em>HACKLENDİ</em>": "CONGÉLATEURS<br>DE SUPERMARCHÉ<em>PIRATÉS</em>",
+  "DONDURUCU · A-A": "CONGÉLATEUR · A-A",
+  "+50°C": "+50°C",
+  "-27°C": "-27°C",
+  "MOD: BUZ ÇÖZME (!)": "MODE : DÉGIVRAGE (!)",
+  "ŞAKA DEĞİL!": "SANS BLAGUE !",
+  "Bir gecede raflar boşaldı 🧊": "Des rayons vidés en une nuit 🧊"
+ },
+ "2026-11-04-siri-ai-uygulama-becerileri": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "3 KASIM 2026 · YAPAY ZEKÂ · ASİSTAN": "3 NOVEMBRE 2026 · IA · ASSISTANT",
+  "SİRİ ARTIK<br>HER UYGULAMAYA<em>AÇILDI</em>": "SIRI S'OUVRE<br>DÉSORMAIS À<em>TOUTE APP</em>",
+  "“AYAKKABILARI PARTNERİME GÖNDER”": "“ENVOIE LES BASKETS À MA MOITIÉ”",
+  "SONUNDA!": "ENFIN !",
+  "Tek komut, birden çok uygulama 📱": "Une commande, plusieurs apps 📱"
  }
 }
