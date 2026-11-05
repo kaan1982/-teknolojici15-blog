@@ -739,5 +739,38 @@
   "“AYAKKABILARI PARTNERİME GÖNDER”": "“スニーカーをパートナーに送って”",
   "SONUNDA!": "ついに!",
   "Tek komut, birden çok uygulama 📱": "ひとことで複数のアプリ 📱"
+ },
+ "2026-11-05-openai-948-linux-root-acigi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "4 KASIM 2026 · YAPAY ZEKÂ · GÜVENLİK": "2026年11月4日 · AI · セキュリティ",
+  "AJANLAR<br>948 KEZ<em>ROOT OLDU</em>": "AIエージェント<br>948回<em>ROOT奪取</em>",
+  "$ ./exploit_0948": "$ ./exploit_0948",
+  "$ id": "$ id",
+  "uid=0(root) gid=0(root)": "uid=0(root) gid=0(root)",
+  "LPE": "LPE",
+  "2.8M LOC · 7% KERNEL": "2.8M LOC · 7% KERNEL",
+  "$1.21M": "$1.21M",
+  "API KREDİSİ": "APIクレジット",
+  "ŞAKA DEĞİL!": "冗談じゃない!",
+  "Açık başına yaklaşık 1.279 dolar 💻": "脆弱性1件あたり約1,279ドル 💻"
+ },
+ "2026-11-05-secmen-veri-merkezi-yasaklari": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "3 KASIM 2026 · ABD SEÇİMİ · YAPAY ZEKÂ": "2026年11月3日 · 米国選挙 · AI",
+  "SEÇMEN<br>VERİ MERKEZİNE<em>HAYIR DEDİ</em>": "有権者が<br>データセンターに<em>ノー</em>",
+  "OY": "投票",
+  "41 OYLAMA · 10 EYALET · 1 İSTİSNA": "41件の投票 · 10州 · 例外1件",
+  "SANDIKTAN ÇIKTI!": "投票で決着!",
+  "Yapay zekâ yarışında yeni engel 🗳️": "AI競争に新たな壁 🗳️"
+ },
+ "2026-11-05-starlink-mobile-qualcomm-5g": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "4 KASIM 2026 · MOBİL · 5G": "2026年11月4日 · モバイル · 5G",
+  "UYDU VE KULE<br>TEK AĞDA<em>BİRLEŞİYOR</em>": "衛星と鉄塔が<br>一つの網に<em>統合</em>",
+  "5G": "5G",
+  "64T64R": "64T64R",
+  "MASSIVE MIMO": "MASSIVE MIMO",
+  "SIRADA 2027!": "次は2027年!",
+  "On binlerce baz istasyonu geliyor 📡": "数万の基地局がやってくる 📡"
  }
 }

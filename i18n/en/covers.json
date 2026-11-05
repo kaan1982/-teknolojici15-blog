@@ -739,5 +739,38 @@
   "“AYAKKABILARI PARTNERİME GÖNDER”": "“SEND THE SHOES TO MY PARTNER”",
   "SONUNDA!": "FINALLY!",
   "Tek komut, birden çok uygulama 📱": "One command, many apps 📱"
+ },
+ "2026-11-05-openai-948-linux-root-acigi": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "4 KASIM 2026 · YAPAY ZEKÂ · GÜVENLİK": "4 NOVEMBER 2026 · AI · SECURITY",
+  "AJANLAR<br>948 KEZ<em>ROOT OLDU</em>": "AGENTS<br>WENT ROOT<em>948 TIMES</em>",
+  "$ ./exploit_0948": "$ ./exploit_0948",
+  "$ id": "$ id",
+  "uid=0(root) gid=0(root)": "uid=0(root) gid=0(root)",
+  "LPE": "LPE",
+  "2.8M LOC · 7% KERNEL": "2.8M LOC · 7% KERNEL",
+  "$1.21M": "$1.21M",
+  "API KREDİSİ": "API CREDITS",
+  "ŞAKA DEĞİL!": "NOT A JOKE!",
+  "Açık başına yaklaşık 1.279 dolar 💻": "About $1,279 per flaw 💻"
+ },
+ "2026-11-05-secmen-veri-merkezi-yasaklari": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "3 KASIM 2026 · ABD SEÇİMİ · YAPAY ZEKÂ": "3 NOVEMBER 2026 · US ELECTION · AI",
+  "SEÇMEN<br>VERİ MERKEZİNE<em>HAYIR DEDİ</em>": "VOTERS<br>SAID NO TO<em>DATA CENTERS</em>",
+  "OY": "VOTE",
+  "41 OYLAMA · 10 EYALET · 1 İSTİSNA": "41 VOTES · 10 STATES · 1 EXCEPTION",
+  "SANDIKTAN ÇIKTI!": "THE VOTERS SPOKE!",
+  "Yapay zekâ yarışında yeni engel 🗳️": "A new hurdle in the AI race 🗳️"
+ },
+ "2026-11-05-starlink-mobile-qualcomm-5g": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "4 KASIM 2026 · MOBİL · 5G": "4 NOVEMBER 2026 · MOBILE · 5G",
+  "UYDU VE KULE<br>TEK AĞDA<em>BİRLEŞİYOR</em>": "SATELLITE AND<br>TOWER IN<em>ONE NETWORK</em>",
+  "5G": "5G",
+  "64T64R": "64T64R",
+  "MASSIVE MIMO": "MASSIVE MIMO",
+  "SIRADA 2027!": "NEXT UP: 2027!",
+  "On binlerce baz istasyonu geliyor 📡": "Tens of thousands of cell sites coming 📡"
  }
 }

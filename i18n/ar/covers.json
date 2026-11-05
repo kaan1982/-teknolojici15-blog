@@ -739,5 +739,38 @@
   "“AYAKKABILARI PARTNERİME GÖNDER”": "“أرسل الحذاء إلى شريكي”",
   "SONUNDA!": "أخيرًا!",
   "Tek komut, birden çok uygulama 📱": "أمر واحد، تطبيقات عدة 📱"
+ },
+ "2026-11-05-openai-948-linux-root-acigi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "4 KASIM 2026 · YAPAY ZEKÂ · GÜVENLİK": "4 نوفمبر 2026 · ذكاء اصطناعي · أمن",
+  "AJANLAR<br>948 KEZ<em>ROOT OLDU</em>": "الوكلاء<br>948 مرة<em>صاروا ROOT</em>",
+  "$ ./exploit_0948": "$ ./exploit_0948",
+  "$ id": "$ id",
+  "uid=0(root) gid=0(root)": "uid=0(root) gid=0(root)",
+  "LPE": "LPE",
+  "2.8M LOC · 7% KERNEL": "2.8M LOC · 7% KERNEL",
+  "$1.21M": "$1.21M",
+  "API KREDİSİ": "رصيد API",
+  "ŞAKA DEĞİL!": "ليست مزحة!",
+  "Açık başına yaklaşık 1.279 dolar 💻": "نحو 1,279 دولارًا لكل ثغرة 💻"
+ },
+ "2026-11-05-secmen-veri-merkezi-yasaklari": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "3 KASIM 2026 · ABD SEÇİMİ · YAPAY ZEKÂ": "3 نوفمبر 2026 · انتخابات أمريكا · ذكاء اصطناعي",
+  "SEÇMEN<br>VERİ MERKEZİNE<em>HAYIR DEDİ</em>": "الناخب<br>قال لمراكز البيانات<em>لا</em>",
+  "OY": "صوت",
+  "41 OYLAMA · 10 EYALET · 1 İSTİSNA": "41 اقتراعًا · 10 ولايات · استثناء واحد",
+  "SANDIKTAN ÇIKTI!": "حسمتها الصناديق!",
+  "Yapay zekâ yarışında yeni engel 🗳️": "عقبة جديدة في سباق الذكاء الاصطناعي 🗳️"
+ },
+ "2026-11-05-starlink-mobile-qualcomm-5g": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "4 KASIM 2026 · MOBİL · 5G": "4 نوفمبر 2026 · محمول · 5G",
+  "UYDU VE KULE<br>TEK AĞDA<em>BİRLEŞİYOR</em>": "القمر والبرج<br>في شبكة<em>واحدة</em>",
+  "5G": "5G",
+  "64T64R": "64T64R",
+  "MASSIVE MIMO": "MASSIVE MIMO",
+  "SIRADA 2027!": "التالي: 2027!",
+  "On binlerce baz istasyonu geliyor 📡": "عشرات آلاف المحطات قادمة 📡"
  }
 }

@@ -739,5 +739,38 @@
   "“AYAKKABILARI PARTNERİME GÖNDER”": "“SCHOENEN NAAR MIJN PARTNER”",
   "SONUNDA!": "EINDELIJK!",
   "Tek komut, birden çok uygulama 📱": "Eén opdracht, meerdere apps 📱"
+ },
+ "2026-11-05-openai-948-linux-root-acigi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "4 KASIM 2026 · YAPAY ZEKÂ · GÜVENLİK": "4 NOVEMBER 2026 · AI · BEVEILIGING",
+  "AJANLAR<br>948 KEZ<em>ROOT OLDU</em>": "AGENTS<br>948 KEER<em>ROOT</em>",
+  "$ ./exploit_0948": "$ ./exploit_0948",
+  "$ id": "$ id",
+  "uid=0(root) gid=0(root)": "uid=0(root) gid=0(root)",
+  "LPE": "LPE",
+  "2.8M LOC · 7% KERNEL": "2.8M LOC · 7% KERNEL",
+  "$1.21M": "$1.21M",
+  "API KREDİSİ": "API-TEGOED",
+  "ŞAKA DEĞİL!": "GEEN GRAP!",
+  "Açık başına yaklaşık 1.279 dolar 💻": "Ongeveer 1.279 dollar per lek 💻"
+ },
+ "2026-11-05-secmen-veri-merkezi-yasaklari": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "3 KASIM 2026 · ABD SEÇİMİ · YAPAY ZEKÂ": "3 NOVEMBER 2026 · VS-VERKIEZING · AI",
+  "SEÇMEN<br>VERİ MERKEZİNE<em>HAYIR DEDİ</em>": "KIEZERS<br>ZEGGEN NEE TEGEN<em>DATACENTERS</em>",
+  "OY": "STEM",
+  "41 OYLAMA · 10 EYALET · 1 İSTİSNA": "41 STEMMINGEN · 10 STATEN · 1 UITZONDERING",
+  "SANDIKTAN ÇIKTI!": "UIT DE STEMBUS!",
+  "Yapay zekâ yarışında yeni engel 🗳️": "Nieuwe drempel in de AI-race 🗳️"
+ },
+ "2026-11-05-starlink-mobile-qualcomm-5g": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "4 KASIM 2026 · MOBİL · 5G": "4 NOVEMBER 2026 · MOBIEL · 5G",
+  "UYDU VE KULE<br>TEK AĞDA<em>BİRLEŞİYOR</em>": "SATELLIET<br>EN MAST<em>IN ÉÉN NET</em>",
+  "5G": "5G",
+  "64T64R": "64T64R",
+  "MASSIVE MIMO": "MASSIVE MIMO",
+  "SIRADA 2027!": "OP NAAR 2027!",
+  "On binlerce baz istasyonu geliyor 📡": "Tienduizenden basisstations op komst 📡"
  }
 }

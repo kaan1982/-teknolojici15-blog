@@ -271,6 +271,39 @@
   "SONUNDA!",
   "Tek komut, birden çok uygulama 📱"
  ],
+ "2026-11-05-openai-948-linux-root-acigi": [
+  "GÜNÜN HABERİ",
+  "4 KASIM 2026 · YAPAY ZEKÂ · GÜVENLİK",
+  "AJANLAR<br>948 KEZ<em>ROOT OLDU</em>",
+  "$ ./exploit_0948",
+  "$ id",
+  "uid=0(root) gid=0(root)",
+  "LPE",
+  "2.8M LOC · 7% KERNEL",
+  "$1.21M",
+  "API KREDİSİ",
+  "ŞAKA DEĞİL!",
+  "Açık başına yaklaşık 1.279 dolar 💻"
+ ],
+ "2026-11-05-secmen-veri-merkezi-yasaklari": [
+  "GÜNÜN HABERİ",
+  "3 KASIM 2026 · ABD SEÇİMİ · YAPAY ZEKÂ",
+  "SEÇMEN<br>VERİ MERKEZİNE<em>HAYIR DEDİ</em>",
+  "OY",
+  "41 OYLAMA · 10 EYALET · 1 İSTİSNA",
+  "SANDIKTAN ÇIKTI!",
+  "Yapay zekâ yarışında yeni engel 🗳️"
+ ],
+ "2026-11-05-starlink-mobile-qualcomm-5g": [
+  "GÜNÜN HABERİ",
+  "4 KASIM 2026 · MOBİL · 5G",
+  "UYDU VE KULE<br>TEK AĞDA<em>BİRLEŞİYOR</em>",
+  "5G",
+  "64T64R",
+  "MASSIVE MIMO",
+  "SIRADA 2027!",
+  "On binlerce baz istasyonu geliyor 📡"
+ ],
  "apollo-11-bilgisayari-4-kb-bellek": [
   "TEKNOLOJİ TARİHİ",
   "<span>1969 · APOLLO 11</span>",

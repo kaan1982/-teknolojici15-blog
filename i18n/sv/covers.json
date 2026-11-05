@@ -739,5 +739,38 @@
   "“AYAKKABILARI PARTNERİME GÖNDER”": "“SKICKA SKORNA TILL MIN PARTNER”",
   "SONUNDA!": "ÄNTLIGEN!",
   "Tek komut, birden çok uygulama 📱": "Ett kommando, flera appar 📱"
+ },
+ "2026-11-05-openai-948-linux-root-acigi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "4 KASIM 2026 · YAPAY ZEKÂ · GÜVENLİK": "4 NOVEMBER 2026 · AI · SÄKERHET",
+  "AJANLAR<br>948 KEZ<em>ROOT OLDU</em>": "AGENTER<br>BLEV ROOT<em>948 GÅNGER</em>",
+  "$ ./exploit_0948": "$ ./exploit_0948",
+  "$ id": "$ id",
+  "uid=0(root) gid=0(root)": "uid=0(root) gid=0(root)",
+  "LPE": "LPE",
+  "2.8M LOC · 7% KERNEL": "2.8M LOC · 7% KERNEL",
+  "$1.21M": "$1.21M",
+  "API KREDİSİ": "API-KREDITER",
+  "ŞAKA DEĞİL!": "INGET SKÄMT!",
+  "Açık başına yaklaşık 1.279 dolar 💻": "Cirka 1 279 dollar per sårbarhet 💻"
+ },
+ "2026-11-05-secmen-veri-merkezi-yasaklari": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "3 KASIM 2026 · ABD SEÇİMİ · YAPAY ZEKÂ": "3 NOVEMBER 2026 · USA-VALET · AI",
+  "SEÇMEN<br>VERİ MERKEZİNE<em>HAYIR DEDİ</em>": "VÄLJARE<br>SA NEJ TILL<em>DATACENTER</em>",
+  "OY": "RÖST",
+  "41 OYLAMA · 10 EYALET · 1 İSTİSNA": "41 OMRÖSTNINGAR · 10 DELSTATER · 1 UNDANTAG",
+  "SANDIKTAN ÇIKTI!": "FRÅN VALURNAN!",
+  "Yapay zekâ yarışında yeni engel 🗳️": "Nytt hinder i AI-kapplöpningen 🗳️"
+ },
+ "2026-11-05-starlink-mobile-qualcomm-5g": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "4 KASIM 2026 · MOBİL · 5G": "4 NOVEMBER 2026 · MOBIL · 5G",
+  "UYDU VE KULE<br>TEK AĞDA<em>BİRLEŞİYOR</em>": "SATELLIT<br>OCH MAST<em>I ETT NÄT</em>",
+  "5G": "5G",
+  "64T64R": "64T64R",
+  "MASSIVE MIMO": "MASSIVE MIMO",
+  "SIRADA 2027!": "NÄSTA: 2027!",
+  "On binlerce baz istasyonu geliyor 📡": "Tiotusentals basstationer på väg 📡"
  }
 }
