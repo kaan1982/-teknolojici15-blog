@@ -223,7 +223,7 @@ function head({ title, desc, url, image, type = 'website', jsonld = [], extra = 
 ${is404 ? '' : `<link rel="canonical" href="${canon}">`}
 <meta name="theme-color" content="#0D0B20">
 <meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}">
-${alts.map((loc) => `<link rel="alternate" hreflang="${loc.tag}" href="${SITE}${loc.prefix}${url}">`).join('')}${is404 ? '' : `<link rel="alternate" hreflang="x-default" href="${SITE}${url}">`}
+${alts.map((loc) => `<link rel="alternate" hreflang="${loc.tag}" href="${SITE}${loc.prefix}${url}">`).join('')}${is404 ? '' : `<link rel="alternate" hreflang="x-default" href="${SITE}${url}">`}${is404 ? '' : `<script src="/js/lang.js?v=${ASSET_V('public/js/lang.js')}"></script>`}
 <meta property="og:type" content="${type}"><meta property="og:site_name" content="Teknolojici15"><meta property="og:locale" content="${ogLocale(L)}">${alts.filter((loc) => loc !== L).map((loc) => `<meta property="og:locale:alternate" content="${ogLocale(loc)}">`).join('')}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">${is404 ? '' : `<meta property="og:url" content="${canon}">`}<meta property="og:image" content="${img}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${img}">

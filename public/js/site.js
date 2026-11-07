@@ -159,6 +159,8 @@
     var hit = lang.querySelector('.lang__list a[data-l="' + code + '"]');
     if (hit) { hit.classList.add('is-suggested'); var li = hit.parentNode; li.parentNode.insertBefore(li, li.parentNode.firstChild); }
   }
+  // remember a language picked in the menu (lang.js uses it on the next visit)
+  lang.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('.lang__list a[data-l]'); if (a) { try { localStorage.setItem('t15lang', a.getAttribute('data-l')); } catch (x) {} } });
   document.addEventListener('click', function (e) { if (lang.open && !lang.contains(e.target)) lang.open = false; });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lang.open) { lang.open = false; lang.querySelector('summary').focus(); } });
 })();
