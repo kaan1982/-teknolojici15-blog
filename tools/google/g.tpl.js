@@ -9,7 +9,13 @@
   w.gtag = gtag;
   var EEA = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH'];
   gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', region: EEA, wait_for_update: 500 });
+  /* Türkiye (KVKK): denied until the visitor accepts in our own banner below */
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', region: ['TR'] });
   gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
+  var TR = false; try { TR = /^(Europe|Asia)\/Istanbul$/.test(Intl.DateTimeFormat().resolvedOptions().timeZone || ''); } catch (e) {}
+  var KEY = 't15consent', choice = null; try { choice = localStorage.getItem(KEY); } catch (e) {}
+  var ALL = function (v) { return { ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v }; };
+  if (TR && (choice === 'granted' || choice === 'denied')) gtag('consent', 'update', ALL(choice));
   gtag('set', 'ads_data_redaction', true);
   gtag('set', 'url_passthrough', true);
 
@@ -51,11 +57,33 @@
       w.addEventListener('resize', fit, { passive: true });
     }
 
-    /* cookie settings link (Google CMP revocation message) */
+    /* KVKK consent banner for visitors in Türkiye (Istanbul time zone). Consent Mode keeps TR denied by
+       Google's own geo until "Accept"; the banner only records the choice, so a missed banner stays safe. */
+    var banner = null;
+    function showBanner() {
+      if (banner) { banner.hidden = false; return; }
+      var tr = (document.documentElement.lang || '').slice(0, 2) === 'tr';
+      var pl = document.querySelector('.foot__links a[href$="/gizlilik/"]');
+      var S = tr ? ['Siteyi geliştirmek ve reklam göstermek için çerez kullanıyoruz. İzin verirsen Google Analytics ve AdSense çerezleri çalışır; vermezsen çalışmaz.', 'Kabul et', 'Reddet', 'Ayrıntılar'] : ['We use cookies to improve the site and show ads. If you allow it, Google Analytics and AdSense cookies are used; if not, they are not.', 'Accept', 'Reject', 'Details'];
+      banner = document.createElement('div'); banner.className = 'consent'; banner.setAttribute('role', 'dialog'); banner.setAttribute('aria-live', 'polite'); banner.setAttribute('aria-label', tr ? 'Çerez izni' : 'Cookie consent');
+      var p = document.createElement('p'); p.className = 'consent__text'; p.textContent = S[0] + ' ';
+      if (pl) { var a = document.createElement('a'); a.href = pl.getAttribute('href'); a.textContent = S[3]; p.appendChild(a); }
+      var row = document.createElement('div'); row.className = 'consent__btns';
+      [['granted', S[1], 'consent__btn consent__btn--ok'], ['denied', S[2], 'consent__btn']].forEach(function (o) {
+        var b = document.createElement('button'); b.type = 'button'; b.className = o[2]; b.textContent = o[1];
+        b.addEventListener('click', function () { try { localStorage.setItem(KEY, o[0]); } catch (e) {} gtag('consent', 'update', ALL(o[0])); banner.hidden = true; });
+        row.appendChild(b);
+      });
+      banner.appendChild(p); banner.appendChild(row); document.body.appendChild(banner);
+    }
+    if (TR && choice !== 'granted' && choice !== 'denied') showBanner();
+
+    /* cookie settings link: our banner in Türkiye, Google CMP revocation message elsewhere */
     document.querySelectorAll('[data-cookie-settings]').forEach(function (b) {
       b.hidden = false;
       b.addEventListener('click', function (e) {
         e.preventDefault();
+        if (TR) { showBanner(); return; }
         w.googlefc = w.googlefc || {}; w.googlefc.callbackQueue = w.googlefc.callbackQueue || [];
         w.googlefc.callbackQueue.push(function () { if (w.googlefc.showRevocationMessage) w.googlefc.showRevocationMessage(); });
       });

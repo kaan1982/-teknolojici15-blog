@@ -15,4 +15,6 @@ Kimlikler girilince build şunları kendiliğinden yapar:
 Ölçülen özel olaylar (GA4 > Yönetici > Özel tanımlar ile parametreleri kaydet):
 read_progress (percent), read_complete, source_click, share (method), language_switch (to_language), deck_nav, pager_click, select_content, instagram_click, ad_slot_view (slot_name). Sayfa başına content_group = home / news / post / ai / news_index / ai_hub / privacy.
 
+Türkiye (KVKK): g.js, TR için Consent Mode varsayılanını "denied" yapar ve İstanbul saat dilimindeki ziyaretçilere kendi Kabul et / Reddet penceresini gösterir (seçim localStorage t15consent). Altbilgideki "Çerez ayarları" Türkiye'de bu pencereyi açar.
+
 AdSense hesabında: Gizlilik ve mesajlaşma > Avrupa düzenlemeleri (GDPR) mesajını oluştur ve yayınla (AEA/BK/İsviçre için zorunlu onay penceresi). Site AdSense'e kendi kök alan adıyla eklenmeli; *.vercel.app kabul edilmez.

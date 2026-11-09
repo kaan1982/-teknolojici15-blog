@@ -590,3 +590,12 @@ a:hover { text-decoration-color: var(--sc-accent); }
 .google-auto-placed ins.adsbygoogle { margin-inline: auto; }
 .bar { top: var(--ad-anchor-t, 0px); transition: top .2s; }
 .deck { bottom: calc(max(12px, env(safe-area-inset-bottom)) + var(--ad-anchor-b, 0px)); transition: bottom .2s; }
+
+/* KVKK consent banner (Türkiye) */
+.consent { position: fixed; z-index: 1000; left: 50%; transform: translateX(-50%); bottom: calc(var(--ad-anchor-b, 0px) + 12px); width: min(640px, calc(100% - 24px)); background: var(--sc-surface); color: var(--sc-ink); border: 1px solid var(--sc-hairline-strong); border-radius: 12px; box-shadow: 0 10px 40px rgb(0 0 0 / .25); padding: 1rem 1.1rem; display: grid; gap: .8rem; font-size: var(--sc-t-sm); }
+.consent[hidden] { display: none; }
+.consent__text { margin: 0; line-height: 1.45; }
+.consent__text a { color: var(--sc-accent); }
+.consent__btns { display: flex; gap: .6rem; flex-wrap: wrap; }
+.consent__btn { font: inherit; font-weight: 700; padding: .55rem 1.1rem; border-radius: 8px; border: 1px solid var(--sc-hairline-strong); background: transparent; color: var(--sc-ink); cursor: pointer; min-height: 44px; flex: 1 1 8rem; }
+.consent__btn--ok { background: var(--sc-accent); border-color: var(--sc-accent); color: var(--sc-accent-ink); }
