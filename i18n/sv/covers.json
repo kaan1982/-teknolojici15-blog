@@ -855,5 +855,41 @@
   "X90": "X90",
   "NASIL YANİ?": "HUR DÅ?",
   "Huawei'ye göre tüm parçalar Çin yapımı 🖥️": "Enligt Huawei är allt tillverkat i Kina 🖥️"
+ },
+ "2026-11-09-anthropic-3-4-milyar-jenerator": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "8 KASIM 2026 · ANTHROPIC": "8 NOVEMBER 2026 · ANTHROPIC",
+  "YAPAY ZEKÂ<br>KENDİ <em>ELEKTRİĞİNİ</em><br>ALIYOR": "AI KÖPER<br>SIN <em>EGEN</em><br><em>EL</em>",
+  "GAZ": "GAS",
+  "1,7 GW": "1,7 GW",
+  "3,4 MİLYAR $": "3,4 MDR $",
+  "REKOR ALIM": "REKORDKÖP",
+  "Şebekeyi beklemek yerine jeneratör aldı ⚡": "Generatorer i stället för att vänta på nätet ⚡"
+ },
+ "2026-11-09-nvidia-huang-bagimsiz-inceleme": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "8 KASIM 2026 · NVIDIA": "8 NOVEMBER 2026 · NVIDIA",
+  "ÇİP DEVİNDE<br>CEO'YA<br><em>İNCELEME</em>": "CHIPJÄTTE<br>GRANSKAR<br><em>SIN VD</em>",
+  "SON DAKİKA": "SENASTE NYTT",
+  "GPU": "GPU",
+  "HİSSE -22%": "AKTIE -22%",
+  "GÜVENLİK SORUSU": "SÄKERHETSFRÅGA",
+  "Bağımsız komite tüm bilgileri inceleyecek 🔎": "En oberoende kommitté granskar allt 🔎"
+ },
+ "2026-11-09-psi-kuantum-sanisi-ispati": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2008 → 2026 · KUANTUM": "2008 → 2026 · KVANT",
+  "18 YILLIK<br>SORUYA<br><em>3 GÜNDE</em> İSPAT": "18 ÅR<br>GAMMAL FRÅGA<br>BEVISAD PÅ <em>3 DAGAR</em>",
+  "lean --check": "lean --check",
+  "> GÜN 1 ... deneme": "> DAG 1 ... försök",
+  "> GÜN 2 ... deneme": "> DAG 2 ... försök",
+  "> GÜN 3 ... İSPAT BULUNDU": "> DAG 3 ... BEVIS FUNNET",
+  "theorem aaronson_ambainis": "theorem aaronson_ambainis",
+  "✓ kernel: OK": "✓ kernel: OK",
+  "∎ Q.E.D.": "∎ Q.E.D.",
+  "Q": "Q",
+  "C": "C",
+  "LEAN ONAYLADI": "GODKÄNT AV LEAN",
+  "Kuantum hızının sınırına yeni ispat 🧮": "Nytt bevis om gränsen för kvantfart 🧮"
  }
 }

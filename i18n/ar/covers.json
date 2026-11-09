@@ -855,5 +855,41 @@
   "X90": "X90",
   "NASIL YANİ?": "كيف ذلك؟",
   "Huawei'ye göre tüm parçalar Çin yapımı 🖥️": "كل القطع صينية الصنع وفق Huawei 🖥️"
+ },
+ "2026-11-09-anthropic-3-4-milyar-jenerator": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "8 KASIM 2026 · ANTHROPIC": "8 نوفمبر 2026 · ANTHROPIC",
+  "YAPAY ZEKÂ<br>KENDİ <em>ELEKTRİĞİNİ</em><br>ALIYOR": "الذكاء<br>الاصطناعي يشتري<br><em>كهرباءه</em>",
+  "GAZ": "غاز",
+  "1,7 GW": "1.7 GW",
+  "3,4 MİLYAR $": "‫3.4 مليار دولار‬",
+  "REKOR ALIM": "صفقة قياسية",
+  "Şebekeyi beklemek yerine jeneratör aldı ⚡": "اشترت مولدات بدل انتظار الشبكة ⚡"
+ },
+ "2026-11-09-nvidia-huang-bagimsiz-inceleme": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "8 KASIM 2026 · NVIDIA": "8 نوفمبر 2026 · NVIDIA",
+  "ÇİP DEVİNDE<br>CEO'YA<br><em>İNCELEME</em>": "عملاق<br>الرقائق يحقق<br><em>مع رئيسه</em>",
+  "SON DAKİKA": "عاجل",
+  "GPU": "GPU",
+  "HİSSE -22%": "‫هبوط السهم 22%‬",
+  "GÜVENLİK SORUSU": "سؤال أمني",
+  "Bağımsız komite tüm bilgileri inceleyecek 🔎": "لجنة مستقلة ستراجع كل المعلومات 🔎"
+ },
+ "2026-11-09-psi-kuantum-sanisi-ispati": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2008 → 2026 · KUANTUM": "2008 → 2026 · الكم",
+  "18 YILLIK<br>SORUYA<br><em>3 GÜNDE</em> İSPAT": "سؤال عمره<br>18 عامًا<br>يُثبت في <em>3 أيام</em>",
+  "lean --check": "lean --check",
+  "> GÜN 1 ... deneme": "> اليوم 1 ... محاولة",
+  "> GÜN 2 ... deneme": "> اليوم 2 ... محاولة",
+  "> GÜN 3 ... İSPAT BULUNDU": "> اليوم 3 ... وُجد البرهان",
+  "theorem aaronson_ambainis": "theorem aaronson_ambainis",
+  "✓ kernel: OK": "✓ kernel: OK",
+  "∎ Q.E.D.": "∎ Q.E.D.",
+  "Q": "Q",
+  "C": "C",
+  "LEAN ONAYLADI": "أكّده LEAN",
+  "Kuantum hızının sınırına yeni ispat 🧮": "برهان جديد على حدود السرعة الكمومية 🧮"
  }
 }

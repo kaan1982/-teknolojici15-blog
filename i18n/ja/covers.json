@@ -855,5 +855,41 @@
   "X90": "X90",
   "NASIL YANİ?": "どういうこと?",
   "Huawei'ye göre tüm parçalar Çin yapımı 🖥️": "Huaweiによると全部品が中国製 🖥️"
+ },
+ "2026-11-09-anthropic-3-4-milyar-jenerator": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "8 KASIM 2026 · ANTHROPIC": "2026年11月8日 · ANTHROPIC",
+  "YAPAY ZEKÂ<br>KENDİ <em>ELEKTRİĞİNİ</em><br>ALIYOR": "AIが<br><em>自前の電力</em>を<br>買う",
+  "GAZ": "ガス",
+  "1,7 GW": "1.7 GW",
+  "3,4 MİLYAR $": "34億ドル",
+  "REKOR ALIM": "過去最大",
+  "Şebekeyi beklemek yerine jeneratör aldı ⚡": "送電網を待たず発電機を購入 ⚡"
+ },
+ "2026-11-09-nvidia-huang-bagimsiz-inceleme": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "8 KASIM 2026 · NVIDIA": "2026年11月8日 · NVIDIA",
+  "ÇİP DEVİNDE<br>CEO'YA<br><em>İNCELEME</em>": "半導体大手<br>CEOを<br><em>調査</em>",
+  "SON DAKİKA": "速報",
+  "GPU": "GPU",
+  "HİSSE -22%": "株価 -22%",
+  "GÜVENLİK SORUSU": "安全保障の疑問",
+  "Bağımsız komite tüm bilgileri inceleyecek 🔎": "独立委員会がすべての情報を調査 🔎"
+ },
+ "2026-11-09-psi-kuantum-sanisi-ispati": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2008 → 2026 · KUANTUM": "2008 → 2026 · 量子",
+  "18 YILLIK<br>SORUYA<br><em>3 GÜNDE</em> İSPAT": "18年来の<br>問いを<br><em>3日</em>で証明",
+  "lean --check": "lean --check",
+  "> GÜN 1 ... deneme": "> 1日目 ... 試行",
+  "> GÜN 2 ... deneme": "> 2日目 ... 試行",
+  "> GÜN 3 ... İSPAT BULUNDU": "> 3日目 ... 証明発見",
+  "theorem aaronson_ambainis": "theorem aaronson_ambainis",
+  "✓ kernel: OK": "✓ kernel: OK",
+  "∎ Q.E.D.": "∎ Q.E.D.",
+  "Q": "Q",
+  "C": "C",
+  "LEAN ONAYLADI": "LEANが検証",
+  "Kuantum hızının sınırına yeni ispat 🧮": "量子の速さの限界に新たな証明 🧮"
  }
 }
