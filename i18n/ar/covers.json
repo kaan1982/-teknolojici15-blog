@@ -891,5 +891,38 @@
   "C": "C",
   "LEAN ONAYLADI": "أكّده LEAN",
   "Kuantum hızının sınırına yeni ispat 🧮": "برهان جديد على حدود السرعة الكمومية 🧮"
+ },
+ "2026-11-10-claude-fable-5-2-mythos": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "9 KASIM 2026 · YENİ MODEL": "9 نوفمبر 2026 · نموذج جديد",
+  "1.000 AJAN<br>FERMAT'YI<br><em>30 SAATTE</em><br>KODLADI": "1000 وكيل<br>صاغوا برهان فيرما<br><em>في 30 ساعة</em>",
+  "FERMAT'NIN SON TEOREMİ": "مبرهنة فيرما الأخيرة",
+  "aⁿ + bⁿ ≠ cⁿ": "aⁿ + bⁿ ≠ cⁿ",
+  "n > 2": "n > 2",
+  "ÖNCEKİ: 11 GÜN": "سابقًا: 11 يومًا",
+  "ŞİMDİ: 30 SAAT": "الآن: 30 ساعة",
+  "MAKİNE ONAYLI": "تحقق آلي",
+  "Ve fiyatı yüzde 20 indi 🧮": "والسعر انخفض 20% 🧮"
+ },
+ "2026-11-10-google-tpu-8tx-8i-max": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "9 KASIM 2026 · YAPAY ZEKÂ ÇİPİ": "9 نوفمبر 2026 · شريحة ذكاء اصطناعي",
+  "GOOGLE'DAN<br><em>İKİ YENİ</em><br>TPU": "Google<br><em>تكشف عن</em><br>TPU جديدتين",
+  "8i": "8i",
+  "TEK PAKET": "حزمة واحدة",
+  "2× BELLEK BANT GENİŞLİĞİ": "2× عرض نطاق الذاكرة",
+  "8tx: ŞİFRELİ": "8tx: مشفرة",
+  "İKİSİ BİR ARADA!": "اثنتان في واحدة!",
+  "Bir pakete iki çip sığdırdılar 🔧": "شريحتان في حزمة واحدة 🔧"
+ },
+ "2026-11-10-nvidia-gr00t-2-robot": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "9 KASIM 2026 · ROBOTİK": "9 نوفمبر 2026 · روبوتات",
+  "ROBOTA<br><em>5 GÖSTERİM</em><br>YETİYOR": "الروبوت<br>يكفيه<br><em>5 عروض</em>",
+  "EL İŞİ": "عمل يدوي",
+  "1 GÖSTERİM": "عرض واحد",
+  "5 GÖSTERİM": "5 عروض",
+  "LEVEL UP!": "مستوى جديد!",
+  "İnsan videosu izleyerek öğreniyor 🤖": "يتعلم من مشاهدة فيديوهات البشر 🤖"
  }
 }

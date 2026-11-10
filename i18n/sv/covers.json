@@ -891,5 +891,38 @@
   "C": "C",
   "LEAN ONAYLADI": "GODKÄNT AV LEAN",
   "Kuantum hızının sınırına yeni ispat 🧮": "Nytt bevis om gränsen för kvantfart 🧮"
+ },
+ "2026-11-10-claude-fable-5-2-mythos": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "9 KASIM 2026 · YENİ MODEL": "9 NOVEMBER 2026 · NY MODELL",
+  "1.000 AJAN<br>FERMAT'YI<br><em>30 SAATTE</em><br>KODLADI": "FERMAT<br>KODAD PÅ<br><em>30 TIMMAR</em>",
+  "FERMAT'NIN SON TEOREMİ": "FERMATS STORA SATS",
+  "aⁿ + bⁿ ≠ cⁿ": "aⁿ + bⁿ ≠ cⁿ",
+  "n > 2": "n > 2",
+  "ÖNCEKİ: 11 GÜN": "FÖRUT: 11 DAGAR",
+  "ŞİMDİ: 30 SAAT": "NU: 30 TIMMAR",
+  "MAKİNE ONAYLI": "MASKINKOLLAD",
+  "Ve fiyatı yüzde 20 indi 🧮": "Och priset sänktes 20 procent 🧮"
+ },
+ "2026-11-10-google-tpu-8tx-8i-max": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "9 KASIM 2026 · YAPAY ZEKÂ ÇİPİ": "9 NOVEMBER 2026 · AI-CHIP",
+  "GOOGLE'DAN<br><em>İKİ YENİ</em><br>TPU": "GOOGLE:<br><em>TVÅ NYA</em><br>TPU:ER",
+  "8i": "8i",
+  "TEK PAKET": "ETT PAKET",
+  "2× BELLEK BANT GENİŞLİĞİ": "2× MINNESBANDBREDD",
+  "8tx: ŞİFRELİ": "8tx: KRYPTERAD",
+  "İKİSİ BİR ARADA!": "TVÅ I ETT!",
+  "Bir pakete iki çip sığdırdılar 🔧": "Två chip i ett enda paket 🔧"
+ },
+ "2026-11-10-nvidia-gr00t-2-robot": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "9 KASIM 2026 · ROBOTİK": "9 NOVEMBER 2026 · ROBOTIK",
+  "ROBOTA<br><em>5 GÖSTERİM</em><br>YETİYOR": "ROBOTEN<br>KLARAR SIG<br>PÅ <em>5 DEMOS</em>",
+  "EL İŞİ": "HANTVERK",
+  "1 GÖSTERİM": "1 DEMO",
+  "5 GÖSTERİM": "5 DEMOS",
+  "LEVEL UP!": "LEVEL UP!",
+  "İnsan videosu izleyerek öğreniyor 🤖": "Den lär sig av videor på människor 🤖"
  }
 }

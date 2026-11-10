@@ -891,5 +891,38 @@
   "C": "C",
   "LEAN ONAYLADI": "VALIDÉ PAR LEAN",
   "Kuantum hızının sınırına yeni ispat 🧮": "Nouvelle preuve sur la limite du gain quantique 🧮"
+ },
+ "2026-11-10-claude-fable-5-2-mythos": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "9 KASIM 2026 · YENİ MODEL": "9 NOVEMBRE 2026 · NOUVEAU MODÈLE",
+  "1.000 AJAN<br>FERMAT'YI<br><em>30 SAATTE</em><br>KODLADI": "1 000 AGENTS<br>CODENT FERMAT<br><em>EN 30 HEURES</em>",
+  "FERMAT'NIN SON TEOREMİ": "THÉORÈME DE FERMAT",
+  "aⁿ + bⁿ ≠ cⁿ": "aⁿ + bⁿ ≠ cⁿ",
+  "n > 2": "n > 2",
+  "ÖNCEKİ: 11 GÜN": "AVANT : 11 JOURS",
+  "ŞİMDİ: 30 SAAT": "MAINTENANT : 30 H",
+  "MAKİNE ONAYLI": "VÉRIFIÉ PAR MACHINE",
+  "Ve fiyatı yüzde 20 indi 🧮": "Et le prix baisse de 20 % 🧮"
+ },
+ "2026-11-10-google-tpu-8tx-8i-max": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "9 KASIM 2026 · YAPAY ZEKÂ ÇİPİ": "9 NOVEMBRE 2026 · PUCE D'IA",
+  "GOOGLE'DAN<br><em>İKİ YENİ</em><br>TPU": "GOOGLE :<br><em>DEUX NOUVEAUX</em><br>TPU",
+  "8i": "8i",
+  "TEK PAKET": "1 BOÎTIER",
+  "2× BELLEK BANT GENİŞLİĞİ": "2× BANDE PASSANTE MÉMOIRE",
+  "8tx: ŞİFRELİ": "8tx : CHIFFRÉ",
+  "İKİSİ BİR ARADA!": "DEUX EN UN !",
+  "Bir pakete iki çip sığdırdılar 🔧": "Deux puces dans un seul boîtier 🔧"
+ },
+ "2026-11-10-nvidia-gr00t-2-robot": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "9 KASIM 2026 · ROBOTİK": "9 NOVEMBRE 2026 · ROBOTIQUE",
+  "ROBOTA<br><em>5 GÖSTERİM</em><br>YETİYOR": "AU ROBOT<br><em>5 DÉMOS</em><br>SUFFISENT",
+  "EL İŞİ": "À LA MAIN",
+  "1 GÖSTERİM": "1 DÉMO",
+  "5 GÖSTERİM": "5 DÉMOS",
+  "LEVEL UP!": "NIVEAU SUP !",
+  "İnsan videosu izleyerek öğreniyor 🤖": "Il apprend en regardant des humains 🤖"
  }
 }

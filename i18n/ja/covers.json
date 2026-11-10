@@ -891,5 +891,38 @@
   "C": "C",
   "LEAN ONAYLADI": "LEANが検証",
   "Kuantum hızının sınırına yeni ispat 🧮": "量子の速さの限界に新たな証明 🧮"
+ },
+ "2026-11-10-claude-fable-5-2-mythos": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "9 KASIM 2026 · YENİ MODEL": "2026年11月9日 · 新モデル",
+  "1.000 AJAN<br>FERMAT'YI<br><em>30 SAATTE</em><br>KODLADI": "1000体の<br>エージェントが<br>フェルマーを<br><em>30時間</em>で形式化",
+  "FERMAT'NIN SON TEOREMİ": "フェルマーの最終定理",
+  "aⁿ + bⁿ ≠ cⁿ": "aⁿ + bⁿ ≠ cⁿ",
+  "n > 2": "n > 2",
+  "ÖNCEKİ: 11 GÜN": "以前: 11日",
+  "ŞİMDİ: 30 SAAT": "現在: 30時間",
+  "MAKİNE ONAYLI": "機械が検証",
+  "Ve fiyatı yüzde 20 indi 🧮": "さらに価格は20%値下げ 🧮"
+ },
+ "2026-11-10-google-tpu-8tx-8i-max": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "9 KASIM 2026 · YAPAY ZEKÂ ÇİPİ": "2026年11月9日 · AIチップ",
+  "GOOGLE'DAN<br><em>İKİ YENİ</em><br>TPU": "Googleが<br><em>新TPUを2つ</em><br>発表",
+  "8i": "8i",
+  "TEK PAKET": "1パッケージ",
+  "2× BELLEK BANT GENİŞLİĞİ": "メモリ帯域幅 2倍",
+  "8tx: ŞİFRELİ": "8tx: 暗号化",
+  "İKİSİ BİR ARADA!": "2つで1つ!",
+  "Bir pakete iki çip sığdırdılar 🔧": "1つのパッケージに2つのチップ 🔧"
+ },
+ "2026-11-10-nvidia-gr00t-2-robot": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "9 KASIM 2026 · ROBOTİK": "2026年11月9日 · ロボット",
+  "ROBOTA<br><em>5 GÖSTERİM</em><br>YETİYOR": "ロボットは<br><em>5回の実演</em>で<br>覚える",
+  "EL İŞİ": "手作業",
+  "1 GÖSTERİM": "実演1回",
+  "5 GÖSTERİM": "実演5回",
+  "LEVEL UP!": "レベルアップ!",
+  "İnsan videosu izleyerek öğreniyor 🤖": "人間の動画を見て学ぶ 🤖"
  }
 }
