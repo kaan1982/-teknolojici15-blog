@@ -114,14 +114,30 @@ function shareBlock(p) {
   const nets = SHARE_BY[L.code] || SHARE_BY.default;
   // Instagram has no share URL: the button opens a post-ready kit (9:16 cover + caption), or the phone's share sheet with the image
   const caption = `${t}\n\n${ex}${ex ? '\n\n' : ''}${tx('shareRead')}: ${url}\n\n${tags.join(' ')}`;
-  const ig = p.cover ? `<li><button type="button" class="share__a share__a--ig share__ig" data-img="${esc(p.cover)}" data-file="${esc(p.slug)}" data-caption="${esc(caption)}" aria-haspopup="dialog">Instagram</button></li>` : '';
+  const ig = p.cover ? `<button type="button" class="share__a share__a--ig share__ig" data-img="${esc(p.cover)}" data-file="${esc(p.slug)}" data-caption="${esc(caption)}" aria-haspopup="dialog"><span>Instagram</span></button>` : '';
   const kit = p.cover ? `<dialog class="igkit" aria-labelledby="igkit-h"><div class="igkit__in">
     <figure class="igkit__post"><figcaption class="igkit__user"><img src="/img/brand/icon-192.png" width="32" height="32" alt=""><b>teknolojici15</b></figcaption><img class="igkit__img" src="${esc(p.cover)}" width="720" height="1280" alt="${esc(t)}" loading="lazy"></figure>
     <div class="igkit__side"><h2 id="igkit-h">${esc(tx('igH'))}</h2><ol class="igkit__steps"><li>${esc(tx('igStep1'))}</li><li>${esc(tx('igStep2'))}</li><li>${esc(tx('igStep3'))}</li></ol>
       <label class="igkit__lab" for="igkit-cap">${esc(tx('igCaption'))}</label><textarea id="igkit-cap" class="igkit__cap" rows="11" readonly>${esc(caption)}</textarea>
       <div class="igkit__btns"><button type="button" class="share__a igkit__dl">${esc(tx('igDownload'))}</button><button type="button" class="share__a igkit__copy" data-done="${esc(T.shareCopied)}">${esc(tx('igCopy'))}</button><a class="share__a igkit__open" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow">${esc(tx('igOpen'))}</a></div>
       <button type="button" class="igkit__x" aria-label="${esc(tx('igClose'))}">×</button></div></div></dialog>` : '';
-  return `<section class="share" aria-labelledby="share-h"><h2 id="share-h">${esc(T.shareH)}</h2><ul class="share__list">${nets.map((k) => k === 'ig' ? ig : `<li><a class="share__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t, ex, tags))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0])}</a></li>`).join('')}<li><button type="button" class="share__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></li><li hidden class="share__nat"><button type="button" class="share__a" data-url="${esc(url)}" data-title="${esc(t)}">${esc(T.shareMore)}</button></li></ul>${kit}</section>`;
+  const ICON = {
+    nat: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    copy: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
+    mail: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>',
+    go: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  };
+  const netA = (k, cls = '') => `<a class="share__a share__a--${k}${cls}" href="${esc(SHARE_NET[k][1](url, t, ex, tags))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${k === 'mail' ? ICON.mail : ''}<span>${esc(SHARE_NET[k][0])}</span>${k === 'mail' ? '' : ICON.go}</a>`;
+  const copyB = (cls = '') => `<button type="button" class="share__a share__copy${cls}" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${ICON.copy}<span>${esc(T.shareCopy)}</span></button>`;
+  const natB = `<li hidden class="share__nat share__nat--main"><button type="button" class="share__a share__a--main" data-url="${esc(url)}" data-title="${esc(t)}" data-text="${esc(ex)}">${ICON.nat}<span>${esc(tx('shareNow'))}</span></button></li>`;
+  return `<section class="share" aria-labelledby="share-h"><p class="share__eyebrow">${esc(T.shareH)}</p><h2 id="share-h" class="share__h">${esc(tx('shareCta'))}</h2><p class="share__sub">${esc(tx('shareSub'))}</p><ul class="share__list">${natB}${nets.filter((k) => k !== 'ig' || ig).map((k) => `<li>${k === 'ig' ? ig : netA(k)}</li>`).join('')}<li>${copyB()}</li></ul>${kit}</section>`;
+}
+/* compact row right under the article header, so sharing is one tap away from the start */
+function shareTop(p) {
+  const url = SITE + p.url, t = p.title, ex = p.excerpt || '';
+  const tags = tx(p.isAI || p.kind === 'ai' ? 'shareTagsAI' : 'shareTags').split(/\s+/).filter(Boolean);
+  const nets = (SHARE_BY[L.code] || SHARE_BY.default).filter((k) => k !== 'ig' && k !== 'mail').slice(0, 3);
+  return `<div class="sharetop" role="group" aria-label="${esc(T.shareH)}"><span class="sharetop__k">${esc(T.shareH)}</span>${nets.map((k) => `<a class="sharetop__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t, ex, tags))}" target="_blank" rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0])}</a>`).join('')}<button type="button" class="sharetop__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></div>`;
 }
 const TFIELDS = ['title', 'excerpt', 'hook', 'fact', 'factLabel', 'category'];
 // A translation lives in i18n/<code>/<posts|ai|haber>/<slug>.md and overrides only text fields + body.
@@ -475,6 +491,7 @@ ${chrome(isAI ? 'ai' : isNews ? 'haber' : 'dizin', p)}
     <h1 class="post__h">${esc(p.title)}</h1>
     <p class="post__lede">${esc(p.excerpt)}</p>
     <p class="post__meta"><time datetime="${p.date}">${fmtDate(p.date)}</time>${p.video ? ` · <a href="${IG}" target="_blank" rel="noopener noreferrer">${esc(T.videoOnIG)}</a>` : ''}</p>
+    ${shareTop(p)}
   </header>
   <div class="post__grid">
     <aside class="post__side">

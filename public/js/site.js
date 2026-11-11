@@ -206,14 +206,14 @@
 (function () {
   document.querySelectorAll('.share__copy').forEach(function (b) {
     b.addEventListener('click', function () {
-      var label = b.textContent, url = b.getAttribute('data-url');
-      var done = function () { b.textContent = b.getAttribute('data-done'); b.classList.add('is-done'); setTimeout(function () { b.textContent = label; b.classList.remove('is-done'); }, 1800); };
+      var t = b.querySelector('span') || b, label = t.textContent, url = b.getAttribute('data-url');
+      var done = function () { t.textContent = b.getAttribute('data-done'); b.classList.add('is-done'); setTimeout(function () { t.textContent = label; b.classList.remove('is-done'); }, 1800); };
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { window.prompt('', url); });
       else window.prompt('', url);
     });
   });
   // network links: open a new tab; if the browser/in-app viewer blocks pop-ups, go there in this tab instead
-  document.querySelectorAll('a.share__a[target="_blank"]').forEach(function (a) {
+  document.querySelectorAll('a.share__a[target="_blank"], a.sharetop__a[target="_blank"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       e.preventDefault();
       var w = null; try { w = window.open(a.href, '_blank'); } catch (err) {}
@@ -283,6 +283,6 @@
   if (navigator.share) document.querySelectorAll('.share__nat').forEach(function (li) {
     li.hidden = false;
     var b = li.querySelector('button');
-    b.addEventListener('click', function () { navigator.share({ title: b.getAttribute('data-title'), url: b.getAttribute('data-url') }).catch(function () {}); });
+    b.addEventListener('click', function () { var d = { title: b.getAttribute('data-title'), url: b.getAttribute('data-url') }; if (b.getAttribute('data-text')) d.text = b.getAttribute('data-text'); navigator.share(d).catch(function () {}); });
   });
 })();
