@@ -127,17 +127,17 @@ function shareBlock(p) {
     mail: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>',
     go: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   };
-  const netA = (k, cls = '') => `<a class="share__a share__a--${k}${cls}" href="${esc(SHARE_NET[k][1](url, t, ex, tags))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${k === 'mail' ? ICON.mail : ''}<span>${esc(SHARE_NET[k][0].toUpperCase())}</span></a>`;
+  const netA = (k, cls = '') => `<a class="share__a share__a--${k}${cls}" href="${esc(SHARE_NET[k][1](url, t, ex, tags))}" ${k === 'mail' ? '' : 'target="_blank" '}rel="noopener noreferrer nofollow">${k === 'mail' ? ICON.mail : ''}<span>${esc(SHARE_NET[k][0])}</span>${k === 'mail' ? '' : ICON.go}</a>`;
   const copyB = (cls = '') => `<button type="button" class="share__a share__copy${cls}" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${ICON.copy}<span>${esc(T.shareCopy)}</span></button>`;
   const natB = `<li hidden class="share__nat share__nat--main"><button type="button" class="share__a share__a--main" data-url="${esc(url)}" data-title="${esc(t)}" data-text="${esc(ex)}">${ICON.nat}<span>${esc(tx('shareNow'))}</span></button></li>`;
-  return `<section class="share" aria-labelledby="share-h"><div class="share__deck" aria-hidden="true"><span class="share__lcd">${esc(T.shareH)}</span><span class="share__grille"></span></div><h2 id="share-h" class="share__h">${esc(tx('shareCta'))}</h2><p class="share__sub">${esc(tx('shareSub'))}</p><ul class="share__list">${natB}${nets.filter((k) => k !== 'ig' || ig).map((k) => `<li>${k === 'ig' ? ig : netA(k)}</li>`).join('')}<li>${copyB()}</li></ul>${kit}</section>`;
+  return `<section class="share" aria-labelledby="share-h"><p class="share__eyebrow">${esc(T.shareH)}</p><h2 id="share-h" class="share__h">${esc(tx('shareCta'))}</h2><p class="share__sub">${esc(tx('shareSub'))}</p><ul class="share__list">${natB}${nets.filter((k) => k !== 'ig' || ig).map((k) => `<li>${k === 'ig' ? ig : netA(k)}</li>`).join('')}<li>${copyB()}</li></ul>${kit}</section>`;
 }
 /* compact row right under the article header, so sharing is one tap away from the start */
 function shareTop(p) {
   const url = SITE + p.url, t = p.title, ex = p.excerpt || '';
   const tags = tx(p.isAI || p.kind === 'ai' ? 'shareTagsAI' : 'shareTags').split(/\s+/).filter(Boolean);
   const nets = (SHARE_BY[L.code] || SHARE_BY.default).filter((k) => k !== 'ig' && k !== 'mail').slice(0, 3);
-  return `<div class="sharetop" role="group" aria-label="${esc(T.shareH)}"><span class="sharetop__k">${esc(T.shareH)}</span>${nets.map((k) => `<a class="sharetop__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t, ex, tags))}" target="_blank" rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0].toUpperCase())}</a>`).join('')}<button type="button" class="sharetop__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></div>`;
+  return `<div class="sharetop" role="group" aria-label="${esc(T.shareH)}"><span class="sharetop__k">${esc(T.shareH)}</span>${nets.map((k) => `<a class="sharetop__a share__a--${k}" href="${esc(SHARE_NET[k][1](url, t, ex, tags))}" target="_blank" rel="noopener noreferrer nofollow">${esc(SHARE_NET[k][0])}</a>`).join('')}<button type="button" class="sharetop__a share__copy" data-url="${esc(url)}" data-done="${esc(T.shareCopied)}">${esc(T.shareCopy)}</button></div>`;
 }
 const TFIELDS = ['title', 'excerpt', 'hook', 'fact', 'factLabel', 'category'];
 // A translation lives in i18n/<code>/<posts|ai|haber>/<slug>.md and overrides only text fields + body.
