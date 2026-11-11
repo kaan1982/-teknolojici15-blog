@@ -924,5 +924,35 @@
   "5 GÖSTERİM": "5 DEMOS",
   "LEVEL UP!": "LEVEL UP!",
   "İnsan videosu izleyerek öğreniyor 🤖": "It learns by watching human video 🤖"
+ },
+ "2026-11-11-anthropic-halka-arz-fiyat-araligi": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "10 KASIM 2026 · HALKA ARZ": "10 NOVEMBER 2026 · IPO",
+  "CLAUDE'UN<br>YAPIMCISI<br><em>BORSAYA</em>": "CLAUDE'S<br>MAKER GOES<br><em>PUBLIC</em>",
+  "ANT ▲ NASDAQ ▲ ANT ▲ NASDAQ ▲ ANT": "ANT ▲ NASDAQ ▲ ANT ▲ NASDAQ ▲ ANT",
+  "19 KASIM'DA!": "ON 19 NOV!",
+  "Değer: 1,4 trilyon dolara kadar 📈": "Value: up to $1.4 trillion 📈"
+ },
+ "2026-11-11-deepmind-signal-dogrulama": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "10 KASIM 2026 · YAPAY ZEKÂ": "10 NOVEMBER 2026 · AI",
+  "ŞİFRELEME<br>KODU <em>İSPATLANDI</em>": "ENCRYPTION<br>CODE <em>PROVEN</em>",
+  "theorem forward_secrecy :": "theorem forward_secrecy :",
+  "∀ msg, compromised k →": "∀ msg, compromised k →",
+  "secret (msg) := by": "secret (msg) := by",
+  "ratchet_step; simp": "ratchet_step; simp",
+  "exact aead_ok": "exact aead_ok",
+  "✓ 6.000.000+ satır": "✓ 6,000,000+ lines",
+  "✓ hata: 0": "✓ errors: 0",
+  "QED ∎": "QED ∎",
+  "4 HAFTADA!": "IN 4 WEEKS!",
+  "Yapay zekâ bu kez açık değil, kanıt buldu 🔐": "This time AI found proof, not a flaw 🔐"
+ },
+ "2026-11-11-microsoft-kasim-yamasi": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "10 KASIM 2026 · SİBER GÜVENLİK": "10 NOVEMBER 2026 · CYBERSECURITY",
+  "BİR AYDA<br><em>1.093 AÇIK</em><br>KAPANDI": "ONE MONTH,<br><em>1,093 FLAWS</em><br>FIXED",
+  "HEMEN GÜNCELLE!": "UPDATE NOW!",
+  "Biri saldırılarda çoktan kullanılıyordu ⚠️": "One was already used in attacks ⚠️"
  }
 }

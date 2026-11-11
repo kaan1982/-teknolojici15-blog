@@ -924,5 +924,35 @@
   "5 GÖSTERİM": "5 DEMO'S",
   "LEVEL UP!": "LEVEL UP!",
   "İnsan videosu izleyerek öğreniyor 🤖": "Hij leert van video's van mensen 🤖"
+ },
+ "2026-11-11-anthropic-halka-arz-fiyat-araligi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "10 KASIM 2026 · HALKA ARZ": "10 NOVEMBER 2026 · BEURSGANG",
+  "CLAUDE'UN<br>YAPIMCISI<br><em>BORSAYA</em>": "MAKER VAN<br>CLAUDE<br><em>NAAR DE BEURS</em>",
+  "ANT ▲ NASDAQ ▲ ANT ▲ NASDAQ ▲ ANT": "ANT ▲ NASDAQ ▲ ANT ▲ NASDAQ ▲ ANT",
+  "19 KASIM'DA!": "OP 19 NOV.!",
+  "Değer: 1,4 trilyon dolara kadar 📈": "Waarde: tot 1,4 biljoen dollar 📈"
+ },
+ "2026-11-11-deepmind-signal-dogrulama": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "10 KASIM 2026 · YAPAY ZEKÂ": "10 NOVEMBER 2026 · AI",
+  "ŞİFRELEME<br>KODU <em>İSPATLANDI</em>": "VERSLEUTEL-<br>CODE <em>BEWEZEN</em>",
+  "theorem forward_secrecy :": "theorem forward_secrecy :",
+  "∀ msg, compromised k →": "∀ msg, compromised k →",
+  "secret (msg) := by": "secret (msg) := by",
+  "ratchet_step; simp": "ratchet_step; simp",
+  "exact aead_ok": "exact aead_ok",
+  "✓ 6.000.000+ satır": "✓ 6.000.000+ regels",
+  "✓ hata: 0": "✓ fouten: 0",
+  "QED ∎": "QED ∎",
+  "4 HAFTADA!": "IN 4 WEKEN!",
+  "Yapay zekâ bu kez açık değil, kanıt buldu 🔐": "Deze keer vond AI bewijs, geen lek 🔐"
+ },
+ "2026-11-11-microsoft-kasim-yamasi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "10 KASIM 2026 · SİBER GÜVENLİK": "10 NOVEMBER 2026 · CYBERVEILIGHEID",
+  "BİR AYDA<br><em>1.093 AÇIK</em><br>KAPANDI": "IN ÉÉN MAAND<br><em>1.093 LEKKEN</em><br>GEDICHT",
+  "HEMEN GÜNCELLE!": "NU UPDATEN!",
+  "Biri saldırılarda çoktan kullanılıyordu ⚠️": "Eén werd al bij aanvallen gebruikt ⚠️"
  }
 }

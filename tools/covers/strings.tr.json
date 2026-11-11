@@ -456,6 +456,36 @@
   "LEVEL UP!",
   "İnsan videosu izleyerek öğreniyor 🤖"
  ],
+ "2026-11-11-anthropic-halka-arz-fiyat-araligi": [
+  "GÜNÜN HABERİ",
+  "10 KASIM 2026 · HALKA ARZ",
+  "CLAUDE'UN<br>YAPIMCISI<br><em>BORSAYA</em>",
+  "ANT ▲ NASDAQ ▲ ANT ▲ NASDAQ ▲ ANT",
+  "19 KASIM'DA!",
+  "Değer: 1,4 trilyon dolara kadar 📈"
+ ],
+ "2026-11-11-deepmind-signal-dogrulama": [
+  "GÜNÜN HABERİ",
+  "10 KASIM 2026 · YAPAY ZEKÂ",
+  "ŞİFRELEME<br>KODU <em>İSPATLANDI</em>",
+  "theorem forward_secrecy :",
+  "∀ msg, compromised k →",
+  "secret (msg) := by",
+  "ratchet_step; simp",
+  "exact aead_ok",
+  "✓ 6.000.000+ satır",
+  "✓ hata: 0",
+  "QED ∎",
+  "4 HAFTADA!",
+  "Yapay zekâ bu kez açık değil, kanıt buldu 🔐"
+ ],
+ "2026-11-11-microsoft-kasim-yamasi": [
+  "GÜNÜN HABERİ",
+  "10 KASIM 2026 · SİBER GÜVENLİK",
+  "BİR AYDA<br><em>1.093 AÇIK</em><br>KAPANDI",
+  "HEMEN GÜNCELLE!",
+  "Biri saldırılarda çoktan kullanılıyordu ⚠️"
+ ],
  "apollo-11-bilgisayari-4-kb-bellek": [
   "TEKNOLOJİ TARİHİ",
   "<span>1969 · APOLLO 11</span>",

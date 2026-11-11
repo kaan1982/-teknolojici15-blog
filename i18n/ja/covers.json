@@ -924,5 +924,35 @@
   "5 GÖSTERİM": "実演5回",
   "LEVEL UP!": "レベルアップ!",
   "İnsan videosu izleyerek öğreniyor 🤖": "人間の動画を見て学ぶ 🤖"
+ },
+ "2026-11-11-anthropic-halka-arz-fiyat-araligi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "10 KASIM 2026 · HALKA ARZ": "2026年11月10日 · 新規上場",
+  "CLAUDE'UN<br>YAPIMCISI<br><em>BORSAYA</em>": "CLAUDEの<br>開発元が<br><em>上場へ</em>",
+  "ANT ▲ NASDAQ ▲ ANT ▲ NASDAQ ▲ ANT": "ANT ▲ NASDAQ ▲ ANT ▲ NASDAQ ▲ ANT",
+  "19 KASIM'DA!": "11月19日!",
+  "Değer: 1,4 trilyon dolara kadar 📈": "評価額は最大1.4兆ドル 📈"
+ },
+ "2026-11-11-deepmind-signal-dogrulama": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "10 KASIM 2026 · YAPAY ZEKÂ": "2026年11月10日 · AI",
+  "ŞİFRELEME<br>KODU <em>İSPATLANDI</em>": "暗号コードを<br><em>証明</em>",
+  "theorem forward_secrecy :": "theorem forward_secrecy :",
+  "∀ msg, compromised k →": "∀ msg, compromised k →",
+  "secret (msg) := by": "secret (msg) := by",
+  "ratchet_step; simp": "ratchet_step; simp",
+  "exact aead_ok": "exact aead_ok",
+  "✓ 6.000.000+ satır": "✓ 600万行以上",
+  "✓ hata: 0": "✓ エラー: 0",
+  "QED ∎": "QED ∎",
+  "4 HAFTADA!": "わずか4週間!",
+  "Yapay zekâ bu kez açık değil, kanıt buldu 🔐": "今回AIが見つけたのは穴でなく証明 🔐"
+ },
+ "2026-11-11-microsoft-kasim-yamasi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "10 KASIM 2026 · SİBER GÜVENLİK": "2026年11月10日 · サイバーセキュリティ",
+  "BİR AYDA<br><em>1.093 AÇIK</em><br>KAPANDI": "1か月で<br><em>1,093件</em><br>の脆弱性を修正",
+  "HEMEN GÜNCELLE!": "今すぐ更新!",
+  "Biri saldırılarda çoktan kullanılıyordu ⚠️": "1件はすでに攻撃に悪用 ⚠️"
  }
 }
