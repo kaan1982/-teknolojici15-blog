@@ -954,5 +954,30 @@
   "BİR AYDA<br><em>1.093 AÇIK</em><br>KAPANDI": "EN UN MOIS<br><em>1 093 FAILLES</em><br>CORRIGÉES",
   "HEMEN GÜNCELLE!": "METTEZ À JOUR !",
   "Biri saldırılarda çoktan kullanılıyordu ⚠️": "L'une était déjà exploitée ⚠️"
+ },
+ "2026-11-12-alphagenome-2-hucre-dna": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "11 KASIM 2026 · YAPAY ZEKÂ": "11 NOVEMBRE 2026 · IA",
+  "AYNI DNA,<br><em>FARKLI</em><br>HÜCRE": "MÊME ADN,<br><em>AUTRE</em><br>CELLULE",
+  "NEREDEYSE 2 KAT!": "PRESQUE 2 FOIS !",
+  "Her hücre aynı DNA'yı başka okuyor 🧬": "Chaque cellule lit le même ADN à sa façon 🧬"
+ },
+ "2026-11-12-ibm-nighthawk-r3-kuantum": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "11 KASIM 2026 · KUANTUM": "11 NOVEMBRE 2026 · QUANTIQUE",
+  "İKİ ÇİP,<br><em>TEK</em><br>MAKİNE": "DEUX PUCES,<br><em>UNE</em><br>MACHINE",
+  "520 KUBİT": "520 QUBITS",
+  "L-COUPLER": "L-COUPLER",
+  "2027: 1.040 KUBİT": "2027 : 1 040 QUBITS",
+  "10.000 İŞLEM HEDEFİ!": "OBJECTIF 10 000 OPS !",
+  "Kuantumda büyümenin yolu: çipleri bağlamak ⚛️": "Pour grandir, le quantique relie ses puces ⚛️"
+ },
+ "2026-11-12-silent-lynx-yapay-zeka-casusluk": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "11 KASIM 2026 · SİBER CASUSLUK": "11 NOVEMBRE 2026 · CYBERESPIONNAGE",
+  "CASUSLUĞU<br><em>YAPAY ZEKÂ</em><br>YAPTI": "<em>L'IA</em><br>A FAIT<br>L'ESPION",
+  "2.000+ BELGE": "2 000+ DOCUMENTS",
+  "ŞAKA DEĞİL!": "SANS RIRE !",
+  "Açık unutulan bir sunucu her şeyi ele verdi 🕵️": "Un serveur laissé ouvert a tout trahi 🕵️"
  }
 }

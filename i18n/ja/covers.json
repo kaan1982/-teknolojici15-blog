@@ -954,5 +954,30 @@
   "BİR AYDA<br><em>1.093 AÇIK</em><br>KAPANDI": "1か月で<br><em>1,093件</em><br>の脆弱性を修正",
   "HEMEN GÜNCELLE!": "今すぐ更新!",
   "Biri saldırılarda çoktan kullanılıyordu ⚠️": "1件はすでに攻撃に悪用 ⚠️"
+ },
+ "2026-11-12-alphagenome-2-hucre-dna": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "11 KASIM 2026 · YAPAY ZEKÂ": "2026年11月11日 · AI",
+  "AYNI DNA,<br><em>FARKLI</em><br>HÜCRE": "同じDNA、<br><em>違う</em><br>細胞",
+  "NEREDEYSE 2 KAT!": "ほぼ2倍!",
+  "Her hücre aynı DNA'yı başka okuyor 🧬": "細胞ごとに同じDNAを違う読み方 🧬"
+ },
+ "2026-11-12-ibm-nighthawk-r3-kuantum": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "11 KASIM 2026 · KUANTUM": "2026年11月11日 · 量子",
+  "İKİ ÇİP,<br><em>TEK</em><br>MAKİNE": "2つのチップで<br><em>1台</em>の<br>マシン",
+  "520 KUBİT": "520量子ビット",
+  "L-COUPLER": "L-COUPLER",
+  "2027: 1.040 KUBİT": "2027年: 1,040量子ビット",
+  "10.000 İŞLEM HEDEFİ!": "目標は10,000演算!",
+  "Kuantumda büyümenin yolu: çipleri bağlamak ⚛️": "量子の拡大の道: チップをつなぐ ⚛️"
+ },
+ "2026-11-12-silent-lynx-yapay-zeka-casusluk": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "11 KASIM 2026 · SİBER CASUSLUK": "2026年11月11日 · サイバー諜報",
+  "CASUSLUĞU<br><em>YAPAY ZEKÂ</em><br>YAPTI": "スパイを<br>したのは<br><em>AI</em>",
+  "2.000+ BELGE": "文書2,000件+",
+  "ŞAKA DEĞİL!": "冗談じゃない!",
+  "Açık unutulan bir sunucu her şeyi ele verdi 🕵️": "放置されたサーバーがすべてを暴露 🕵️"
  }
 }

@@ -954,5 +954,30 @@
   "BİR AYDA<br><em>1.093 AÇIK</em><br>KAPANDI": "PÅ EN MÅNAD<br><em>1 093 HÅL</em><br>TÄPPTA",
   "HEMEN GÜNCELLE!": "UPPDATERA NU!",
   "Biri saldırılarda çoktan kullanılıyordu ⚠️": "Ett användes redan i attacker ⚠️"
+ },
+ "2026-11-12-alphagenome-2-hucre-dna": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "11 KASIM 2026 · YAPAY ZEKÂ": "11 NOVEMBER 2026 · AI",
+  "AYNI DNA,<br><em>FARKLI</em><br>HÜCRE": "SAMMA DNA,<br><em>OLIKA</em><br>CELLER",
+  "NEREDEYSE 2 KAT!": "NÄSTAN 2 GÅNGER!",
+  "Her hücre aynı DNA'yı başka okuyor 🧬": "Varje cell läser samma DNA på sitt sätt 🧬"
+ },
+ "2026-11-12-ibm-nighthawk-r3-kuantum": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "11 KASIM 2026 · KUANTUM": "11 NOVEMBER 2026 · KVANT",
+  "İKİ ÇİP,<br><em>TEK</em><br>MAKİNE": "TVÅ CHIP,<br><em>EN</em><br>MASKIN",
+  "520 KUBİT": "520 QUBITS",
+  "L-COUPLER": "L-COUPLER",
+  "2027: 1.040 KUBİT": "2027: 1 040 QUBITS",
+  "10.000 İŞLEM HEDEFİ!": "MÅL: 10 000 OPERATIONER!",
+  "Kuantumda büyümenin yolu: çipleri bağlamak ⚛️": "Kvantvägen framåt: koppla ihop chip ⚛️"
+ },
+ "2026-11-12-silent-lynx-yapay-zeka-casusluk": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "11 KASIM 2026 · SİBER CASUSLUK": "11 NOVEMBER 2026 · CYBERSPIONAGE",
+  "CASUSLUĞU<br><em>YAPAY ZEKÂ</em><br>YAPTI": "<em>AI</em><br>SKÖTTE<br>SPIONAGET",
+  "2.000+ BELGE": "2 000+ DOKUMENT",
+  "ŞAKA DEĞİL!": "INGET SKÄMT!",
+  "Açık unutulan bir sunucu her şeyi ele verdi 🕵️": "En glömd öppen server avslöjade allt 🕵️"
  }
 }
