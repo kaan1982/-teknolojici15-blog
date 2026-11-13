@@ -979,5 +979,34 @@
   "2.000+ BELGE": "2,000+ وثيقة",
   "ŞAKA DEĞİL!": "ليست مزحة!",
   "Açık unutulan bir sunucu her şeyi ele verdi 🕵️": "خادم منسيّ مكشوف فضح كل شيء 🕵️"
+ },
+ "2026-11-13-aws-emulator-yapay-zeka-ajanlari": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "11 KASIM 2026 · YAPAY ZEKÂ": "11 نوفمبر 2026 · الذكاء الاصطناعي",
+  "BULUTU<br><em>AJANLAR</em><br>YAZDI": "الوكلاء<br><em>كتبوا</em><br>السحابة",
+  "$ ./emulator --local █": "$ ./emulator --local █",
+  "TEST": "اختبار",
+  "HATA BUL": "كشف الأخطاء",
+  "DÜZELT": "إصلاح",
+  "x0": "x0",
+  "İNSAN ELİ DEĞMEDİ!": "بلا يد بشرية!",
+  "200+ AWS servisi artık dizüstünde 💻": "أكثر من 200 خدمة AWS على الحاسوب 💻"
+ },
+ "2026-11-13-gemini-4-hydrogen-arama": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "12 KASIM 2026 · YAPAY ZEKÂ": "12 نوفمبر 2026 · الذكاء الاصطناعي",
+  "ARAMAYA<br><em>YENİ BEYİN</em><br>TAKILDI": "البحث<br><em>بعقل جديد</em><br>كليًا",
+  "en iyi telefon hangisi?": "ما أفضل هاتف؟",
+  "HERKESE AÇIK!": "متاح للجميع!",
+  "Tek soru, aynı anda onlarca arama 🔎": "سؤال واحد وعشرات عمليات البحث معًا 🔎"
+ },
+ "2026-11-13-nvidia-huang-istifa": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "12 KASIM 2026 · ÇİP DÜNYASI": "12 نوفمبر 2026 · عالم الرقائق",
+  "NVIDIA'DA<br><em>33 YILLIK</em><br>DÖNEM BİTTİ": "في NVIDIA<br><em>33 عامًا</em><br>انتهت",
+  "CEO": "الرئيس التنفيذي",
+  "GEÇİCİ": "مؤقت",
+  "TARİHİ GÜN!": "يوم تاريخي!",
+  "Koltuk artık finans direktöründe 💺": "المقعد الآن للمديرة المالية 💺"
  }
 }

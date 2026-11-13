@@ -979,5 +979,34 @@
   "2.000+ BELGE": "2.000+ DOCUMENTEN",
   "ŞAKA DEĞİL!": "GEEN GRAP!",
   "Açık unutulan bir sunucu her şeyi ele verdi 🕵️": "Een open gelaten server verraadde alles 🕵️"
+ },
+ "2026-11-13-aws-emulator-yapay-zeka-ajanlari": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "11 KASIM 2026 · YAPAY ZEKÂ": "11 NOVEMBER 2026 · AI",
+  "BULUTU<br><em>AJANLAR</em><br>YAZDI": "AGENTS<br><em>SCHREVEN</em><br>DE CLOUD",
+  "$ ./emulator --local █": "$ ./emulator --local █",
+  "TEST": "TEST",
+  "HATA BUL": "BUGS VINDEN",
+  "DÜZELT": "FIXEN",
+  "x0": "x0",
+  "İNSAN ELİ DEĞMEDİ!": "GEEN MENS AAN TE PAS!",
+  "200+ AWS servisi artık dizüstünde 💻": "200+ AWS-diensten nu op je laptop 💻"
+ },
+ "2026-11-13-gemini-4-hydrogen-arama": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "12 KASIM 2026 · YAPAY ZEKÂ": "12 NOVEMBER 2026 · AI",
+  "ARAMAYA<br><em>YENİ BEYİN</em><br>TAKILDI": "ZOEKEN<br><em>KRIJGT NIEUW</em><br>BREIN",
+  "en iyi telefon hangisi?": "welke telefoon is de beste?",
+  "HERKESE AÇIK!": "VOOR IEDEREEN!",
+  "Tek soru, aynı anda onlarca arama 🔎": "Eén vraag, tientallen zoekopdrachten tegelijk 🔎"
+ },
+ "2026-11-13-nvidia-huang-istifa": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "12 KASIM 2026 · ÇİP DÜNYASI": "12 NOVEMBER 2026 · CHIPS",
+  "NVIDIA'DA<br><em>33 YILLIK</em><br>DÖNEM BİTTİ": "BIJ NVIDIA<br><em>33 JAAR</em><br>VOORBIJ",
+  "CEO": "CEO",
+  "GEÇİCİ": "INTERIM",
+  "TARİHİ GÜN!": "HISTORISCHE DAG!",
+  "Koltuk artık finans direktöründe 💺": "De stoel gaat naar de financieel directeur 💺"
  }
 }

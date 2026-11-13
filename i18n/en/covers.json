@@ -979,5 +979,34 @@
   "2.000+ BELGE": "2,000+ FILES",
   "ŞAKA DEĞİL!": "NO JOKE!",
   "Açık unutulan bir sunucu her şeyi ele verdi 🕵️": "One server left open gave it all away 🕵️"
+ },
+ "2026-11-13-aws-emulator-yapay-zeka-ajanlari": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "11 KASIM 2026 · YAPAY ZEKÂ": "11 NOVEMBER 2026 · AI",
+  "BULUTU<br><em>AJANLAR</em><br>YAZDI": "AGENTS<br><em>WROTE</em><br>THE CLOUD",
+  "$ ./emulator --local █": "$ ./emulator --local █",
+  "TEST": "TEST",
+  "HATA BUL": "FIND BUGS",
+  "DÜZELT": "FIX",
+  "x0": "x0",
+  "İNSAN ELİ DEĞMEDİ!": "NO HUMAN HANDS!",
+  "200+ AWS servisi artık dizüstünde 💻": "200+ AWS services now on a laptop 💻"
+ },
+ "2026-11-13-gemini-4-hydrogen-arama": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "12 KASIM 2026 · YAPAY ZEKÂ": "12 NOVEMBER 2026 · AI",
+  "ARAMAYA<br><em>YENİ BEYİN</em><br>TAKILDI": "SEARCH GETS<br><em>A NEW BRAIN</em><br>INSIDE",
+  "en iyi telefon hangisi?": "which phone is best?",
+  "HERKESE AÇIK!": "OPEN TO ALL!",
+  "Tek soru, aynı anda onlarca arama 🔎": "One question, dozens of searches at once 🔎"
+ },
+ "2026-11-13-nvidia-huang-istifa": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "12 KASIM 2026 · ÇİP DÜNYASI": "12 NOVEMBER 2026 · CHIPS",
+  "NVIDIA'DA<br><em>33 YILLIK</em><br>DÖNEM BİTTİ": "AT NVIDIA<br><em>33 YEARS</em><br>COME TO AN END",
+  "CEO": "CEO",
+  "GEÇİCİ": "INTERIM",
+  "TARİHİ GÜN!": "HISTORIC DAY!",
+  "Koltuk artık finans direktöründe 💺": "The chair now goes to the finance chief 💺"
  }
 }

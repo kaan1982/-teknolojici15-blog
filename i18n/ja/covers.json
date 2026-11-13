@@ -979,5 +979,34 @@
   "2.000+ BELGE": "文書2,000件+",
   "ŞAKA DEĞİL!": "冗談じゃない!",
   "Açık unutulan bir sunucu her şeyi ele verdi 🕵️": "放置されたサーバーがすべてを暴露 🕵️"
+ },
+ "2026-11-13-aws-emulator-yapay-zeka-ajanlari": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "11 KASIM 2026 · YAPAY ZEKÂ": "2026年11月11日 · AI",
+  "BULUTU<br><em>AJANLAR</em><br>YAZDI": "クラウドを<br><em>AIエージェント</em><br>が書いた",
+  "$ ./emulator --local █": "$ ./emulator --local █",
+  "TEST": "テスト",
+  "HATA BUL": "バグ発見",
+  "DÜZELT": "修正",
+  "x0": "x0",
+  "İNSAN ELİ DEĞMEDİ!": "人の手ゼロ!",
+  "200+ AWS servisi artık dizüstünde 💻": "200以上のAWSサービスがノートPCに 💻"
+ },
+ "2026-11-13-gemini-4-hydrogen-arama": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "12 KASIM 2026 · YAPAY ZEKÂ": "2026年11月12日 · AI",
+  "ARAMAYA<br><em>YENİ BEYİN</em><br>TAKILDI": "検索に<br><em>新しい頭脳</em><br>が入った",
+  "en iyi telefon hangisi?": "一番いいスマホは?",
+  "HERKESE AÇIK!": "全員に公開!",
+  "Tek soru, aynı anda onlarca arama 🔎": "1つの質問で数十の検索を同時に 🔎"
+ },
+ "2026-11-13-nvidia-huang-istifa": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "12 KASIM 2026 · ÇİP DÜNYASI": "2026年11月12日 · 半導体",
+  "NVIDIA'DA<br><em>33 YILLIK</em><br>DÖNEM BİTTİ": "NVIDIAの<br><em>33年</em><br>が終わった",
+  "CEO": "CEO",
+  "GEÇİCİ": "暫定",
+  "TARİHİ GÜN!": "歴史的な日!",
+  "Koltuk artık finans direktöründe 💺": "椅子は財務責任者の手に 💺"
  }
 }
