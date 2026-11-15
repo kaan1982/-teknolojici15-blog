@@ -1031,5 +1031,33 @@
   "YENİ MODEL": "NUOVO MODELLO",
   "DAVA AÇILDI!": "CAUSA AVVIATA!",
   "Dört kuruluş, beş şirkete karşı ⚖️": "Quattro gruppi contro cinque aziende ⚖️"
+ },
+ "2026-11-15-starship-gemi-kuleyle-yakalandi": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "14 KASIM 2026 · UZAY": "14 NOVEMBRE 2026 · SPAZIO",
+  "GEMİ<br><em>KULEYE</em><br>KONDU": "NAVE<br><em>PRESA</em><br>DALLA TORRE",
+  "TARİHTE İLK!": "PRIMA VOLTA!",
+  "Yörüngeden dönen gemi havada yakalandı 🚀": "Tornata dall'orbita, presa al volo 🚀"
+ },
+ "2026-11-15-claude-godel-defterleri": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "1940'LAR → 2026 · YAPAY ZEKÂ": "ANNI '40 → 2026 · IA",
+  "GÖDEL'İN<br>DEFTERİNDEN<br><em>663 TEOREM</em>": "QUADERNI<br>DI GÖDEL:<br><em>663 TEOREMI</em>",
+  "∀x ∃y (φ → ψ)": "∀x ∃y (φ → ψ)",
+  "ZF ⊬ AC": "ZF ⊬ AC",
+  "falsch": "falsch",
+  "DOĞRU": "VERI",
+  "DÜZELTİLDİ": "CORRETTI",
+  "YANLIŞ": "FALSI",
+  "GÜNLER İÇİNDE!": "IN POCHI GIORNI!",
+  "Haftada bir sayfadan birkaç güne 📓": "Da una pagina a settimana a pochi giorni 📓"
+ },
+ "2026-11-15-chatgpt-wallet-ajan-odeme": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "13 KASIM 2026 · YAPAY ZEKÂ": "13 NOVEMBRE 2026 · IA",
+  "AJAN ÖDÜYOR,<br><em>KARTINI</em><br>GÖRMÜYOR": "L'AGENTE PAGA,<br><em>LA CARTA</em><br>NON LA VEDE",
+  "JETON": "TOKEN",
+  "ONAYSIZ ÖDEME YOK!": "NIENTE ACQUISTI SENZA OK!",
+  "Her alışverişe parmak izi onayı 🛒": "Impronta digitale per ogni acquisto 🛒"
  }
 }

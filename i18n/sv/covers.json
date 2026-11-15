@@ -1031,5 +1031,33 @@
   "YENİ MODEL": "NY MODELL",
   "DAVA AÇILDI!": "STÄMNING INLÄMNAD!",
   "Dört kuruluş, beş şirkete karşı ⚖️": "Fyra grupper mot fem bolag ⚖️"
+ },
+ "2026-11-15-starship-gemi-kuleyle-yakalandi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "14 KASIM 2026 · UZAY": "14 NOVEMBER 2026 · RYMDEN",
+  "GEMİ<br><em>KULEYE</em><br>KONDU": "SKEPPET<br><em>FÅNGAT</em><br>AV TORNET",
+  "TARİHTE İLK!": "FÖRSTA GÅNGEN!",
+  "Yörüngeden dönen gemi havada yakalandı 🚀": "Skeppet från omloppsbana fångades i luften 🚀"
+ },
+ "2026-11-15-claude-godel-defterleri": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "1940'LAR → 2026 · YAPAY ZEKÂ": "1940-TALET → 2026 · AI",
+  "GÖDEL'İN<br>DEFTERİNDEN<br><em>663 TEOREM</em>": "GÖDELS<br>ANTECKNINGAR:<br><em>663 SATSER</em>",
+  "∀x ∃y (φ → ψ)": "∀x ∃y (φ → ψ)",
+  "ZF ⊬ AC": "ZF ⊬ AC",
+  "falsch": "falsch",
+  "DOĞRU": "RÄTT",
+  "DÜZELTİLDİ": "RÄTTADE",
+  "YANLIŞ": "FEL",
+  "GÜNLER İÇİNDE!": "PÅ NÅGRA DAGAR!",
+  "Haftada bir sayfadan birkaç güne 📓": "Från en sida i veckan till några dagar 📓"
+ },
+ "2026-11-15-chatgpt-wallet-ajan-odeme": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "13 KASIM 2026 · YAPAY ZEKÂ": "13 NOVEMBER 2026 · AI",
+  "AJAN ÖDÜYOR,<br><em>KARTINI</em><br>GÖRMÜYOR": "AGENTEN BETALAR,<br><em>SER INTE</em><br>DITT KORT",
+  "JETON": "TOKEN",
+  "ONAYSIZ ÖDEME YOK!": "INGET KÖP UTAN OK!",
+  "Her alışverişe parmak izi onayı 🛒": "Fingeravtryck för varje köp 🛒"
  }
 }

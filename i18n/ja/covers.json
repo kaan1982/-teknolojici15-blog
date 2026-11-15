@@ -1031,5 +1031,33 @@
   "YENİ MODEL": "新モデル",
   "DAVA AÇILDI!": "提訴!",
   "Dört kuruluş, beş şirkete karşı ⚖️": "4団体 対 5社 ⚖️"
+ },
+ "2026-11-15-starship-gemi-kuleyle-yakalandi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "14 KASIM 2026 · UZAY": "2026年11月14日 · 宇宙",
+  "GEMİ<br><em>KULEYE</em><br>KONDU": "宇宙船を<br><em>タワーが</em><br>キャッチ",
+  "TARİHTE İLK!": "史上初!",
+  "Yörüngeden dönen gemi havada yakalandı 🚀": "軌道から戻った船を空中で捕獲 🚀"
+ },
+ "2026-11-15-claude-godel-defterleri": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "1940'LAR → 2026 · YAPAY ZEKÂ": "1940年代 → 2026 · AI",
+  "GÖDEL'İN<br>DEFTERİNDEN<br><em>663 TEOREM</em>": "ゲーデルの<br>ノートから<br><em>663の定理</em>",
+  "∀x ∃y (φ → ψ)": "∀x ∃y (φ → ψ)",
+  "ZF ⊬ AC": "ZF ⊬ AC",
+  "falsch": "falsch",
+  "DOĞRU": "正しい",
+  "DÜZELTİLDİ": "修正",
+  "YANLIŞ": "誤り",
+  "GÜNLER İÇİNDE!": "わずか数日!",
+  "Haftada bir sayfadan birkaç güne 📓": "週1ページから数日へ 📓"
+ },
+ "2026-11-15-chatgpt-wallet-ajan-odeme": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "13 KASIM 2026 · YAPAY ZEKÂ": "2026年11月13日 · AI",
+  "AJAN ÖDÜYOR,<br><em>KARTINI</em><br>GÖRMÜYOR": "エージェントは<br><em>カードを見ずに</em><br>支払う",
+  "JETON": "トークン",
+  "ONAYSIZ ÖDEME YOK!": "承認なしの支払いなし!",
+  "Her alışverişe parmak izi onayı 🛒": "購入ごとに指紋で承認 🛒"
  }
 }

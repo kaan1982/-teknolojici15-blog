@@ -1031,5 +1031,33 @@
   "YENİ MODEL": "نموذج جديد",
   "DAVA AÇILDI!": "رُفعت الدعوى!",
   "Dört kuruluş, beş şirkete karşı ⚖️": "أربع منظمات ضد خمس شركات ⚖️"
+ },
+ "2026-11-15-starship-gemi-kuleyle-yakalandi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "14 KASIM 2026 · UZAY": "14 نوفمبر 2026 · الفضاء",
+  "GEMİ<br><em>KULEYE</em><br>KONDU": "البرج<br><em>يلتقط</em><br>المركبة",
+  "TARİHTE İLK!": "لأول مرة!",
+  "Yörüngeden dönen gemi havada yakalandı 🚀": "مركبة عائدة من المدار التُقطت في الجو 🚀"
+ },
+ "2026-11-15-claude-godel-defterleri": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "1940'LAR → 2026 · YAPAY ZEKÂ": "الأربعينيات → 2026 · ذكاء اصطناعي",
+  "GÖDEL'İN<br>DEFTERİNDEN<br><em>663 TEOREM</em>": "من دفاتر<br>غودل:<br><em>663 مبرهنة</em>",
+  "∀x ∃y (φ → ψ)": "∀x ∃y (φ → ψ)",
+  "ZF ⊬ AC": "ZF ⊬ AC",
+  "falsch": "falsch",
+  "DOĞRU": "صحيحة",
+  "DÜZELTİLDİ": "مُصحّحة",
+  "YANLIŞ": "خاطئة",
+  "GÜNLER İÇİNDE!": "في أيام!",
+  "Haftada bir sayfadan birkaç güne 📓": "من صفحة أسبوعيًا إلى بضعة أيام 📓"
+ },
+ "2026-11-15-chatgpt-wallet-ajan-odeme": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "13 KASIM 2026 · YAPAY ZEKÂ": "13 نوفمبر 2026 · ذكاء اصطناعي",
+  "AJAN ÖDÜYOR,<br><em>KARTINI</em><br>GÖRMÜYOR": "الوكيل يدفع<br><em>ولا يرى</em><br>بطاقتك",
+  "JETON": "رمز",
+  "ONAYSIZ ÖDEME YOK!": "لا دفع دون موافقة!",
+  "Her alışverişe parmak izi onayı 🛒": "موافقة ببصمة الإصبع لكل عملية شراء 🛒"
  }
 }
