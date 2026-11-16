@@ -1059,5 +1059,31 @@
   "JETON": "TOKEN",
   "ONAYSIZ ÖDEME YOK!": "NIENTE ACQUISTI SENZA OK!",
   "Her alışverişe parmak izi onayı 🛒": "Impronta digitale per ogni acquisto 🛒"
+ },
+ "2026-11-16-lovable-uygulamalari-veri-acigi": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · YAPAY ZEKÂ · GÜVENLİK": "2026 · IA · SICUREZZA",
+  "GİRİŞ YOK,<br>ŞİFRE YOK,<br><em>VERİ AÇIKTA</em>": "NIENTE LOGIN,<br>NIENTE PASSWORD,<br><em>DATI ESPOSTI</em>",
+  "> GET /rest/v1/users": "> GET /rest/v1/users",
+  "200 OK · auth: none": "200 OK · auth: none",
+  "24.664 SİTE": "24.664 SITI",
+  "ŞİFRESİZ OKUNDU": "LETTI SENZA PASSWORD",
+  "ŞİFRE SORMADI!": "NESSUNA PASSWORD!",
+  "Kodu yapay zekâ yazdı, kilidi kim taktı? 🔓": "Il codice l'ha scritto l'IA, ma il lucchetto? 🔓"
+ },
+ "2026-11-16-meta-italya-805-milyon-ceza": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · İTALYA · GİZLİLİK": "2026 · ITALIA · PRIVACY",
+  "GALERİNE<br>BAKTI, CEZA<br><em>805 MİLYON €</em>": "HA SBIRCIATO<br>LA GALLERIA,<br><em>805 MILIONI €</em>",
+  "AÇIK": "ATTIVO",
+  "ONAY YOKTU!": "NESSUN CONSENSO!",
+  "Varsayılan açık, izin belirsizdi 📱": "Attivo di default, permesso poco chiaro 📱"
+ },
+ "2026-11-16-apple-saglik-yapay-zeka-calismasi": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · YAPAY ZEKÂ · SAĞLIK": "2026 · IA · SALUTE",
+  "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "DOMANDE DI SALUTE<br>ALL'IA:<br><em>200.000 VOLONTARI</em>",
+  "TEŞHİS DEĞİL!": "NON È UNA DIAGNOSI!",
+  "Yanıta ne kadar güveniyorsun? 🩺": "Quanto ti fidi della risposta? 🩺"
  }
 }

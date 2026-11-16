@@ -1059,5 +1059,31 @@
   "JETON": "TOKEN",
   "ONAYSIZ ÖDEME YOK!": "KEIN KAUF OHNE OK!",
   "Her alışverişe parmak izi onayı 🛒": "Fingerabdruck bei jedem Einkauf 🛒"
+ },
+ "2026-11-16-lovable-uygulamalari-veri-acigi": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · YAPAY ZEKÂ · GÜVENLİK": "2026 · KI · SICHERHEIT",
+  "GİRİŞ YOK,<br>ŞİFRE YOK,<br><em>VERİ AÇIKTA</em>": "KEIN LOGIN,<br>KEIN PASSWORT,<br><em>DATEN OFFEN</em>",
+  "> GET /rest/v1/users": "> GET /rest/v1/users",
+  "200 OK · auth: none": "200 OK · auth: none",
+  "24.664 SİTE": "24.664 APPS",
+  "ŞİFRESİZ OKUNDU": "OHNE PASSWORT GELESEN",
+  "ŞİFRE SORMADI!": "KEIN PASSWORT!",
+  "Kodu yapay zekâ yazdı, kilidi kim taktı? 🔓": "Die KI schrieb den Code, wer baute das Schloss ein? 🔓"
+ },
+ "2026-11-16-meta-italya-805-milyon-ceza": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · İTALYA · GİZLİLİK": "2026 · ITALIEN · DATENSCHUTZ",
+  "GALERİNE<br>BAKTI, CEZA<br><em>805 MİLYON €</em>": "BLICK IN DIE<br>GALERIE, STRAFE:<br><em>805 MIO. €</em>",
+  "AÇIK": "AN",
+  "ONAY YOKTU!": "KEINE EINWILLIGUNG!",
+  "Varsayılan açık, izin belirsizdi 📱": "Standardmäßig an, Erlaubnis unklar 📱"
+ },
+ "2026-11-16-apple-saglik-yapay-zeka-calismasi": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · YAPAY ZEKÂ · SAĞLIK": "2026 · KI · GESUNDHEIT",
+  "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "GESUNDHEITSFRAGEN<br>AN DIE KI:<br><em>200.000 FREIWILLIGE</em>",
+  "TEŞHİS DEĞİL!": "KEINE DIAGNOSE!",
+  "Yanıta ne kadar güveniyorsun? 🩺": "Wie sehr vertraust du der Antwort? 🩺"
  }
 }

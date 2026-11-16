@@ -1059,5 +1059,31 @@
   "JETON": "TOKEN",
   "ONAYSIZ ÖDEME YOK!": "INGET KÖP UTAN OK!",
   "Her alışverişe parmak izi onayı 🛒": "Fingeravtryck för varje köp 🛒"
+ },
+ "2026-11-16-lovable-uygulamalari-veri-acigi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YAPAY ZEKÂ · GÜVENLİK": "2026 · AI · SÄKERHET",
+  "GİRİŞ YOK,<br>ŞİFRE YOK,<br><em>VERİ AÇIKTA</em>": "INGEN INLOGG,<br>INGET LÖSENORD,<br><em>DATA ÖPPEN</em>",
+  "> GET /rest/v1/users": "> GET /rest/v1/users",
+  "200 OK · auth: none": "200 OK · auth: none",
+  "24.664 SİTE": "24 664 APPS",
+  "ŞİFRESİZ OKUNDU": "LÄSTES UTAN LÖSENORD",
+  "ŞİFRE SORMADI!": "INGET LÖSENORD!",
+  "Kodu yapay zekâ yazdı, kilidi kim taktı? 🔓": "AI skrev koden, men vem satte låset? 🔓"
+ },
+ "2026-11-16-meta-italya-805-milyon-ceza": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · İTALYA · GİZLİLİK": "2026 · ITALIEN · INTEGRITET",
+  "GALERİNE<br>BAKTI, CEZA<br><em>805 MİLYON €</em>": "KIKADE I<br>GALLERIET, BOT<br><em>805 MILJONER €</em>",
+  "AÇIK": "PÅ",
+  "ONAY YOKTU!": "INGET SAMTYCKE!",
+  "Varsayılan açık, izin belirsizdi 📱": "På som standard, oklart samtycke 📱"
+ },
+ "2026-11-16-apple-saglik-yapay-zeka-calismasi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YAPAY ZEKÂ · SAĞLIK": "2026 · AI · HÄLSA",
+  "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "HÄLSOFRÅGOR<br>TILL AI:<br><em>200 000 FRIVILLIGA</em>",
+  "TEŞHİS DEĞİL!": "INGEN DIAGNOS!",
+  "Yanıta ne kadar güveniyorsun? 🩺": "Hur mycket litar du på svaret? 🩺"
  }
 }

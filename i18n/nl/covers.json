@@ -1059,5 +1059,31 @@
   "JETON": "TOKEN",
   "ONAYSIZ ÖDEME YOK!": "GEEN AANKOOP ZONDER OK!",
   "Her alışverişe parmak izi onayı 🛒": "Vingerafdruk bij elke aankoop 🛒"
+ },
+ "2026-11-16-lovable-uygulamalari-veri-acigi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN VANDAAG",
+  "2026 · YAPAY ZEKÂ · GÜVENLİK": "2026 · AI · BEVEILIGING",
+  "GİRİŞ YOK,<br>ŞİFRE YOK,<br><em>VERİ AÇIKTA</em>": "GEEN LOGIN,<br>GEEN WACHTWOORD,<br><em>DATA OPEN</em>",
+  "> GET /rest/v1/users": "> GET /rest/v1/users",
+  "200 OK · auth: none": "200 OK · auth: none",
+  "24.664 SİTE": "24.664 APPS",
+  "ŞİFRESİZ OKUNDU": "ZONDER WACHTWOORD GELEZEN",
+  "ŞİFRE SORMADI!": "GEEN WACHTWOORD!",
+  "Kodu yapay zekâ yazdı, kilidi kim taktı? 🔓": "AI schreef de code, wie deed het slot erop? 🔓"
+ },
+ "2026-11-16-meta-italya-805-milyon-ceza": {
+  "GÜNÜN HABERİ": "NIEUWS VAN VANDAAG",
+  "2026 · İTALYA · GİZLİLİK": "2026 · ITALIË · PRIVACY",
+  "GALERİNE<br>BAKTI, CEZA<br><em>805 MİLYON €</em>": "KEEK IN JE<br>GALERIJ, BOETE<br><em>805 MILJOEN €</em>",
+  "AÇIK": "AAN",
+  "ONAY YOKTU!": "GEEN TOESTEMMING!",
+  "Varsayılan açık, izin belirsizdi 📱": "Standaard aan, toestemming onduidelijk 📱"
+ },
+ "2026-11-16-apple-saglik-yapay-zeka-calismasi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN VANDAAG",
+  "2026 · YAPAY ZEKÂ · SAĞLIK": "2026 · AI · GEZONDHEID",
+  "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "GEZONDHEIDSVRAAG<br>AAN AI:<br><em>200.000 VRIJWILLIGERS</em>",
+  "TEŞHİS DEĞİL!": "GEEN DIAGNOSE!",
+  "Yanıta ne kadar güveniyorsun? 🩺": "Hoeveel vertrouw je het antwoord? 🩺"
  }
 }

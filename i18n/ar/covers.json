@@ -1059,5 +1059,31 @@
   "JETON": "رمز",
   "ONAYSIZ ÖDEME YOK!": "لا دفع دون موافقة!",
   "Her alışverişe parmak izi onayı 🛒": "موافقة ببصمة الإصبع لكل عملية شراء 🛒"
+ },
+ "2026-11-16-lovable-uygulamalari-veri-acigi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ · GÜVENLİK": "2026 · ذكاء اصطناعي · أمن",
+  "GİRİŞ YOK,<br>ŞİFRE YOK,<br><em>VERİ AÇIKTA</em>": "لا دخول،<br>لا كلمة مرور،<br><em>البيانات مكشوفة</em>",
+  "> GET /rest/v1/users": "> GET /rest/v1/users",
+  "200 OK · auth: none": "200 OK · auth: none",
+  "24.664 SİTE": "24,664 موقعًا",
+  "ŞİFRESİZ OKUNDU": "قُرئت بلا كلمة مرور",
+  "ŞİFRE SORMADI!": "بلا كلمة مرور!",
+  "Kodu yapay zekâ yazdı, kilidi kim taktı? 🔓": "الذكاء الاصطناعي كتب الشيفرة، فمن أقفلها؟ 🔓"
+ },
+ "2026-11-16-meta-italya-805-milyon-ceza": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · İTALYA · GİZLİLİK": "2026 · إيطاليا · الخصوصية",
+  "GALERİNE<br>BAKTI, CEZA<br><em>805 MİLYON €</em>": "نظرت في<br>معرض صورك،<br><em>805 ملايين €</em>",
+  "AÇIK": "مفعّل",
+  "ONAY YOKTU!": "بلا موافقة!",
+  "Varsayılan açık, izin belirsizdi 📱": "مفعّل افتراضيًا، والإذن غامض 📱"
+ },
+ "2026-11-16-apple-saglik-yapay-zeka-calismasi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ · SAĞLIK": "2026 · ذكاء اصطناعي · صحة",
+  "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "سؤال صحي<br>للذكاء الاصطناعي:<br><em>200 ألف متطوع</em>",
+  "TEŞHİS DEĞİL!": "ليس تشخيصًا!",
+  "Yanıta ne kadar güveniyorsun? 🩺": "إلى أي حد تثق بالإجابة؟ 🩺"
  }
 }

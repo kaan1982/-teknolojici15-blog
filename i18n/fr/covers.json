@@ -1059,5 +1059,31 @@
   "JETON": "JETON",
   "ONAYSIZ ÖDEME YOK!": "PAS D'ACHAT SANS OK !",
   "Her alışverişe parmak izi onayı 🛒": "Empreinte digitale à chaque achat 🛒"
+ },
+ "2026-11-16-lovable-uygulamalari-veri-acigi": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "2026 · YAPAY ZEKÂ · GÜVENLİK": "2026 · IA · SÉCURITÉ",
+  "GİRİŞ YOK,<br>ŞİFRE YOK,<br><em>VERİ AÇIKTA</em>": "NI CONNEXION,<br>NI MOT DE PASSE,<br><em>DONNÉES À NU</em>",
+  "> GET /rest/v1/users": "> GET /rest/v1/users",
+  "200 OK · auth: none": "200 OK · auth: none",
+  "24.664 SİTE": "24 664 APPS",
+  "ŞİFRESİZ OKUNDU": "LU SANS MOT DE PASSE",
+  "ŞİFRE SORMADI!": "SANS MOT DE PASSE !",
+  "Kodu yapay zekâ yazdı, kilidi kim taktı? 🔓": "L'IA a écrit le code, mais qui a posé le verrou ? 🔓"
+ },
+ "2026-11-16-meta-italya-805-milyon-ceza": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "2026 · İTALYA · GİZLİLİK": "2026 · ITALIE · VIE PRIVÉE",
+  "GALERİNE<br>BAKTI, CEZA<br><em>805 MİLYON €</em>": "ELLE A VU TA<br>GALERIE, AMENDE :<br><em>805 MILLIONS €</em>",
+  "AÇIK": "ACTIF",
+  "ONAY YOKTU!": "SANS CONSENTEMENT !",
+  "Varsayılan açık, izin belirsizdi 📱": "Activé par défaut, accord flou 📱"
+ },
+ "2026-11-16-apple-saglik-yapay-zeka-calismasi": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "2026 · YAPAY ZEKÂ · SAĞLIK": "2026 · IA · SANTÉ",
+  "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "SANTÉ : LES<br>QUESTIONS À L'IA :<br><em>200 000 VOLONTAIRES</em>",
+  "TEŞHİS DEĞİL!": "PAS UN DIAGNOSTIC !",
+  "Yanıta ne kadar güveniyorsun? 🩺": "Quelle confiance dans la réponse ? 🩺"
  }
 }

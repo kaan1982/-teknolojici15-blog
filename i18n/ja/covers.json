@@ -1059,5 +1059,31 @@
   "JETON": "トークン",
   "ONAYSIZ ÖDEME YOK!": "承認なしの支払いなし!",
   "Her alışverişe parmak izi onayı 🛒": "購入ごとに指紋で承認 🛒"
+ },
+ "2026-11-16-lovable-uygulamalari-veri-acigi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ · GÜVENLİK": "2026 · AI · セキュリティ",
+  "GİRİŞ YOK,<br>ŞİFRE YOK,<br><em>VERİ AÇIKTA</em>": "ログインなし、<br>パスワードなし、<br><em>データ丸見え</em>",
+  "> GET /rest/v1/users": "> GET /rest/v1/users",
+  "200 OK · auth: none": "200 OK · auth: none",
+  "24.664 SİTE": "24,664サイト",
+  "ŞİFRESİZ OKUNDU": "パスワードなしで読めた",
+  "ŞİFRE SORMADI!": "パスワード不要!",
+  "Kodu yapay zekâ yazdı, kilidi kim taktı? 🔓": "コードはAIが書いた、鍵は誰が? 🔓"
+ },
+ "2026-11-16-meta-italya-805-milyon-ceza": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · İTALYA · GİZLİLİK": "2026 · イタリア · プライバシー",
+  "GALERİNE<br>BAKTI, CEZA<br><em>805 MİLYON €</em>": "ギャラリーを<br>見て制裁金<br><em>8億500万€</em>",
+  "AÇIK": "オン",
+  "ONAY YOKTU!": "同意なし!",
+  "Varsayılan açık, izin belirsizdi 📱": "初期設定でオン、許可は曖昧 📱"
+ },
+ "2026-11-16-apple-saglik-yapay-zeka-calismasi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ · SAĞLIK": "2026 · AI · 健康",
+  "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "健康の質問を<br>AIに:<br><em>20万人が参加</em>",
+  "TEŞHİS DEĞİL!": "診断ではない!",
+  "Yanıta ne kadar güveniyorsun? 🩺": "回答をどこまで信じる? 🩺"
  }
 }
