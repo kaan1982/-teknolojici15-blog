@@ -1085,5 +1085,33 @@
   "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "DOMANDE DI SALUTE<br>ALL'IA:<br><em>200.000 VOLONTARI</em>",
   "TEŞHİS DEĞİL!": "NON È UNA DIAGNOSI!",
   "Yanıta ne kadar güveniyorsun? 🩺": "Quanto ti fidi della risposta? 🩺"
+ },
+ "2026-11-17-fbi-artex-yapay-zeka-saldiri-araci": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · FBI UYARISI · YAPAY ZEKÂ": "2026 · ALLERTA FBI · IA",
+  "YAPAY ZEKÂ<br>AĞA SIZDI:<br><em>3 SAATTEN KISA</em>": "L'IA È ENTRATA<br>IN MENO DI<br><em>3 ORE</em>",
+  "> scan": "> scan",
+  "> login ✓": "> login ✓",
+  "> root ✓": "> root ✓",
+  "FBI UYARDI!": "L'FBI AVVISA!",
+  "Unutulan tek bir şifre yetti. ⏱️": "È bastata una password dimenticata. ⏱️"
+ },
+ "2026-11-17-amd-world-labs-satin-alma": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · YAPAY ZEKÂ · ÇİP": "2026 · IA · CHIP",
+  "ÇİP DEVİ<br>DÜNYA MODELİ<br><em>SATIN ALDI</em>": "IL GIGANTE<br>DEI CHIP COMPRA<br><em>UN LAB DI IA</em>",
+  "8,2 MİLYAR $": "8,2 MLD $",
+  "HİSSE TAKASI": "IN AZIONI",
+  "FIG. 1 · 3D": "FIG. 1 · 3D",
+  "MODELCİSİNİ ALDI!": "HA COMPRATO I MODELLI!",
+  "Çipi yapan, modeli de yapacak. 🧊": "Chi fa i chip farà anche i modelli. 🧊"
+ },
+ "2026-11-17-zoox-uber-las-vegas-robotaksi": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · LAS VEGAS · ULAŞIM": "2026 · LAS VEGAS · TRASPORTI",
+  "UBER ÇAĞIR,<br><em>SÜRÜCÜ</em><br>YOK!": "CHIAMI UBER,<br><em>AUTISTA</em><br>NESSUNO!",
+  "EK ÜCRET: 0 $": "SUPPLEMENTO: 0 $",
+  "ŞAKA DEĞİL!": "NON È UNO SCHERZO!",
+  "Sırada Los Angeles var. 🚕": "Prossima tappa: Los Angeles. 🚕"
  }
 }

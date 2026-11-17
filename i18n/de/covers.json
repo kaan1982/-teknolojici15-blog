@@ -1085,5 +1085,33 @@
   "SAĞLIK SORUSU<br>YAPAY ZEKÂYA:<br><em>200 BİN GÖNÜLLÜ</em>": "GESUNDHEITSFRAGEN<br>AN DIE KI:<br><em>200.000 FREIWILLIGE</em>",
   "TEŞHİS DEĞİL!": "KEINE DIAGNOSE!",
   "Yanıta ne kadar güveniyorsun? 🩺": "Wie sehr vertraust du der Antwort? 🩺"
+ },
+ "2026-11-17-fbi-artex-yapay-zeka-saldiri-araci": {
+  "GÜNÜN HABERİ": "TAGESNEWS",
+  "2026 · FBI UYARISI · YAPAY ZEKÂ": "2026 · FBI-WARNUNG · KI",
+  "YAPAY ZEKÂ<br>AĞA SIZDI:<br><em>3 SAATTEN KISA</em>": "KI DRANG EIN:<br>IN UNTER<br><em>3 STUNDEN</em>",
+  "> scan": "> scan",
+  "> login ✓": "> login ✓",
+  "> root ✓": "> root ✓",
+  "FBI UYARDI!": "FBI WARNT!",
+  "Unutulan tek bir şifre yetti. ⏱️": "Ein vergessenes Passwort reichte. ⏱️"
+ },
+ "2026-11-17-amd-world-labs-satin-alma": {
+  "GÜNÜN HABERİ": "TAGESNEWS",
+  "2026 · YAPAY ZEKÂ · ÇİP": "2026 · KI · CHIPS",
+  "ÇİP DEVİ<br>DÜNYA MODELİ<br><em>SATIN ALDI</em>": "CHIPRIESE<br>KAUFT WELT-<br><em>MODELL-LABOR</em>",
+  "8,2 MİLYAR $": "8,2 MRD. $",
+  "HİSSE TAKASI": "AKTIENTAUSCH",
+  "FIG. 1 · 3D": "FIG. 1 · 3D",
+  "MODELCİSİNİ ALDI!": "MODELLBAUER GEKAUFT!",
+  "Çipi yapan, modeli de yapacak. 🧊": "Der Chipbauer baut jetzt auch Modelle. 🧊"
+ },
+ "2026-11-17-zoox-uber-las-vegas-robotaksi": {
+  "GÜNÜN HABERİ": "TAGESNEWS",
+  "2026 · LAS VEGAS · ULAŞIM": "2026 · LAS VEGAS · VERKEHR",
+  "UBER ÇAĞIR,<br><em>SÜRÜCÜ</em><br>YOK!": "UBER RUFEN,<br><em>FAHRER</em><br>KEINER!",
+  "EK ÜCRET: 0 $": "AUFPREIS: 0 $",
+  "ŞAKA DEĞİL!": "KEIN WITZ!",
+  "Sırada Los Angeles var. 🚕": "Als Nächstes: Los Angeles. 🚕"
  }
 }
