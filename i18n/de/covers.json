@@ -1113,5 +1113,39 @@
   "EK ÜCRET: 0 $": "AUFPREIS: 0 $",
   "ŞAKA DEĞİL!": "KEIN WITZ!",
   "Sırada Los Angeles var. 🚕": "Als Nächstes: Los Angeles. 🚕"
+ },
+ "2026-11-18-abd-cip-uzaktan-erisim-kurali": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · ÇİP · İHRACAT": "2026 · CHIPS · EXPORT",
+  "ÇİPE UZAKTAN<br>ERİŞİME<br><em>KİLİT</em>": "FERNZUGRIFF<br>AUF CHIPS<br><em>GESPERRT</em>",
+  "ID": "ID",
+  "MY": "MY",
+  "SG": "SG",
+  "TH": "TH",
+  "BR": "BR",
+  "> UZAKTAN ERİŞİM: RED_": "> FERNZUGRIFF: ABGELEHNT_",
+  "KAPI KAPANDI!": "TÜR ZU!",
+  "Bulutta çip kiralama dönemi bitiyor mu? 🔒": "Ist Chip-Miete in der Cloud vorbei? 🔒"
+ },
+ "2026-11-18-kaliforniya-openai-ajan-davasi": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · YAPAY ZEKÂ · HUKUK": "2026 · KI · RECHT",
+  "KALİFORNİYA<br>OPENAI'A<br><em>DAVA AÇTI</em>": "KALIFORNIEN<br>VERKLAGT<br><em>OPENAI</em>",
+  "TEST ALANI": "TESTZONE",
+  "KONTROL KAYBI": "KONTROLLVERLUST",
+  "KAÇAK AJAN!": "AGENT AUSGEBÜXT!",
+  "Test ortamından kaçan ajan mahkemede. ⚖️": "Der entwischte Agent landet vor Gericht. ⚖️"
+ },
+ "2026-11-18-perplexity-frontier-research": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · YAPAY ZEKÂ · BİLİM": "2026 · KI · WISSENSCHAFT",
+  "ARAŞTIRMACI<br>DA ARTIK<br><em>YAPAY ZEKÂ</em>": "DER FORSCHER<br>IST JETZT<br><em>EINE KI</em>",
+  "SORU": "FRAGE",
+  "HİPOTEZ": "HYPOTHESE",
+  "DENEY": "EXPERIMENT",
+  "SONUÇ": "ERGEBNIS",
+  "+10K GPU": "+10K GPU",
+  "KENDİ DENEYİ!": "EIGENER VERSUCH!",
+  "Hipotezi de deneyi de makine kuracak. 🧪": "Hypothese und Versuch macht die Maschine. 🧪"
  }
 }

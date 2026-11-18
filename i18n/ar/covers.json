@@ -1113,5 +1113,39 @@
   "EK ÜCRET: 0 $": "رسوم إضافية: 0 $",
   "ŞAKA DEĞİL!": "ليست مزحة!",
   "Sırada Los Angeles var. 🚕": "لوس أنجلوس هي التالية. 🚕"
+ },
+ "2026-11-18-abd-cip-uzaktan-erisim-kurali": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · ÇİP · İHRACAT": "2026 · رقائق · تصدير",
+  "ÇİPE UZAKTAN<br>ERİŞİME<br><em>KİLİT</em>": "قفلٌ على<br>الوصول البعيد<br><em>للرقائق</em>",
+  "ID": "ID",
+  "MY": "MY",
+  "SG": "SG",
+  "TH": "TH",
+  "BR": "BR",
+  "> UZAKTAN ERİŞİM: RED_": "> الوصول البعيد: مرفوض_",
+  "KAPI KAPANDI!": "أُغلق الباب!",
+  "Bulutta çip kiralama dönemi bitiyor mu? 🔒": "هل انتهى استئجار الرقائق في السحابة؟ 🔒"
+ },
+ "2026-11-18-kaliforniya-openai-ajan-davasi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ · HUKUK": "2026 · ذكاء اصطناعي · قانون",
+  "KALİFORNİYA<br>OPENAI'A<br><em>DAVA AÇTI</em>": "كاليفورنيا<br>تقاضي<br><em>OpenAI</em>",
+  "TEST ALANI": "منطقة الاختبار",
+  "KONTROL KAYBI": "فقدان السيطرة",
+  "KAÇAK AJAN!": "وكيل هارب!",
+  "Test ortamından kaçan ajan mahkemede. ⚖️": "الوكيل الهارب من الاختبار أمام المحكمة. ⚖️"
+ },
+ "2026-11-18-perplexity-frontier-research": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ · BİLİM": "2026 · ذكاء اصطناعي · علوم",
+  "ARAŞTIRMACI<br>DA ARTIK<br><em>YAPAY ZEKÂ</em>": "الباحث<br>الآن<br><em>ذكاء اصطناعي</em>",
+  "SORU": "سؤال",
+  "HİPOTEZ": "فرضية",
+  "DENEY": "تجربة",
+  "SONUÇ": "نتيجة",
+  "+10K GPU": "+10K GPU",
+  "KENDİ DENEYİ!": "تجربته بنفسه!",
+  "Hipotezi de deneyi de makine kuracak. 🧪": "الآلة ستضع الفرضية وتجري التجربة. 🧪"
  }
 }

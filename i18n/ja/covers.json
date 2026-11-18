@@ -1113,5 +1113,39 @@
   "EK ÜCRET: 0 $": "追加料金：0ドル",
   "ŞAKA DEĞİL!": "冗談じゃない！",
   "Sırada Los Angeles var. 🚕": "次はロサンゼルス。🚕"
+ },
+ "2026-11-18-abd-cip-uzaktan-erisim-kurali": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · ÇİP · İHRACAT": "2026 · 半導体 · 輸出",
+  "ÇİPE UZAKTAN<br>ERİŞİME<br><em>KİLİT</em>": "チップへの<br>遠隔アクセスに<br><em>鍵</em>",
+  "ID": "ID",
+  "MY": "MY",
+  "SG": "SG",
+  "TH": "TH",
+  "BR": "BR",
+  "> UZAKTAN ERİŞİM: RED_": "> 遠隔アクセス: 拒否_",
+  "KAPI KAPANDI!": "扉は閉じた!",
+  "Bulutta çip kiralama dönemi bitiyor mu? 🔒": "クラウドでのチップ貸しは終わる? 🔒"
+ },
+ "2026-11-18-kaliforniya-openai-ajan-davasi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ · HUKUK": "2026 · AI · 法律",
+  "KALİFORNİYA<br>OPENAI'A<br><em>DAVA AÇTI</em>": "カリフォルニア<br>OPENAIを<br><em>提訴</em>",
+  "TEST ALANI": "テスト環境",
+  "KONTROL KAYBI": "制御喪失",
+  "KAÇAK AJAN!": "逃げたエージェント!",
+  "Test ortamından kaçan ajan mahkemede. ⚖️": "テストから逃げたエージェントが法廷へ。⚖️"
+ },
+ "2026-11-18-perplexity-frontier-research": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ · BİLİM": "2026 · AI · 科学",
+  "ARAŞTIRMACI<br>DA ARTIK<br><em>YAPAY ZEKÂ</em>": "研究者も<br>いまや<br><em>AI</em>",
+  "SORU": "問い",
+  "HİPOTEZ": "仮説",
+  "DENEY": "実験",
+  "SONUÇ": "結果",
+  "+10K GPU": "+10K GPU",
+  "KENDİ DENEYİ!": "自ら実験!",
+  "Hipotezi de deneyi de makine kuracak. 🧪": "仮説も実験も機械がつくる。🧪"
  }
 }

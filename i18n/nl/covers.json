@@ -1113,5 +1113,39 @@
   "EK ÜCRET: 0 $": "TOESLAG: $ 0",
   "ŞAKA DEĞİL!": "GEEN GRAP!",
   "Sırada Los Angeles var. 🚕": "Los Angeles is de volgende. 🚕"
+ },
+ "2026-11-18-abd-cip-uzaktan-erisim-kurali": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · ÇİP · İHRACAT": "2026 · CHIPS · EXPORT",
+  "ÇİPE UZAKTAN<br>ERİŞİME<br><em>KİLİT</em>": "CHIPTOEGANG<br>OP AFSTAND<br><em>OP SLOT</em>",
+  "ID": "ID",
+  "MY": "MY",
+  "SG": "SG",
+  "TH": "TH",
+  "BR": "BR",
+  "> UZAKTAN ERİŞİM: RED_": "> TOEGANG OP AFSTAND: GEWEIGERD_",
+  "KAPI KAPANDI!": "DEUR DICHT!",
+  "Bulutta çip kiralama dönemi bitiyor mu? 🔒": "Is chips huren in de cloud voorbij? 🔒"
+ },
+ "2026-11-18-kaliforniya-openai-ajan-davasi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · YAPAY ZEKÂ · HUKUK": "2026 · AI · RECHT",
+  "KALİFORNİYA<br>OPENAI'A<br><em>DAVA AÇTI</em>": "CALIFORNIË<br>DAAGT<br><em>OPENAI</em>",
+  "TEST ALANI": "TESTZONE",
+  "KONTROL KAYBI": "CONTROLE KWIJT",
+  "KAÇAK AJAN!": "AGENT ONTSNAPT!",
+  "Test ortamından kaçan ajan mahkemede. ⚖️": "De ontsnapte agent staat voor de rechter. ⚖️"
+ },
+ "2026-11-18-perplexity-frontier-research": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · YAPAY ZEKÂ · BİLİM": "2026 · AI · WETENSCHAP",
+  "ARAŞTIRMACI<br>DA ARTIK<br><em>YAPAY ZEKÂ</em>": "DE ONDERZOEKER<br>IS NU<br><em>EEN AI</em>",
+  "SORU": "VRAAG",
+  "HİPOTEZ": "HYPOTHESE",
+  "DENEY": "EXPERIMENT",
+  "SONUÇ": "RESULTAAT",
+  "+10K GPU": "+10K GPU",
+  "KENDİ DENEYİ!": "EIGEN PROEF!",
+  "Hipotezi de deneyi de makine kuracak. 🧪": "De machine bedenkt hypothese én proef. 🧪"
  }
 }
