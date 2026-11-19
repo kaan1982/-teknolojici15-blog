@@ -1147,5 +1147,38 @@
   "+10K GPU": "+10K GPU",
   "KENDİ DENEYİ!": "تجربته بنفسه!",
   "Hipotezi de deneyi de makine kuracak. 🧪": "الآلة ستضع الفرضية وتجري التجربة. 🧪"
+ },
+ "2026-11-19-gemini-sohbet-saklama-iki-ay": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ · GİZLİLİK": "2026 · ذكاء اصطناعي · خصوصية",
+  "GEÇMİŞİ<br>KAPATTIN,<br><em>SİLİNMEDİ</em>": "أوقفتَ السجل<br>لكنه<br><em>لم يُحذف</em>",
+  "OFF": "OFF",
+  "GEÇMİŞ": "السجل",
+  "72 SAAT": "72 ساعة",
+  "2 AY": "شهران",
+  "NASIL YANİ?": "كيف ذلك؟",
+  "Geçmiş kapalı sohbetler 2 ay duracak. 🗂️": "المحادثات دون سجل تبقى شهرين. 🗂️"
+ },
+ "2026-11-19-gpt-6-2-astra-sol": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ · MODEL": "2026 · ذكاء اصطناعي · نموذج",
+  "GPT-6.2:<br>UCUZ AMA<br><em>NOTU YÜKSEK</em>": "GPT-6.2:<br>أرخص لكن<br><em>الخطر مرتفع</em>",
+  "ASTRA": "ASTRA",
+  "SOL": "SOL",
+  "1M TOKEN · GİRİŞ / ÇIKIŞ": "مليون رمز · إدخال / إخراج",
+  "SİBER RİSK": "خطر سيبراني",
+  "KRİTİK!": "حرج!",
+  "Fiyat düştü, güvenlik notu yükseldi. ⚠️": "السعر انخفض وتقييم الخطر ارتفع. ⚠️"
+ },
+ "2026-11-19-java4shell-openjdk-acigi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · GÜVENLİK · JAVA": "2026 · أمن · JAVA",
+  "JAVA'DA<br>KRİTİK<br><em>DELİK</em>": "ثغرة<br>حرجة في<br><em>JAVA</em>",
+  "QUJD...x9==": "QUJD...x9==",
+  "DİZİ SONU": "نهاية المصفوفة",
+  "+63 B": "+63 B",
+  "CVSS 9.2": "CVSS 9.2",
+  "HEMEN YAMA!": "حدّث الآن!",
+  "Tek bozuk metin sunucuyu düşürebilir. 🔓": "نص تالف واحد قد يُسقط خادمًا. 🔓"
  }
 }

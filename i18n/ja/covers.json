@@ -1147,5 +1147,38 @@
   "+10K GPU": "+10K GPU",
   "KENDİ DENEYİ!": "自ら実験!",
   "Hipotezi de deneyi de makine kuracak. 🧪": "仮説も実験も機械がつくる。🧪"
+ },
+ "2026-11-19-gemini-sohbet-saklama-iki-ay": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ · GİZLİLİK": "2026 · AI · プライバシー",
+  "GEÇMİŞİ<br>KAPATTIN,<br><em>SİLİNMEDİ</em>": "履歴オフでも<br><em>消えない</em>",
+  "OFF": "OFF",
+  "GEÇMİŞ": "履歴",
+  "72 SAAT": "72時間",
+  "2 AY": "2か月",
+  "NASIL YANİ?": "どういうこと？",
+  "Geçmiş kapalı sohbetler 2 ay duracak. 🗂️": "履歴オフの会話も約2か月保存。🗂️"
+ },
+ "2026-11-19-gpt-6-2-astra-sol": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ · MODEL": "2026 · AI · モデル",
+  "GPT-6.2:<br>UCUZ AMA<br><em>NOTU YÜKSEK</em>": "GPT-6.2<br>安くなったが<br><em>リスク高</em>",
+  "ASTRA": "ASTRA",
+  "SOL": "SOL",
+  "1M TOKEN · GİRİŞ / ÇIKIŞ": "100万トークン · 入力 / 出力",
+  "SİBER RİSK": "サイバーリスク",
+  "KRİTİK!": "重大！",
+  "Fiyat düştü, güvenlik notu yükseldi. ⚠️": "価格は下がり、リスク評価は上昇。⚠️"
+ },
+ "2026-11-19-java4shell-openjdk-acigi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · GÜVENLİK · JAVA": "2026 · セキュリティ · JAVA",
+  "JAVA'DA<br>KRİTİK<br><em>DELİK</em>": "JAVAに<br>重大な<br><em>穴</em>",
+  "QUJD...x9==": "QUJD...x9==",
+  "DİZİ SONU": "配列の末尾",
+  "+63 B": "+63 B",
+  "CVSS 9.2": "CVSS 9.2",
+  "HEMEN YAMA!": "今すぐ更新！",
+  "Tek bozuk metin sunucuyu düşürebilir. 🔓": "壊れた文字列ひとつでサーバーが落ちる。🔓"
  }
 }
