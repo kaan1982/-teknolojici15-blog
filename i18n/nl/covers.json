@@ -1180,5 +1180,38 @@
   "CVSS 9.2": "CVSS 9.2",
   "HEMEN YAMA!": "NU PATCHEN!",
   "Tek bozuk metin sunucuyu düşürebilir. 🔓": "Eén kapotte tekst kan een server platleggen. 🔓"
+ },
+ "2026-11-20-anthropic-borsa-ilk-gun": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · YAPAY ZEKÂ · BORSA": "2026 · AI · BEURS",
+  "ANTHROPIC<br>BORSADA:<br><em>REKOR</em> GÜN": "ANTHROPIC<br>NAAR DE BEURS:<br><em>RECORD</em>DAG",
+  "ANT": "ANT",
+  "$81.3B": "$81,3 MLD",
+  "TARİHİ!": "HISTORISCH!",
+  "İlk gün hisse ne yaptı? 📈": "Wat deed het aandeel op dag één? 📈"
+ },
+ "2026-11-20-gemini-4-neon": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · YAPAY ZEKÂ · MODEL": "2026 · AI · MODEL",
+  "GEMINI 4<br><em>NEON</em>:<br>HIZLI, UCUZ": "GEMINI 4<br><em>NEON</em>:<br>SNEL, GOEDKOOP",
+  "Ne": "Ne",
+  "GİRİŞ": "INPUT",
+  "ÇIKIŞ": "OUTPUT",
+  "1M TOKEN BAŞINA": "PER 1M TOKENS",
+  "4 DÜŞÜNME SEVİYESİ": "4 DENKNIVEAUS",
+  "UCUZ AMA GÜÇLÜ!": "GOEDKOOP MAAR STERK!",
+  "Carbon ayarı, daha küçük fatura? 💡": "Carbon-kwaliteit, kleinere rekening? 💡"
+ },
+ "2026-11-20-intel-18a-ilk-dis-musteri": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "&gt; 2026 · ÇİP · DÖKÜMHANE_": "&gt; 2026 · CHIPS · FOUNDRY_",
+  "INTEL'E<br><em>İLK DIŞ</em><br>MÜŞTERİ": "INTEL HEEFT<br><em>EERSTE EXTERNE</em><br>KLANT",
+  "18A VERİMİ": "18A-OPBRENGST",
+  "18A-P": "18A-P",
+  "MÜŞTERİ: ???": "KLANT: ???",
+  "> SÖZLEŞME İMZALANDI": "> CONTRACT GETEKEND",
+  "> HEDEF: TSMC İLE YARIŞ_": "> DOEL: TSMC UITDAGEN_",
+  "İLK İMZA!": "EERSTE DEAL!",
+  "Gizemli müşteri kim olabilir? 🏭": "Wie is de mysterieuze klant? 🏭"
  }
 }

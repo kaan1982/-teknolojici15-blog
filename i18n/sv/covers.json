@@ -1180,5 +1180,38 @@
   "CVSS 9.2": "CVSS 9.2",
   "HEMEN YAMA!": "PATCHA NU!",
   "Tek bozuk metin sunucuyu düşürebilir. 🔓": "En trasig textsträng kan fälla en server. 🔓"
+ },
+ "2026-11-20-anthropic-borsa-ilk-gun": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YAPAY ZEKÂ · BORSA": "2026 · AI · BÖRS",
+  "ANTHROPIC<br>BORSADA:<br><em>REKOR</em> GÜN": "ANTHROPIC<br>PÅ BÖRSEN:<br><em>REKORD</em>DAG",
+  "ANT": "ANT",
+  "$81.3B": "81,3 MDR $",
+  "TARİHİ!": "HISTORISKT!",
+  "İlk gün hisse ne yaptı? 📈": "Hur gick aktien första dagen? 📈"
+ },
+ "2026-11-20-gemini-4-neon": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YAPAY ZEKÂ · MODEL": "2026 · AI · MODELL",
+  "GEMINI 4<br><em>NEON</em>:<br>HIZLI, UCUZ": "GEMINI 4<br><em>NEON</em>:<br>SNABB, BILLIG",
+  "Ne": "Ne",
+  "GİRİŞ": "IN",
+  "ÇIKIŞ": "UT",
+  "1M TOKEN BAŞINA": "PER 1M TOKEN",
+  "4 DÜŞÜNME SEVİYESİ": "4 TANKENIVÅER",
+  "UCUZ AMA GÜÇLÜ!": "BILLIG MEN STARK!",
+  "Carbon ayarı, daha küçük fatura? 💡": "Carbon-nivå, mindre nota? 💡"
+ },
+ "2026-11-20-intel-18a-ilk-dis-musteri": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "&gt; 2026 · ÇİP · DÖKÜMHANE_": "&gt; 2026 · CHIP · FOUNDRY_",
+  "INTEL'E<br><em>İLK DIŞ</em><br>MÜŞTERİ": "INTEL FÅR<br><em>FÖRSTA EXTERNA</em><br>KUNDEN",
+  "18A VERİMİ": "18A-UTBYTE",
+  "18A-P": "18A-P",
+  "MÜŞTERİ: ???": "KUND: ???",
+  "> SÖZLEŞME İMZALANDI": "> AVTAL SIGNERAT",
+  "> HEDEF: TSMC İLE YARIŞ_": "> MÅL: UTMANA TSMC_",
+  "İLK İMZA!": "FÖRSTA AVTALET!",
+  "Gizemli müşteri kim olabilir? 🏭": "Vem är den hemliga kunden? 🏭"
  }
 }

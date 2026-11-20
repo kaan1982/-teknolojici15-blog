@@ -1180,5 +1180,38 @@
   "CVSS 9.2": "CVSS 9.2",
   "HEMEN YAMA!": "今すぐ更新！",
   "Tek bozuk metin sunucuyu düşürebilir. 🔓": "壊れた文字列ひとつでサーバーが落ちる。🔓"
+ },
+ "2026-11-20-anthropic-borsa-ilk-gun": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ · BORSA": "2026 · AI · 株式",
+  "ANTHROPIC<br>BORSADA:<br><em>REKOR</em> GÜN": "ANTHROPIC<br>上場:<br><em>記録的</em>な一日",
+  "ANT": "ANT",
+  "$81.3B": "813億ドル",
+  "TARİHİ!": "歴史的！",
+  "İlk gün hisse ne yaptı? 📈": "初日の株価はどうなった？📈"
+ },
+ "2026-11-20-gemini-4-neon": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ · MODEL": "2026 · AI · モデル",
+  "GEMINI 4<br><em>NEON</em>:<br>HIZLI, UCUZ": "GEMINI 4<br><em>NEON</em>:<br>速くて安い",
+  "Ne": "Ne",
+  "GİRİŞ": "入力",
+  "ÇIKIŞ": "出力",
+  "1M TOKEN BAŞINA": "100万トークンあたり",
+  "4 DÜŞÜNME SEVİYESİ": "4段階の思考レベル",
+  "UCUZ AMA GÜÇLÜ!": "安いのに強力！",
+  "Carbon ayarı, daha küçük fatura? 💡": "Carbon並みの質で請求は少なく？💡"
+ },
+ "2026-11-20-intel-18a-ilk-dis-musteri": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "&gt; 2026 · ÇİP · DÖKÜMHANE_": "&gt; 2026 · 半導体 · ファウンドリ_",
+  "INTEL'E<br><em>İLK DIŞ</em><br>MÜŞTERİ": "INTELに<br><em>初の外部</em><br>顧客",
+  "18A VERİMİ": "18A 歩留まり",
+  "18A-P": "18A-P",
+  "MÜŞTERİ: ???": "顧客: ???",
+  "> SÖZLEŞME İMZALANDI": "> 契約締結",
+  "> HEDEF: TSMC İLE YARIŞ_": "> 目標: TSMCに挑む_",
+  "İLK İMZA!": "初契約！",
+  "Gizemli müşteri kim olabilir? 🏭": "謎の顧客は誰？🏭"
  }
 }

@@ -1180,5 +1180,38 @@
   "CVSS 9.2": "CVSS 9.2",
   "HEMEN YAMA!": "حدّث الآن!",
   "Tek bozuk metin sunucuyu düşürebilir. 🔓": "نص تالف واحد قد يُسقط خادمًا. 🔓"
+ },
+ "2026-11-20-anthropic-borsa-ilk-gun": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ · BORSA": "2026 · ذكاء اصطناعي · بورصة",
+  "ANTHROPIC<br>BORSADA:<br><em>REKOR</em> GÜN": "أنثروبيك<br>في البورصة:<br>يوم <em>قياسي</em>",
+  "ANT": "ANT",
+  "$81.3B": "81.3 مليار $",
+  "TARİHİ!": "تاريخي!",
+  "İlk gün hisse ne yaptı? 📈": "كيف كان أداء السهم في يومه الأول؟ 📈"
+ },
+ "2026-11-20-gemini-4-neon": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ · MODEL": "2026 · ذكاء اصطناعي · نموذج",
+  "GEMINI 4<br><em>NEON</em>:<br>HIZLI, UCUZ": "GEMINI 4<br><em>NEON</em>:<br>سريع ورخيص",
+  "Ne": "Ne",
+  "GİRİŞ": "إدخال",
+  "ÇIKIŞ": "إخراج",
+  "1M TOKEN BAŞINA": "لكل مليون رمز",
+  "4 DÜŞÜNME SEVİYESİ": "4 مستويات تفكير",
+  "UCUZ AMA GÜÇLÜ!": "رخيص لكنه قوي!",
+  "Carbon ayarı, daha küçük fatura? 💡": "جودة Carbon بفاتورة أصغر؟ 💡"
+ },
+ "2026-11-20-intel-18a-ilk-dis-musteri": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "&gt; 2026 · ÇİP · DÖKÜMHANE_": "&gt; 2026 · رقائق · تصنيع_",
+  "INTEL'E<br><em>İLK DIŞ</em><br>MÜŞTERİ": "إنتل تكسب<br><em>أول عميل</em><br>خارجي",
+  "18A VERİMİ": "عائد 18A",
+  "18A-P": "18A-P",
+  "MÜŞTERİ: ???": "العميل: ???",
+  "> SÖZLEŞME İMZALANDI": "> تم توقيع العقد",
+  "> HEDEF: TSMC İLE YARIŞ_": "> الهدف: منافسة TSMC_",
+  "İLK İMZA!": "أول توقيع!",
+  "Gizemli müşteri kim olabilir? 🏭": "من يكون العميل الغامض؟ 🏭"
  }
 }

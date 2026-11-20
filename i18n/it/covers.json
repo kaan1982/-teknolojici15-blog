@@ -1180,5 +1180,38 @@
   "CVSS 9.2": "CVSS 9.2",
   "HEMEN YAMA!": "AGGIORNA ORA!",
   "Tek bozuk metin sunucuyu düşürebilir. 🔓": "Un solo testo malformato abbatte un server. 🔓"
+ },
+ "2026-11-20-anthropic-borsa-ilk-gun": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · YAPAY ZEKÂ · BORSA": "2026 · IA · BORSA",
+  "ANTHROPIC<br>BORSADA:<br><em>REKOR</em> GÜN": "ANTHROPIC<br>IN BORSA:<br>GIORNO <em>RECORD</em>",
+  "ANT": "ANT",
+  "$81.3B": "81,3 MLD $",
+  "TARİHİ!": "STORICO!",
+  "İlk gün hisse ne yaptı? 📈": "Com'è andato il titolo il primo giorno? 📈"
+ },
+ "2026-11-20-gemini-4-neon": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · YAPAY ZEKÂ · MODEL": "2026 · IA · MODELLO",
+  "GEMINI 4<br><em>NEON</em>:<br>HIZLI, UCUZ": "GEMINI 4<br><em>NEON</em>:<br>VELOCE, ECONOMICO",
+  "Ne": "Ne",
+  "GİRİŞ": "INPUT",
+  "ÇIKIŞ": "OUTPUT",
+  "1M TOKEN BAŞINA": "PER 1M TOKEN",
+  "4 DÜŞÜNME SEVİYESİ": "4 LIVELLI DI RAGIONAMENTO",
+  "UCUZ AMA GÜÇLÜ!": "ECONOMICO MA POTENTE!",
+  "Carbon ayarı, daha küçük fatura? 💡": "Qualità Carbon, conto più leggero? 💡"
+ },
+ "2026-11-20-intel-18a-ilk-dis-musteri": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "&gt; 2026 · ÇİP · DÖKÜMHANE_": "&gt; 2026 · CHIP · FONDERIA_",
+  "INTEL'E<br><em>İLK DIŞ</em><br>MÜŞTERİ": "INTEL: PRIMO<br><em>CLIENTE</em><br>ESTERNO",
+  "18A VERİMİ": "RESA 18A",
+  "18A-P": "18A-P",
+  "MÜŞTERİ: ???": "CLIENTE: ???",
+  "> SÖZLEŞME İMZALANDI": "> CONTRATTO FIRMATO",
+  "> HEDEF: TSMC İLE YARIŞ_": "> OBIETTIVO: SFIDARE TSMC_",
+  "İLK İMZA!": "PRIMA FIRMA!",
+  "Gizemli müşteri kim olabilir? 🏭": "Chi sarà il cliente misterioso? 🏭"
  }
 }
