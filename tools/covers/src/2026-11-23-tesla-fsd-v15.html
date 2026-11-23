@@ -1,0 +1,63 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+.cv{--bg:#07061A;background:radial-gradient(ellipse at 50% 70%,#24104A 0%,#0C0828 45%,#05040F 100%)}
+.stars{position:absolute;inset:0;background:radial-gradient(#7DF9FF 1.5px,transparent 2px) 0 0/90px 110px,radial-gradient(#FF4FD8 1.2px,transparent 1.8px) 40px 50px/130px 150px;opacity:.25}
+.k{position:absolute;left:56px;top:178px;color:#7DF9FF;text-shadow:0 0 14px #7DF9FF}
+.t{position:absolute;left:56px;right:56px;top:248px;font-size:118px;color:#F4F0FF}
+.t em{font-style:normal;color:#FF4FD8;display:block;text-shadow:0 0 26px rgb(255 79 216/.6)}
+.art{position:absolute;left:0;right:0;top:640px;height:1000px}
+.st{color:#7DF9FF;left:60px;top:1590px;font-size:60px;background:rgb(7 6 26/.9);transform:rotate(-6deg);text-shadow:0 0 12px #7DF9FF}
+.cv__foot{color:#F4F0FF}
+</style></head><body><div class="cv scan">
+<div class="stars"></div>
+<div class="cv__top"><div class="cv__brand"><img src="../../../public/img/brand/mark.png">TEKNOLOJİCİ<b>15</b></div><div class="cv__tag">GÜNÜN HABERİ</div></div>
+<div class="cv__kicker k">2026 · SÜRÜCÜSÜZ ARAÇ</div>
+<div class="cv__title t">SÜRÜŞ ZEKÂSI <em>BAŞTAN</em> YAZILDI</div>
+<svg class="art" viewBox="0 0 1080 1000" font-family="V,monospace">
+  <defs>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A0F3A"/><stop offset="1" stop-color="#2E1660"/></linearGradient>
+    <radialGradient id="cone" cx="0.5" cy="1" r="1"><stop offset="0" stop-color="#7DF9FF" stop-opacity=".55"/><stop offset="1" stop-color="#7DF9FF" stop-opacity="0"/></radialGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <!-- road in perspective -->
+  <polygon points="470,40 610,40 1060,1000 20,1000" fill="url(#road)"/>
+  <g stroke="#FF4FD8" stroke-width="7" filter="url(#gl)">
+    <line x1="470" y1="40" x2="20" y2="1000"/><line x1="610" y1="40" x2="1060" y2="1000"/>
+  </g>
+  <g fill="#F4F0FF" opacity=".75"><polygon points="534,70 546,70 552,140 528,140"/><polygon points="525,210 555,210 563,320 517,320"/><polygon points="512,420 568,420 580,560 500,560"/></g>
+  <!-- sensor cone -->
+  <polygon points="540,690 250,150 830,150" fill="url(#cone)"/>
+  <!-- detection boxes -->
+  <g fill="none" stroke-width="6" filter="url(#gl)">
+    <rect x="300" y="190" width="120" height="120" stroke="#FFC845"/>
+    <rect x="660" y="230" width="110" height="90" stroke="#7DF9FF"/>
+    <rect x="470" y="340" width="140" height="56" rx="28" stroke="#FF4FD8"/>
+  </g>
+  <!-- road sign -->
+  <circle cx="360" cy="250" r="44" fill="#F4F0FF" stroke="#FF3B5C" stroke-width="12"/>
+  <text x="360" y="268" text-anchor="middle" font-size="52" fill="#07061A">30</text>
+  <!-- pothole -->
+  <ellipse cx="540" cy="368" rx="54" ry="16" fill="#05040F"/>
+  <!-- small animal -->
+  <g fill="#7DF9FF"><ellipse cx="715" cy="290" rx="34" ry="18"/><circle cx="748" cy="270" r="13"/><rect x="690" y="300" width="6" height="16"/><rect x="730" y="300" width="6" height="16"/><polygon points="752,258 760,244 762,262"/></g>
+  <!-- generic car, top-down -->
+  <g filter="url(#gl)">
+    <rect x="455" y="640" width="170" height="300" rx="70" fill="#14102E" stroke="#7DF9FF" stroke-width="8"/>
+    <rect x="482" y="700" width="116" height="70" rx="20" fill="#7DF9FF" opacity=".35"/>
+    <rect x="482" y="850" width="116" height="50" rx="18" fill="#7DF9FF" opacity=".2"/>
+    <rect x="470" y="652" width="40" height="18" rx="8" fill="#FFF6C8"/><rect x="570" y="652" width="40" height="18" rx="8" fill="#FFF6C8"/>
+    <circle cx="540" cy="800" r="16" fill="#FF4FD8"/>
+  </g>
+  <!-- big readout -->
+  <g filter="url(#gl)">
+    <rect x="770" y="560" width="270" height="170" rx="18" fill="rgb(7 6 26/.85)" stroke="#FF4FD8" stroke-width="6"/>
+    <text x="905" y="690" text-anchor="middle" font-size="150" fill="#FF4FD8">25x</text>
+  </g>
+  <g filter="url(#gl)">
+    <rect x="40" y="560" width="250" height="170" rx="18" fill="rgb(7 6 26/.85)" stroke="#7DF9FF" stroke-width="6"/>
+    <text x="165" y="690" text-anchor="middle" font-size="150" fill="#7DF9FF">v15</text>
+  </g>
+</svg>
+<div class="cv__stamp st">25 KAT MI?</div>
+<div class="cv__foot">Yeni ekran, aracın planını canlı gösteriyor 🚗</div>
+</div></body></html>

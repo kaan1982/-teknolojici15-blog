@@ -1269,5 +1269,36 @@
   "KASIM": "NOV.",
   "SERT DÜŞÜŞ!": "CHUTE BRUTALE !",
   "Nvidia bir günde %14 değer kaybetti 📉": "Nvidia a perdu 14 % en un jour 📉"
+ },
+ "2026-11-23-tesla-fsd-v15": {
+  "GÜNÜN HABERİ": "INFO DU JOUR",
+  "2026 · SÜRÜCÜSÜZ ARAÇ": "2026 · VOITURE AUTONOME",
+  "SÜRÜŞ ZEKÂSI <em>BAŞTAN</em> YAZILDI": "L'IA DE CONDUITE <em>RÉÉCRITE</em>",
+  "25x": "25x",
+  "v15": "v15",
+  "25 KAT MI?": "25 FOIS ?",
+  "Yeni ekran, aracın planını canlı gösteriyor 🚗": "Un écran montre le plan en direct 🚗"
+ },
+ "2026-11-23-openrouter-istem-hirsizligi": {
+  "GÜNÜN HABERİ": "INFO DU JOUR",
+  "2026 · YAPAY ZEKÂ GÜVENLİĞİ": "2026 · SÉCURITÉ DE L'IA",
+  "SORUNU YOLDA <em>BİRİ OKUDU</em>": "QUELQU'UN <em>A LU</em> VOTRE PROMPT",
+  "> prompt_": "> prompt_",
+  "key=AKIA****": "key=AKIA****",
+  "AI": "IA",
+  "2 MİLYON": "2 M",
+  "TUZAK İSTEK": "REQUÊTES PIÈGES",
+  "ŞİFRE YAPIŞTIRMA!": "PAS DE MOT DE PASSE !",
+  "Ucuz sağlayıcı, pahalı sızıntı 🐤": "Fournisseur bon marché, fuite coûteuse 🐤"
+ },
+ "2026-11-23-bitcoin-kasim-dususu": {
+  "GÜNÜN HABERİ": "INFO DU JOUR",
+  "2026 · KRİPTO PARA": "2026 · CRYPTO",
+  "BITCOIN'İN <em>KARA KASIMI</em>": "LE <em>NOVEMBRE NOIR</em> DU BITCOIN",
+  "B": "B",
+  "$55K": "$55K",
+  "ETF: -$4,14 MİLYAR": "ETF : -4,14 MD$",
+  "2018'DEN BERİ YOK!": "DU JAMAIS VU DEPUIS 2018 !",
+  "Kurumsal para kapıdan çıkıyor 📉": "L'argent institutionnel s'en va 📉"
  }
 }
