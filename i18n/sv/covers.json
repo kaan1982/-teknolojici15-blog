@@ -1300,5 +1300,39 @@
   "ETF: -$4,14 MİLYAR": "ETF: -4,14 MDR $",
   "2018'DEN BERİ YOK!": "SÄMST SEDAN 2018!",
   "Kurumsal para kapıdan çıkıyor 📉": "Institutionella pengar drar 📉"
+ },
+ "2026-11-24-nvidia-jensen-huang-geri-dondu": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · ÇİP DEVİ": "2026 · CHIPJÄTTE",
+  "11 GÜNDE <em>GERİ DÖNDÜ</em>": "TILLBAKA <em>EFTER 11 DAGAR</em>",
+  "CEO": "VD",
+  "NASIL YANİ?": "VA, HUR DÅ?",
+  "Kurul 6 gün önce “dönmeyecek” demişti 🔄": "Styrelsen sa ”nej” 6 dagar tidigare 🔄"
+ },
+ "2026-11-24-openai-perplexity-ortak-sinir": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YAPAY ZEKÂ GÜVENLİĞİ": "2026 · AI-SÄKERHET",
+  "YAPAY ZEKÂYA <em>ORTAK SINIR</em>": "EN GEMENSAM <em>GRÄNS FÖR AI</em>",
+  "> ÖLÇÜM: PERPLEXITY": "> MÅTT: PERPLEXITY",
+  "SINIR 0,68-0,70": "GRÄNS 0,68-0,70",
+  "GPT-3.5: 0,99": "GPT-3.5: 0,99",
+  "GPT-4: 0,91": "GPT-4: 0,91",
+  "ŞİMDİ: ~0,76": "NU: ~0,76",
+  "DÜŞÜK = DAHA AKILLI MODEL": "LÄGRE = SMARTARE MODELL",
+  "FREN ZAMANI MI?": "DAGS ATT BROMSA?",
+  "Microsoft da kendi ölçümünü paylaştı 📉": "Även Microsoft delade sitt värde 📉"
+ },
+ "2026-11-24-glm-5-4-dongulu-transformer": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YENİ MODEL MİMARİSİ": "2026 · NY MODELLARKITEKTUR",
+  "AYNI KATMAN, <em>İKİ TUR</em>": "SAMMA LAGER, <em>TVÅ VARV</em>",
+  "GİRDİ": "INDATA",
+  "ÇIKTI": "UTDATA",
+  "x2": "x2",
+  "28 KATMAN": "28 LAGER",
+  "750B": "750B",
+  "1M TOKEN": "1M TOKEN",
+  "DÖNGÜ!": "LOOP!",
+  "Yeni ağırlık yok, daha derin düşünme var 🔁": "Inga nya vikter, djupare tänkande 🔁"
  }
 }

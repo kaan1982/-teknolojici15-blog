@@ -1300,5 +1300,39 @@
   "ETF: -$4,14 MİLYAR": "ETF : -4,14 MD$",
   "2018'DEN BERİ YOK!": "DU JAMAIS VU DEPUIS 2018 !",
   "Kurumsal para kapıdan çıkıyor 📉": "L'argent institutionnel s'en va 📉"
+ },
+ "2026-11-24-nvidia-jensen-huang-geri-dondu": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "2026 · ÇİP DEVİ": "2026 · GÉANT DES PUCES",
+  "11 GÜNDE <em>GERİ DÖNDÜ</em>": "DE RETOUR <em>EN 11 JOURS</em>",
+  "CEO": "CEO",
+  "NASIL YANİ?": "QUOI ?",
+  "Kurul 6 gün önce “dönmeyecek” demişti 🔄": "Le conseil disait « non » 6 jours avant 🔄"
+ },
+ "2026-11-24-openai-perplexity-ortak-sinir": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "2026 · YAPAY ZEKÂ GÜVENLİĞİ": "2026 · SÉCURITÉ DE L'IA",
+  "YAPAY ZEKÂYA <em>ORTAK SINIR</em>": "UNE LIMITE <em>COMMUNE À L'IA</em>",
+  "> ÖLÇÜM: PERPLEXITY": "> MESURE : PERPLEXITY",
+  "SINIR 0,68-0,70": "LIMITE 0,68-0,70",
+  "GPT-3.5: 0,99": "GPT-3.5 : 0,99",
+  "GPT-4: 0,91": "GPT-4 : 0,91",
+  "ŞİMDİ: ~0,76": "ACTUEL : ~0,76",
+  "DÜŞÜK = DAHA AKILLI MODEL": "PLUS BAS = PLUS MALIN",
+  "FREN ZAMANI MI?": "L'HEURE DU FREIN ?",
+  "Microsoft da kendi ölçümünü paylaştı 📉": "Microsoft a aussi publié son score 📉"
+ },
+ "2026-11-24-glm-5-4-dongulu-transformer": {
+  "GÜNÜN HABERİ": "ACTU DU JOUR",
+  "2026 · YENİ MODEL MİMARİSİ": "2026 · NOUVELLE ARCHITECTURE",
+  "AYNI KATMAN, <em>İKİ TUR</em>": "MÊMES COUCHES, <em>DEUX TOURS</em>",
+  "GİRDİ": "ENTRÉE",
+  "ÇIKTI": "SORTIE",
+  "x2": "x2",
+  "28 KATMAN": "28 COUCHES",
+  "750B": "750B",
+  "1M TOKEN": "1M TOKENS",
+  "DÖNGÜ!": "BOUCLE !",
+  "Yeni ağırlık yok, daha derin düşünme var 🔁": "Pas de nouveaux poids, plus de réflexion 🔁"
  }
 }

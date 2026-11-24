@@ -1300,5 +1300,39 @@
   "ETF: -$4,14 MİLYAR": "ETF: -4.14 مليار $",
   "2018'DEN BERİ YOK!": "الأسوأ منذ 2018!",
   "Kurumsal para kapıdan çıkıyor 📉": "الأموال المؤسسية تتجه للخروج 📉"
+ },
+ "2026-11-24-nvidia-jensen-huang-geri-dondu": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · ÇİP DEVİ": "2026 · عملاق الرقائق",
+  "11 GÜNDE <em>GERİ DÖNDÜ</em>": "عاد <em>بعد 11 يومًا</em>",
+  "CEO": "CEO",
+  "NASIL YANİ?": "كيف ذلك؟",
+  "Kurul 6 gün önce “dönmeyecek” demişti 🔄": "قال المجلس «لا عودة» قبل 6 أيام 🔄"
+ },
+ "2026-11-24-openai-perplexity-ortak-sinir": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ GÜVENLİĞİ": "2026 · أمان الذكاء الاصطناعي",
+  "YAPAY ZEKÂYA <em>ORTAK SINIR</em>": "حد <em>مشترك للذكاء</em>",
+  "> ÖLÇÜM: PERPLEXITY": "> المقياس: PERPLEXITY",
+  "SINIR 0,68-0,70": "الحد 0.68-0.70",
+  "GPT-3.5: 0,99": "GPT-3.5: 0.99",
+  "GPT-4: 0,91": "GPT-4: 0.91",
+  "ŞİMDİ: ~0,76": "الآن: ~0.76",
+  "DÜŞÜK = DAHA AKILLI MODEL": "أقل = نموذج أذكى",
+  "FREN ZAMANI MI?": "وقت الكبح؟",
+  "Microsoft da kendi ölçümünü paylaştı 📉": "مايكروسوفت شاركت نتيجتها أيضًا 📉"
+ },
+ "2026-11-24-glm-5-4-dongulu-transformer": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YENİ MODEL MİMARİSİ": "2026 · بنية نموذج جديدة",
+  "AYNI KATMAN, <em>İKİ TUR</em>": "الطبقات نفسها، <em>جولتان</em>",
+  "GİRDİ": "المدخل",
+  "ÇIKTI": "المخرج",
+  "x2": "x2",
+  "28 KATMAN": "28 طبقة",
+  "750B": "750B",
+  "1M TOKEN": "مليون رمز",
+  "DÖNGÜ!": "حلقة!",
+  "Yeni ağırlık yok, daha derin düşünme var 🔁": "لا أوزان جديدة، تفكير أعمق 🔁"
  }
 }

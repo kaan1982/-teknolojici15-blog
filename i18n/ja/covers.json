@@ -1300,5 +1300,39 @@
   "ETF: -$4,14 MİLYAR": "ETF: -41.4億ドル",
   "2018'DEN BERİ YOK!": "2018年以来最悪!",
   "Kurumsal para kapıdan çıkıyor 📉": "機関マネーが出口へ 📉"
+ },
+ "2026-11-24-nvidia-jensen-huang-geri-dondu": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · ÇİP DEVİ": "2026 · 半導体の巨人",
+  "11 GÜNDE <em>GERİ DÖNDÜ</em>": "11日で<em>復帰</em>",
+  "CEO": "CEO",
+  "NASIL YANİ?": "どういうこと？",
+  "Kurul 6 gün önce “dönmeyecek” demişti 🔄": "取締役会は6日前に「戻さない」と 🔄"
+ },
+ "2026-11-24-openai-perplexity-ortak-sinir": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ GÜVENLİĞİ": "2026 · AIの安全性",
+  "YAPAY ZEKÂYA <em>ORTAK SINIR</em>": "AIに<em>共通の上限</em>",
+  "> ÖLÇÜM: PERPLEXITY": "> 指標: PERPLEXITY",
+  "SINIR 0,68-0,70": "上限 0.68-0.70",
+  "GPT-3.5: 0,99": "GPT-3.5: 0.99",
+  "GPT-4: 0,91": "GPT-4: 0.91",
+  "ŞİMDİ: ~0,76": "現在: ~0.76",
+  "DÜŞÜK = DAHA AKILLI MODEL": "低いほど賢いモデル",
+  "FREN ZAMANI MI?": "ブレーキの時？",
+  "Microsoft da kendi ölçümünü paylaştı 📉": "Microsoftも自社の値を公開 📉"
+ },
+ "2026-11-24-glm-5-4-dongulu-transformer": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YENİ MODEL MİMARİSİ": "2026 · 新しいモデル構造",
+  "AYNI KATMAN, <em>İKİ TUR</em>": "同じ層を<em>2周</em>",
+  "GİRDİ": "入力",
+  "ÇIKTI": "出力",
+  "x2": "x2",
+  "28 KATMAN": "28層",
+  "750B": "750B",
+  "1M TOKEN": "100万トークン",
+  "DÖNGÜ!": "ループ！",
+  "Yeni ağırlık yok, daha derin düşünme var 🔁": "新しい重みなしで深く考える 🔁"
  }
 }
