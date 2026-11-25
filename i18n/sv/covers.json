@@ -1334,5 +1334,33 @@
   "1M TOKEN": "1M TOKEN",
   "DÖNGÜ!": "LOOP!",
   "Yeni ağırlık yok, daha derin düşünme var 🔁": "Inga nya vikter, djupare tänkande 🔁"
+ },
+ "2026-11-25-huawei-abd-mahkumiyet": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · TEKNOLOJİ VE HUKUK": "2026 · TEKNIK OCH RÄTT",
+  "JÜRİ KARARI: <em>SUÇLU</em>": "JURYN: <em>SKYLDIG</em>",
+  "SON BASKI": "SENASTE UPPLAGAN",
+  "\"ocsic\"": "\"ocsic\"",
+  "KARAR ÇIKTI!": "DOMEN HAR FALLIT!",
+  "Çalınan kod, Cisco adı ters yazılarak gizlenmiş 🔨": "Stulen kod, gömd genom att skriva Cisco baklänges 🔨"
+ },
+ "2026-11-25-tidal-yapay-zeka-muzik-yasagi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YAPAY ZEKÂ VE MÜZİK": "2026 · AI OCH MUSIK",
+  "YAPAY ZEKÂ ŞARKISINA <em>YASAK</em>": "AI-LÅTAR <em>FÖRBJUDS</em>",
+  "AI": "AI",
+  "27M+": "27M+",
+  "SİLİNİYOR!": "RADERAS!",
+  "Yeni gelen her 100 şarkının 43'ü yapay zekâ 🎵": "43 av varje 100 nya låtar är AI 🎵"
+ },
+ "2026-11-25-meta-muse-ingiltere": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YAPAY ZEKÂ AJANI": "2026 · AI-AGENT",
+  "AJAN ALIŞVERİŞE <em>ÇIKTI</em>": "AGENTEN GÅR OCH <em>HANDLAR</em>",
+  "ÖDENSİN Mİ?": "BETALA?",
+  "EVET": "JA",
+  "HAYIR": "NEJ",
+  "ÖNCE SİZE SORAR": "FRÅGAR DIG FÖRST",
+  "Bir dev mağaza bu ajanı içeri almadı 🛒": "En jättebutik släppte inte in agenten 🛒"
  }
 }
