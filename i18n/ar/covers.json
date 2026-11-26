@@ -1362,5 +1362,42 @@
   "HAYIR": "لا",
   "ÖNCE SİZE SORAR": "يسألك أولًا",
   "Bir dev mağaza bu ajanı içeri almadı 🛒": "متجر عملاق لم يسمح لهذا الوكيل بالدخول 🛒"
+ },
+ "2026-11-26-gpt-6-protein-tasarimi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ VE BİYOLOJİ": "2026 · ذكاء اصطناعي وأحياء",
+  "PROTEİNİ <em>KENDİ ÇİZDİ</em>": "رسم البروتين <em>بنفسه</em>",
+  "HEDEF": "الهدف",
+  "> helix(5); dock(PD-L1)": "> helix(5); dock(PD-L1)",
+  "> fold(); score()": "> fold(); score()",
+  "> 322 tasarim hazir": "> 322 تصميم جاهز",
+  "5 HEDEF PROTEİN": "5 أهداف بروتينية",
+  "1 ÖN BASKI": "ورقة أولية واحدة",
+  "ŞAKA DEĞİL!": "لا نمزح!",
+  "Şekli model çizdi, kararı laboratuvar verdi 🧬": "النموذج رسم الشكل والمختبر حكم 🧬"
+ },
+ "2026-11-26-spacex-starmind-fcc-onayi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · UZAY VE VERİ MERKEZİ": "2026 · الفضاء ومراكز البيانات",
+  "VERİ MERKEZİ <em>YÖRÜNGEYE</em>": "مركز البيانات <em>إلى المدار</em>",
+  "500 - 1002 KM": "500 - 1002 KM",
+  "UYDU ÜST SINIRI": "الحد الأعلى للأقمار",
+  "İZİN ÇIKTI!": "صدر الإذن!",
+  "İlk uydu 2033'e, tamamı 2040'a kadar 🛰️": "أول قمر حتى 2033 والكل حتى 2040 🛰️"
+ },
+ "2026-11-26-cia-odni-osint-sizmasi": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · İSTİHBARAT VE GÜVENLİK": "2026 · الاستخبارات والأمن",
+  "AÇIK TARAFTAN <em>GİRDİLER</em>": "من الجهة المفتوحة <em>دخلوا</em>",
+  "osint-analiz / terminal": "osint-analiz / terminal",
+  "> baglanti: ACIK KAYNAK AGI": "> الاتصال: شبكة مفتوحة",
+  "> yetki: ERISIM SAGLANDI": "> الصلاحية: تم الوصول",
+  "> sorgu kayitlari: OKUNUYOR": "> سجلات الاستعلام: تُقرأ",
+  "> gizli ag: ERISIM YOK": "> الشبكة السرية: لا وصول",
+  "> etkilenen kurum: 3": "> أجهزة متأثرة: 3",
+  "AÇIK KAYNAK": "مصدر مفتوح",
+  "GİZLİ AĞ": "شبكة سرية",
+  "GİZLİ DEĞİL!": "ليست سرية!",
+  "Sorgularını gören, önceliklerini öğreniyor 🔎": "من يرى استعلاماتهم يعرف أولوياتهم 🔎"
  }
 }

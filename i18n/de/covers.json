@@ -1362,5 +1362,42 @@
   "HAYIR": "NEIN",
   "ÖNCE SİZE SORAR": "FRAGT ERST SIE",
   "Bir dev mağaza bu ajanı içeri almadı 🛒": "Ein Riesenshop ließ ihn nicht rein 🛒"
+ },
+ "2026-11-26-gpt-6-protein-tasarimi": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · YAPAY ZEKÂ VE BİYOLOJİ": "2026 · KI UND BIOLOGIE",
+  "PROTEİNİ <em>KENDİ ÇİZDİ</em>": "PROTEIN <em>SELBST ENTWORFEN</em>",
+  "HEDEF": "ZIEL",
+  "> helix(5); dock(PD-L1)": "> helix(5); dock(PD-L1)",
+  "> fold(); score()": "> fold(); score()",
+  "> 322 tasarim hazir": "> 322 Entwuerfe ok",
+  "5 HEDEF PROTEİN": "5 ZIELPROTEINE",
+  "1 ÖN BASKI": "1 PREPRINT",
+  "ŞAKA DEĞİL!": "KEIN WITZ!",
+  "Şekli model çizdi, kararı laboratuvar verdi 🧬": "Die Form vom Modell, das Urteil aus dem Labor 🧬"
+ },
+ "2026-11-26-spacex-starmind-fcc-onayi": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · UZAY VE VERİ MERKEZİ": "2026 · WELTRAUM UND RECHENZENTRUM",
+  "VERİ MERKEZİ <em>YÖRÜNGEYE</em>": "RECHENZENTRUM <em>IM ORBIT</em>",
+  "500 - 1002 KM": "500 - 1002 KM",
+  "UYDU ÜST SINIRI": "SATELLITEN-MAX",
+  "İZİN ÇIKTI!": "GENEHMIGT!",
+  "İlk uydu 2033'e, tamamı 2040'a kadar 🛰️": "Erster Satellit bis 2033, alle bis 2040 🛰️"
+ },
+ "2026-11-26-cia-odni-osint-sizmasi": {
+  "GÜNÜN HABERİ": "NEWS DES TAGES",
+  "2026 · İSTİHBARAT VE GÜVENLİK": "2026 · GEHEIMDIENST UND SICHERHEIT",
+  "AÇIK TARAFTAN <em>GİRDİLER</em>": "REIN ÜBER DIE <em>OFFENE SEITE</em>",
+  "osint-analiz / terminal": "osint-analyse / terminal",
+  "> baglanti: ACIK KAYNAK AGI": "> verbindung: OSINT-NETZ",
+  "> yetki: ERISIM SAGLANDI": "> zugriff: GEWAEHRT",
+  "> sorgu kayitlari: OKUNUYOR": "> suchprotokolle: LESEN",
+  "> gizli ag: ERISIM YOK": "> geheimnetz: KEIN ZUGRIFF",
+  "> etkilenen kurum: 3": "> betroffene behoerden: 3",
+  "AÇIK KAYNAK": "OPEN SOURCE",
+  "GİZLİ AĞ": "GEHEIMNETZ",
+  "GİZLİ DEĞİL!": "NICHT GEHEIM!",
+  "Sorgularını gören, önceliklerini öğreniyor 🔎": "Wer die Suchen sieht, kennt die Ziele 🔎"
  }
 }

@@ -1362,5 +1362,42 @@
   "HAYIR": "NEJ",
   "ÖNCE SİZE SORAR": "FRÅGAR DIG FÖRST",
   "Bir dev mağaza bu ajanı içeri almadı 🛒": "En jättebutik släppte inte in agenten 🛒"
+ },
+ "2026-11-26-gpt-6-protein-tasarimi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · YAPAY ZEKÂ VE BİYOLOJİ": "2026 · AI OCH BIOLOGI",
+  "PROTEİNİ <em>KENDİ ÇİZDİ</em>": "RITADE SITT <em>EGET PROTEIN</em>",
+  "HEDEF": "MÅL",
+  "> helix(5); dock(PD-L1)": "> helix(5); dock(PD-L1)",
+  "> fold(); score()": "> fold(); score()",
+  "> 322 tasarim hazir": "> 322 design klara",
+  "5 HEDEF PROTEİN": "5 MÅLPROTEINER",
+  "1 ÖN BASKI": "1 PREPRINT",
+  "ŞAKA DEĞİL!": "INGET SKÄMT!",
+  "Şekli model çizdi, kararı laboratuvar verdi 🧬": "Modellen ritade formen, labbet gav domen 🧬"
+ },
+ "2026-11-26-spacex-starmind-fcc-onayi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · UZAY VE VERİ MERKEZİ": "2026 · RYMD OCH DATACENTER",
+  "VERİ MERKEZİ <em>YÖRÜNGEYE</em>": "DATACENTER <em>I OMLOPPSBANA</em>",
+  "500 - 1002 KM": "500 - 1002 KM",
+  "UYDU ÜST SINIRI": "TAK FÖR SATELLITER",
+  "İZİN ÇIKTI!": "KLARTECKEN!",
+  "İlk uydu 2033'e, tamamı 2040'a kadar 🛰️": "Första satelliten 2033, alla senast 2040 🛰️"
+ },
+ "2026-11-26-cia-odni-osint-sizmasi": {
+  "GÜNÜN HABERİ": "DAGENS NYHET",
+  "2026 · İSTİHBARAT VE GÜVENLİK": "2026 · UNDERRÄTTELSE OCH SÄKERHET",
+  "AÇIK TARAFTAN <em>GİRDİLER</em>": "IN GENOM <em>ÖPPNA SIDAN</em>",
+  "osint-analiz / terminal": "osint-analys / terminal",
+  "> baglanti: ACIK KAYNAK AGI": "> anslutning: ÖPPNA KÄLLOR",
+  "> yetki: ERISIM SAGLANDI": "> behörighet: ÅTKOMST OK",
+  "> sorgu kayitlari: OKUNUYOR": "> sökloggar: LÄSES",
+  "> gizli ag: ERISIM YOK": "> hemligt nät: EJ ÅTKOMST",
+  "> etkilenen kurum: 3": "> berörda myndigheter: 3",
+  "AÇIK KAYNAK": "ÖPPEN KÄLLA",
+  "GİZLİ AĞ": "HEMLIGT NÄT",
+  "GİZLİ DEĞİL!": "EJ HEMLIGT!",
+  "Sorgularını gören, önceliklerini öğreniyor 🔎": "Den som ser frågorna ser prioriteringarna 🔎"
  }
 }

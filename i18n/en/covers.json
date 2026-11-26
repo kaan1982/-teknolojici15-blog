@@ -1362,5 +1362,42 @@
   "HAYIR": "NO",
   "ÖNCE SİZE SORAR": "IT ASKS YOU FIRST",
   "Bir dev mağaza bu ajanı içeri almadı 🛒": "A giant store wouldn't let this agent in 🛒"
+ },
+ "2026-11-26-gpt-6-protein-tasarimi": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "2026 · YAPAY ZEKÂ VE BİYOLOJİ": "2026 · AI AND BIOLOGY",
+  "PROTEİNİ <em>KENDİ ÇİZDİ</em>": "IT DREW THE <em>PROTEIN ITSELF</em>",
+  "HEDEF": "TARGET",
+  "> helix(5); dock(PD-L1)": "> helix(5); dock(PD-L1)",
+  "> fold(); score()": "> fold(); score()",
+  "> 322 tasarim hazir": "> 322 designs ready",
+  "5 HEDEF PROTEİN": "5 TARGET PROTEINS",
+  "1 ÖN BASKI": "1 PREPRINT",
+  "ŞAKA DEĞİL!": "NO JOKE!",
+  "Şekli model çizdi, kararı laboratuvar verdi 🧬": "The model drew the shape, the lab made the call 🧬"
+ },
+ "2026-11-26-spacex-starmind-fcc-onayi": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "2026 · UZAY VE VERİ MERKEZİ": "2026 · SPACE AND DATA CENTERS",
+  "VERİ MERKEZİ <em>YÖRÜNGEYE</em>": "DATA CENTERS <em>GO TO ORBIT</em>",
+  "500 - 1002 KM": "500 - 1002 KM",
+  "UYDU ÜST SINIRI": "SATELLITE CAP",
+  "İZİN ÇIKTI!": "APPROVED!",
+  "İlk uydu 2033'e, tamamı 2040'a kadar 🛰️": "First satellite by 2033, all of them by 2040 🛰️"
+ },
+ "2026-11-26-cia-odni-osint-sizmasi": {
+  "GÜNÜN HABERİ": "TODAY'S NEWS",
+  "2026 · İSTİHBARAT VE GÜVENLİK": "2026 · INTELLIGENCE AND SECURITY",
+  "AÇIK TARAFTAN <em>GİRDİLER</em>": "THEY ENTERED <em>THE OPEN SIDE</em>",
+  "osint-analiz / terminal": "osint-analysis / terminal",
+  "> baglanti: ACIK KAYNAK AGI": "> link: OPEN SOURCE NET",
+  "> yetki: ERISIM SAGLANDI": "> access: GRANTED",
+  "> sorgu kayitlari: OKUNUYOR": "> query logs: READING",
+  "> gizli ag: ERISIM YOK": "> classified net: NO ACCESS",
+  "> etkilenen kurum: 3": "> agencies hit: 3",
+  "AÇIK KAYNAK": "OPEN SOURCE",
+  "GİZLİ AĞ": "CLASSIFIED",
+  "GİZLİ DEĞİL!": "NOT CLASSIFIED!",
+  "Sorgularını gören, önceliklerini öğreniyor 🔎": "See the queries, learn the priorities 🔎"
  }
 }

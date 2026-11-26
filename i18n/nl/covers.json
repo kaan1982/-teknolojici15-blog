@@ -1362,5 +1362,42 @@
   "HAYIR": "NEE",
   "ÖNCE SİZE SORAR": "VRAAGT EERST JOU",
   "Bir dev mağaza bu ajanı içeri almadı 🛒": "Een grote winkel liet deze agent niet binnen 🛒"
+ },
+ "2026-11-26-gpt-6-protein-tasarimi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · YAPAY ZEKÂ VE BİYOLOJİ": "2026 · AI EN BIOLOGIE",
+  "PROTEİNİ <em>KENDİ ÇİZDİ</em>": "EIWIT <em>ZELF ONTWORPEN</em>",
+  "HEDEF": "DOELWIT",
+  "> helix(5); dock(PD-L1)": "> helix(5); dock(PD-L1)",
+  "> fold(); score()": "> fold(); score()",
+  "> 322 tasarim hazir": "> 322 ontwerpen ok",
+  "5 HEDEF PROTEİN": "5 DOELEIWITTEN",
+  "1 ÖN BASKI": "1 PREPRINT",
+  "ŞAKA DEĞİL!": "ECHT WAAR!",
+  "Şekli model çizdi, kararı laboratuvar verdi 🧬": "Vorm van het model, oordeel van het lab 🧬"
+ },
+ "2026-11-26-spacex-starmind-fcc-onayi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · UZAY VE VERİ MERKEZİ": "2026 · RUIMTE EN DATACENTERS",
+  "VERİ MERKEZİ <em>YÖRÜNGEYE</em>": "DATACENTER <em>IN DE RUIMTE</em>",
+  "500 - 1002 KM": "500 - 1002 KM",
+  "UYDU ÜST SINIRI": "MAX. SATELLIETEN",
+  "İZİN ÇIKTI!": "GROEN LICHT!",
+  "İlk uydu 2033'e, tamamı 2040'a kadar 🛰️": "Eerste satelliet in 2033, alle in 2040 🛰️"
+ },
+ "2026-11-26-cia-odni-osint-sizmasi": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · İSTİHBARAT VE GÜVENLİK": "2026 · INLICHTINGEN EN VEILIGHEID",
+  "AÇIK TARAFTAN <em>GİRDİLER</em>": "ERIN VIA DE <em>OPEN KANT</em>",
+  "osint-analiz / terminal": "osint-analyse / terminal",
+  "> baglanti: ACIK KAYNAK AGI": "> verbinding: OPEN BRONNEN",
+  "> yetki: ERISIM SAGLANDI": "> rechten: TOEGANG OK",
+  "> sorgu kayitlari: OKUNUYOR": "> zoeklogs: WORDEN GELEZEN",
+  "> gizli ag: ERISIM YOK": "> geheim net: GEEN TOEGANG",
+  "> etkilenen kurum: 3": "> geraakte diensten: 3",
+  "AÇIK KAYNAK": "OPEN BRONNEN",
+  "GİZLİ AĞ": "GEHEIM NET",
+  "GİZLİ DEĞİL!": "NIET GEHEIM!",
+  "Sorgularını gören, önceliklerini öğreniyor 🔎": "Wie de query ziet, kent de prioriteiten 🔎"
  }
 }

@@ -1362,5 +1362,42 @@
   "HAYIR": "いいえ",
   "ÖNCE SİZE SORAR": "まずあなたに確認",
   "Bir dev mağaza bu ajanı içeri almadı 🛒": "ある巨大ストアはこのエージェントを入れなかった 🛒"
+ },
+ "2026-11-26-gpt-6-protein-tasarimi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ VE BİYOLOJİ": "2026 · AIと生物学",
+  "PROTEİNİ <em>KENDİ ÇİZDİ</em>": "タンパク質を<em>自ら描いた</em>",
+  "HEDEF": "標的",
+  "> helix(5); dock(PD-L1)": "> helix(5); dock(PD-L1)",
+  "> fold(); score()": "> fold(); score()",
+  "> 322 tasarim hazir": "> 322件の設計 完了",
+  "5 HEDEF PROTEİN": "標的タンパク質 5種",
+  "1 ÖN BASKI": "プレプリント 1本",
+  "ŞAKA DEĞİL!": "冗談じゃない!",
+  "Şekli model çizdi, kararı laboratuvar verdi 🧬": "形はモデルが描き、判定は実験室 🧬"
+ },
+ "2026-11-26-spacex-starmind-fcc-onayi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · UZAY VE VERİ MERKEZİ": "2026 · 宇宙とデータセンター",
+  "VERİ MERKEZİ <em>YÖRÜNGEYE</em>": "データセンターが<em>軌道へ</em>",
+  "500 - 1002 KM": "500 - 1002 KM",
+  "UYDU ÜST SINIRI": "衛星の上限",
+  "İZİN ÇIKTI!": "許可が出た!",
+  "İlk uydu 2033'e, tamamı 2040'a kadar 🛰️": "初号機は2033年、全基は2040年まで 🛰️"
+ },
+ "2026-11-26-cia-odni-osint-sizmasi": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · İSTİHBARAT VE GÜVENLİK": "2026 · 情報機関とセキュリティ",
+  "AÇIK TARAFTAN <em>GİRDİLER</em>": "開いた側から<em>入り込んだ</em>",
+  "osint-analiz / terminal": "osint-analiz / terminal",
+  "> baglanti: ACIK KAYNAK AGI": "> 接続: オープンソース網",
+  "> yetki: ERISIM SAGLANDI": "> 権限: アクセス取得",
+  "> sorgu kayitlari: OKUNUYOR": "> 検索ログ: 読み取り中",
+  "> gizli ag: ERISIM YOK": "> 機密網: アクセス不可",
+  "> etkilenen kurum: 3": "> 影響機関: 3",
+  "AÇIK KAYNAK": "公開ソース",
+  "GİZLİ AĞ": "機密ネット",
+  "GİZLİ DEĞİL!": "機密じゃない!",
+  "Sorgularını gören, önceliklerini öğreniyor 🔎": "検索を見れば優先事項が見える 🔎"
  }
 }

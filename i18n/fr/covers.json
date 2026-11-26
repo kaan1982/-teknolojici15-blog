@@ -1362,5 +1362,42 @@
   "HAYIR": "NON",
   "ÖNCE SİZE SORAR": "IL VOUS DEMANDE D'ABORD",
   "Bir dev mağaza bu ajanı içeri almadı 🛒": "Un géant du commerce lui a fermé la porte 🛒"
+ },
+ "2026-11-26-gpt-6-protein-tasarimi": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "2026 · YAPAY ZEKÂ VE BİYOLOJİ": "2026 · IA ET BIOLOGIE",
+  "PROTEİNİ <em>KENDİ ÇİZDİ</em>": "LA PROTÉINE, <em>IL L'A FAITE SEUL</em>",
+  "HEDEF": "CIBLE",
+  "> helix(5); dock(PD-L1)": "> helix(5); dock(PD-L1)",
+  "> fold(); score()": "> fold(); score()",
+  "> 322 tasarim hazir": "> 322 designs prets",
+  "5 HEDEF PROTEİN": "5 PROTÉINES CIBLES",
+  "1 ÖN BASKI": "1 PREPRINT",
+  "ŞAKA DEĞİL!": "SANS BLAGUE !",
+  "Şekli model çizdi, kararı laboratuvar verdi 🧬": "Le modèle dessine, le labo décide 🧬"
+ },
+ "2026-11-26-spacex-starmind-fcc-onayi": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "2026 · UZAY VE VERİ MERKEZİ": "2026 · ESPACE ET DATA CENTERS",
+  "VERİ MERKEZİ <em>YÖRÜNGEYE</em>": "LE DATA CENTER <em>EN ORBITE</em>",
+  "500 - 1002 KM": "500 - 1002 KM",
+  "UYDU ÜST SINIRI": "PLAFOND SATELLITES",
+  "İZİN ÇIKTI!": "AUTORISÉ !",
+  "İlk uydu 2033'e, tamamı 2040'a kadar 🛰️": "Premier satellite en 2033, tous en 2040 🛰️"
+ },
+ "2026-11-26-cia-odni-osint-sizmasi": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "2026 · İSTİHBARAT VE GÜVENLİK": "2026 · RENSEIGNEMENT ET SÉCURITÉ",
+  "AÇIK TARAFTAN <em>GİRDİLER</em>": "ENTRÉS PAR LE <em>CÔTÉ OUVERT</em>",
+  "osint-analiz / terminal": "analyse-osint / terminal",
+  "> baglanti: ACIK KAYNAK AGI": "> lien: RESEAU OPEN SOURCE",
+  "> yetki: ERISIM SAGLANDI": "> droits: ACCES ACCORDE",
+  "> sorgu kayitlari: OKUNUYOR": "> journaux requetes: LUS",
+  "> gizli ag: ERISIM YOK": "> reseau secret: AUCUN ACCES",
+  "> etkilenen kurum: 3": "> agences touchees: 3",
+  "AÇIK KAYNAK": "OPEN SOURCE",
+  "GİZLİ AĞ": "RÉSEAU SECRET",
+  "GİZLİ DEĞİL!": "PAS SECRET !",
+  "Sorgularını gören, önceliklerini öğreniyor 🔎": "Voir les requêtes, deviner les priorités 🔎"
  }
 }
