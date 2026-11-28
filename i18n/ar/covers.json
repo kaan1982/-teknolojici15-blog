@@ -1435,5 +1435,38 @@
   "PLAN HENÜZ KESİN DEĞİL": "الخطة لم تُحسم بعد",
   "NASIL YANİ?": "كيف ذلك؟",
   "Rekor gelir, yine de küçülme planı 📉": "إيرادات قياسية وخطة انكماش 📉"
+ },
+ "2026-11-28-abd-hava-kuvvetleri-cloud-one": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · ASKERÎ SİBER GÜVENLİK": "2026 · الأمن السيبراني العسكري",
+  "ASKERÎ BULUTA <em>SIZILDI</em>": "اختراق <em>السحابة العسكرية</em>",
+  "> KONTROL KATMANI": "> طبقة التحكم",
+  "> ERİŞİM: İHLAL": "> الوصول: مُخترَق",
+  "> GÜNCELLEME: DURDU": "> التحديث: متوقف",
+  "> YETKİLER: GERİ ALINDI": "> الصلاحيات: مسحوبة",
+  "> ÜS SAYISI: 200+": "> أكثر من 200 قاعدة",
+  "ALARM!": "إنذار!",
+  "Güncelleme sırasında fark edildi ⚠️": "اكتُشف أثناء التحديث ⚠️"
+ },
+ "2026-11-28-openai-apple-karsi-dava": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ DONANIMI": "2026 · عتاد الذكاء الاصطناعي",
+  "ESKİ ORTAKLAR <em>MAHKEMEDE</em>": "شريكا الأمس <em>في المحكمة</em>",
+  "GİZLİ": "سري",
+  "DAVA": "دعوى",
+  "KARŞI DAVA": "دعوى مضادة",
+  "RÖVANŞ!": "جولة الثأر!",
+  "Kavga donanıma taşındı ⚖️": "الصراع انتقل إلى العتاد ⚖️"
+ },
+ "2026-11-28-kanada-yapay-zeka-hesaplama-fonu": {
+  "GÜNÜN HABERİ": "خبر اليوم",
+  "2026 · YAPAY ZEKÂ VE DEVLET": "2026 · الذكاء الاصطناعي والدولة",
+  "İŞLEM GÜCÜNÜ <em>DEVLET ÖDÜYOR</em>": "الدولة <em>تدفع ثمن الحوسبة</em>",
+  "DEVLET": "الدولة",
+  "ŞİRKET": "الشركة",
+  "1 MİLYAR": "مليار",
+  "KANADA DOLARI": "دولار كندي",
+  "YERLİ OLSUN!": "محلي أولًا!",
+  "1.500 başvuru, fon büyüdü 🖥️": "1,500 طلب، والصندوق كبر 🖥️"
  }
 }

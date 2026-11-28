@@ -1435,5 +1435,38 @@
   "PLAN HENÜZ KESİN DEĞİL": "計画はまだ未確定",
   "NASIL YANİ?": "どういうこと?",
   "Rekor gelir, yine de küçülme planı 📉": "過去最高の売上でも縮小へ 📉"
+ },
+ "2026-11-28-abd-hava-kuvvetleri-cloud-one": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · ASKERÎ SİBER GÜVENLİK": "2026 · 軍事サイバー",
+  "ASKERÎ BULUTA <em>SIZILDI</em>": "軍事クラウドに<em>侵入</em>",
+  "> KONTROL KATMANI": "> 制御層",
+  "> ERİŞİM: İHLAL": "> アクセス: 侵害",
+  "> GÜNCELLEME: DURDU": "> 更新: 停止",
+  "> YETKİLER: GERİ ALINDI": "> 権限: 取り消し",
+  "> ÜS SAYISI: 200+": "> 基地数: 200+",
+  "ALARM!": "警報!",
+  "Güncelleme sırasında fark edildi ⚠️": "更新中に発覚 ⚠️"
+ },
+ "2026-11-28-openai-apple-karsi-dava": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ DONANIMI": "2026 · AIハードウェア",
+  "ESKİ ORTAKLAR <em>MAHKEMEDE</em>": "元パートナーが<em>法廷へ</em>",
+  "GİZLİ": "機密",
+  "DAVA": "訴訟",
+  "KARŞI DAVA": "反訴",
+  "RÖVANŞ!": "リベンジ!",
+  "Kavga donanıma taşındı ⚖️": "争いはハードへ ⚖️"
+ },
+ "2026-11-28-kanada-yapay-zeka-hesaplama-fonu": {
+  "GÜNÜN HABERİ": "今日のニュース",
+  "2026 · YAPAY ZEKÂ VE DEVLET": "2026 · AIと国家",
+  "İŞLEM GÜCÜNÜ <em>DEVLET ÖDÜYOR</em>": "計算資源は<em>国が払う</em>",
+  "DEVLET": "国",
+  "ŞİRKET": "企業",
+  "1 MİLYAR": "10億",
+  "KANADA DOLARI": "カナダドル",
+  "YERLİ OLSUN!": "国産で!",
+  "1.500 başvuru, fon büyüdü 🖥️": "1,500件の応募で基金拡大 🖥️"
  }
 }

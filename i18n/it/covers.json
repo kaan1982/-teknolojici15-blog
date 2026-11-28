@@ -1435,5 +1435,38 @@
   "PLAN HENÜZ KESİN DEĞİL": "PIANO NON ANCORA DEFINITIVO",
   "NASIL YANİ?": "COME, SCUSA?",
   "Rekor gelir, yine de küçülme planı 📉": "Ricavi record, ma si taglia lo stesso 📉"
+ },
+ "2026-11-28-abd-hava-kuvvetleri-cloud-one": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · ASKERÎ SİBER GÜVENLİK": "2026 · CYBERSICUREZZA MILITARE",
+  "ASKERÎ BULUTA <em>SIZILDI</em>": "CLOUD MILITARE <em>VIOLATO</em>",
+  "> KONTROL KATMANI": "> LIVELLO DI CONTROLLO",
+  "> ERİŞİM: İHLAL": "> ACCESSO: VIOLATO",
+  "> GÜNCELLEME: DURDU": "> AGGIORNAMENTI: STOP",
+  "> YETKİLER: GERİ ALINDI": "> PERMESSI: REVOCATI",
+  "> ÜS SAYISI: 200+": "> BASI: 200+",
+  "ALARM!": "ALLARME!",
+  "Güncelleme sırasında fark edildi ⚠️": "Scoperto durante un aggiornamento ⚠️"
+ },
+ "2026-11-28-openai-apple-karsi-dava": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · YAPAY ZEKÂ DONANIMI": "2026 · HARDWARE IA",
+  "ESKİ ORTAKLAR <em>MAHKEMEDE</em>": "EX PARTNER <em>IN TRIBUNALE</em>",
+  "GİZLİ": "SEGRETO",
+  "DAVA": "CAUSA",
+  "KARŞI DAVA": "CONTROCAUSA",
+  "RÖVANŞ!": "RIVINCITA!",
+  "Kavga donanıma taşındı ⚖️": "La lite passa all'hardware ⚖️"
+ },
+ "2026-11-28-kanada-yapay-zeka-hesaplama-fonu": {
+  "GÜNÜN HABERİ": "NOTIZIA DEL GIORNO",
+  "2026 · YAPAY ZEKÂ VE DEVLET": "2026 · IA E STATO",
+  "İŞLEM GÜCÜNÜ <em>DEVLET ÖDÜYOR</em>": "CALCOLO <em>PAGATO DALLO STATO</em>",
+  "DEVLET": "STATO",
+  "ŞİRKET": "AZIENDA",
+  "1 MİLYAR": "1 MILIARDO",
+  "KANADA DOLARI": "DOLLARI CANADESI",
+  "YERLİ OLSUN!": "MADE IN CANADA!",
+  "1.500 başvuru, fon büyüdü 🖥️": "1.500 domande, il fondo cresce 🖥️"
  }
 }

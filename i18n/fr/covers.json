@@ -1435,5 +1435,38 @@
   "PLAN HENÜZ KESİN DEĞİL": "PLAN PAS ENCORE FIXÉ",
   "NASIL YANİ?": "COMMENT ÇA ?",
   "Rekor gelir, yine de küçülme planı 📉": "Revenus records, et pourtant des coupes 📉"
+ },
+ "2026-11-28-abd-hava-kuvvetleri-cloud-one": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "2026 · ASKERÎ SİBER GÜVENLİK": "2026 · CYBERSÉCURITÉ MILITAIRE",
+  "ASKERÎ BULUTA <em>SIZILDI</em>": "LE CLOUD MILITAIRE <em>PIRATÉ</em>",
+  "> KONTROL KATMANI": "> COUCHE DE CONTRÔLE",
+  "> ERİŞİM: İHLAL": "> ACCÈS : VIOLÉ",
+  "> GÜNCELLEME: DURDU": "> MISES À JOUR : STOP",
+  "> YETKİLER: GERİ ALINDI": "> DROITS : RETIRÉS",
+  "> ÜS SAYISI: 200+": "> BASES : 200+",
+  "ALARM!": "ALERTE !",
+  "Güncelleme sırasında fark edildi ⚠️": "Découvert lors d'une mise à jour ⚠️"
+ },
+ "2026-11-28-openai-apple-karsi-dava": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "2026 · YAPAY ZEKÂ DONANIMI": "2026 · MATÉRIEL IA",
+  "ESKİ ORTAKLAR <em>MAHKEMEDE</em>": "EX-PARTENAIRES <em>AU TRIBUNAL</em>",
+  "GİZLİ": "SECRET",
+  "DAVA": "PLAINTE",
+  "KARŞI DAVA": "CONTRE-PLAINTE",
+  "RÖVANŞ!": "REVANCHE !",
+  "Kavga donanıma taşındı ⚖️": "La bataille passe au matériel ⚖️"
+ },
+ "2026-11-28-kanada-yapay-zeka-hesaplama-fonu": {
+  "GÜNÜN HABERİ": "L'INFO DU JOUR",
+  "2026 · YAPAY ZEKÂ VE DEVLET": "2026 · IA ET ÉTAT",
+  "İŞLEM GÜCÜNÜ <em>DEVLET ÖDÜYOR</em>": "L'ÉTAT <em>PAIE LE CALCUL</em>",
+  "DEVLET": "ÉTAT",
+  "ŞİRKET": "ENTREPRISE",
+  "1 MİLYAR": "1 MILLIARD",
+  "KANADA DOLARI": "DOLLARS CANADIENS",
+  "YERLİ OLSUN!": "LOCAL D'ABORD !",
+  "1.500 başvuru, fon büyüdü 🖥️": "1 500 demandes, le fonds grandit 🖥️"
  }
 }

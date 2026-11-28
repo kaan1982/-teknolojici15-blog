@@ -1435,5 +1435,38 @@
   "PLAN HENÜZ KESİN DEĞİL": "PLAN NOG NIET DEFINITIEF",
   "NASIL YANİ?": "HOEZO?",
   "Rekor gelir, yine de küçülme planı 📉": "Recordomzet, toch een krimpplan 📉"
+ },
+ "2026-11-28-abd-hava-kuvvetleri-cloud-one": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · ASKERÎ SİBER GÜVENLİK": "2026 · MILITAIRE CYBERVEILIGHEID",
+  "ASKERÎ BULUTA <em>SIZILDI</em>": "MILITAIRE CLOUD <em>GEHACKT</em>",
+  "> KONTROL KATMANI": "> CONTROLELAAG",
+  "> ERİŞİM: İHLAL": "> TOEGANG: LEK",
+  "> GÜNCELLEME: DURDU": "> UPDATES: GESTOPT",
+  "> YETKİLER: GERİ ALINDI": "> RECHTEN: INGETROKKEN",
+  "> ÜS SAYISI: 200+": "> BASES: 200+",
+  "ALARM!": "ALARM!",
+  "Güncelleme sırasında fark edildi ⚠️": "Ontdekt tijdens een update ⚠️"
+ },
+ "2026-11-28-openai-apple-karsi-dava": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · YAPAY ZEKÂ DONANIMI": "2026 · AI-HARDWARE",
+  "ESKİ ORTAKLAR <em>MAHKEMEDE</em>": "EX-PARTNERS <em>VOOR DE RECHTER</em>",
+  "GİZLİ": "GEHEIM",
+  "DAVA": "ZAAK",
+  "KARŞI DAVA": "TEGENZAAK",
+  "RÖVANŞ!": "REVANCHE!",
+  "Kavga donanıma taşındı ⚖️": "Strijd verhuist naar hardware ⚖️"
+ },
+ "2026-11-28-kanada-yapay-zeka-hesaplama-fonu": {
+  "GÜNÜN HABERİ": "NIEUWS VAN DE DAG",
+  "2026 · YAPAY ZEKÂ VE DEVLET": "2026 · AI EN OVERHEID",
+  "İŞLEM GÜCÜNÜ <em>DEVLET ÖDÜYOR</em>": "STAAT BETAALT <em>REKENKRACHT</em>",
+  "DEVLET": "STAAT",
+  "ŞİRKET": "BEDRIJF",
+  "1 MİLYAR": "1 MILJARD",
+  "KANADA DOLARI": "CANADESE DOLLAR",
+  "YERLİ OLSUN!": "LIEFST LOKAAL!",
+  "1.500 başvuru, fon büyüdü 🖥️": "1.500 aanvragen, fonds groeit 🖥️"
  }
 }
